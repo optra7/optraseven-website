@@ -1,0 +1,59 @@
+# ─── Start by Ignoring Everything ───────────────────────────────
+app/public/**
+
+# ─── Allow Only Top-Level Files in app/public ───────────────────
+!app/public/*.php
+!app/public/.htaccess
+!app/public/favicon.ico
+!app/public/index.html
+!app/public/robots.txt
+
+# ─── Allow wp-admin Directory ───────────────────────────────────
+#!app/public/wp-admin/
+#!app/public/wp-admin/**
+
+# ─── Allow wp-content/themes/index.php ──────────────────────────
+!app/public/wp-content/
+!app/public/wp-content/themes/
+!app/public/wp-content/themes/index.php
+
+# ─── Allow Custom Theme ─────────────────────────────────────────
+!app/public/wp-content/themes/optraseven-website-theme/
+!app/public/wp-content/themes/optraseven-website-theme/**
+
+# ─── Still Ignore Everything Else ───────────────────────────────
+# (e.g., uploads, plugins, cache, backups, etc.)
+app/public/wp-includes/
+app/public/wp-content/uploads/
+app/public/wp-content/plugins/
+app/public/wp-content/cache/
+app/public/wp-content/upgrade/
+app/public/wp-content/backups-*/
+
+# ─── Local, Backup, Env Files ───────────────────────────────────
+conf/
+app/sql/*
+*.localwp-site
+*.sql
+*.tar.gz
+*.zip
+*.log
+*.env
+.env.*
+.htaccess
+
+# ─── Node & Composer Dependencies ───────────────────────────────
+node_modules/
+vendor/
+package-lock.json
+composer.lock
+
+# ─── OS & IDE Junk ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
