@@ -162,6 +162,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ) {
 
     // Load ACF JSON from theme folder
     add_filter( 'acf/settings/load_json', function( $paths ) {
+        unset($paths[0]);
         $paths[] = get_stylesheet_directory() . '/acf-json';
         return $paths;
     } );
@@ -201,10 +202,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 
 $theme_includes = [
-//    '/inc/custom-header.php',
-//    '/inc/template-tags.php',
-//    '/inc/template-functions.php',
-//    '/inc/customizer.php',
+    '/inc/cpt.php',
+    '/inc/enqueue.php',
+    '/inc/hooks.php',
+    '/inc/shortcodes.php',
 ];
 
 // Load files
