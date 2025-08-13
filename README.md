@@ -1,4 +1,5 @@
 # optraseven-website
 
-optraseven-website developed by custom wordpress theme
+optraseven-website
 
+html repository link : https://github.com/shibbirahmadshihabweb/Optimisice-Seven.git
