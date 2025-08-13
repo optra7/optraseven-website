@@ -150,6 +150,24 @@ function optraseven_website_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'optraseven_website_theme_scripts' );
 
 /**
+ * ----------------------------------------------------
+ * ACF JSON Save/Load Points
+ * ----------------------------------------------------
+ */
+if ( function_exists( 'acf_add_local_field_group' ) ) {
+    // Save ACF JSON in theme folder
+    add_filter( 'acf/settings/save_json', function( $path ) {
+        return get_stylesheet_directory() . '/acf-json';
+    } );
+
+    // Load ACF JSON from theme folder
+    add_filter( 'acf/settings/load_json', function( $paths ) {
+        $paths[] = get_stylesheet_directory() . '/acf-json';
+        return $paths;
+    } );
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -176,3 +194,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * ----------------------------------------------------
+ * Include Modular Theme Files
+ * ----------------------------------------------------
+ */
+
+$theme_includes = [
+//    '/inc/custom-header.php',
+//    '/inc/template-tags.php',
+//    '/inc/template-functions.php',
+//    '/inc/customizer.php',
+];
+
+// Load files
+foreach ( $theme_includes as $file ) {
+    $filepath = get_template_directory() . $file;
+    if ( file_exists( $filepath ) ) {
+        require_once $filepath;
+    }
+}
