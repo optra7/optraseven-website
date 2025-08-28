@@ -10,31 +10,60 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main blog-single">
+    <?php while ( have_posts() ) : the_post(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+            <header class="entry-header">
+                <h1><?php the_title(); ?></h1>
+                <?php if ( has_post_thumbnail() ) {
+                    the_post_thumbnail('large');
+                } ?>
+            </header>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+            <div class="entry-content">
+                <?php the_content(); ?>
+            </div>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'optraseven-website-theme' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'optraseven-website-theme' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+            <aside class="blog-acf-meta">
+                <?php
+                // Platform (Select)
+                $platform = get_field('platform');
+                if ( $platform ) : ?>
+                    <p><strong>Platform:</strong> <?php echo esc_html($platform); ?></p>
+                <?php endif; ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+                <?php
+                // Explore Service (Link field)
+                $service = get_field('explore_service');
 
-		endwhile; // End of the loop.
-		?>
+                if ( $service ) : ?>
+                    <div class="explore-related explore-service">
+                        <p><strong>Explore Service:</strong> <?php echo esc_html($service); ?></p>
+                    </div>
+                <?php endif; ?>
 
-	</main><!-- #main -->
+                <?php
+                // Explore Case Study (Link field)
+                $case_study = get_field('explore_case_study');
+                if ( $case_study ) : ?>
+                    <div class="explore-related explore-case-study">
+                        <p><strong>Explore Case Study:</strong> <?php echo esc_html($case_study); ?></p>
+                    </div>
+                <?php endif; ?>
 
-<?php
-get_sidebar();
-get_footer();
+                <?php
+                // Explore Portfolio (Link field)
+                $portfolio = get_field('explore_portfolio');
+                if ( $portfolio ) : ?>
+                    <div class="explore-related explore-portfolio">
+                        <p><strong>Explore Portfolio:</strong> <?php echo esc_html($portfolio); ?></p>
+                    </div>
+                <?php endif; ?>
+            </aside>
+
+        </article>
+    <?php endwhile; ?>
+</main>
+
+<?php get_footer(); ?>
