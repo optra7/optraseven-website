@@ -1,67 +1,71 @@
 <?php
 /**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package optraseven_official_theme
+ * Single Blog Post
  */
 
 get_header();
 ?>
 
-<main id="primary" class="site-main blog-single">
+<main id="primary" class="site-main single-blog">
     <?php while ( have_posts() ) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
             <header class="entry-header">
                 <h1><?php the_title(); ?></h1>
-                <?php if ( has_post_thumbnail() ) {
-                    the_post_thumbnail('large');
-                } ?>
+                <?php if (get_field('subtitle')): ?>
+                    <p class="subtitle"><?php the_field('subtitle'); ?></p>
+                <?php endif; ?>
+                <p class="meta">
+                    By <?php the_field('author_name'); ?> •
+                    <?php echo get_the_date(); ?>
+                </p>
             </header>
+
+            <?php if (has_post_thumbnail()): ?>
+                <div class="featured-image">
+                    <?php the_post_thumbnail('large'); ?>
+                </div>
+            <?php endif; ?>
 
             <div class="entry-content">
                 <?php the_content(); ?>
             </div>
 
-            <aside class="blog-acf-meta">
+            <div class="meta">
                 <?php
-                // Platform (Select)
                 $platform = get_field('platform');
                 if ( $platform ) : ?>
                     <p><strong>Platform:</strong> <?php echo esc_html($platform); ?></p>
                 <?php endif; ?>
+            </div>
 
-                <?php
-                // Explore Service (Link field)
-                $service = get_field('explore_service');
-
-                if ( $service ) : ?>
+            <div class="explore-links">
+                <?php if ($service = get_field('explore_service')): ?>
                     <div class="explore-related explore-service">
-                        <p><strong>Explore Service:</strong> <?php echo esc_html($service); ?></p>
+                        <p><strong>Explore Service:</strong>
+                            <a href="<?php echo esc_url($service); ?>"><?php echo esc_html($service); ?></a>
+                        </p>
                     </div>
                 <?php endif; ?>
 
-                <?php
-                // Explore Case Study (Link field)
-                $case_study = get_field('explore_case_study');
-                if ( $case_study ) : ?>
+                <?php if ($case_study = get_field('explore_case_study')): ?>
                     <div class="explore-related explore-case-study">
-                        <p><strong>Explore Case Study:</strong> <?php echo esc_html($case_study); ?></p>
+                        <p><strong>Explore Case Study:</strong>
+                            <a href="<?php echo esc_url($case_study); ?>"><?php echo esc_html($case_study); ?></a>
+                        </p>
                     </div>
                 <?php endif; ?>
 
-                <?php
-                // Explore Portfolio (Link field)
-                $portfolio = get_field('explore_portfolio');
-                if ( $portfolio ) : ?>
+                <?php if ($portfolio = get_field('explore_portfolio')): ?>
                     <div class="explore-related explore-portfolio">
-                        <p><strong>Explore Portfolio:</strong> <?php echo esc_html($portfolio); ?></p>
+                        <p><strong>Explore Portfolio:</strong>
+                            <a href="<?php echo esc_url($portfolio); ?>"><?php echo esc_html($portfolio); ?></a>
+                        </p>
                     </div>
                 <?php endif; ?>
-            </aside>
+            </div>
 
+            <?php comments_template(); ?>
         </article>
     <?php endwhile; ?>
 </main>
