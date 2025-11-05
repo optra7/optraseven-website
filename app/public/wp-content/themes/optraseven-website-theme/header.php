@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
+<!-- <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'optraseven-website-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -41,9 +41,9 @@
 			$optraseven_website_theme_description = get_bloginfo( 'description', 'display' );
 			if ( $optraseven_website_theme_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $optraseven_website_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<p class="site-description"><?php echo $optraseven_website_theme_description; ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div>
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'optraseven-website-theme' ); ?></button>
@@ -55,5 +55,144 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</nav>
+	</header>
+
+	<body class="page-home"> -->
+    <aside class="main-menu-responsive">
+        <div class="main-menu-responsive__header">
+            <a href="#" class="main-menu-responsive__logo">OptraSeven</a>
+            <div class="main-menu-responsive__close-btn">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <a href="#" class="main-menu__link">About</a>
+            <a href="#" class="main-menu__link">Portfolio</a>
+            <a href="#" class="main-menu__link">Services</a>
+            <a href="#" class="main-menu__link">Case Studies</a>
+            <a href="#" class="main-menu__link">Contact</a>
+        </nav>
+        <div class="start-project-btn-wrarpper">
+            <button class="btn btn--secondary btn--medium">
+                Start a Project
+                <svg class="fee-icon" aria-hidden="true" focusable="false">
+                    <use href="./svg/svg-icon-sprite.svg#arrow-up-right"></use>
+                </svg>
+            </button>
+        </div>
+    </aside>
+
+    <header class="site-main-header">
+        <div class="site-main-header__container">
+
+            <div class="header-logo-wrapper">
+                <a href="#" class="header-logo">OptraSeven</a>
+            </div>
+
+            <div class="main-menu-wrapper">
+                <nav class="main-menu">
+                    <a href="#" class="main-menu__link">About</a>
+                    <a href="#" class="main-menu__link">Portfolio</a>
+
+                    <div class="megamenu">
+                        <a tabindex="0" class="main-menu__link">Services</a>
+                        <div class="megamenu__content-wrapper megamenu__content-wrapper--service">
+                            <div class="megamenu__triangle-head"></div>
+                            <div class="megamenu__content">
+                                <div class="megamenu__content-container-left megamenu__content-container-left--service">
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                        <div class="megamenu__link-card-text-wrapper">
+                                            <p class="megamenu__link-card-title">
+                                                Shopify
+                                            </p>
+                                            <p class="megamenu__link-card-subtitle">
+                                                Shopify solutions that boost sales success.
+                                            </p>
+                                        </div>
+                                        <div class="megamenu__link-card-icon-wrapper">
+                                            <img class="megamenu__link-card-icon"
+                                                src="./images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                    </a>
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                        <div class="megamenu__link-card-text-wrapper">
+                                            <p class="megamenu__link-card-title">
+                                                Shopify
+                                            </p>
+                                            <p class="megamenu__link-card-subtitle">
+                                                Shopify solutions that boost sales success.
+                                            </p>
+                                        </div>
+                                        <div class="megamenu__link-card-icon-wrapper">
+                                            <img class="megamenu__link-card-icon"
+                                                src="./images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                    </a>
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                        <div class="megamenu__link-card-text-wrapper">
+                                            <p class="megamenu__link-card-title">
+                                                Shopify
+                                            </p>
+                                            <p class="megamenu__link-card-subtitle">
+                                                Shopify solutions that boost sales success.
+                                            </p>
+                                        </div>
+                                        <div class="megamenu__link-card-icon-wrapper">
+                                            <img class="megamenu__link-card-icon"
+                                                src="./images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                    </a>
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                        <div class="megamenu__link-card-text-wrapper">
+                                            <p class="megamenu__link-card-title">
+                                                Shopify
+                                            </p>
+                                            <p class="megamenu__link-card-subtitle">
+                                                Shopify solutions that boost sales success.
+                                            </p>
+                                        </div>
+                                        <div class="megamenu__link-card-icon-wrapper">
+                                            <img class="megamenu__link-card-icon"
+                                                src="./images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div
+                                    class="megamenu__content-container-right megamenu__content-container-right--service">
+                                    <a class="megamenu__service-view-all-card">
+                                        <div class="megamenu__service-view-all-title-wrapper">
+                                            <p class="megamenu__service-view-all-title">
+                                                View All Service
+                                            </p>
+                                            <p class="megamenu__service-view-all-subtitle">
+                                                We don’t stop there, check out all the services we offer here at
+                                                OptraSeven
+                                            </p>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="main-menu__link">Case Studies</a>
+                    <a href="#" class="main-menu__link">Contact</a>
+                </nav>
+                <div class="main-menu__responsive-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="start-project-btn-wrarpper">
+                <button class="btn btn--secondary btn--medium">
+                    Start a Project
+                    <svg class="fee-icon" aria-hidden="true" focusable="false">
+                        <use href="./svg/svg-icon-sprite.svg#arrow-up-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>

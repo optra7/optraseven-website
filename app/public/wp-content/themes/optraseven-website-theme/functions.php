@@ -1,4 +1,5 @@
 <?php
+
 /**
  * optraseven official theme functions and definitions
  *
@@ -7,9 +8,9 @@
  * @package optraseven_official_theme
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (! defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
 
 /**
@@ -19,17 +20,18 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function optraseven_website_theme_setup() {
+function optraseven_website_theme_setup()
+{
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on optraseven official theme, use a find and replace
 		* to change 'optraseven-website-theme' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'optraseven-website-theme', get_template_directory() . '/languages' );
+	load_theme_textdomain('optraseven-website-theme', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 
 	/*
 		* Let WordPress manage the document title.
@@ -37,19 +39,19 @@ function optraseven_website_theme_setup() {
 		* hard-coded <title> tag in the document head, and expect WordPress to
 		* provide it for us.
 		*/
-	add_theme_support( 'title-tag' );
+	add_theme_support('title-tag');
 
 	/*
 		* Enable support for Post Thumbnails on posts and pages.
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support('post-thumbnails');
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'optraseven-website-theme' ),
+			'menu-1' => esc_html__('Primary', 'optraseven-website-theme'),
 		)
 	);
 
@@ -83,7 +85,7 @@ function optraseven_website_theme_setup() {
 	);
 
 	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+	add_theme_support('customize-selective-refresh-widgets');
 
 	/**
 	 * Add support for core custom logo.
@@ -100,7 +102,9 @@ function optraseven_website_theme_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'optraseven_website_theme_setup' );
+add_action('after_setup_theme', 'optraseven_website_theme_setup');
+
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,22 +113,24 @@ add_action( 'after_setup_theme', 'optraseven_website_theme_setup' );
  *
  * @global int $content_width
  */
-function optraseven_website_theme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'optraseven_website_theme_content_width', 640 );
+function optraseven_website_theme_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('optraseven_website_theme_content_width', 640);
 }
-add_action( 'after_setup_theme', 'optraseven_website_theme_content_width', 0 );
+add_action('after_setup_theme', 'optraseven_website_theme_content_width', 0);
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function optraseven_website_theme_widgets_init() {
+function optraseven_website_theme_widgets_init()
+{
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'optraseven-website-theme' ),
+			'name'          => esc_html__('Sidebar', 'optraseven-website-theme'),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'optraseven-website-theme' ),
+			'description'   => esc_html__('Add widgets here.', 'optraseven-website-theme'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -132,40 +138,47 @@ function optraseven_website_theme_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'optraseven_website_theme_widgets_init' );
+add_action('widgets_init', 'optraseven_website_theme_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function optraseven_website_theme_scripts() {
-	wp_enqueue_style( 'optraseven-website-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'optraseven-website-theme-style', 'rtl', 'replace' );
+function optraseven_website_theme_scripts()
+{
+	wp_enqueue_style('optraseven-website-theme-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_enqueue_style('optraseven-website-reboot-style', get_template_directory_uri() . '/css/reboot.css', array('optraseven-website-theme-style'), '1.0');
+	wp_enqueue_style('optraseven-website-main', get_template_directory_uri() . '/css/main.css', array('optraseven-website-reboot-style'), '1.0');
+	wp_style_add_data('optraseven-website-theme-style', 'rtl', 'replace');
 
-	wp_enqueue_script( 'optraseven-website-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	wp_enqueue_script('optraseven-website-mobile-navigation', get_template_directory_uri() . '/js/responsive-mobile-menu.js', array(), _S_VERSION, true);
+
+
+	// wp_enqueue_script('optraseven-website-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'optraseven_website_theme_scripts' );
+add_action('wp_enqueue_scripts', 'optraseven_website_theme_scripts');
 
 /**
  * ----------------------------------------------------
  * ACF JSON Save/Load Points
  * ----------------------------------------------------
  */
-if ( function_exists( 'acf_add_local_field_group' ) ) {
-    // Save ACF JSON in theme folder
-    add_filter( 'acf/settings/save_json', function( $path ) {
-        return get_stylesheet_directory() . '/acf-json';
-    } );
+if (function_exists('acf_add_local_field_group')) {
+	// Save ACF JSON in theme folder
+	add_filter('acf/settings/save_json', function ($path) {
+		return get_stylesheet_directory() . '/acf-json';
+	});
 
-    // Load ACF JSON from theme folder
-    add_filter( 'acf/settings/load_json', function( $paths ) {
-        unset($paths[0]);
-        $paths[] = get_stylesheet_directory() . '/acf-json';
-        return $paths;
-    } );
+	// Load ACF JSON from theme folder
+	add_filter('acf/settings/load_json', function ($paths) {
+		unset($paths[0]);
+		$paths[] = get_stylesheet_directory() . '/acf-json';
+		return $paths;
+	});
 }
 
 /**
@@ -191,7 +204,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
@@ -202,16 +215,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 
 $theme_includes = [
-    '/inc/cpt.php',
-    '/inc/enqueue.php',
-    '/inc/hooks.php',
-    '/inc/shortcodes.php',
+	'/inc/cpt.php',
+	'/inc/enqueue.php',
+	'/inc/hooks.php',
+	'/inc/shortcodes.php',
 ];
 
 // Load files
-foreach ( $theme_includes as $file ) {
-    $filepath = get_template_directory() . $file;
-    if ( file_exists( $filepath ) ) {
-        require_once $filepath;
-    }
+foreach ($theme_includes as $file) {
+	$filepath = get_template_directory() . $file;
+	if (file_exists($filepath)) {
+		require_once $filepath;
+	}
 }
