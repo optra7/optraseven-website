@@ -141,6 +141,29 @@ function optraseven_website_theme_widgets_init()
 add_action('widgets_init', 'optraseven_website_theme_widgets_init');
 
 /**
+ * Enqueue google fonts
+ */
+// functions.php
+function mytheme_enqueue_google_fonts() {
+    // Enqueue the Google Fonts normally
+    wp_enqueue_style(
+        'mytheme-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap',
+        array(),
+        null
+    );
+
+    // Add preconnects for fonts
+    add_action('wp_head', function() {
+        echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
+        echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+    }, 1); // priority 1 ensures it goes at the very top
+}
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_google_fonts');
+
+
+
+/**
  * Enqueue scripts and styles.
  */
 function optraseven_website_theme_scripts()
@@ -151,7 +174,7 @@ function optraseven_website_theme_scripts()
 	wp_style_add_data('optraseven-website-theme-style', 'rtl', 'replace');
 
 
-	wp_enqueue_script('optraseven-website-mobile-navigation', get_template_directory_uri() . '/js/responsive-mobile-menu.js', array(), _S_VERSION, true);
+	wp_enqueue_script('optraseven-website-mobile-navigation', get_template_directory_uri() . '/js/responsive-mobile-menu.js', [], _S_VERSION, true);
 
 
 	// wp_enqueue_script('optraseven-website-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
@@ -161,6 +184,16 @@ function optraseven_website_theme_scripts()
 	}
 }
 add_action('wp_enqueue_scripts', 'optraseven_website_theme_scripts');
+
+/**
+ * Enqueue scrollspy for some pages
+*/
+function optraseven_website_enqueue_scrollspy() {
+	if(is_page_template(['page-dsar.php', 'page-privacy-policy.php', 'page-terms-of-use.php'])) {
+		wp_enqueue_script('scrollspy-pages', get_template_directory_uri() . '/js/scrollspy.js', [], _S_VERSION, true);
+	}
+}
+add_action('wp_enqueue_scripts', 'optraseven_website_enqueue_scrollspy');
 
 /**
  * ----------------------------------------------------

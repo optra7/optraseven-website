@@ -1,25 +1,183 @@
 <?php
+
 /**
  * Template Name: DSAR
  */
 get_header();
 ?>
 
-<main id="primary" class="site-main dsar-page">
-    <article <?php post_class(); ?>>
-        <header>
-            <h1><?php the_title(); ?></h1>
-        </header>
+<main>
+    <section class="section o7-stepper">
+        <h1 class="o7-stepper__page-header o7-stepper--dsar-header">
+            Data Subject Access Request (DSAR) Policy
+        </h1>
+        <div class="container o7-stepper-wrapper">
+            <aside class="o7-stepper__sidebar">
+                <ul class="o7-stepper__nav">
+                    <li class="o7-stepper__nav-item o7-stepper__nav-item--active" tabindex="0">
+                        <a href="#introduction">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Introduction
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#scope">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Scope
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#making-a-request">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Making a Request
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#processing-your-request">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Processing Your Request
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#accessing-your-data">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Accessing Your Data
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#correcting-your-data">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Correcting Your Data
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#deleting-your-data">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Deleting Your Data
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#refusal-of-requests">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Refusal of Requests
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#changes-to-the-dsar-policy">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Changes to the DSAR Policy
+                        </a>
+                    </li>
+                    <li class="o7-stepper__nav-item" tabindex="0">
+                        <a href="#contact-us">
+                            <span class="o7-stepper__nav-bullet o7-stepper__nav-bullet--white"></span>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </aside>
 
-        <div class="page-content">
-            <?php
-            // Default editor content
-            the_content();
+            <div class="o7-stepper__article-wrapper">
+                <article class="o7-stepper-article">
+                    <h2 class="o7-stepper-article__para-title o7-stepper-article__para-title--first"
+                        id="introduction">
+                        Introduction
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        At OptraSeven, we are committed to maintaining the accuracy, confidentiality, and
+                        security of your personal information. In line with this commitment and in
+                        compliance with data protection regulations, we provide you with the right to
+                        access, correct, or delete any personal information we hold about you.
+                    </p>
 
-            ?>
+                    <h2 class="o7-stepper-article__para-title" id="scope">
+                        Scope
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        This DSAR policy applies to all personal data processed by Outliant, including data
+                        collected through our website, digital services, and any other interactions you may
+                        have with us.
+                    </p>
 
+                    <h2 class="o7-stepper-article__para-title" id="making-a-request">
+                        Making a Request
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        <b>Identification:</b> To ensure the security of your data, all requests must be
+                        accompanied by sufficient information to identify you (e.g., name, contact details)
+                        and any other relevant information.<br>
+                        <b>Type of Request:</b> Clearly state whether you seek
+                        access to your data, a correction, or deletion.<br>
+                        <b>Contact:</b> Submit your request to
+                        info@outliant.com.
+                    </p>
+
+                    <h2 class="o7-stepper-article__para-title" id="processing-your-request">
+                        Processing Your Request
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        <b>Acknowledgement:</b> We will acknowledge receipt of your request
+                        promptly.<br>
+                        <b>Verification:</b> We may need to verify your identity and the validity of your
+                        request.<br>
+                        <b>Timeliness:</b> We aim to respond to your request within the timeframe
+                        stipulated by applicable data protection laws.<br>
+                        <b>No Charge:</b> Generally, you will not be charged for making a DSAR. However, if
+                        your request is excessive or repetitive, we may impose a reasonable fee.
+                    </p>
+
+                    <h2 class="o7-stepper-article__para-title" id="accessing-your-data">
+                        Accessing Your Data
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        Upon a valid request, we will provide you with a copy of your personal data in a
+                        structured, commonly used, and machine-readable format.
+                    </p>
+
+                    <h2 class="o7-stepper-article__para-title" id="correcting-your-data">
+                        Correcting Your Data
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        If any personal data we hold about you is incorrect, you have the right to request
+                        that we correct any inaccuracies.
+                    </p>
+
+                    <h2 class="o7-stepper-article__para-title" id="deleting-your-data">
+                        Deleting Your Data
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        You may request the deletion of your personal data, subject to certain exceptions
+                        dictated by law or our business needs.
+                    </p>
+
+                    <h2 class="o7-stepper-article__para-title" id="refusal-of-requests">
+                        Refusal of Requests
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        In certain circumstances, we may legally refuse your request. If this is the case,
+                        we will explain the reasons for our refusal.
+                    </p>
+
+                    <h2 class="o7-stepper-article__para-title" id="changes-to-the-dsar-policy">
+                        Changes to the DSAR Policy
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        This policy may be updated periodically. We will notify you of any significant
+                        changes through our website or through other means of contact.
+                    </p>
+
+                    <h2 class="o7-stepper-article__para-title" id="contact-us">
+                        Contact Us
+                    </h2>
+                    <p class="o7-stepper-article__para">
+                        If you have any questions about this DSAR policy or how we process your personal
+                        data, please contact us through our designated channels or via our info@outliant.com
+                        email.
+                    </p>
+                </article>
+            </div>
         </div>
-    </article>
+    </section>
 </main>
 
 <?php get_footer(); ?>
