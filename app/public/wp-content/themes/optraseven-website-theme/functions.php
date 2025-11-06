@@ -248,7 +248,7 @@ if (defined('JETPACK__VERSION')) {
  */
 
 $theme_includes = [
-	'/inc/cpt.php',
+//	'/inc/cpt.php',
 	'/inc/enqueue.php',
 	'/inc/hooks.php',
 	'/inc/shortcodes.php',
