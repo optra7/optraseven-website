@@ -8,7 +8,7 @@
         const navItems = sidebarNav ? sidebarNav.querySelectorAll(".o7-stepper__nav-item a") : [];
         const sections = [];
 
-        if (!sidebarNav || navItems.length === 0) return; 
+        if (!sidebarNav || navItems.length === 0) return;
 
         navItems.forEach(link => {
             const targetId = link.getAttribute("href")?.substring(1);
@@ -27,11 +27,14 @@
                 const targetSection = document.getElementById(targetId);
                 if (!targetSection) return;
 
-                const top = targetSection.getBoundingClientRect().top + window.scrollY - containerOffsetTop;
+                const headerOffset = 80; // adjust if you have a fixed header, otherwise 0
+                const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerOffset;
+
                 window.scrollTo({
-                    top: top, 
+                    top: targetPosition,
                     behavior: "smooth"
                 });
+
             });
         });
 

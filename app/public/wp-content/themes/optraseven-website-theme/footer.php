@@ -20,50 +20,50 @@
                         <a href="#">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
-                                    <use href="./svg/svg-icon-sprite.svg#facebook"></use>
+                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#facebook"?>></use>
                                 </svg>
                             </div>
                         </a>
                         <a href="#">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
-                                    <use href="./svg/svg-icon-sprite.svg#x-twitter"></use>
+                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#x-twitter"?>></use>
                                 </svg>
                             </div>
                         </a>
                         <a href="#">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
-                                    <use href="./svg/svg-icon-sprite.svg#instagram"></use>
+                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#instagram"?>></use>
                                 </svg>
                             </div>
                         </a>
                         <a href="#">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
-                                    <use href="./svg/svg-icon-sprite.svg#whatsapp"></use>
+                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#whatsapp"?>></use>
                                 </svg>
                             </div>
                         </a>
                         <a href="#">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
-                                    <use href="./svg/svg-icon-sprite.svg#linkedin"></use>
+                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#linkedin"?>></use>
                                 </svg>
                             </div>
                         </a>
                         <a href="#">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
-                                    <use href="./svg/svg-icon-sprite.svg#github"></use>
+                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#github"?>></use>
                                 </svg>
                             </div>
                         </a>
                         <svg class="o7-footer__icon-chip-bg-icon-one" aria-hidden="true" focusable="false">
-                            <use href="./svg/svg-icon-sprite.svg#footer-icon-chip-bg-icon-1"></use>
+                            <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#footer-icon-chip-bg-icon-1"?>></use>
                         </svg>
                         <svg class="o7-footer__icon-chip-bg-icon-two" aria-hidden="true" focusable="false">
-                            <use href="./svg/svg-icon-sprite.svg#footer-icon-chip-bg-icon-2"></use>
+                            <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#footer-icon-chip-bg-icon-2"?>></use>
                         </svg>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                         Back To Top
                         <div class="o7-footer__back-to-top-icon-wrapper">
                             <svg class="fee-icon o7-footer__back-to-top-icon" aria-hidden="true" focusable="false">
-                                <use href="./svg/svg-icon-sprite.svg#arrow-up"></use>
+                                <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up"?>></use>
                             </svg>
                         </div>
                         </span>
@@ -82,10 +82,10 @@
 
                     </button> -->
                     <svg class="o7-footer__button-chip-bg-span-icon" aria-hidden="true" focusable="false">
-                        <use href="./svg/svg-icon-sprite.svg#footer-icon-chip-bg-icon-2"></use>
+                        <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#footer-icon-chip-bg-icon-2"?>></use>
                     </svg>
                     <svg class="o7-footer__button-chip-bg-icon" aria-hidden="true" focusable="false">
-                        <use href="./svg/svg-icon-sprite.svg#footer-icon-chip-bg-icon-1"></use>
+                        <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#footer-icon-chip-bg-icon-1"?>></use>
                     </svg>
                 </div>
 
@@ -102,7 +102,7 @@
                             <a class="btn btn--tertiary btn--medium">
                                 Get In Touch
                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                    <use href="./svg/svg-icon-sprite.svg#arrow-up-right"></use>
+                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
                                 </svg>
                             </a>
                         </div>
@@ -136,7 +136,7 @@
                                     <div class="o7-footer__address o7-footer__address--reverse">
                                         <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
                                             aria-hidden="true" focusable="false">
-                                            <use href="./svg/svg-icon-sprite.svg#phone-outline"></use>
+                                            <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline"?>></use>
                                         </svg>
                                         (+880) 1784287229
                                     </div>
@@ -147,7 +147,7 @@
                                     <div class="o7-footer__address o7-footer__address--reverse">
                                         <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
                                             aria-hidden="true" focusable="false">
-                                            <use href="./svg/svg-icon-sprite.svg#envelope-outline-thin"></use>
+                                            <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
                                         </svg>
                                         optraseven@gmail.com
                                     </div>
@@ -158,7 +158,7 @@
                                     <div class="o7-footer__address o7-footer__address--reverse">
                                         <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
                                             aria-hidden="true" focusable="false">
-                                            <use href="./svg/svg-icon-sprite.svg#location-arrow-outline"></use>
+                                            <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#location-arrow-outline"?>></use>
                                         </svg>
                                         Bogura District,<br>
                                         Rajshahi Division,<br>
