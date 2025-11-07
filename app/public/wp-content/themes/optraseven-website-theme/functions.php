@@ -229,6 +229,59 @@ if (function_exists('acf_add_local_field_group')) {
 		return $paths;
 	});
 }
+/**
+ * ----------------------------------------------------
+ * POST FORMS
+ * ----------------------------------------------------
+ */
+
+// For non-logged-in users
+add_action('admin_post_nopriv_contact_form_submit', 'optraseven_contact_form_handler');
+// For logged-in users
+add_action('admin_post_contact_form_submit', 'optraseven_contact_form_handler');
+
+function optraseven_contact_form_handler() {
+    require_once get_template_directory() . '/utils/sanitize-forms.php';
+
+    $name     = sanitize_text_field($_POST['name'] ?? '');
+    $email    = sanitize_email($_POST['email'] ?? '');
+    $whatsapp = sanitize_tel_field($_POST['whatsapp'] ?? '');
+    $subject  = sanitize_text_field($_POST['subject'] ?? '');
+    $message  = sanitize_textarea_field($_POST['message'] ?? '');
+
+    $errors = [];
+
+    if (!$name || !$email || !$subject || !$message) {
+        $errors[] = 'All fields are required.';
+    }
+
+    if (!is_email($email)) {
+        $errors[] = 'Invalid email address.';
+    }
+
+    if (empty($errors)) {
+        $to      = 'info@optraseven.com';
+        $subject_line = 'Contact Form submission from: ' . $email;
+        $body    = "Name: $name\nEmail: $email\nWhatsapp: $whatsapp\n\nMessage:\n$message";
+        $headers = "From: $name <$email>";
+
+        if (!wp_mail($to, $subject_line, $body, $headers)) {
+            $errors[] = 'Error sending email. Please try again later.';
+        }
+    }
+
+    // Redirect back to the page with status
+    $redirect = wp_get_referer() ?: home_url('/contact/');
+    if (!empty($errors)) {
+        $redirect = add_query_arg('contact_error', urlencode(implode(', ', $errors)), $redirect);
+    } else {
+        $redirect = add_query_arg('contact_success', '1', $redirect);
+    }
+    wp_safe_redirect($redirect);
+    exit;
+}
+
+
 
 /**
  * Implement the Custom Header feature.
