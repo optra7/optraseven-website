@@ -24,3 +24,28 @@ function optraseven_register_case_study_taxonomy() {
     ]);
 }
 add_action('init', 'optraseven_register_case_study_taxonomy');
+
+function optraseven_register_portfolio_taxonomy() {
+
+    register_taxonomy('portfolio_category', 'portfolio', [
+        'labels' => [
+            'name'              => 'Portfolio Categories',
+            'singular_name'     => 'Portfolio Category',
+            'search_items'      => 'Search Portfolio Categories',
+            'all_items'         => 'All Portfolio Categories',
+            'parent_item'       => 'Parent Category',
+            'parent_item_colon' => 'Parent Category:',
+            'edit_item'         => 'Edit Category',
+            'update_item'       => 'Update Category',
+            'add_new_item'      => 'Add New Category',
+            'new_item_name'     => 'New Category Name',
+            'menu_name'         => 'Categories',
+        ],
+        'hierarchical'      => true, // true = behaves like "Categories"; false = like "Tags"
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'rewrite'           => ['slug' => 'portfolio-category'],
+        'show_in_rest'      => true, // enables Gutenberg and REST API
+    ]);
+}
+add_action('init', 'optraseven_register_portfolio_taxonomy');
