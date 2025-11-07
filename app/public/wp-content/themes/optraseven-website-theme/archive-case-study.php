@@ -21,19 +21,13 @@ get_header();
             </div>
 
             <div class="o7-page-banner__image-wrapper">
-                <div class="o7-page-banner__image">
-                    <?php
-                    $banner_image = get_field('banner_image', 'option');
-                    if ($banner_image) :
-                        echo wp_get_attachment_image($banner_image['ID'], 'full', false, [
-                            'alt' => $banner_image['alt'],
-                            'decoding' => 'async',
-                            'fetchpriority' => 'high',
-                            'class' => 'case-study-banner-img'
-                        ]);
-                    endif;
-                    ?>
-                </div>
+                <?php
+                $banner_img = get_field('banner_image', 'option');
+                if ($banner_img): ?>
+                    <div class="o7-page-banner__image">
+                        <img src="<?php echo esc_url($banner_img['url']); ?>" alt="<?php echo esc_attr($banner_img['alt']); ?>" width="1520" height="506" />
+                    </div>
+                <?php endif; ?>
                 <div class="o7-page-banner__image-overlay"></div>
             </div>
         </div>
@@ -43,24 +37,19 @@ get_header();
     <section class="section">
         <div class="container">
             <div class="o7-list-page-filter">
-
-                <!-- Filter List (Taxonomies or ACF) -->
                 <div class="o7-list-page-filter__list-wrapper">
                     <ul class="o7-list-page-filter__list">
-                        <li class="o7-list-page-filter__filter-item" data-filter="all">All</li>
-
+                        <li class="o7-list-page-filter__filter-item active" data-filter="all">All</li>
                         <?php
-                        $terms = get_terms([
-                            'taxonomy' => 'case_study_category',
+                        $terms = get_terms(array(
+                            'taxonomy' => 'case-study-category',
                             'hide_empty' => true,
-                        ]);
-
-                        if (!empty($terms) && !is_wp_error($terms)) :
-                            foreach ($terms as $term) :
-                                echo '<li class="o7-list-page-filter__filter-item" data-filter="' . esc_attr($term->slug) . '">' . esc_html($term->name) . '</li>';
-                            endforeach;
-                        endif;
-                        ?>
+                        ));
+                        foreach ($terms as $term): ?>
+                            <li class="o7-list-page-filter__filter-item" data-filter="<?php echo esc_attr($term->slug); ?>">
+                                <?php echo esc_html($term->name); ?>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
 
@@ -69,105 +58,59 @@ get_header();
                     <div class="o7-list-page-filter__column-left">
 
                         <?php
-                        $case_studies = new WP_Query([
+                        $args = array(
                             'post_type' => 'case-study',
                             'posts_per_page' => -1,
-                        ]);
+                        );
+                        $case_query = new WP_Query($args);
 
-                        if ($case_studies->have_posts()) :
-                            $count = 0;
-                            while ($case_studies->have_posts()) : $case_studies->the_post();
-                                $count++;
-                                $featured_image = get_the_post_thumbnail_url(get_the_ID(), 'large');
-                                $industry = get_field('industry');
+                        if ($case_query->have_posts()):
+                            $i = 0;
+                            while ($case_query->have_posts()): $case_query->the_post();
+                                $i++;
+                                $category = wp_get_post_terms(get_the_ID(), 'case-study-category');
+                                $featured_img = get_the_post_thumbnail_url(get_the_ID(), 'large');
                                 $platform = get_field('platform');
-                                $category = get_the_terms(get_the_ID(), 'case_study_category');
-                                $tagline = get_field('subtitle');
-                                $skills = get_field('service');
+                                $subtitle = get_field('subtitle');
                                 ?>
-
-                                <article class="o7-list-page-filter__card" data-category="<?php echo esc_attr($industry); ?>">
+                                <article class="o7-list-page-filter__card <?php echo ($i % 2 == 0) ? 'right' : 'left'; ?>">
                                     <a href="<?php the_permalink(); ?>">
                                         <div class="o7-list-page-filter__card-image-wrapper">
-                                            <?php if ($featured_image) : ?>
-                                                <img src="<?php echo esc_url($featured_image); ?>"
-                                                     alt="<?php the_title_attribute(); ?>"
-                                                     loading="lazy"
-                                                     decoding="async"
-                                                     width="780"
-                                                     height="680" />
+                                            <?php if ($featured_img): ?>
+                                                <img src="<?php echo esc_url($featured_img); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" decoding="async" width="780" height="680" />
                                             <?php endif; ?>
 
-                                            <!-- Hover chip (services) -->
-                                            <?php if ($skills) : ?>
-                                                <div class="o7-hover-chip">
-                                                    <div class="o7-hover-chip__bg">
-                                                        <svg class="o7-hover-chip__icon"><use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#chip-radius-1"></use></svg>
-                                                        <div class="o7-hover-chip__bg-span-wrapper">
-                                                            <span class="o7-hover-chip__bg-span"></span>
-                                                            <svg class="o7-hover-chip__bg-span-icon"><use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#chip-radius-2"></use></svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="o7-hover-chip__inner">
-                                                        <?php
-                                                        $count_services = count($skills);
-                                                        $max = 2;
-                                                        foreach ($skills as $i => $service) :
-                                                            if ($i < $max) :
-                                                                echo '<div class="o7-hover-chip__buton">' . esc_html($service->name ?? $service) . '</div>';
-                                                            elseif ($i === $max) :
-                                                                echo '<div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+' . ($count_services - $max) . '</div>';
-                                                                break;
-                                                            endif;
-                                                        endforeach;
-                                                        ?>
-                                                    </div>
-                                                </div>
-                                            <?php endif; ?>
-
-                                            <!-- Platform icon -->
-                                            <?php if ($platform) : ?>
-                                                <div class="o7-hover-icon o7-hover-icon--<?php echo esc_attr(strtolower($platform)); ?> o7-hover-icon--left-icon-box">
-                                                    <div class="o7-hover-icon__bg">
-                                                        <svg class="o7-hover-icon__icon"><use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#card-curve-img-1"></use></svg>
-                                                        <div class="o7-hover-icon__bg-span-wrapper">
-                                                            <span class="o7-hover-icon__bg-span"></span>
-                                                            <svg class="o7-hover-icon__bg-span-icon"><use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#card-curve-img-2"></use></svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="o7-hover-icon__inner o7-hover-icon__inner--left-icon-box">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/images/platform-icons/<?php echo esc_attr(strtolower($platform)); ?>.webp"
-                                                             alt="<?php echo esc_attr($platform); ?> icon"
-                                                             loading="lazy" width="80" height="80" />
+                                            <!-- platform -->
+                                            <?php if ($platform): ?>
+                                                <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?> o7-hover-icon--left-icon-box">
+                                                    <div class="o7-hover-icon__inner">
+                                                        <span><?php echo esc_html($platform); ?></span>
                                                     </div>
                                                 </div>
                                             <?php endif; ?>
                                         </div>
 
-                                        <!-- Card Title -->
                                         <div class="o7-list-page-filter__card-title-wrapper">
                                             <div class="o7-card-category">
-                                                <?php if (!empty($category)) : ?>
-                                                    <div class="o7-card-catagory__title-wrapper">
-                                                        <p class="o7-card-catagory__title"><?php echo esc_html($category[0]->name); ?></p>
-                                                    </div>
+                                                <?php if (!empty($category)): ?>
+                                                    <p class="o7-card-catagory__title"><?php echo esc_html($category[0]->name); ?></p>
                                                 <?php endif; ?>
-                                                <div class="o7-card-catagory__title-wrapper">
-                                                    <span class="o7-card-catagory__decorative-dot"></span>
-                                                    <p class="o7-card-catagory__title"><?php the_title(); ?></p>
-                                                </div>
+
+                                                <span class="o7-card-catagory__decorative-dot"></span>
+                                                <p class="o7-card-catagory__title"><?php the_title(); ?></p>
                                             </div>
-                                            <h3 class="o7-list-page-filter__card-tagline"><?php echo esc_html($tagline); ?></h3>
+
+                                            <?php if ($subtitle): ?>
+                                                <h3 class="o7-list-page-filter__card-tagline"><?php echo esc_html($subtitle); ?></h3>
+                                            <?php endif; ?>
                                         </div>
                                     </a>
                                 </article>
-
                             <?php
-                                // Close column divs every few posts if you want a masonry-style grid
                             endwhile;
                             wp_reset_postdata();
-                        else :
-                            echo '<p>No Case Studies found.</p>';
+                        else:
+                            echo '<p>No case studies found.</p>';
                         endif;
                         ?>
                     </div>
