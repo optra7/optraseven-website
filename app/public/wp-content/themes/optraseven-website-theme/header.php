@@ -61,14 +61,14 @@
 	<body class="page-home"> -->
     <aside class="main-menu-responsive">
         <div class="main-menu-responsive__header">
-            <a href="#" class="main-menu-responsive__logo">OptraSeven</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="main-menu-responsive__logo">OptraSeven</a>
             <div class="main-menu-responsive__close-btn">
                 <span></span>
                 <span></span>
             </div>
         </div>
         <nav class="main-menu">
-            <a href="#" class="main-menu__link">About</a>
+            <a href="/about" class="main-menu__link">About</a>
             <a href="#" class="main-menu__link">Portfolio</a>
             <a href="#" class="main-menu__link">Services</a>
             <a href="#" class="main-menu__link">Case Studies</a>
@@ -88,12 +88,12 @@
         <div class="site-main-header__container">
 
             <div class="header-logo-wrapper">
-                <a href="#" class="header-logo">OptraSeven</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo">OptraSeven</a>
             </div>
 
             <div class="main-menu-wrapper">
                 <nav class="main-menu">
-                    <a href="#" class="main-menu__link">About</a>
+                    <a href="/about" class="main-menu__link">About</a>
                     <a href="#" class="main-menu__link">Portfolio</a>
 
                     <div class="megamenu">
@@ -178,7 +178,7 @@
                         </div>
                     </div>
                     <a href="#" class="main-menu__link">Case Studies</a>
-                    <a href="#" class="main-menu__link">Contact</a>
+                    <a href="/contact" class="main-menu__link">Contact</a>
                 </nav>
                 <div class="main-menu__responsive-btn">
                     <span></span>
@@ -190,7 +190,7 @@
                 <button class="btn btn--secondary btn--medium">
                     Start a Project
                     <svg class="fee-icon" aria-hidden="true" focusable="false">
-                        <use href="./svg/svg-icon-sprite.svg#arrow-up-right"></use>
+                        <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right" ?>></use>
                     </svg>
                 </button>
             </div>

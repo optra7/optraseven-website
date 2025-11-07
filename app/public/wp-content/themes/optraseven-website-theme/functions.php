@@ -174,10 +174,7 @@ function optraseven_website_theme_scripts()
 	wp_style_add_data('optraseven-website-theme-style', 'rtl', 'replace');
 
 
-	wp_enqueue_script('optraseven-website-mobile-navigation', get_template_directory_uri() . '/js/responsive-mobile-menu.js', [], _S_VERSION, true);
-
-
-	// wp_enqueue_script('optraseven-website-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+	wp_enqueue_script('optraseven-website-shared-scripts', get_template_directory_uri() . '/js/shared.js', [], _S_VERSION, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
