@@ -122,6 +122,24 @@ get_header();
     ];
 
     get_template_part('template-parts/logo-slider', null, ['images' => $logo_images, 'path' => '/assets/images/homepage/']);
+
+    // ACF Flexible Content sections
+    if (function_exists('have_rows') && have_rows('homepage_sections')) :
+        while (have_rows('homepage_sections')) : the_row();
+
+            if (get_row_layout() === 'case_study_slider') :
+                get_template_part('template-parts/content', 'case-study-slider');
+
+            elseif (get_row_layout() === 'portfolio_slider') :
+                get_template_part('template-parts/content', 'portfolio-slider');
+            endif;
+
+        endwhile;
+    else :
+        // Optional fallback if ACF not used or empty
+        get_template_part('template-parts/content', 'case-study-slider');
+        get_template_part('template-parts/content', 'portfolio-slider');
+    endif;
     ?>
 </main>
 
