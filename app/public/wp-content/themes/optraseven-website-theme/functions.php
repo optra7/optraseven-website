@@ -328,3 +328,97 @@ foreach ($theme_includes as $file) {
 		require_once $filepath;
 	}
 }
+
+if (function_exists('acf_add_local_field_group')) {
+
+    acf_add_local_field_group([
+        'key' => 'group_case_study_content',
+        'title' => 'Case Study Content',
+        'fields' => [
+            [
+                'key' => 'field_case_study_content_blocks',
+                'label' => 'Content Blocks',
+                'name' => 'case_study_content_blocks',
+                'type' => 'repeater',
+                'button_label' => 'Add Content Block',
+                'layout' => 'block',
+                'sub_fields' => [
+                    [
+                        'key' => 'field_block_type',
+                        'label' => 'Block Type',
+                        'name' => 'block_type',
+                        'type' => 'select',
+                        'choices' => [
+                            'text_block' => 'Text (with Title)',
+                            'image_block' => 'Image',
+                            'description' => 'Description (no Title)',
+                        ],
+                        'default_value' => 'text_block',
+                        'wrapper' => ['width' => '25'],
+                    ],
+                    [
+                        'key' => 'field_block_title',
+                        'label' => 'Title',
+                        'name' => 'block_title',
+                        'type' => 'text',
+                        'wrapper' => ['width' => '50'],
+                        'conditional_logic' => [
+                            [
+                                [
+                                    'field' => 'field_block_type',
+                                    'operator' => '==',
+                                    'value' => 'text_block',
+                                ],
+                            ],
+                        ],
+                    ],
+                    [
+                        'key' => 'field_block_content',
+                        'label' => 'Content',
+                        'name' => 'block_content',
+                        'type' => 'wysiwyg',
+                        'tabs' => 'all',
+                        'toolbar' => 'basic',
+                        'media_upload' => 0,
+                        'wrapper' => ['width' => '75'],
+                        'conditional_logic' => [
+                            [
+                                [
+                                    'field' => 'field_block_type',
+                                    'operator' => '!=',
+                                    'value' => 'image_block',
+                                ],
+                            ],
+                        ],
+                    ],
+                    [
+                        'key' => 'field_block_image',
+                        'label' => 'Image',
+                        'name' => 'block_image',
+                        'type' => 'image',
+                        'return_format' => 'array',
+                        'preview_size' => 'medium',
+                        'conditional_logic' => [
+                            [
+                                [
+                                    'field' => 'field_block_type',
+                                    'operator' => '==',
+                                    'value' => 'image_block',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        'location' => [
+            [
+                [
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'case-study',
+                ],
+            ],
+        ],
+    ]);
+}

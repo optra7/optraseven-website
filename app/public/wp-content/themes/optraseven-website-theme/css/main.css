@@ -2397,10 +2397,8 @@ a.main-menu__link:focus-visible {
 
 .o7-accordion__item {
     margin-bottom: 20px;
-    padding: 30px;
     background-color: #E7E7E7;
     border-radius: 25px;
-
 }
 
 .o7-accordion__question {
@@ -2409,12 +2407,14 @@ a.main-menu__link:focus-visible {
     align-items: center;
     cursor: pointer;
     user-select: none;
+    padding-right: 30px;
 }
 
 .o7-accordion__question-text {
     font-weight: 400;
     font-size: 24px;
     margin: 0;
+    padding: 30px;
 }
 
 
@@ -2438,6 +2438,7 @@ a.main-menu__link:focus-visible {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 0px;
+    padding: 0 30px 30px;
 }
 
 .o7-accordion__item.active .o7-accordion__answer {
@@ -2471,7 +2472,6 @@ a.main-menu__link:focus-visible {
     .o7-accordion__item {
         padding: 20px;
         border-radius: 16px;
-
     }
 
     .o7-accordion__question {
@@ -2485,17 +2485,19 @@ a.main-menu__link:focus-visible {
 }
 
 @media (max-width: 576px) {
-    .o7-accordion__item {
+    /* .o7-accordion__item {
         padding: 20px;
-    }
+    } */
 
     .o7-accordion__question {
         border-radius: 16px;
+        padding-right: 20px;
     }
 
     .o7-accordion__question-text {
         font-weight: 500;
         font-size: 20px;
+        padding: 20px;
     }
 
     .o7-accordion__answer-text {
@@ -3982,7 +3984,8 @@ a.main-menu__link:focus-visible {
     margin: 0 0 60px;
 }
 
-.o7-details-page-post__sub-title {
+.o7-details-page-post__sub-title,
+.o7-details-page-post h2 {
     font-size: 56px;
     font-weight: 400;
     margin: 0 0 40px;
@@ -4035,7 +4038,8 @@ a.main-menu__link:focus-visible {
         margin: 0 0 50px;
     }
 
-    .o7-details-page-post__sub-title {
+    .o7-details-page-post__sub-title,
+    .o7-details-page-post h2  {
         font-size: 42px;
         margin: 0 0 20px;
     }
@@ -4051,7 +4055,8 @@ a.main-menu__link:focus-visible {
         margin: 0 0 40px;
     }
 
-    .o7-details-page-post__sub-title {
+    .o7-details-page-post__sub-title,
+    .o7-details-page-post h2  {
         font-size: 38px;
     }
 
@@ -4088,7 +4093,8 @@ a.main-menu__link:focus-visible {
         display: none;
     }
 
-    .o7-details-page-post__sub-title {
+    .o7-details-page-post__sub-title,
+    .o7-details-page-post h2  {
         font-size: 36px;
     }
 
@@ -4102,7 +4108,8 @@ a.main-menu__link:focus-visible {
         font-size: 40px;
     }
 
-    .o7-details-page-post__sub-title {
+    .o7-details-page-post__sub-title,
+    .o7-details-page-post h2  {
         font-size: 28px;
         font-weight: 500;
     }
@@ -4284,6 +4291,26 @@ a.main-menu__link:focus-visible {
 /* Explore More Arrow Card END */
 
 /* Details Page Post */
+.o7-details-page-post p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 25px 0;
+    color: #787878;
+}
+
+.o7-details-page-post picture, .o7-details-page-post img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px;
+    margin: 80px 0 50px;
+}
+
+.o7-details-page-post h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 80px 0 20px;
+}
 
 .o7-details-page-post__description {
     font-size: 20px;
@@ -4309,14 +4336,17 @@ a.main-menu__link:focus-visible {
     margin: 0;
 }
 
-.o7-details-page-post__key-point {
+.o7-details-page-post__key-point, .o7-details-page-post li {
     font-size: 20px;
     font-weight: 400;
     margin: 0;
     color: #787878;
 }
+.o7-details-page-post li strong {
+    font-weight: 600;
+}
 
-.o7-details-page-post__key-point--list {
+.o7-details-page-post__key-point--list,  .o7-details-page-post li {
     line-height: 170%;
 }
 
@@ -5259,8 +5289,8 @@ a.main-menu__link:focus-visible {
     }
 
     .o7-our-journey__paragraph {
-    font-size: 28px;
-}
+        font-size: 28px;
+    }
 
     .o7-our-culture-para,
     .o7-quote {

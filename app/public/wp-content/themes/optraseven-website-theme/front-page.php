@@ -141,6 +141,192 @@ get_header();
         get_template_part('template-parts/content', 'portfolio-slider');
     endif;
     ?>
+
+    <section class="section section-faq">
+        <div class="container">
+            <div class="o7-faq__container">
+                <div class="o7-faq__block-left">
+                    <div class="o7-section-header o7-accordion-header">
+                        <p class="o7-section-header__title">
+                            <span class="o7-section-header__title-pointer"></span>
+                            Frequently Asked Questions
+                        </p>
+                        <div class="o7-section-header__subtitle-container flex-col align-start">
+                            <h2 class="o7-section-header__sub-title">
+                                Answers to Things You Might Be Wondering
+                            </h2>
+                            <a href="#" class="btn btn--secondary btn--medium button__mobile--invisible">
+                                Get In Touch
+                                <svg class="fee-icon" aria-hidden="true" focusable="false">
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="o7-section-header o7-section-header-tab-visible">
+                        <p class="o7-section-header__title">
+                            <span class="o7-section-header__title-pointer"></span>
+                            Frequently Asked Questions
+                        </p>
+                        <div class="o7-section-header__subtitle-container">
+                            <h2 class="o7-section-header__sub-title">
+                                Answers to Things You Might Be Wondering
+                            </h2>
+                            <a href="#" class="btn btn--secondary btn--medium button__mobile--invisible">
+                                Get In Touch
+                                <svg class="fee-icon" aria-hidden="true" focusable="false">
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="o7-faq__block-right">
+                    <ol class="o7-accordion">
+                        <li class="o7-accordion__item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="o7-accordion__question">
+                                <p class="o7-accordion__question-text">
+                                    How much does a website cost?
+                                </p>
+                                <div class="o7-accordion__icon-wrapper">
+                                    <svg class="o7-icon o7-accordion__icon" aria-hidden="true" focusable="false">
+                                        <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="o7-accordion__answer" hidden>
+                                <p class="o7-accordion__answer-text">
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+
+
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="o7-accordion__item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="o7-accordion__question">
+                                <p class="o7-accordion__question-text">
+                                    How long does a website project usually take to complete?
+                                </p>
+                                <div class="o7-accordion__icon-wrapper">
+                                    <svg class="o7-icon o7-accordion__icon" aria-hidden="true" focusable="false">
+                                        <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="o7-accordion__answer" hidden>
+                                <p class="o7-accordion__answer-text">
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="o7-accordion__item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="o7-accordion__question">
+                                <p class="o7-accordion__question-text">
+                                    How easy is it for me to change content myself?
+                                </p>
+                                <div class="o7-accordion__icon-wrapper">
+                                    <svg class="o7-icon o7-accordion__icon" aria-hidden="true" focusable="false">
+                                        <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="o7-accordion__answer" hidden>
+                                <p class="o7-accordion__answer-text">
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="o7-accordion__item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="o7-accordion__question">
+                                <p class="o7-accordion__question-text">
+                                    Can I create PPC landing pages myself?
+                                </p>
+                                <div class="o7-accordion__icon-wrapper">
+                                    <svg class="o7-icon o7-accordion__icon" aria-hidden="true" focusable="false">
+                                        <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="o7-accordion__answer" hidden>
+                                <p class="o7-accordion__answer-text">
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="o7-accordion__item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="o7-accordion__question">
+                                <p class="o7-accordion__question-text">
+                                    We have limited budget, will you still work with us?
+                                </p>
+                                <div class="o7-accordion__icon-wrapper">
+                                    <svg class="o7-icon o7-accordion__icon" aria-hidden="true" focusable="false">
+                                        <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="o7-accordion__answer" hidden>
+                                <p class="o7-accordion__answer-text">
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="o7-accordion__item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="o7-accordion__question">
+                                <p class="o7-accordion__question-text">
+                                    Do you outsource any work?
+                                </p>
+                                <div class="o7-accordion__icon-wrapper">
+                                    <svg class="o7-icon o7-accordion__icon" aria-hidden="true" focusable="false">
+                                        <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="o7-accordion__answer" hidden>
+                                <p class="o7-accordion__answer-text">
+                                    Timelines depend on the spec of the website project, but here's some
+                                    guidelines...
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <a href="#" class="btn btn--secondary btn--medium button__mobile--visible">
+                    Get In Touch
+                    <svg class="fee-icon" aria-hidden="true" focusable="false">
+                        <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

@@ -119,11 +119,11 @@
                     <div class="o7-footer__menu-links">
                         <h6 class="o7-footer__link-title o7-footer__link-title--align-right-mobile">Explore</h6>
                         <ul class="o7-footer__menu-links-ul o7-footer__menu-links-ul--align-right-mobile">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href="portfolio-list.html" target="_blank">Work</a></li>
                             <li><a href="service.html" target="_blank">Services</a></li>
                             <li><a href="case-study-list.html" target="_blank">Cases</a></li>
-                            <li><a href="contact.html" target="_blank">Contact</a></li>
+                            <li><a href="/contact" target="_blank">Contact</a></li>
                         </ul>
                     </div>
                     <div class="o7-footer__address-container">
@@ -179,9 +179,9 @@
                     </div>
                     <div class="o7-footer__policy-pages">
                         <ul class="o7-footer__policy-pages-link">
-                            <li><a href="privacyPolicy.html" target="_blank">Privacy Policy</a></li>
-                            <li><a href="TermsOfUse.html" target="_blank">Terms of Use</a></li>
-                            <li><a href="dsar.html" target="_blank">DSAR</a></li>
+                            <li><a href="/privacy-policy" target="_blank">Privacy Policy</a></li>
+                            <li><a href="/terms-of-use" target="_blank">Terms of Use</a></li>
+                            <li><a href="/dsar" target="_blank">DSAR</a></li>
                         </ul>
                     </div>
                 </div>
