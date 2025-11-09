@@ -307,6 +307,11 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_filter( 'comment_form_defaults', function( $defaults ) {
+    $defaults['logged_in_as'] = ''; // remove "Logged in as" text
+    return $defaults;
+});
+
 /**
  * ----------------------------------------------------
  * Include Modular Theme Files
