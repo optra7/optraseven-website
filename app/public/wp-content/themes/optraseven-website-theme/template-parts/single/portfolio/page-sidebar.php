@@ -25,7 +25,7 @@ $fields_order = ['Services', 'Industries', 'Apps', 'Themes', 'Platform'];
 
         $value = $sidebar_fields[$label] ?? null;
 
-//        if (empty($value)) continue; // skip if empty
+        if (empty($value)) continue; // skip if empty
 
         ?>
         <div class="o7-details-page-sidebar__item-wrapper">

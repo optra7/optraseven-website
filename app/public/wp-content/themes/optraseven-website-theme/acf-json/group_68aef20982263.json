@@ -67,8 +67,8 @@
                 "id": ""
             },
             "choices": {
-                "design: Design": "design: Design",
-                "development: Development": "development: Development"
+                "Design": "Design",
+                "Development": "Development"
             },
             "default_value": [],
             "return_format": "value",
@@ -253,5 +253,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762367345
+    "modified": 1762724973
 }

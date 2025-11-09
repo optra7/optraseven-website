@@ -57,7 +57,7 @@
             "label": "Service",
             "name": "service",
             "aria-label": "",
-            "type": "text",
+            "type": "select",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -66,12 +66,20 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
+            "choices": {
+                "Design": "Design",
+                "Development": "Development"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "multiple": 1,
+            "allow_null": 0,
             "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "create_options": 0,
+            "save_options": 0
         },
         {
             "key": "field_68af1ad616989",
@@ -245,5 +253,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762367339
+    "modified": 1762725184
 }
