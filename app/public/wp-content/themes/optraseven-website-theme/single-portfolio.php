@@ -8,11 +8,11 @@ get_header();
 <main id="primary" class="site-main single-portfolio">
     <?php if (have_posts()) : while (have_posts()) : the_post();
         $sidebar_fields = [
-            'Services' => get_field('services'),
-            'Industries' => get_field('industries'),
-            'Apps' => get_field('apps'),
-            'Themes' => get_field('themes'),
-            'Platform' => get_field('platform') ? [get_field('platform')] : null
+            'Services'   => get_field('service'), // already array
+            'Industries' => get_field('industry') ? [get_field('industry')] : [],
+            'Apps'       => get_field('apps') ? [get_field('apps')] : [],
+            'Themes'     => get_field('theme') ? [get_field('theme')] : [],
+            'Platform'   => get_field('platform') ? [get_field('platform')] : [],
         ];
         ?>
         <section class="section">
