@@ -2441,9 +2441,6 @@ a.main-menu__link:focus-visible {
     padding: 0 30px 30px;
 }
 
-.o7-accordion__item.active .o7-accordion__answer {
-    padding-top: 30px;
-}
 
 .o7-accordion__icon-wrapper {
     width: 30px;

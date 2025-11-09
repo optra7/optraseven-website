@@ -45,7 +45,6 @@
 
 
 
-		/* Script For Accordion*/
 		const accordionItems = document.querySelectorAll(".o7-accordion__item");
 
 		if (accordionItems) {
