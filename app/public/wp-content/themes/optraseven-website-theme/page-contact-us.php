@@ -128,6 +128,9 @@ get_header();
                 </div>
             </div>
         </section>
+        <?php
+        get_template_part('template-parts/map', null, []);
+        ?>
     </main>
 </body>
 
