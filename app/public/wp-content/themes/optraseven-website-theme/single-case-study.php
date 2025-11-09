@@ -18,10 +18,10 @@ get_header();
         <?php get_template_part('template-parts/single/page-banner', null, ['post_id' => get_the_ID()]); ?>
         <div class="o7-details-page-post-wrapper">
             <aside class="o7-details-page-sidebar">
-                <?php get_template_part('template-parts/single/page-sidebar', null, ['post_id' => get_the_ID()]); ?>
+                <?php get_template_part('template-parts/single/case-study/page-sidebar', null, ['post_id' => get_the_ID()]); ?>
             </aside>
             <article class="o7-details-page-post">
-                <?php get_template_part('template-parts/single/page-content', null, ['post_id' => get_the_ID()]); ?>
+                <?php get_template_part('template-parts/single/case-study/page-content', null, ['post_id' => get_the_ID()]); ?>
             </article>
         </div>
         </div>

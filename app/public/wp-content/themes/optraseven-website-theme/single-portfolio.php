@@ -27,10 +27,10 @@ get_header();
 
                 <div class="o7-details-page-post-wrapper">
                     <aside class="o7-details-page-sidebar">
-                        <?php get_template_part('template-parts/single/page-sidebar', null, ['post_id' => get_the_ID(), 'sidebar_fields' => $sidebar_fields]); ?>
+                        <?php get_template_part('template-parts/single/portfolio/page-sidebar', null, ['post_id' => get_the_ID(), 'sidebar_fields' => $sidebar_fields]); ?>
                     </aside>
                     <article class="o7-details-page-post">
-                        <?php get_template_part('template-parts/single/page-content', null, ['post_id' => get_the_ID()]); ?>
+                        <?php get_template_part('template-parts/single/portfolio/page-content', null, ['post_id' => get_the_ID()]); ?>
                     </article>
                 </div>
             </div>
