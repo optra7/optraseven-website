@@ -6,38 +6,62 @@
 $args = $args ?? [];
 $args = wp_parse_args($args, ['post_id' => get_the_ID()]);
 $post_id = $args['post_id'];
+
+// Get field values
+$explore_fields = [
+    'Portfolio' => get_field('explore_portfolio', $post_id),
+    'Service'    => get_field('explore_service', $post_id),
+    'Blog'       => get_field('explore_blog', $post_id),
+];
+
+// Filter out empty ones
+$explore_fields = array_filter($explore_fields);
 ?>
 
-<?php if (have_rows('explore_more', $post_id)) : ?>
-    <section class="section">
+<?php if (!empty($explore_fields)) : ?>
+    <section class="section o7-explore-more">
         <div class="container o7-arrow-card">
             <h2 class="o7-arrow-card__title">Explore More</h2>
+
             <div class="o7-arrow-card__card-wrapper">
-                <?php while (have_rows('explore_more', $post_id)) : the_row();
-                    $link = get_sub_field('link');
-                    $image = get_sub_field('image');
-                    $type = get_sub_field('type');
-                    $category = get_sub_field('category');
-                    $tagline = get_sub_field('tagline');
+                <?php foreach ($explore_fields as $label => $url) :
+                    $post_id_linked = url_to_postid($url);
+                    if (!$post_id_linked) continue;
+
+                    $linked_post = get_post($post_id_linked);
+                    if (!$linked_post) continue;
+
+                    // Detect post type label
+                    $type_label = get_post_type_object($linked_post->post_type)->labels->singular_name ?? ucfirst($linked_post->post_type);
+
+                    // Get post title and thumbnail
+                    $title = get_the_title($linked_post->ID);
+                    $image = get_the_post_thumbnail($linked_post->ID, 'medium_large', [
+                        'alt' => esc_attr($title),
+                        'loading' => 'lazy',
+                        'decoding' => 'async'
+                    ]);
                     ?>
-                    <article class="o7-arrow-card__card o7-arrow-card__card--<?php echo esc_attr($type); ?>">
-                        <a href="<?php echo esc_url($link['url']); ?>">
+                    <article class="o7-arrow-card__card o7-arrow-card__card--<?php echo esc_attr($linked_post->post_type); ?>">
+                        <a href="<?php echo esc_url(get_permalink($linked_post->ID)); ?>" class="o7-arrow-card__card-link">
                             <div class="o7-arrow-card__card-image-wrapper">
-                                <?php if ($image) echo wp_get_attachment_image($image['ID'], 'medium_large', false, ['alt' => $image['alt'], 'loading' => 'lazy', 'decoding' => 'async']); ?>
+                                <?php echo $image ?: '<div class="o7-arrow-card__card-placeholder"></div>'; ?>
                                 <div class="o7-arrow-card__card-hover-chip">
-                                    <svg class="o7-arrow-card__card-hover-icon" aria-hidden="true"><use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#arrow-up-right"></use></svg>
+                                    <svg class="o7-arrow-card__card-hover-icon" aria-hidden="true">
+                                        <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right" ?>></use>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="o7-arrow-card__card-title-wrapper">
                                 <div class="o7-arrow-card__card-category-wrapper">
                                     <span class="o7-arrow-card__card-decorative-dot"></span>
-                                    <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($category); ?></p>
+                                    <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($type_label); ?></p>
                                 </div>
-                                <h3 class="o7-arrow-card__card-tagline"><?php echo esc_html($tagline); ?></h3>
+                                <h3 class="o7-arrow-card__card-tagline"><?php echo esc_html($title); ?></h3>
                             </div>
                         </a>
                     </article>
-                <?php endwhile; ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
