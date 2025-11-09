@@ -21,12 +21,12 @@ get_header();
                 <?php get_template_part('template-parts/single/case-study/page-sidebar', null, ['post_id' => get_the_ID()]); ?>
             </aside>
             <article class="o7-details-page-post">
-                <?php get_template_part('template-parts/single/case-study/page-content', null, ['post_id' => get_the_ID()]); ?>
+                <?php get_template_part('template-parts/single/page-content', null, ['post_id' => get_the_ID()]); ?>
             </article>
         </div>
         </div>
     </section>
-        <?php get_template_part('template-parts/single/explore-more', null, ['post_id' => get_the_ID()]); ?>
+        <?php get_template_part('template-parts/single/case-study/explore-more', null, ['post_id' => get_the_ID()]); ?>
     <?php endwhile; endif; ?>
 
 </main>

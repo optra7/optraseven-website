@@ -30,12 +30,12 @@ get_header();
                         <?php get_template_part('template-parts/single/portfolio/page-sidebar', null, ['post_id' => get_the_ID(), 'sidebar_fields' => $sidebar_fields]); ?>
                     </aside>
                     <article class="o7-details-page-post">
-                        <?php get_template_part('template-parts/single/portfolio/page-content', null, ['post_id' => get_the_ID()]); ?>
+                        <?php get_template_part('template-parts/single/page-content', null, ['post_id' => get_the_ID()]); ?>
                     </article>
                 </div>
             </div>
         </section>
-        <?php get_template_part('template-parts/single/explore-more', null, ['post_id' => get_the_ID(), 'post_type' => 'portfolio']); ?>
+        <?php get_template_part('template-parts/single/portfolio/explore-more', null, ['post_id' => get_the_ID(), 'post_type' => 'portfolio']); ?>
 
     <?php endwhile; endif; ?>
 
