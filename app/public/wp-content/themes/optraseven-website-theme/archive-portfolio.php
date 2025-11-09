@@ -10,28 +10,25 @@ get_header();
             <div class="o7-page-banner__heading">
                 <h1 class="o7-page-banner__title">
                     <span class="o7-page-banner__decorative-dot"></span>
-                    Our Works
+                    <?php echo esc_html(get_field('portfolio_banner_title', 'option') ?: 'Our Works'); ?>
                 </h1>
                 <h2 class="o7-page-banner__sub-title">
-                    Discover the digital stories we’ve built for our clients
+                    <?php echo esc_html(get_field('portfolio_banner_subtitle', 'option') ?: 'Digital success stories crafted with design & technology'); ?>
                 </h2>
             </div>
 
-            <?php
-            // Optional: Add a banner image via ACF or fallback
-            $banner_image = get_field('portfolio_banner_image', 'option');
-            if ($banner_image) :
-                $banner_url = esc_url($banner_image['url']);
-                $banner_alt = esc_attr($banner_image['alt']);
-            else :
-                $banner_url = get_template_directory_uri() . '/images/portfolio-pages/portfolio-list-images/portfolio-banner-image.webp';
-                $banner_alt = 'portfolio-banner';
-            endif;
-            ?>
             <div class="o7-page-banner__image-wrapper">
-                <div class="o7-page-banner__image">
-                    <img src="<?php echo $banner_url; ?>" alt="<?php echo $banner_alt; ?>" loading="lazy" decoding="async" />
-                </div>
+                <?php
+                $banner_img = get_field('portfolio_banner_image', 'option');
+                if ($banner_img): ?>
+                    <div class="o7-page-banner__image">
+                        <img src="<?php echo esc_url($banner_img['url']); ?>" alt="<?php echo esc_attr($banner_img['alt']); ?>" width="1520" height="506" />
+                    </div>
+                <?php else: ?>
+                    <div class="o7-page-banner__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/portfolio-pages/portfolio-list-images/portfolio-banner-image.webp" alt="portfolio-banner" width="1520" height="506" />
+                    </div>
+                <?php endif; ?>
                 <div class="o7-page-banner__image-overlay"></div>
             </div>
         </div>
@@ -45,134 +42,86 @@ get_header();
                 <!-- Filter List -->
                 <div class="o7-list-page-filter__list-wrapper">
                     <ul class="o7-list-page-filter__list">
-                        <li class="o7-list-page-filter__filter-item active" data-filter="*">All</li>
+                        <li class="o7-list-page-filter__filter-item active" data-filter="all">All</li>
                         <?php
-                        $categories = get_terms([
-                            'taxonomy' => 'portfolio_category',
+                        $terms = get_terms(array(
+                            'taxonomy' => 'portfolio-category',
                             'hide_empty' => true,
-                        ]);
-                        foreach ($categories as $cat) :
-                            echo '<li class="o7-list-page-filter__filter-item" data-filter=".' . esc_attr($cat->slug) . '">' . esc_html($cat->name) . '</li>';
-                        endforeach;
-                        ?>
+                        ));
+                        foreach ($terms as $term): ?>
+                            <li class="o7-list-page-filter__filter-item" data-filter="<?php echo esc_attr($term->slug); ?>">
+                                <?php echo esc_html($term->name); ?>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
 
-                <!-- Portfolio Grid -->
+                <!-- Portfolio Cards Grid -->
                 <div class="o7-list-page-filter__data-list">
-
                     <div class="o7-list-page-filter__column-left">
-                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                            <?php
-                            // Get taxonomy terms
-                            $cats = get_the_terms(get_the_ID(), 'portfolio_category');
-                            $cat_classes = '';
-                            if ($cats && !is_wp_error($cats)) {
-                                foreach ($cats as $c) {
-                                    $cat_classes .= ' ' . $c->slug;
-                                }
-                            }
 
-                            // Get custom fields
-                            $tagline = get_field('tagline');
-                            $brand_name = get_field('brand_name');
-                            $platform_icon = get_field('platform_icon'); // image
-                            $services = get_field('services'); // array
-                            ?>
-                            <article <?php post_class('o7-list-page-filter__card' . $cat_classes); ?>>
-                                <a href="<?php the_permalink(); ?>">
+                        <?php
+                        $args = array(
+                            'post_type' => 'portfolio',
+                            'posts_per_page' => -1,
+                        );
+                        $portfolio_query = new WP_Query($args);
 
-                                    <!-- Image -->
-                                    <div class="o7-list-page-filter__card-image-wrapper">
-                                        <?php if (has_post_thumbnail()) :
-                                            the_post_thumbnail('large', [
-                                                'class' => 'o7-list-page-filter__card-image',
-                                                'loading' => 'lazy',
-                                                'decoding' => 'async'
-                                            ]);
-                                        endif; ?>
+                        if ($portfolio_query->have_posts()):
+                            $i = 0;
+                            while ($portfolio_query->have_posts()): $portfolio_query->the_post();
+                                $i++;
+                                $categories = wp_get_post_terms(get_the_ID(), 'portfolio-category');
+                                $featured_img = get_the_post_thumbnail_url(get_the_ID(), 'large');
+                                $platform_icon = get_field('platform_icon');
+                                $tagline = get_field('tagline');
+                                $brand_name = get_field('brand_name');
+                                ?>
+                                <article class="o7-list-page-filter__card <?php echo ($i % 2 == 0) ? 'right' : 'left'; ?>">
+                                    <a href="<?php the_permalink(); ?>">
 
-                                        <!-- Hover Chips (Services) -->
-                                        <?php if ($services) : ?>
-                                            <div class="o7-hover-chip">
-                                                <div class="o7-hover-chip__bg">
-                                                    <svg class="o7-hover-chip__icon">
-                                                        <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#chip-radius-1"></use>
-                                                    </svg>
-                                                    <div class="o7-hover-chip__bg-span-wrapper">
-                                                        <span class="o7-hover-chip__bg-span"></span>
-                                                        <svg class="o7-hover-chip__bg-span-icon">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#chip-radius-2"></use>
-                                                        </svg>
+                                        <div class="o7-list-page-filter__card-image-wrapper">
+                                            <?php if ($featured_img): ?>
+                                                <img src="<?php echo esc_url($featured_img); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" decoding="async" width="780" height="680" />
+                                            <?php endif; ?>
+
+                                            <!-- platform icon -->
+                                            <?php if ($platform_icon): ?>
+                                                <div class="o7-hover-icon o7-hover-icon--left-icon-box">
+                                                    <div class="o7-hover-icon__inner">
+                                                        <img src="<?php echo esc_url($platform_icon['url']); ?>" alt="<?php echo esc_attr($platform_icon['alt']); ?>" width="80" height="80" loading="lazy" decoding="async" />
                                                     </div>
                                                 </div>
-                                                <div class="o7-hover-chip__inner">
-                                                    <?php
-                                                    $count = 0;
-                                                    foreach ($services as $service) {
-                                                        $count++;
-                                                        $hidden_class = ($count > 2) ? ' o7-hover-chip__buton--hidden-mobile' : '';
-                                                        echo '<div class="o7-hover-chip__buton' . $hidden_class . '">' . esc_html($service) . '</div>';
-                                                    }
-                                                    if ($count > 2) {
-                                                        echo '<div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+' . ($count - 2) . '</div>';
-                                                    }
-                                                    ?>
-                                                </div>
-                                            </div>
-                                        <?php endif; ?>
-
-                                        <!-- Platform Icon -->
-                                        <?php if ($platform_icon) : ?>
-                                            <div class="o7-hover-icon o7-hover-icon--shopify">
-                                                <div class="o7-hover-icon__bg">
-                                                    <svg class="o7-hover-icon__icon">
-                                                        <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#card-curve-img-1"></use>
-                                                    </svg>
-                                                    <div class="o7-hover-icon__bg-span-wrapper">
-                                                        <span class="o7-hover-icon__bg-span"></span>
-                                                        <svg class="o7-hover-icon__bg-span-icon">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#card-curve-img-2"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="o7-hover-icon__inner">
-                                                    <img src="<?php echo esc_url($platform_icon['url']); ?>" alt="<?php echo esc_attr($platform_icon['alt']); ?>" loading="lazy" decoding="async" width="80" height="80" />
-                                                </div>
-                                            </div>
-                                        <?php endif; ?>
-
-                                    </div>
-
-                                    <!-- Title + Tagline -->
-                                    <div class="o7-list-page-filter__card-title-wrapper">
-                                        <div class="o7-card-category">
-                                            <?php
-                                            if ($cats) :
-                                                foreach ($cats as $c) :
-                                                    echo '<div class="o7-card-catagory__title-wrapper">';
-                                                    echo '<p class="o7-card-catagory__title">' . esc_html($c->name) . '</p>';
-                                                    echo '</div>';
-                                                endforeach;
-                                            endif;
-                                            if ($brand_name) :
-                                                echo '<div class="o7-card-catagory__title-wrapper"><span class="o7-card-catagory__decorative-dot"></span><p class="o7-card-catagory__title">' . esc_html($brand_name) . '</p></div>';
-                                            endif;
-                                            ?>
+                                            <?php endif; ?>
                                         </div>
-                                        <?php if ($tagline) : ?>
-                                            <h3 class="o7-list-page-filter__card-tagline"><?php echo esc_html($tagline); ?></h3>
-                                        <?php endif; ?>
-                                    </div>
 
-                                </a>
-                            </article>
+                                        <div class="o7-list-page-filter__card-title-wrapper">
+                                            <div class="o7-card-category">
+                                                <?php if (!empty($categories)): ?>
+                                                    <p class="o7-card-catagory__title"><?php echo esc_html($categories[0]->name); ?></p>
+                                                <?php endif; ?>
 
-                        <?php endwhile;
+                                                <span class="o7-card-catagory__decorative-dot"></span>
+                                                <?php if ($brand_name): ?>
+                                                    <p class="o7-card-catagory__title"><?php echo esc_html($brand_name); ?></p>
+                                                <?php else: ?>
+                                                    <p class="o7-card-catagory__title"><?php the_title(); ?></p>
+                                                <?php endif; ?>
+                                            </div>
+
+                                            <?php if ($tagline): ?>
+                                                <h3 class="o7-list-page-filter__card-tagline"><?php echo esc_html($tagline); ?></h3>
+                                            <?php endif; ?>
+                                        </div>
+                                    </a>
+                                </article>
+                            <?php
+                            endwhile;
                             wp_reset_postdata();
-                        else : ?>
-                            <p>No portfolio items found.</p>
-                        <?php endif; ?>
+                        else:
+                            echo '<p>No portfolio items found.</p>';
+                        endif;
+                        ?>
                     </div>
 
                 </div>
