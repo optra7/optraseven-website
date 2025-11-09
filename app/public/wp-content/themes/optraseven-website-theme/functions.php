@@ -314,8 +314,8 @@ if (defined('JETPACK__VERSION')) {
  */
 
 $theme_includes = [
-//	'/inc/custom-post-types.php',
-//	'/inc/custom-taxonomies.php',
+	'/inc/custom-post-types.php',
+	'/inc/custom-taxonomies.php',
 	'/inc/enqueue.php',
 	'/inc/hooks.php',
 	'/inc/shortcodes.php',
