@@ -1,0 +1,84 @@
+/* 
+// mega menu - portfolio:start
+----------------------------------------- */
+
+.megamenu-portfolio .megamenu__content-wrapper {
+    display: block;
+}
+.megamenu-portfolio .megamenu__content {
+    padding: 0;
+    width: 924px;
+    gap: 0;
+}
+.megamenu__left-panel,
+.megamenu__right-panel {
+    padding: 30px;
+}
+.megamenu__left-panel {
+    width: 315px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #E7E7E7;
+    border-radius: 25px 0 0 25px;
+}
+
+/* --- mega menu tab item:start ---- */
+.megamenu-tab__item {
+    border-radius: 8px;
+    padding: 8px 16px 8px 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.megamenu-tab__item:hover {
+    background-color: #ffffff;
+}
+.megamenu-tab__item + .megamenu-tab__item {
+    margin-top: 10px;
+}
+
+.megamenu-tab__icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #C7C7C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.megamenu-tab__item:hover .megamenu-tab__icon-wrapper {
+    background-color: #f4f4f4;
+}
+.megamenu-tab__label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    flex: 1 1 auto;
+}
+
+.megamenu-tab__circle-shape {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #7CE3AC;
+    opacity: 0;
+}
+.megamenu-tab__item:hover .megamenu-tab__circle-shape {
+    opacity: 1;
+}
+
+/* ---/ mega menu tab item:end \---- */
+
+/* --- mega menu tab item:start ---- */
+.megamenu-portfolio a.megamenu__service-view-all-card {
+    background-color: #fff;
+    margin-top: 45px;
+}
+/* ---/ mega menu tab item:end \---- */
+
+.megamenu__right-panel {
+    flex: 1 1 auto;
+}
+
+/* _____/ mega menu - portfolio:end \_______*/
