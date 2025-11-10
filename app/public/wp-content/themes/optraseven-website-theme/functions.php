@@ -187,9 +187,18 @@ add_action('wp_enqueue_scripts', 'optraseven_website_theme_scripts');
  * Enqueue scrollspy for some pages
 */
 function optraseven_website_enqueue_scrollspy() {
-	if(is_page_template(['page-dsar.php', 'page-privacy-policy.php', 'page-terms-of-use.php'])) {
-		wp_enqueue_script('scrollspy-pages', get_template_directory_uri() . '/js/scrollspy.js', [], _S_VERSION, true);
-	}
+    if (
+        is_page_template(['page-dsar.php', 'page-privacy-policy.php', 'page-terms-of-use.php']) ||
+        is_singular('service')
+    ) {
+        wp_enqueue_script(
+            'scrollspy-pages',
+            get_template_directory_uri() . '/js/scrollspy.js',
+            [],
+            _S_VERSION,
+            true
+        );
+    }
 }
 add_action('wp_enqueue_scripts', 'optraseven_website_enqueue_scrollspy');
 
@@ -308,10 +317,10 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-add_filter( 'comment_form_defaults', function( $defaults ) {
-    $defaults['logged_in_as'] = ''; // remove "Logged in as" text
-    return $defaults;
-});
+//add_filter( 'comment_form_defaults', function( $defaults ) {
+//    $defaults['logged_in_as'] = ''; // remove "Logged in as" text
+//    return $defaults;
+//});
 
 /**
  * ----------------------------------------------------
