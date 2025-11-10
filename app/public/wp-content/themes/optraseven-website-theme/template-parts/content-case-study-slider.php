@@ -12,7 +12,7 @@
                        class="btn btn--secondary btn--medium button__mobile--invisible">
                         Show All
                         <svg class="fee-icon" aria-hidden="true" focusable="false">
-                            <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#arrow-up-right"></use>
+                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                         </svg>
                     </a>
                 </div>
