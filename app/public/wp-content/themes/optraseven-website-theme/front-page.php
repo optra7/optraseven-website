@@ -160,6 +160,49 @@ get_header();
     get_template_part('template-parts/faq', null, $faq_data);
     ?>
 
+    <?php
+    get_template_part('template-parts/testimonial-slider', null, [
+        'title_pointer' => 'Clients',
+        'title' => 'Testimonials',
+        'subtitle' => 'What our clients think',
+        'testimonials' => [
+            [
+                'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/Amelia_James.webp',
+                'client_name' => 'Emily Stone',
+                'client_title' => 'Marketing Director',
+                'blockquote' => '   OptraSeven was a critical partner in our branding and website development. They took
+                                    an innovative approach that was highly collaborative with our team and executed the
+                                    program in a way that exceeded our expectations. We are very happy with their team
+                                    and the results. We look forward to leveraging our great brand and website for many
+                                    years to come',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/duck_design_1.webp',
+            ],
+            [
+                'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/aiden_ross.webp',
+                'client_name' => 'Aiden Ross',
+                'client_title' => 'Co-Founder, Ruggable',
+                'blockquote' => '   OptraSeven delivered a flawless Webflow website that perfectly matched our vision.
+                                    Their designers understood our brand deeply and created an intuitive user experience
+                                    that our audience loves. The QA process was extremely thorough, and they always went
+                                    the extra mile. Their dedication made the entire process seamless and rewarding',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/duck_design_1.webp',
+            ],
+            [
+                'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/olivia_bennet.webp',
+                'client_name' => 'Olivia Bennet',
+                'client_title' => 'Owner, VERVE',
+                'blockquote' => '   From concept to launch, OptraSeven made everything feel effortless. Their UI/UX team
+                                    brought clarity and elegance to our ideas, and the final Shopify site functions
+                                    flawlessly. They were meticulous in QA, and truly cared about the result. We’re
+                                    incredibly satisfied with the outcome and grateful for a partnership that delivered
+                                    such strong results',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/verve.webp',
+            ],
+        ],
+    ]);
+
+    ?>
+
 </main>
 
 <?php get_footer(); ?>
