@@ -7,7 +7,7 @@
 
     <a href="<?php the_permalink(); ?>">
         <div class="o7-content-card__circle">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/arrow-up-right-svgrepo-com.svg"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-up-right-svgrepo-com.svg"
                  alt="arrow"
                  class="o7-content-card__circle-arrow">
         </div>

@@ -123,9 +123,9 @@ get_header();
 
     get_template_part('template-parts/logo-slider', null, ['images' => $logo_images, 'path' => '/assets/images/homepage/']);
 
-    get_template_part('template-parts/content', 'case-study-slider');
-
     get_template_part('template-parts/content', 'portfolio-slider');
+
+    get_template_part('template-parts/content', 'case-study-slider');
     ?>
 
     <?php
