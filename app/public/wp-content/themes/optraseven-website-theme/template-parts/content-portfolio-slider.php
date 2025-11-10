@@ -12,7 +12,7 @@
                        class="btn btn--secondary btn--medium button__mobile--invisible">
                         Show All
                         <svg class="fee-icon" aria-hidden="true" focusable="false">
-                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                            <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-up-right'); ?>"></use>
                         </svg>
                     </a>
                 </div>
@@ -39,14 +39,14 @@
                 <a href="#" class="o7-slider-control__prev-button">
                     <div class="o7-slider-control__button">
                         <svg class="o7-icon slider__arrow">
-                            <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#arrow-left"></use>
+                            <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-left'); ?>"></use>
                         </svg>
                     </div>
                 </a>
                 <a href="#" class="o7-slider-control__next-button">
                     <div class="o7-slider-control__button">
                         <svg class="o7-icon slider__arrow">
-                            <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#arrow-right"></use>
+                            <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-right'); ?>"></use>
                         </svg>
                     </div>
                 </a>
@@ -56,7 +56,7 @@
                class="btn btn--secondary btn--medium button__mobile--visible">
                 Show All
                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                    <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#arrow-up-right"></use>
+                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-right'); ?>"></use>
                 </svg>
             </a>
         </div>
