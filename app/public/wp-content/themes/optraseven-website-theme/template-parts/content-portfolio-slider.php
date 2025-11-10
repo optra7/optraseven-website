@@ -28,7 +28,7 @@
 
                 if ($portfolio_query->have_posts()) :
                     while ($portfolio_query->have_posts()) : $portfolio_query->the_post();
-                        get_template_part('template-parts/content/content', 'portfolio-slider-card');
+                        get_template_part('template-parts/content', 'portfolio-slider-card');
                     endwhile;
                     wp_reset_postdata();
                 endif;
