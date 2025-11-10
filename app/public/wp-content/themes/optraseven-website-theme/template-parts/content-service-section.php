@@ -1,0 +1,191 @@
+<?php
+/**
+ * Template part for displaying posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package optraseven_official_theme
+ */
+
+?>
+
+<section class="section">
+    <div class="container">
+        <div class="o7-section-header">
+            <p class="o7-section-header__title">
+                <span class="o7-section-header__title-pointer"></span>
+                Solutions We Provide
+            </p>
+            <div class="o7-section-header__subtitle-container">
+                <h2 class="o7-section-header__sub-title">Where Strategy Meets Powerful Web Experiences</h2>
+                <a href="#" class="btn btn--secondary btn--medium button__mobile--invisible">Show All
+                    <svg class="fee-icon" aria-hidden="true" focusable="false">
+                        <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-up-right'); ?>"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="section__card-wrapper">
+            <div class="service-col-one">
+                <article class="o7-content-card">
+                    <div class="o7-content-card__image-wrapper">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/shopify.webp" alt="shopify-image" class="o7-content-card__image">
+                    </div>
+                    <div class="o7-hover-chip">
+                        <div class="o7-hover-chip__bg">
+                            <svg class="o7-hover-chip__icon" aria-hidden="true" focusable="false">
+                                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-1.svg'); ?>"></use>
+                            </svg>
+                            <div class="o7-hover-chip__bg-span-wraper">
+                                <span class="o7-hover-chip__bg-span"></span>
+                                <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-2.svg'); ?>"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="o7-hover-chip__inner">
+                            <div class="o7-hover-chip__buton">Planning</div>
+                            <div class="o7-hover-chip__buton">UI & UX</div>
+                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">
+                                Development
+                            </div>
+                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+1</div>
+                        </div>
+                    </div>
+
+                    <div class="o7-card-category o7-card-category--home-sec">
+                        <div class="o7-card-catagory__title-wrapper">
+                            <span class="o7-card-catagory__decorative-dot"></span>
+                            <p class="o7-card-catagory__title">Shopify</p>
+                        </div>
+                    </div>
+
+                    <h3 class="o7-content-card__header">
+                        Creative shopify experiences that grow your business
+                    </h3>
+                </article>
+                <article class="o7-content-card">
+                    <div class="o7-content-card__image-wrapper">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/custom-web-application.webp" alt="custom-web-application-image"
+                             class="o7-content-card__image">
+                    </div>
+                    <div class="o7-hover-chip">
+                        <div class="o7-hover-chip__bg">
+                            <svg class="o7-hover-chip__icon" aria-hidden="true" focusable="false">
+                                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-1.svg'); ?>"></use>
+                            </svg>
+                            <div class="o7-hover-chip__bg-span-wraper">
+                                <span class="o7-hover-chip__bg-span"></span>
+                                <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-2.svg'); ?>"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="o7-hover-chip__inner">
+                            <div class="o7-hover-chip__buton">Planning</div>
+                            <div class="o7-hover-chip__buton">UI & UX</div>
+                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">
+                                Development
+                            </div>
+                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+1</div>
+                        </div>
+                    </div>
+
+                    <div class="o7-card-category o7-card-category--home-sec">
+                        <div class="o7-card-catagory__title-wrapper">
+                            <span class="o7-card-catagory__decorative-dot"></span>
+                            <p class="o7-card-catagory__title">Custom Web Application</p>
+                        </div>
+                    </div>
+
+                    <h3 class="o7-content-card__header">
+                        Custom web application crafted for your unique business needs
+                    </h3>
+                </article>
+            </div>
+            <div class="service-col-two">
+                <article class="o7-content-card">
+                    <div class="o7-content-card__image-wrapper">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/webflow-2.webp" alt="webflow-image" class="o7-content-card__image">
+                    </div>
+                    <div class="o7-hover-chip">
+                        <div class="o7-hover-chip__bg">
+                            <svg class="o7-hover-chip__icon">
+                                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-1.svg'); ?>"></use>
+                            </svg>
+                            <div class="o7-hover-chip__bg-span-wraper">
+                                <span class="o7-hover-chip__bg-span"></span>
+                                <svg class="o7-hover-chip__bg-span-icon">
+                                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-2.svg'); ?>"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="o7-hover-chip__inner">
+                            <div class="o7-hover-chip__buton">Planning</div>
+                            <div class="o7-hover-chip__buton">UI & UX</div>
+                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">
+                                Development
+                            </div>
+                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+1</div>
+                        </div>
+                    </div>
+                    <div class="o7-card-category o7-card-category--home-sec">
+                        <div class="o7-card-catagory__title-wrapper">
+                            <span class="o7-card-catagory__decorative-dot"></span>
+                            <p class="o7-card-catagory__title">Webflow</p>
+                        </div>
+                    </div>
+                    <h3 class="o7-content-card__header">
+                        Accelerate your brand with expert webflow development
+                    </h3>
+                </article>
+                <article class="o7-content-card">
+                    <div class="o7-content-card__image-wrapper">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/quality-assurance.webp" alt="quality-assurance-image"
+                             class="o7-content-card__image">
+                    </div>
+                    <div class="o7-hover-chip">
+                        <div class="o7-hover-chip__bg">
+                            <svg class="o7-hover-chip__icon" aria-hidden="true" focusable="false">
+                                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-1.svg'); ?>"></use>
+                            </svg>
+                            <div class="o7-hover-chip__bg-span-wraper">
+                                <span class="o7-hover-chip__bg-span"></span>
+                                <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-2.svg'); ?>"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="o7-hover-chip__inner">
+                            <div class="o7-hover-chip__buton">Planning</div>
+                            <div class="o7-hover-chip__buton">UI & UX</div>
+                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">
+                                Development
+                            </div>
+                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+1</div>
+                        </div>
+                    </div>
+                    <div class="o7-card-category o7-card-category--home-sec">
+                        <div class="o7-card-catagory__title-wrapper">
+                            <span class="o7-card-catagory__decorative-dot"></span>
+                            <p class="o7-card-catagory__title">Quality Assurance</p>
+                        </div>
+                    </div>
+                    <h3 class="o7-content-card__header">
+                        Uncompromising quality assurance for software and e-commerce
+                    </h3>
+                </article>
+            </div>
+        </div>
+        <a href="#" class="btn btn--secondary btn--medium button__mobile--visible">Show All
+            <svg class="fee-icon" aria-hidden="true" focusable="false">
+                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-up-right'); ?>"></use>
+            </svg>
+        </a>
+
+    </div>
+</section>

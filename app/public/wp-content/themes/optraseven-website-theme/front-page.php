@@ -125,6 +125,8 @@ get_header();
 
     get_template_part('template-parts/content', 'portfolio-slider');
 
+    get_template_part('template-parts/content', 'service-section');
+
     get_template_part('template-parts/content', 'case-study-slider');
     ?>
 
