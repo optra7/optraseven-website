@@ -457,6 +457,7 @@ template {
     display: none !important;
 }
 
+
 /*  ======== Typography:end  ======== */
 
 /* ------------------- Custom Reboot END-------------------- */
@@ -517,6 +518,10 @@ template {
 
 .semi-bold {
     font-weight: 600;
+}
+
+.text-danger{
+    color: #DC3545;
 }
 
 @media (max-width: 1024px) {
@@ -1704,7 +1709,6 @@ figure.megamenu__service-view-all-image-wrapper {
     backdrop-filter: blur(10px);
 }
 
-/* Megamenu END */
 /* ------------------- Layout Components END-------------------- */
 
 /* ------------------- Blocks -------------------- */
@@ -6670,6 +6674,39 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-get-the-quote__text-area-wrapper {
     margin-top: 25px;
 }
+
+.o7-get-the-quote__input-file {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #C7C7C7;
+    border-radius: 8px;
+    height: 50px;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #787878;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    width: 100%;
+}
+
+.o7-get-the-quote__input-file::file-selector-button {
+    background-color: #EBEBEB;
+    color: #202020;
+    border: 1px solid #C7C7C7;
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.o7-get-the-quote__input-file::file-selector-button:hover {
+    background-color: #ddd;
+}
+
 
 .o7-get-the-quote__contact {
     display: none;
