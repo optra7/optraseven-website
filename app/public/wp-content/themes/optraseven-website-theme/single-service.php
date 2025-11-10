@@ -86,6 +86,26 @@ while (have_posts()) : the_post();
                 </div>
             </div>
         </section>
+
+        <?php
+        $faq_data = array(
+            'title_pointer' => '', // optional small accent text (left dot in your original)
+            'title'         => 'Frequently Asked Questions',
+            'sub_title'     => 'Answers to Things You Might Be Wondering',
+            'button_text'   => 'Get In Touch',
+            'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
+            'questions'     => array(
+                array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
+                array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
+                array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
+                array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
+            ),
+        );
+
+        get_template_part('template-parts/faq', null, $faq_data);
+        ?>
+
+        <?php get_template_part('template-parts/single/service/explore-more', null, ['post_id' => get_the_ID(), 'post_type' => 'service']); ?>
     </main>
 
 <?php endwhile; ?>

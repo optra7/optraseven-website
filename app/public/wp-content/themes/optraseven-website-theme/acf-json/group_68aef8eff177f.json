@@ -90,8 +90,8 @@
         },
         {
             "key": "field_68aefa4eca763",
-            "label": "Related Portfolio",
-            "name": "related_portfolio",
+            "label": "Explore Portfolio",
+            "name": "explore_portfolio",
             "aria-label": "",
             "type": "url",
             "instructions": "",
@@ -125,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762367350
+    "modified": 1762769358
 }

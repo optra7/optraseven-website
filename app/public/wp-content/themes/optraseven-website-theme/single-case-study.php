@@ -34,7 +34,7 @@ get_header();
         </div>
         </div>
     </section>
-        <?php get_template_part('template-parts/single/case-study/explore-more', null, ['post_id' => get_the_ID(), 'post_type' => 'portfolio']); ?>
+        <?php get_template_part('template-parts/single/case-study/explore-more', null, ['post_id' => get_the_ID(), 'post_type' => 'case-study']); ?>
     <?php endwhile; endif; ?>
 
 </main>
