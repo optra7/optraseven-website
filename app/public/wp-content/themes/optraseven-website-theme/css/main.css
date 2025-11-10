@@ -1635,8 +1635,9 @@ a.main-menu__link:focus-visible {
 }
 
 .megamenu__link-card-title {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
 }
 
 .megamenu__link-card-subtitle {
@@ -1667,7 +1668,7 @@ a.megamenu__service-view-all-card:hover {
 
 .megamenu__service-view-all-title {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
 }
 .megamenu__service-view-all-title-wrapper .megamenu__link-card-icon {

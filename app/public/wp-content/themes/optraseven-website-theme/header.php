@@ -94,7 +94,81 @@
             <div class="main-menu-wrapper">
                 <nav class="main-menu">
                     <a href="/about" class="main-menu__link">About</a>
-                    <a href="#" class="main-menu__link">Portfolio</a>
+                    <div class="megamenu">
+                        <a tabindex="0" class="main-menu__link">Portfolio</a>
+                        <div class="megamenu__content-wrapper megamenu__content-wrapper--service">
+                            <div class="megamenu__triangle-head"></div>
+                            <div class="megamenu__content">
+                                <div class="megamenu__content-container-left megamenu__content-container-left--service">
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                        <div class="megamenu__link-card-text-wrapper">
+                                            <p class="megamenu__link-card-title">
+                                                Shopify
+                                            </p>
+                                            <p class="megamenu__link-card-subtitle">
+                                                Shopify solutions that boost sales success.
+                                            </p>
+                                        </div>
+                                        <div class="megamenu__link-card-icon-wrapper">
+                                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                    </a>
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                        <div class="megamenu__link-card-text-wrapper">
+                                            <p class="megamenu__link-card-title">
+                                                Webflow
+                                            </p>
+                                            <p class="megamenu__link-card-subtitle">
+                                                Shopify solutions that boost sales success.
+                                            </p>
+                                        </div>
+                                        <div class="megamenu__link-card-icon-wrapper">
+                                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                    </a>
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                        <div class="megamenu__link-card-text-wrapper">
+                                            <p class="megamenu__link-card-title">
+                                                CRO
+                                            </p>
+                                            <p class="megamenu__link-card-subtitle">
+                                                Shopify solutions that boost sales success.
+                                            </p>
+                                        </div>
+                                        <div class="megamenu__link-card-icon-wrapper">
+                                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                    </a>
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                        <div class="megamenu__link-card-text-wrapper">
+                                            <p class="megamenu__link-card-title">
+                                                Custom Application
+                                            </p>
+                                            <p class="megamenu__link-card-subtitle">
+                                                Shopify solutions that boost sales success.
+                                            </p>
+                                        </div>
+                                        <div class="megamenu__link-card-icon-wrapper">
+                                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div
+                                    class="megamenu__content-container-right megamenu__content-container-right--service">
+                                    <a href="#" class="megamenu__service-view-all-card">
+                                        <div class="megamenu__service-view-all-title-wrapper">
+                                            <h2 class="megamenu__service-view-all-title">View All Service</h2>
+                                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                                        </div>
+                                        <p class="megamenu__service-view-all-description">We don’t stop there, check out all the services we offer here at OptraSeven</p>
+                                        <figure class="megamenu__service-view-all-image-wrapper">
+                                            <img class="megamenu__service-view-all-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/srevice-card-img.webp" alt="Service Card Image">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="megamenu">
                         <a tabindex="0" class="main-menu__link">Services</a>
