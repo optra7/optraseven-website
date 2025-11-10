@@ -215,7 +215,7 @@ get_header();
                         <p class="o7-news-letter__check-list-poiner">
                             <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
                                 focusable="false">
-                                <use href= <?= get_template_directory_uri() . "./svg/svg-icon-sprite.svg#check" ?>></use>
+                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                             </svg>
                         </p>
                         <p class="o7-news-letter__check-list-option">Weekly Updates</p>
@@ -224,7 +224,7 @@ get_header();
                         <p class="o7-news-letter__check-list-poiner">
                             <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
                                 focusable="false">
-                                <use href= <?= get_template_directory_uri() . "./svg/svg-icon-sprite.svg#check" ?>></use>
+                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                             </svg>
                         </p>
                         <p class="o7-news-letter__check-list-option">Exclusive Content</p>
@@ -233,7 +233,7 @@ get_header();
                         <p class="o7-news-letter__check-list-poiner">
                             <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
                                 focusable="false">
-                                <use href=<?= get_template_directory_uri() . "./svg/svg-icon-sprite.svg#check" ?>></use>
+                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                             </svg>
                         </p>
                         <p class="o7-news-letter__check-list-option">Unsubscribe Anytime</p>
