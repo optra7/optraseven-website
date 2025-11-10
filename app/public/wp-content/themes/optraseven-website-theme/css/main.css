@@ -1756,6 +1756,42 @@ figure.megamenu__service-view-all-image-wrapper {
 
 /* Social Icon Chip END*/
 
+/* newsletter plugin override */
+.o7-news-letter__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.o7-news-letter__form .tnp-email {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  font-size: 1rem;
+}
+
+.o7-news-letter__form .tnp-submit {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.o7-news-letter__form .tnp-submit:hover {
+  background: var(--color-accent-hover);
+}
+
+.tnp-field{
+    margin: 0 auto;
+}
+
+/* END of newsletter plugin override */
 /* Back-to-top Button */
 .o7-footer__button-chip {
     position: absolute;
