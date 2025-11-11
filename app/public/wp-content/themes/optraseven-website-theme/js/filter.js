@@ -1,52 +1,63 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const leftCol = document.querySelector('.o7-list-page-filter__column-left');
-    const rightCol = document.querySelector('.o7-list-page-filter__column-right');
     const filterButtons = document.querySelectorAll('.o7-list-page-filter__filter-item');
-    const allCards = Array.from(document.querySelectorAll('.o7-list-page-filter__card'));
+    const caseCards     = document.querySelectorAll('.o7-list-page-filter__card');
+    const leftCol       = document.querySelector('.o7-list-page-filter__column-left');
+    const rightCol      = document.querySelector('.o7-list-page-filter__column-right');
 
-    if (!leftCol || !rightCol || allCards.length === 0) return;
-
-    function renderColumns(cards) {
+    // Function to apply filter
+    function applyFilter(filter) {
+        // Clear columns
         leftCol.innerHTML = '';
         rightCol.innerHTML = '';
-        cards.forEach((card, index) => {
-            if (index % 2 === 0) leftCol.appendChild(card);
-            else rightCol.appendChild(card);
-        });
-    }
 
-    function updateURL(filter) {
-        const params = new URLSearchParams(window.location.search);
-        if (filter === 'all') params.delete('filter');
-        else params.set('filter', filter);
-
-        const newURL = `${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`;
-        window.history.replaceState({}, '', newURL);
-    }
-
-    function applyFilter(filter) {
-        const visibleCards = filter === 'all'
-            ? allCards
-            : allCards.filter(card => card.classList.contains(filter));
-
-        renderColumns(visibleCards);
-
-        filterButtons.forEach(btn =>
-            btn.classList.toggle('active', btn.dataset.filter === filter)
+        // Filter & split cards
+        const visibleCards = Array.from(caseCards).filter(card =>
+            filter === 'all' || card.classList.contains(filter)
         );
 
-        updateURL(filter);
+        const half = Math.ceil(visibleCards.length / 2);
+        visibleCards.forEach((card, index) => {
+            if (index < half) {
+                leftCol.appendChild(card);
+            } else {
+                rightCol.appendChild(card);
+            }
+            card.style.display = 'block';
+        });
+
+        // Hide non-matching cards
+        Array.from(caseCards)
+            .filter(card => !visibleCards.includes(card))
+            .forEach(card => card.style.display = 'none');
+
+        // Update URL without reloading
+        const url = new URL(window.location);
+        if (filter === 'all') {
+            url.searchParams.delete('filter');
+        } else {
+            url.searchParams.set('filter', filter);
+        }
+        window.history.replaceState(null, '', url.toString());
     }
 
-    const startFilter = (window.archiveFilterData && window.archiveFilterData.current_filter) || 'all';
-    applyFilter(startFilter);
-
+    // Add click events
     filterButtons.forEach(button => {
-        button.addEventListener('click', () => applyFilter(button.dataset.filter));
+        button.addEventListener('click', () => {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filter = button.dataset.filter;
+            applyFilter(filter);
+        });
     });
 
-    window.addEventListener('popstate', () => {
-        const params = new URLSearchParams(window.location.search);
-        applyFilter(params.get('filter') || 'all');
+    // On page load, apply filter from URL
+    const initialFilter = window.archiveFilterData?.current_filter || 'all';
+    applyFilter(initialFilter);
+
+    // Mark active button
+    filterButtons.forEach(btn => {
+        if (btn.dataset.filter === initialFilter) btn.classList.add('active');
+        else btn.classList.remove('active');
     });
 });
