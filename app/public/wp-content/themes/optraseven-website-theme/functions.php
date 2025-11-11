@@ -204,21 +204,22 @@ function optraseven_website_enqueue_scrollspy()
 }
 add_action('wp_enqueue_scripts', 'optraseven_website_enqueue_scrollspy');
 
-function optraseven_enqueue_filter_scripts()
-{
-	// enqueue your theme’s main stylesheet
-	wp_enqueue_style('optraseven-style', get_stylesheet_uri());
+function optraseven_archive_filter_scripts() {
+    if (is_post_type_archive(['case-study', 'portfolio', 'post'])) {
+        wp_enqueue_script(
+            'o7-archive-filter',
+            get_template_directory_uri() . '/js/filter.js',
+            [],
+            _S_VERSION,
+            true
+        );
 
-	// enqueue JS file
-	wp_enqueue_script(
-		'o7-filter',
-		get_template_directory_uri() . '/assets/js/filter.js',
-		array('jquery'), // dependencies
-		filemtime(get_template_directory() . '/js/filter.js'), // version for cache busting
-		true // load in footer
-	);
+        wp_localize_script('o7-archive-filter', 'archiveFilterData', [
+            'current_filter' => isset($_GET['filter']) ? sanitize_text_field($_GET['filter']) : 'all',
+        ]);
+    }
 }
-add_action('wp_enqueue_scripts', 'optraseven_enqueue_filter_scripts');
+add_action('wp_enqueue_scripts', 'optraseven_archive_filter_scripts');
 
 
 /**
