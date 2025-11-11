@@ -227,6 +227,78 @@
 }
 /* ---/ mega menu tag:end \---- */
 
+/* ==== Responive Desing ==== */
+@media(max-width: 1024px) {
+    .megamenu__left-panel {
+        width: 100%;
+        border-radius: 0;
+        background: none;
+        padding: 5px 0 5px 30px;
+    }
+    .megamenu-tab__circle-shape {
+        display: none;
+    }
+    .megamenu-tab__item {
+        border-radius: 0;
+        padding: 0;
+    }
+    .megamenu-tab__item + .megamenu-tab__item {
+        margin-top: 15px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .megamenu__left-panel {
+        padding: 10px 0 10px 20px;
+    }
+}
+
 
 /* _____/ mega menu - portfolio:end \_______*/
 
+/* srevice mega menu responsive design */
+.main-menu-responsive .main-menu {
+    height: calc(100% - 130px);
+    overflow-y: auto;
+}
+
+@media(max-width: 1024px) {
+    .main-menu-responsive .megamenu__link-card--service {
+        padding: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .main-menu-responsive .megamenu__link-card--service + .megamenu__link-card--service {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px #f2f2f2 solid;
+    }
+    .main-menu-responsive .megamenu__content-container-left {
+        padding: 5px 0 5px 30px;
+    }
+    
+    .main-menu-responsive .megamenu__link-card-icon-wrapper {
+        display: none;
+    }
+    
+    .main-menu-responsive .megamenu__link-card-text-wrapper {
+        width: 100%;
+    }
+    
+    .main-menu-responsive .megamenu__link-card-title {
+        font-weight: 500;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-menu-responsive .megamenu__content-container-left {
+        gap: 10px;
+        padding: 10px 0 10px 20px;
+    }
+    .main-menu-responsive .megamenu__link-card--service + .megamenu__link-card--service {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+}
+    
