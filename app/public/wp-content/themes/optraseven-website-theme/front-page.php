@@ -191,6 +191,8 @@ get_header();
 
     ?>
 
+    <?php get_template_part('template-parts/content', 'blog-slider'); ?>
+
     <section class="o7-news-letter section">
         <div class="container">
             <div class="o7-news-letter__container">
