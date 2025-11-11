@@ -1,40 +1,33 @@
 <?php
+/**
+ * Universal Archive Template (for filtering)
+ */
 get_header();
+
+$post_type = get_post_type();
+$taxonomy  = 'category'; // default for blog
+
+if ($post_type === 'case-study') {
+    $taxonomy = 'case_study_category';
+} elseif ($post_type === 'portfolio') {
+    $taxonomy = 'portfolio_category';
+} elseif ($post_type === 'service') {
+    $taxonomy = 'service_category';
+}
+
+// Pass current filter to JS
+$current_filter = isset($_GET['filter']) ? sanitize_text_field($_GET['filter']) : 'all';
+wp_localize_script('o7-archive-filter', 'archiveFilterData', [
+    'current_filter' => $current_filter,
+]);
 ?>
 
 <main id="primary" class="site-main archive-portfolio">
 
-    <!-- 🔹 Hero / Banner Section -->
-    <section class="section">
-        <div class="container o7-page-banner">
-            <div class="o7-page-banner__heading">
-                <h1 class="o7-page-banner__title">
-                    <span class="o7-page-banner__decorative-dot"></span>
-                    <?php echo esc_html(get_field('portfolio_banner_title', 'option') ?: 'Our Works'); ?>
-                </h1>
-                <h2 class="o7-page-banner__sub-title">
-                    <?php echo esc_html(get_field('portfolio_banner_subtitle', 'option') ?: 'Digital success stories crafted with design & technology'); ?>
-                </h2>
-            </div>
+    <!-- ====== Banner Section ====== -->
+    <?php get_template_part('template-parts/archive/portfolio/page-banner', null, ['post_id' => get_the_ID()]); ?>
+    <!-- ====== Filter Section ====== -->
 
-            <div class="o7-page-banner__image-wrapper">
-                <?php
-                $banner_img = get_field('portfolio_banner_image', 'option');
-                if ($banner_img): ?>
-                    <div class="o7-page-banner__image">
-                        <img src="<?php echo esc_url($banner_img['url']); ?>" alt="<?php echo esc_attr($banner_img['alt']); ?>" width="1520" height="506" />
-                    </div>
-                <?php else: ?>
-                    <div class="o7-page-banner__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/portfolio-pages/portfolio-list-images/portfolio-banner-image.webp" alt="portfolio-banner" width="1520" height="506" />
-                    </div>
-                <?php endif; ?>
-                <div class="o7-page-banner__image-overlay"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 🔹 Filter Section -->
     <section class="section">
         <div class="container">
             <div class="o7-list-page-filter">

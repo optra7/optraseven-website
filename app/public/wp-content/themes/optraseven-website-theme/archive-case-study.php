@@ -11,6 +11,8 @@ if ($post_type === 'case-study') {
     $taxonomy = 'case_study_category';
 } elseif ($post_type === 'portfolio') {
     $taxonomy = 'portfolio_category';
+} elseif ($post_type === 'service') {
+    $taxonomy = 'service_category';
 }
 
 // Pass current filter to JS
@@ -20,7 +22,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
 ]);
 ?>
 
-<main id="primary" class="site-main archive-<?php echo esc_attr($post_type); ?>">
+<main id="primary" class="site-main archive-case-study">
 
     <!-- ====== Banner Section ====== -->
     <?php get_template_part('template-parts/archive/case-study/page-banner', null, ['post_id' => get_the_ID()]); ?>
