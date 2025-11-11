@@ -166,8 +166,7 @@ get_header();
                             <use href="./svg/svg-icon-sprite.svg#card-curve-img-1"></use>
                         </svg>
                     </div>
-                    <img src="./images/about-us/optra-seven-office.webp"
-                        alt="optra seven office / optimisic seven office" class="o7-content-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/optra-seven-office.webp" alt="optra seven office / optimisic seven office" class="o7-content-image">
                 </div>
                 <div class="o7-our-culture-card-wrapper">
                     <div class="o7-section-header">
@@ -226,6 +225,99 @@ get_header();
                             </button>
                         </div>
                     </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php
+    get_template_part('template-parts/testimonial-slider', null, [
+        'title_pointer' => ' ',
+        'title' => 'Chapters From Our Client Journey',
+        'subtitle' => 'Chapters From Our Client Journey',
+        'testimonials' => [
+            [
+                'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/Amelia_James.webp',
+                'client_name' => 'Emily Stone',
+                'client_title' => 'Marketing Director',
+                'blockquote' => '   OptraSeven was a critical partner in our branding and website development. They took
+                                    an innovative approach that was highly collaborative with our team and executed the
+                                    program in a way that exceeded our expectations. We are very happy with their team
+                                    and the results. We look forward to leveraging our great brand and website for many
+                                    years to come',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/duck_design_1.webp',
+            ],
+            [
+                'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/aiden_ross.webp',
+                'client_name' => 'Aiden Ross',
+                'client_title' => 'Co-Founder, Ruggable',
+                'blockquote' => '   OptraSeven delivered a flawless Webflow website that perfectly matched our vision.
+                                    Their designers understood our brand deeply and created an intuitive user experience
+                                    that our audience loves. The QA process was extremely thorough, and they always went
+                                    the extra mile. Their dedication made the entire process seamless and rewarding',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/duck_design_1.webp',
+            ],
+            [
+                'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/olivia_bennet.webp',
+                'client_name' => 'Olivia Bennet',
+                'client_title' => 'Owner, VERVE',
+                'blockquote' => '   From concept to launch, OptraSeven made everything feel effortless. Their UI/UX team
+                                    brought clarity and elegance to our ideas, and the final Shopify site functions
+                                    flawlessly. They were meticulous in QA, and truly cared about the result. We’re
+                                    incredibly satisfied with the outcome and grateful for a partnership that delivered
+                                    such strong results',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/verve.webp',
+            ],
+        ],
+    ]);
+
+    ?>
+    <section class="o7-news-letter section">
+        <div class="container">
+            <div class="o7-news-letter__container">
+                <div class="o7-news-letter__form-wrapper">
+                    <p class="title">
+                        <span class="o7-content-card__title-pointer"></span>
+                        Join Us
+                    </p>
+                    <h2 class="o7-news-letter__content-header">Get Digital Insights That Make an Impact</h2>
+
+                    <div class="o7-news-letter__form">
+                        <?php echo do_shortcode('[newsletter_form]'); ?>
+                    </div>
+                </div>
+
+                <p class="o7-news-letter__paragraph">
+                    By subscribing, you agree to our Privacy Policy and consent to receive updates from OptraSeven.
+                </p>
+
+                <div class="o7-news-letter__check-list">
+                    <div class="o7-news-letter__check-list-content">
+                        <p class="o7-news-letter__check-list-poiner">
+                            <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
+                                focusable="false">
+                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
+                            </svg>
+                        </p>
+                        <p class="o7-news-letter__check-list-option">Weekly Updates</p>
+                    </div>
+                    <div class="o7-news-letter__check-list-content">
+                        <p class="o7-news-letter__check-list-poiner">
+                            <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
+                                focusable="false">
+                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
+                            </svg>
+                        </p>
+                        <p class="o7-news-letter__check-list-option">Exclusive Content</p>
+                    </div>
+                    <div class="o7-news-letter__check-list-content">
+                        <p class="o7-news-letter__check-list-poiner">
+                            <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
+                                focusable="false">
+                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
+                            </svg>
+                        </p>
+                        <p class="o7-news-letter__check-list-option">Unsubscribe Anytime</p>
+                    </div>
                 </div>
             </div>
         </div>
