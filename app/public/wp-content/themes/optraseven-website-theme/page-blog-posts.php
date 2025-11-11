@@ -22,10 +22,10 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
 ]);
 ?>
 
-<main id="primary" class="site-main archive-service">
+<main id="primary" class="site-main archive-blog">
 
     <!-- ====== Banner Section ====== -->
-    <?php get_template_part('template-parts/archive/service/page-banner', null, ['post_id' => get_the_ID()]); ?>
+    <?php get_template_part('template-parts/archive/blog/page-banner', null, ['post_id' => get_the_ID()]); ?>
     <!-- ====== Filter Section ====== -->
 
 </main>
