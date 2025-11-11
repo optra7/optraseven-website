@@ -1,9 +1,9 @@
 {
-    "key": "group_69130d9c65954",
-    "title": "archive-case-study-template",
+    "key": "group_6913919412250",
+    "title": "archive-portfolio-template",
     "fields": [
         {
-            "key": "field_69130d9c34977",
+            "key": "field_69139195166f7",
             "label": "Banner Title",
             "name": "banner_title",
             "aria-label": "",
@@ -24,7 +24,7 @@
             "append": ""
         },
         {
-            "key": "field_69130dd034978",
+            "key": "field_691391f8166f8",
             "label": "Banner Subtitle",
             "name": "banner_subtitle",
             "aria-label": "",
@@ -45,7 +45,7 @@
             "append": ""
         },
         {
-            "key": "field_69130de434979",
+            "key": "field_69139206166f9",
             "label": "Banner Image",
             "name": "banner_image",
             "aria-label": "",
@@ -76,7 +76,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "193"
+                "value": "202"
             }
         ]
     ],
@@ -89,5 +89,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762890297
+    "modified": 1762890385
 }
