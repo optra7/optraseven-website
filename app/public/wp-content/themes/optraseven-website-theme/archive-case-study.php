@@ -8,7 +8,7 @@ get_header();
 <main id="primary" class="site-main archive-case-study">
 
     <!-- ====== Banner Section ====== -->
-    <?php get_template_part('template-parts/archive/page-banner', null, ['post_id' => get_the_ID()]); ?>
+    <?php get_template_part('template-parts/archive/case-study/page-banner', null, ['post_id' => get_the_ID()]); ?>
     <!-- ====== Filter Section ====== -->
     <section class="section">
         <div class="container">
@@ -17,15 +17,21 @@ get_header();
                     <ul class="o7-list-page-filter__list">
                         <li class="o7-list-page-filter__filter-item active" data-filter="all">All</li>
                         <?php
-                        $terms = get_terms(array(
-                            'taxonomy' => 'case-study-category',
+                        $terms = get_terms([
+                            'taxonomy'   => 'case_study_category', // ✅ must match the registered taxonomy slug exactly
                             'hide_empty' => true,
-                        ));
-                        foreach ($terms as $term): ?>
-                            <li class="o7-list-page-filter__filter-item" data-filter="<?php echo esc_attr($term->slug); ?>">
-                                <?php echo esc_html($term->name); ?>
-                            </li>
-                        <?php endforeach; ?>
+                        ]);
+
+                        if (!empty($terms) && !is_wp_error($terms)) {
+                            foreach ($terms as $term) : ?>
+                                <li class="o7-list-page-filter__filter-item"
+                                    data-filter="<?php echo esc_attr($term->slug); ?>">
+                                    <?php echo esc_html($term->name); ?>
+                                </li>
+                            <?php
+                            endforeach;
+                        }
+                        ?>
                     </ul>
                 </div>
 
