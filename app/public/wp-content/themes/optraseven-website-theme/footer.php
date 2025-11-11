@@ -99,7 +99,7 @@
                                 eCommerce business.</p>
                         </div>
                         <div class="get-in-touch-btn-wrarpper">
-                            <a class="btn btn--tertiary btn--medium">
+                            <a href="/contact-us" class="btn btn--tertiary btn--medium">
                                 Get In Touch
                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
@@ -179,9 +179,9 @@
                     </div>
                     <div class="o7-footer__policy-pages">
                         <ul class="o7-footer__policy-pages-link">
-                            <li><a href="/privacy-policy" target="_blank">Privacy Policy</a></li>
-                            <li><a href="/terms-of-use" target="_blank">Terms of Use</a></li>
-                            <li><a href="/dsar" target="_blank">DSAR</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="/terms-of-use">Terms of Use</a></li>
+                            <li><a href="/dsar">DSAR</a></li>
                         </ul>
                     </div>
                 </div>

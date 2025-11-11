@@ -439,7 +439,7 @@ get_header();
                                         launch my project on</label>
                                     <!-- date input -->
                                     <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
-                                        <input type="date" id="date" name="date"
+                                        <input type="date" placeholder="mm-dd-yyyy" id="date" name="date"
                                             class="o7-input-field o7-get-the-quote__input-date o7-get-the-quote__full-width">
                                     </div>
                                 </div>
