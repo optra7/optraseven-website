@@ -38,35 +38,95 @@ get_header();
                 <!-- Case Study Cards Grid -->
                 <div class="o7-list-page-filter__data-list">
                     <div class="o7-list-page-filter__column-left">
-
                         <?php
-                        $args = array(
-                            'post_type' => 'case-study',
+                        $args = [
+                            'post_type'      => 'case-study',
                             'posts_per_page' => -1,
-                        );
+                        ];
                         $case_query = new WP_Query($args);
 
                         if ($case_query->have_posts()):
-                            $i = 0;
                             while ($case_query->have_posts()): $case_query->the_post();
-                                $i++;
-                                $category = wp_get_post_terms(get_the_ID(), 'case-study-category');
+
+                                // ACF fields
+                                $subtitle  = get_field('subtitle');
+                                $platform  = get_field('platform'); // "webflow" or "shopify"
+                                $services  = get_field('service');  // array
+                                $industry  = get_field('industry');
+
+                                // Featured image
                                 $featured_img = get_the_post_thumbnail_url(get_the_ID(), 'large');
-                                $platform = get_field('platform');
-                                $subtitle = get_field('subtitle');
+
+                                // Taxonomy (Case Study Category)
+                                $categories = wp_get_post_terms(get_the_ID(), 'case_study_category');
+                                $category_name = (!empty($categories) && !is_wp_error($categories)) ? $categories[0]->name : '';
                                 ?>
-                                <article class="o7-list-page-filter__card <?php echo ($i % 2 == 0) ? 'right' : 'left'; ?>">
+
+                                <article class="o7-list-page-filter__card">
                                     <a href="<?php the_permalink(); ?>">
                                         <div class="o7-list-page-filter__card-image-wrapper">
                                             <?php if ($featured_img): ?>
-                                                <img src="<?php echo esc_url($featured_img); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" decoding="async" width="780" height="680" />
+                                                <img src="<?php echo esc_url($featured_img); ?>"
+                                                     alt="<?php the_title_attribute(); ?>"
+                                                     loading="lazy"
+                                                     decoding="async"
+                                                     width="780"
+                                                     height="680" />
                                             <?php endif; ?>
 
-                                            <!-- platform -->
+                                            <!-- Hover chip (Services list) -->
+                                            <?php if ($services): ?>
+                                                <div class="o7-hover-chip">
+                                                    <div class="o7-hover-chip__bg">
+                                                        <svg class="o7-hover-chip__icon" aria-hidden="true" focusable="false">
+                                                            <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#chip-radius-1"></use>
+                                                        </svg>
+                                                        <div class="o7-hover-chip__bg-span-wrapper">
+                                                            <span class="o7-hover-chip__bg-span"></span>
+                                                            <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                                                                <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#chip-radius-2"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="o7-hover-chip__inner">
+                                                        <?php foreach ($services as $index => $service): ?>
+                                                            <div class="o7-hover-chip__buton <?php echo $index >= 2 ? 'o7-hover-chip__buton--hidden-mobile' : ''; ?>">
+                                                                <?php echo esc_html($service); ?>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                        <?php if (count($services) > 2): ?>
+                                                            <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">
+                                                                +<?php echo count($services) - 2; ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+
+                                            <!-- Hover platform icon -->
                                             <?php if ($platform): ?>
                                                 <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?> o7-hover-icon--left-icon-box">
-                                                    <div class="o7-hover-icon__inner">
-                                                        <span><?php echo esc_html($platform); ?></span>
+                                                    <div class="o7-hover-icon__bg">
+                                                        <svg class="o7-hover-icon__icon" aria-hidden="true" focusable="false">
+                                                            <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#card-curve-img-1"></use>
+                                                        </svg>
+                                                        <div class="o7-hover-icon__bg-span-wrapper">
+                                                            <span class="o7-hover-icon__bg-span"></span>
+                                                            <svg class="o7-hover-icon__bg-span-icon" aria-hidden="true" focusable="false">
+                                                                <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#card-curve-img-2"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="o7-hover-icon__inner o7-hover-icon__inner--left-icon-box">
+                                                        <picture>
+                                                            <img src="<?php echo get_template_directory_uri(); ?>/images/case-study-pages/case-study-list/hover-icon-<?php echo strtolower($platform); ?>.webp"
+                                                                 alt="<?php echo esc_attr($platform); ?> icon"
+                                                                 loading="lazy"
+                                                                 decoding="async"
+                                                                 width="80"
+                                                                 height="80" />
+                                                        </picture>
                                                     </div>
                                                 </div>
                                             <?php endif; ?>
@@ -74,12 +134,18 @@ get_header();
 
                                         <div class="o7-list-page-filter__card-title-wrapper">
                                             <div class="o7-card-category">
-                                                <?php if (!empty($category)): ?>
-                                                    <p class="o7-card-catagory__title"><?php echo esc_html($category[0]->name); ?></p>
+                                                <?php if ($industry): ?>
+                                                    <div class="o7-card-catagory__title-wrapper">
+                                                        <p class="o7-card-catagory__title"><?php echo esc_html($industry); ?></p>
+                                                    </div>
                                                 <?php endif; ?>
 
-                                                <span class="o7-card-catagory__decorative-dot"></span>
-                                                <p class="o7-card-catagory__title"><?php the_title(); ?></p>
+                                                <div class="o7-card-catagory__title-wrapper">
+                                                    <?php if ($industry): ?>
+                                                        <span class="o7-card-catagory__decorative-dot"></span>
+                                                    <?php endif; ?>
+                                                    <p class="o7-card-catagory__title"><?php the_title(); ?></p>
+                                                </div>
                                             </div>
 
                                             <?php if ($subtitle): ?>
@@ -88,6 +154,7 @@ get_header();
                                         </div>
                                     </a>
                                 </article>
+
                             <?php
                             endwhile;
                             wp_reset_postdata();
@@ -97,6 +164,7 @@ get_header();
                         ?>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
