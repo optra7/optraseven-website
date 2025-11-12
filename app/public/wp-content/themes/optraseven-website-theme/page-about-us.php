@@ -156,7 +156,7 @@ get_header();
         <div class="container">
             <div class="o7-our-culture-content-wrapper">
                 <div class="o7-our-culture__image-wrapper">
-                    <div class="o7-our-culture-image-chip__wrapper">
+                    <!-- <div class="o7-our-culture-image-chip__wrapper">
                         <svg class="o7-icon o7-our-culture-image-chip__icon-one" aria-hidden="true"
                             focusable="false">
                             <use href="./svg/svg-icon-sprite.svg#chip-radius-1"></use>
@@ -165,7 +165,7 @@ get_header();
                             focusable="false">
                             <use href="./svg/svg-icon-sprite.svg#card-curve-img-1"></use>
                         </svg>
-                    </div>
+                    </div> -->
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/optra-seven-office.webp" alt="optra seven office / optimisic seven office" class="o7-content-image">
                 </div>
                 <div class="o7-our-culture-card-wrapper">
