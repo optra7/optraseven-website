@@ -72,7 +72,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                             $services  = get_field('service', $post_id);
                             $industry  = get_field('industry', $post_id);
                             $featured_img = get_the_post_thumbnail_url($post_id, 'large');
-                            $categories = wp_get_post_terms($post_id, 'case_study_category', ['fields' => 'slugs']);
+                            $categories = wp_get_post_terms($post_id, 'portfolio_category', ['fields' => 'slugs']);
                             $category_classes = !empty($categories) ? implode(' ', $categories) : '';
                             ?>
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
