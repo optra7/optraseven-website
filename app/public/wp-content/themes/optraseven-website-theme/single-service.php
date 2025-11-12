@@ -64,24 +64,6 @@ while (have_posts()) : the_post();
                         <?php endif; ?>
 
                         <?php echo $content_with_ids; ?>
-
-                        <!-- Optional Meta Info -->
-                        <?php if ($platform): ?>
-                            <p class="o7-stepper-article__para"><strong>Platform:</strong> <?php echo esc_html($platform); ?></p>
-                        <?php endif; ?>
-
-                        <!-- Explore Links -->
-                        <div class="o7-service-explore">
-                            <?php if ($explore_blog): ?>
-                                <p><strong>Explore Blog:</strong> <a href="<?php echo esc_url($explore_blog); ?>"><?php echo esc_html(get_the_title($explore_blog)); ?></a></p>
-                            <?php endif; ?>
-                            <?php if ($case_study): ?>
-                                <p><strong>Explore Case Study:</strong> <a href="<?php echo esc_url($case_study); ?>"><?php echo esc_html(get_the_title($case_study)); ?></a></p>
-                            <?php endif; ?>
-                            <?php if ($portfolio): ?>
-                                <p><strong>Explore Portfolio:</strong> <a href="<?php echo esc_url($portfolio); ?>"><?php echo esc_html(get_the_title($portfolio)); ?></a></p>
-                            <?php endif; ?>
-                        </div>
                     </article>
                 </div>
             </div>

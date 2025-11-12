@@ -38,8 +38,8 @@
                 "id": ""
             },
             "choices": {
-                "shopify: Shopify": "shopify: Shopify",
-                "webflow: Webflow": "webflow: Webflow"
+                "Shopify": "Shopify",
+                "Webflow": "Webflow"
             },
             "default_value": false,
             "return_format": "value",
@@ -125,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762769358
+    "modified": 1762977172
 }
