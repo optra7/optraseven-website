@@ -6396,22 +6396,20 @@
                             <div class="o7-map__office-location-3rd-circle"></div>
                         </div>
                     </div>
-                    <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__address-card-link">
-                        <div class="o7-map__address-card">
-                            <h2 class="o7-map__address-header">
-                                Bangladesh
-                            </h2>
-                            <address class="o7-map__addreess">
-                                Ventura Iconia, Level 3, Plot 37, Road 11, Banani 1213, Dhaka, Bangladesh
-                            </address>
-                            <h2 class="o7-map__whatsapp">
-                                whatsapp
-                            </h2>
-                            <p class="o7-map__whatsapp-number">
-                                +8801856788998
-                            </p>
-                        </div>
-                    </a>
+                    <div class="o7-map__address-card">
+                        <h2 class="o7-map__address-header">
+                            Bangladesh
+                        </h2>
+                        <address class="o7-map__addreess">
+                            Ventura Iconia, Level 3, Plot 37, Road 11, Banani 1213, Dhaka, Bangladesh
+                        </address>
+                        <h2 class="o7-map__whatsapp">
+                            whatsapp
+                        </h2>
+                        <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__whatsapp-number">
+                            +8801856788998
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="o7-map__card-america">
@@ -6421,28 +6419,25 @@
                             <div class="o7-map__office-location-3rd-circle"></div>
                         </div>
                     </div>
-                    <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__address-card-link">
-                        <div class="o7-map__address-card">
-                            <h2 class="o7-map__address-header">
-                                USA
-                            </h2>
-                            <address class="o7-map__addreess">
-                                17700 Avalon BLVD Carson California, USA
-                            </address>
-                            <h2 class="o7-map__whatsapp">
-                                whatsapp
-                            </h2>
-                            <p class="o7-map__whatsapp-number">
-                                +1 (716) 503-6335
-                            </p>
-                        </div>
-                    </a>
+                    <div class="o7-map__address-card">
+                        <h2 class="o7-map__address-header">
+                            USA
+                        </h2>
+                        <address class="o7-map__addreess">
+                            17700 Avalon BLVD Carson California, USA
+                        </address>
+                        <h2 class="o7-map__whatsapp">
+                            whatsapp
+                        </h2>
+                        <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__whatsapp-number">
+                            +1 (716) 503-6335
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="o7-map__moblile-visible-wrapper">
-            <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__address-card-link">
-                <div class="o7-map__address-card o7-map__moblile-visible--card">
+            <div class="o7-map__address-card o7-map__moblile-visible--card">
                     <h2 class="o7-map__address-header">
                         Bangladesh
                     </h2>
@@ -6452,13 +6447,11 @@
                     <h2 class="o7-map__whatsapp">
                         whatsapp
                     </h2>
-                    <p class="o7-map__whatsapp-number">
+                    <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__whatsapp-number">
                         +8801856788998
-                    </p>
+                    </a>
                 </div>
-            </a>
-            <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__address-card-link">
-                <div class="o7-map__address-card o7-map__moblile-visible--card">
+            <div class="o7-map__address-card o7-map__moblile-visible--card">
                     <h2 class="o7-map__address-header">
                         USA
                     </h2>
@@ -6468,11 +6461,10 @@
                     <h2 class="o7-map__whatsapp">
                         whatsapp
                     </h2>
-                    <p class="o7-map__whatsapp-number">
+                    <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__whatsapp-number">
                         +1 (716) 503-6335
-                    </p>
+                    </a>
                 </div>
-            </a>
         </div>
     </div>
 </section>
