@@ -2890,6 +2890,7 @@ figure.megamenu__service-view-all-image-wrapper {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    transition: all 300ms ease-out 0s;
 }
 
 .o7-slider-control.slider__button--visible {
@@ -2906,7 +2907,13 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-slider-control__button--aquamarine {
     background-color: #7CE3AC;
 }
+.o7-slider-control__button--aquamarine:hover {
+    background-color: #202020;
+}
 
+.o7-slider-control__button--aquamarine:hover .slider__arrow {
+    fill: #ffffff;
+}
 @media (max-width: 1024px) {
     .o7-slider-control__button {
         background-color: #7CE3AC;
@@ -6749,7 +6756,12 @@ figure.megamenu__service-view-all-image-wrapper {
     font-size: 10px;
     color: #787878;
 }
-
+.o7-get-the-quote__input-file[type=file]::file-selector-button {
+    border-style: solid;
+    border-color: #C7C7C7;
+    border-width: 0 1px 0 0;
+    border-radius: 8px 0 0 8px;
+}
 .o7-get-the-quote__input-text {
     width: 100%;
     min-height: 120px;
