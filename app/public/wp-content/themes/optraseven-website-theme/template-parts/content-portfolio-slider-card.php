@@ -1,8 +1,10 @@
 <article class="o7-content-card o7-content-card--scrolling-snap">
     <div class="o7-content-card__image-wrapper">
-        <?php if (has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail('large', ['class' => 'o7-content-card__image']); ?>
-        <?php endif; ?>
+        <div class="o7-content-card__image-frame">
+            <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('large', ['class' => 'o7-content-card__image']); ?>
+            <?php endif; ?>
+        </div>
     </div>
 
     <a href="<?php the_permalink(); ?>">
