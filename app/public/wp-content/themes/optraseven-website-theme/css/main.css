@@ -932,6 +932,13 @@ select:focus {
     margin-left: 10px;
 }
 
+.page-template-page-dsar main,
+.page-template-page-privacy-policy main,
+.page-template-page-terms-of-use main {
+    max-width: 1550px;
+    margin: 202px auto 0;
+}
+
 @media(max-width: 1024px) {
 
     .site-main-header .main-menu,
@@ -5651,6 +5658,7 @@ figure.megamenu__service-view-all-image-wrapper {
     font-size: 16px;
     font-weight: 500;
     color: #787878;
+    line-height: 1.6;
 }
 
 .o7-hero-legal-intro__text-one {
@@ -5776,7 +5784,10 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-stepper__nav-item {
     padding: 14px 0;
-    border-bottom: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #e1e1e1;
+}
+.o7-stepper__nav-item:last-child {
+    border-bottom: none;
 }
 
 .o7-stepper__nav-item a {
