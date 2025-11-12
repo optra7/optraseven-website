@@ -5,17 +5,8 @@
 get_header();
 
 $post_type = get_post_type();
-$taxonomy  = 'category'; // default for blog
+$taxonomy = 'case_study_category';
 
-if ($post_type === 'case-study') {
-    $taxonomy = 'case_study_category';
-} elseif ($post_type === 'portfolio') {
-    $taxonomy = 'portfolio_category';
-} elseif ($post_type === 'service') {
-    $taxonomy = 'service_category';
-}
-
-// Pass current filter to JS
 $current_filter = isset($_GET['filter']) ? sanitize_text_field($_GET['filter']) : 'all';
 wp_localize_script('o7-archive-filter', 'archiveFilterData', [
     'current_filter' => $current_filter,

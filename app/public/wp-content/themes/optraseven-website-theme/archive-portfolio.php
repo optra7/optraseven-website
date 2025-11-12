@@ -5,17 +5,8 @@
 get_header();
 
 $post_type = get_post_type();
-$taxonomy  = 'category'; // default for blog
+$taxonomy = 'portfolio_category';
 
-if ($post_type === 'case-study') {
-    $taxonomy = 'case_study_category';
-} elseif ($post_type === 'portfolio') {
-    $taxonomy = 'portfolio_category';
-} elseif ($post_type === 'service') {
-    $taxonomy = 'service_category';
-}
-
-// Pass current filter to JS
 $current_filter = isset($_GET['filter']) ? sanitize_text_field($_GET['filter']) : 'all';
 wp_localize_script('o7-archive-filter', 'archiveFilterData', [
     'current_filter' => $current_filter,
@@ -72,7 +63,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                             $services  = get_field('service', $post_id);
                             $industry  = get_field('industry', $post_id);
                             $featured_img = get_the_post_thumbnail_url($post_id, 'large');
-                            $categories = wp_get_post_terms($post_id, 'case_study_category', ['fields' => 'slugs']);
+                            $categories = wp_get_post_terms($post_id, 'portfolio_category', ['fields' => 'slugs']);
                             $category_classes = !empty($categories) ? implode(' ', $categories) : '';
                             ?>
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
