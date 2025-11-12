@@ -24,6 +24,8 @@
                 echo '<div class="o7-card-catagory__title-wrapper">';
                 echo '<span class="o7-card-catagory__decorative-dot"></span>';
                 echo '<p class="o7-card-catagory__title">' . esc_html($cat->name) . '</p>';
+                echo '<span class="o7-card-catagory__decorative-dot"></span>';
+                echo '<p class="o7-card-portfolio__title">' . the_title() . '</p>';
                 echo '</div>';
             endforeach;
         endif;
@@ -40,6 +42,10 @@
             <?php endif;
         endif; ?>
     </div>
-
-    <h3 class="o7-content-card__header"><?php the_title(); ?></h3>
+    <?php if (function_exists('get_field')) :
+        $subtitle = get_field('subtitle'); // ACF field
+        if ($subtitle) : ?>
+            <h3 class="o7-content-card__header"><?php echo esc_html($subtitle); ?></h3>
+        <?php endif;
+    endif; ?>
 </article>

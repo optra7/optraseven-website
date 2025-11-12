@@ -89,9 +89,18 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                         <?php endif; ?>
                                     </div>
 
+                                    <?php if ($platform) : ?>
+                                        <p class="o7-content-card__title">
+                                            <span class="o7-content-card__title-pointer"></span>
+                                            <?php echo esc_html($platform); ?>
+                                        </p>
+                                    <?php endif; ?>
+
                                     <!-- Title & Subtitle -->
                                     <div class="o7-list-page-filter__card-title-wrapper">
-                                        <h3 class="o7-list-page-filter__card-title"><?php echo esc_html(get_the_title($post_id)); ?></h3>
+                                        <h3 class="o7-content-card__header">
+                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                        </h3>
                                         <?php if ($subtitle): ?>
                                             <p class="o7-list-page-filter__card-subtitle"><?php echo esc_html($subtitle); ?></p>
                                         <?php endif; ?>

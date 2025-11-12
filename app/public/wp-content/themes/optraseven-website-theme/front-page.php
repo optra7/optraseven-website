@@ -128,6 +128,24 @@ get_header();
     get_template_part('template-parts/content', 'service-section');
 
     get_template_part('template-parts/content', 'case-study-slider');
+
+    $logo_images = [
+        'Nextjs.webp',
+        'Oracle_logo.webp',
+        'sql-database-generic-svgrepo-com.webp',
+        'hydrogen.webp',
+        'Microsoft_Azure_Logo.webp',
+        'Webflow.webp',
+        'express.webp',
+        'liquid.webp',
+        'remix.webp',
+        'Framer_Logo_Core 1.webp',
+        'aws.webp',
+        'Shopify_logo_2018.webp',
+        'Google_Cloud_logo.webp'
+    ];
+
+    get_template_part('template-parts/logo-slider', null, ['images' => $logo_images, 'path' => '/assets/images/homepage/']);
     ?>
 
     <?php
@@ -152,7 +170,7 @@ get_header();
     get_template_part('template-parts/testimonial-slider', null, [
         'title_pointer' => ' ',
         'title' => 'Chapters From Our Client Journey',
-        'subtitle' => 'Chapters From Our Client Journey',
+        'subtitle' => 'What Our Clients Say About Us',
         'testimonials' => [
             [
                 'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/Amelia_James.webp',
@@ -163,7 +181,7 @@ get_header();
                                     program in a way that exceeded our expectations. We are very happy with their team
                                     and the results. We look forward to leveraging our great brand and website for many
                                     years to come',
-                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/duck_design_1.webp',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/duck_design.webp',
             ],
             [
                 'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/aiden_ross.webp',
@@ -173,7 +191,7 @@ get_header();
                                     Their designers understood our brand deeply and created an intuitive user experience
                                     that our audience loves. The QA process was extremely thorough, and they always went
                                     the extra mile. Their dedication made the entire process seamless and rewarding',
-                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/duck_design_1.webp',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/ruggable.webp',
             ],
             [
                 'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/olivia_bennet.webp',
@@ -185,6 +203,17 @@ get_header();
                                     incredibly satisfied with the outcome and grateful for a partnership that delivered
                                     such strong results',
                 'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/verve.webp',
+            ],
+            [
+                'client_image' => get_template_directory_uri() . '/assets/images/testimonials/clients/Amelia_James.webp',
+                'client_name' => 'Emily Stone',
+                'client_title' => 'Marketing Director',
+                'blockquote' => '   OptraSeven was a critical partner in our branding and website development. They took
+                                    an innovative approach that was highly collaborative with our team and executed the
+                                    program in a way that exceeded our expectations. We are very happy with their team
+                                    and the results. We look forward to leveraging our great brand and website for many
+                                    years to come',
+                'company_logo' => get_template_directory_uri() . '/assets/images/testimonials/logos/duck_design.webp',
             ],
         ],
     ]);

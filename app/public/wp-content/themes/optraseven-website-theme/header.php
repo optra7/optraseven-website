@@ -22,43 +22,6 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<!-- <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'optraseven-website-theme' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$optraseven_website_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $optraseven_website_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $optraseven_website_theme_description; ?></p>
-			<?php endif; ?>
-		</div>
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'optraseven-website-theme' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav>
-	</header>
-
-	<body class="page-home"> -->
     <aside class="main-menu-responsive">
         <div class="main-menu-responsive__header">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="main-menu-responsive__logo">OptraSeven</a>
@@ -340,7 +303,7 @@
                         </div>
                     </div>
 
-                    <div class="megamenu">
+                    <div class="megamenu megamenu-service">
                         <a tabindex="0" class="main-menu__link">Services</a>
                         <div class="megamenu__content-wrapper megamenu__content-wrapper--service">
                             <div class="megamenu__triangle-head"></div>
