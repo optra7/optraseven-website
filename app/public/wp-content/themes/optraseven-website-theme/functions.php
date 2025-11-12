@@ -205,7 +205,7 @@ function optraseven_website_enqueue_scrollspy()
 add_action('wp_enqueue_scripts', 'optraseven_website_enqueue_scrollspy');
 
 function optraseven_archive_filter_scripts() {
-    if (is_post_type_archive(['case-study', 'portfolio', 'post'])) {
+    if (is_home() || is_post_type_archive(['case-study', 'portfolio'])) {
         wp_enqueue_script(
             'o7-archive-filter',
             get_template_directory_uri() . '/js/filter.js',
@@ -420,10 +420,10 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-//add_filter( 'comment_form_defaults', function( $defaults ) {
-//    $defaults['logged_in_as'] = ''; // remove "Logged in as" text
-//    return $defaults;
-//});
+add_filter( 'comment_form_defaults', function( $defaults ) {
+    $defaults['logged_in_as'] = ''; // remove "Logged in as" text
+    return $defaults;
+});
 
 /**
  * ----------------------------------------------------

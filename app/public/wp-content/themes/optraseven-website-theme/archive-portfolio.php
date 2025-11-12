@@ -77,7 +77,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                             <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?> o7-hover-icon--left-icon-box">
                                                 <div class="o7-hover-icon__inner o7-hover-icon__inner--left-icon-box">
                                                     <picture>
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/images/case-study-pages/case-study-list/hover-icon-<?php echo strtolower($platform); ?>.webp" alt="<?php echo esc_attr($platform); ?>" width="80" height="80" />
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/archive/hover-icon-<?php echo strtolower($platform); ?>.webp" alt="<?php echo esc_attr($platform); ?>" width="80" height="80" />
                                                     </picture>
                                                 </div>
                                             </div>
