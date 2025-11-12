@@ -27,96 +27,95 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
     <!-- ====== Banner Section ====== -->
     <?php get_template_part('template-parts/archive/portfolio/page-banner', null, ['post_id' => get_the_ID()]); ?>
     <!-- ====== Filter Section ====== -->
-
     <section class="section">
         <div class="container">
             <div class="o7-list-page-filter">
 
-                <!-- Filter List -->
+                <!-- Filter Tabs -->
                 <div class="o7-list-page-filter__list-wrapper">
                     <ul class="o7-list-page-filter__list">
                         <li class="o7-list-page-filter__filter-item active" data-filter="all">All</li>
                         <?php
-                        $terms = get_terms(array(
-                            'taxonomy' => 'portfolio-category',
+                        $terms = get_terms([
+                            'taxonomy'   => $taxonomy,
                             'hide_empty' => true,
-                        ));
-                        foreach ($terms as $term): ?>
-                            <li class="o7-list-page-filter__filter-item" data-filter="<?php echo esc_attr($term->slug); ?>">
-                                <?php echo esc_html($term->name); ?>
-                            </li>
-                        <?php endforeach; ?>
+                        ]);
+
+                        if (!empty($terms) && !is_wp_error($terms)) :
+                            foreach ($terms as $term) : ?>
+                                <li class="o7-list-page-filter__filter-item"
+                                    data-filter="<?php echo esc_attr($term->slug); ?>">
+                                    <?php echo esc_html($term->name); ?>
+                                </li>
+                            <?php endforeach;
+                        endif;
+                        ?>
                     </ul>
                 </div>
 
-                <!-- Portfolio Cards Grid -->
+                <!-- Data List -->
                 <div class="o7-list-page-filter__data-list">
-                    <div class="o7-list-page-filter__column-left">
+                    <div class="o7-list-page-filter__column-left"></div>
+                    <div class="o7-list-page-filter__column-right"></div>
 
-                        <?php
-                        $args = array(
-                            'post_type' => 'portfolio',
-                            'posts_per_page' => -1,
-                        );
-                        $portfolio_query = new WP_Query($args);
+                    <?php
+                    $query = new WP_Query([
+                        'post_type'      => $post_type,
+                        'posts_per_page' => -1,
+                    ]);
 
-                        if ($portfolio_query->have_posts()):
-                            $i = 0;
-                            while ($portfolio_query->have_posts()): $portfolio_query->the_post();
-                                $i++;
-                                $categories = wp_get_post_terms(get_the_ID(), 'portfolio-category');
-                                $featured_img = get_the_post_thumbnail_url(get_the_ID(), 'large');
-                                $platform_icon = get_field('platform_icon');
-                                $tagline = get_field('tagline');
-                                $brand_name = get_field('brand_name');
-                                ?>
-                                <article class="o7-list-page-filter__card <?php echo ($i % 2 == 0) ? 'right' : 'left'; ?>">
-                                    <a href="<?php the_permalink(); ?>">
+                    if ($query->have_posts()) :
+                        while ($query->have_posts()) : $query->the_post();
+                            $post_id = get_the_ID();
+                            $subtitle  = get_field('subtitle', $post_id);
+                            $platform  = get_field('platform', $post_id);
+                            $services  = get_field('service', $post_id);
+                            $industry  = get_field('industry', $post_id);
+                            $featured_img = get_the_post_thumbnail_url($post_id, 'large');
+                            $categories = wp_get_post_terms($post_id, 'case_study_category', ['fields' => 'slugs']);
+                            $category_classes = !empty($categories) ? implode(' ', $categories) : '';
+                            ?>
+                            <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
+                                <a href="<?php echo get_permalink($post_id); ?>">
+                                    <div class="o7-list-page-filter__card-image-wrapper">
+                                        <?php if ($featured_img): ?>
+                                            <img src="<?php echo esc_url($featured_img); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" width="780" height="680" loading="lazy" decoding="async">
+                                        <?php endif; ?>
 
-                                        <div class="o7-list-page-filter__card-image-wrapper">
-                                            <?php if ($featured_img): ?>
-                                                <img src="<?php echo esc_url($featured_img); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" decoding="async" width="780" height="680" />
-                                            <?php endif; ?>
+                                        <?php if ($platform): ?>
+                                            <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?> o7-hover-icon--left-icon-box">
+                                                <div class="o7-hover-icon__inner o7-hover-icon__inner--left-icon-box">
+                                                    <picture>
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/images/case-study-pages/case-study-list/hover-icon-<?php echo strtolower($platform); ?>.webp" alt="<?php echo esc_attr($platform); ?>" width="80" height="80" />
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
 
-                                            <!-- platform icon -->
-                                            <?php if ($platform_icon): ?>
-                                                <div class="o7-hover-icon o7-hover-icon--left-icon-box">
-                                                    <div class="o7-hover-icon__inner">
-                                                        <img src="<?php echo esc_url($platform_icon['url']); ?>" alt="<?php echo esc_attr($platform_icon['alt']); ?>" width="80" height="80" loading="lazy" decoding="async" />
-                                                    </div>
+                                    <div class="o7-list-page-filter__card-title-wrapper">
+                                        <div class="o7-card-category">
+                                            <?php if ($industry): ?>
+                                                <div class="o7-card-catagory__title-wrapper">
+                                                    <p class="o7-card-catagory__title"><?php echo esc_html($industry); ?></p>
                                                 </div>
                                             <?php endif; ?>
-                                        </div>
-
-                                        <div class="o7-list-page-filter__card-title-wrapper">
-                                            <div class="o7-card-category">
-                                                <?php if (!empty($categories)): ?>
-                                                    <p class="o7-card-catagory__title"><?php echo esc_html($categories[0]->name); ?></p>
-                                                <?php endif; ?>
-
-                                                <span class="o7-card-catagory__decorative-dot"></span>
-                                                <?php if ($brand_name): ?>
-                                                    <p class="o7-card-catagory__title"><?php echo esc_html($brand_name); ?></p>
-                                                <?php else: ?>
-                                                    <p class="o7-card-catagory__title"><?php the_title(); ?></p>
-                                                <?php endif; ?>
+                                            <div class="o7-card-catagory__title-wrapper">
+                                                <?php if ($industry): ?><span class="o7-card-catagory__decorative-dot"></span><?php endif; ?>
+                                                <p class="o7-card-catagory__title"><?php echo esc_html(get_the_title($post_id)); ?></p>
                                             </div>
-
-                                            <?php if ($tagline): ?>
-                                                <h3 class="o7-list-page-filter__card-tagline"><?php echo esc_html($tagline); ?></h3>
-                                            <?php endif; ?>
                                         </div>
-                                    </a>
-                                </article>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                        else:
-                            echo '<p>No portfolio items found.</p>';
-                        endif;
-                        ?>
-                    </div>
-
+                                        <?php if ($subtitle): ?>
+                                            <h3 class="o7-list-page-filter__card-tagline"><?php echo esc_html($subtitle); ?></h3>
+                                        <?php endif; ?>
+                                    </div>
+                                </a>
+                            </article>
+                        <?php
+                        endwhile;
+                        wp_reset_postdata();
+                    endif;
+                    ?>
                 </div>
             </div>
         </div>
