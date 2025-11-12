@@ -59,7 +59,7 @@ $fields_order = ['Services', 'Industries', 'Apps', 'Themes', 'Platform'];
                target="_blank" rel="noopener">
                 View Site
                 <svg class="fee-icon">
-                    <use href="<?php echo get_template_directory_uri(); ?>/svg/svg-icon-sprite.svg#arrow-up-right"></use>
+                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                 </svg>
             </a>
         </div>

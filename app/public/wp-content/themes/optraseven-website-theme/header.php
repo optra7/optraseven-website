@@ -425,7 +425,7 @@
                 </div>
             </div>
             <div class="start-project-btn-wrarpper">
-                <a href="/get-the-quote" class="btn btn--secondary btn--medium">
+                <a href="/get-the-quote" class="btn btn--secondary btn--large">
                     Start a Project
                     <svg class="fee-icon" aria-hidden="true" focusable="false">
                         <use href="<?= get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-up-right' ?>"></use>

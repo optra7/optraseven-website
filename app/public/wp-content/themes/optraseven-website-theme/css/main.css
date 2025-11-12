@@ -4011,6 +4011,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 
 /* Page Banner Start */
+
 .o7-details-page-hero__image img {
     max-width: 100%;
     display: block;
@@ -4050,7 +4051,7 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-details-page-sidebar__title {
     font-size: 24px;
     font-weight: 600;
-    margin: 0 0 15px;
+    margin: 0 0 10px;
 }
 
 .o7-details-page-sidebar__item {
@@ -4131,7 +4132,7 @@ figure.megamenu__service-view-all-image-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 60px;
-    margin-top: 60px;
+    margin-top: 120px;
 }
 
 .o7-details-page-post {
@@ -4300,11 +4301,16 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-arrow-card__card-wrapper {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
-
+.o7-arrow-card__card {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: calc(50% - 20px);
+}
 .o7-arrow-card__card-image-wrapper img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto;
     border-radius: 25px;
@@ -4348,6 +4354,7 @@ figure.megamenu__service-view-all-image-wrapper {
     flex-direction: column;
     gap: 10px;
     margin: 40px 0 0;
+    padding-left: 10px;
 }
 
 .o7-arrow-card__card-category-wrapper {
@@ -4365,7 +4372,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-arrow-card__card-catagory-title {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -4456,7 +4463,7 @@ figure.megamenu__service-view-all-image-wrapper {
     font-size: 20px;
     font-weight: 400;
     margin: 25px 0;
-    color: #787878;
+    color: #484848;
 }
 
 .o7-details-page-post picture,
@@ -4465,9 +4472,16 @@ figure.megamenu__service-view-all-image-wrapper {
     display: block;
     height: auto;
     border-radius: 25px;
-    margin: 80px 0 50px;
+    margin: 0 0 50px;
 }
-
+.o7-details-page-post__spacer-100 {
+    margin: 50px 0;
+    height: 0;
+}
+.o7-details-page-post__spacer-80 {
+    margin: 40px 0;
+    height: 0;
+}
 .o7-details-page-post h3 {
     font-size: 32px;
     font-weight: 500;
@@ -4503,7 +4517,7 @@ figure.megamenu__service-view-all-image-wrapper {
     font-size: 20px;
     font-weight: 400;
     margin: 0;
-    color: #787878;
+    color: #484848;
 }
 
 .o7-details-page-post li strong {
