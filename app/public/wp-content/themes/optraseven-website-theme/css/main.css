@@ -2899,7 +2899,9 @@ figure.megamenu__service-view-all-image-wrapper {
     flex-shrink: 0;
     transition: all 300ms ease-out 0s;
 }
-
+.o7-slider-control__button:hover {
+    background-color: #7CE3AC;
+}
 .o7-slider-control.slider__button--visible {
     display: none;
 }
@@ -4533,8 +4535,11 @@ figure.megamenu__service-view-all-image-wrapper {
 
 
 /* Blog Post Start */
+.single-blog .section {
+    margin: 162px auto 0;
+}
 .o7-blog-post {
-    max-width: 1000px;
+    max-width: 1330px;
     margin: 0 auto;
     width: 100%;
 }
@@ -4578,13 +4583,45 @@ figure.megamenu__service-view-all-image-wrapper {
 }
 
 .o7-blog-post__banner-image img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto;
     border-radius: 25px;
     margin: 0 0 30px;
 }
-
+.o7-blog-post__content p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 25px 0;
+    color: #484848;
+}
+.o7-blog-post__content h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 80px 0 20px;
+}
+.o7-blog-post__content img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px;
+    margin: 0 0 50px;
+}
+.o7-blog-post__content li {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: #484848;
+    line-height: 1.7;
+}
+.o7-stepper-service-details__spacer-100 {
+    margin: 50px 0;
+    height: 0;
+}
+.o7-stepper-service-details__spacer-80 {
+    margin: 40px 0;
+    height: 0;
+}
 .o7-blog-post__description {
     font-size: 20px;
     font-weight: 400;
@@ -4698,12 +4735,17 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-blog-post-comment__heading {
     text-align: center;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 56px;
+    font-weight: 400;
     margin-bottom: 50px;
-    color: #222;
+    color: #202020;
 }
-
+.o7-blog-post-comment__input-box p.form-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
 .o7-blog-post-comment__input-box {
     display: flex;
     gap: 20px;
@@ -4733,7 +4775,48 @@ figure.megamenu__service-view-all-image-wrapper {
     align-items: center;
     gap: 8px;
 }
+.comment-form p {
+    margin: 15px 0;
+}
+.comment-form p label {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+    color: #484848;
+    display: block;
+}
+.comment-form p input[type="text"],
+.comment-form p input[type="email"],
+.comment-form p input[type="url"] {
+    font-family: "Manrope", sans-serif;
+    border: 1px solid #C7C7C7;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px 15px;
+    background-color: transparent;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    transition: all 300ms ease-out 0s;
+}
+.comment-form p input[type="text"]:focus,
+.comment-form p input[type="email"]:focus,
+.comment-form p input[type="url"]:focus {
+    border: 1px solid #202020;
+}
 
+.comment-form p input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.comment-form .comment-form-cookies-consent {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 25px;
+}
 .comment-respond {
     width: 100%;
 }
@@ -5921,7 +6004,44 @@ figure.megamenu__service-view-all-image-wrapper {
     max-width: 1060px;
     min-width: 575px;
 }
-
+.o7-stepper-service-details__article-wrapper h2 {
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0 0 40px;
+}
+.o7-stepper-service-details__article-wrapper p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 25px 0;
+    color: #484848;
+}
+.o7-stepper-service-details__article-wrapper h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 80px 0 20px;
+}
+.o7-stepper-service-details__article-wrapper img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px;
+    margin: 0 0 50px;
+}
+.o7-stepper-service-details__article-wrapper li {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: #484848;
+    line-height: 1.7;
+}
+.o7-stepper-service-details__spacer-100 {
+    margin: 50px 0;
+    height: 0;
+}
+.o7-stepper-service-details__spacer-80 {
+    margin: 40px 0;
+    height: 0;
+}
 /* service details END */
 
 /* Privacy Policy, Terms of Use, DSAR responsive START */

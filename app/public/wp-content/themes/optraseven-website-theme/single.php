@@ -84,7 +84,7 @@ get_header();
                     'comment_notes_before' => '',
                     'comment_notes_after'  => '',
                     'label_submit'         => 'Submit',
-                    'class_submit'         => 'btn btn--secondary btn--x-small',
+                    'class_submit'         => 'btn btn--secondary btn--small',
                     'comment_field'        => '<textarea name="comment" placeholder="Type your comment here" required></textarea>',
                 ]);
                 ?>
