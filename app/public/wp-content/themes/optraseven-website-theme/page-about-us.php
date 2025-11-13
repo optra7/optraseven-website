@@ -305,7 +305,7 @@ get_header();
                     <div class="o7-news-letter__check-list-content">
                         <p class="o7-news-letter__check-list-poiner">
                             <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                focusable="false">
+                                 focusable="false">
                                 <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                             </svg>
                         </p>
@@ -314,7 +314,7 @@ get_header();
                     <div class="o7-news-letter__check-list-content">
                         <p class="o7-news-letter__check-list-poiner">
                             <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                focusable="false">
+                                 focusable="false">
                                 <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                             </svg>
                         </p>
@@ -323,7 +323,7 @@ get_header();
                     <div class="o7-news-letter__check-list-content">
                         <p class="o7-news-letter__check-list-poiner">
                             <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                focusable="false">
+                                 focusable="false">
                                 <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                             </svg>
                         </p>

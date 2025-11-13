@@ -480,57 +480,57 @@ get_header();
     get_template_part('template-parts/faq', null, $faq_data);
     ?>
 
-    <section class="o7-news-letter section">
-        <div class="container">
-            <div class="o7-news-letter__container">
-                <div class="o7-news-letter__form-wrapper">
-                    <p class="title">
-                        <span class="o7-content-card__title-pointer"></span>
-                        Join Us
+        <section class="o7-news-letter section">
+            <div class="container">
+                <div class="o7-news-letter__container">
+                    <div class="o7-news-letter__form-wrapper">
+                        <p class="title">
+                            <span class="o7-content-card__title-pointer"></span>
+                            Join Us
+                        </p>
+                        <h2 class="o7-news-letter__content-header">Get Digital Insights That Make an Impact</h2>
+
+                        <div class="o7-news-letter__form">
+                            <?php echo do_shortcode('[newsletter_form]'); ?>
+                        </div>
+                    </div>
+
+                    <p class="o7-news-letter__paragraph">
+                        By subscribing, you agree to our Privacy Policy and consent to receive updates from OptraSeven.
                     </p>
-                    <h2 class="o7-news-letter__content-header">Get Digital Insights That Make an Impact</h2>
 
-                    <div class="o7-news-letter__form">
-                        <?php echo do_shortcode('[newsletter_form]'); ?>
-                    </div>
-                </div>
-
-                <p class="o7-news-letter__paragraph">
-                    By subscribing, you agree to our Privacy Policy and consent to receive updates from OptraSeven.
-                </p>
-
-                <div class="o7-news-letter__check-list">
-                    <div class="o7-news-letter__check-list-content">
-                        <p class="o7-news-letter__check-list-poiner">
-                            <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                focusable="false">
-                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
-                            </svg>
-                        </p>
-                        <p class="o7-news-letter__check-list-option">Weekly Updates</p>
-                    </div>
-                    <div class="o7-news-letter__check-list-content">
-                        <p class="o7-news-letter__check-list-poiner">
-                            <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                focusable="false">
-                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
-                            </svg>
-                        </p>
-                        <p class="o7-news-letter__check-list-option">Exclusive Content</p>
-                    </div>
-                    <div class="o7-news-letter__check-list-content">
-                        <p class="o7-news-letter__check-list-poiner">
-                            <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                focusable="false">
-                                <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
-                            </svg>
-                        </p>
-                        <p class="o7-news-letter__check-list-option">Unsubscribe Anytime</p>
+                    <div class="o7-news-letter__check-list">
+                        <div class="o7-news-letter__check-list-content">
+                            <p class="o7-news-letter__check-list-poiner">
+                                <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
+                                     focusable="false">
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
+                                </svg>
+                            </p>
+                            <p class="o7-news-letter__check-list-option">Weekly Updates</p>
+                        </div>
+                        <div class="o7-news-letter__check-list-content">
+                            <p class="o7-news-letter__check-list-poiner">
+                                <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
+                                     focusable="false">
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
+                                </svg>
+                            </p>
+                            <p class="o7-news-letter__check-list-option">Exclusive Content</p>
+                        </div>
+                        <div class="o7-news-letter__check-list-content">
+                            <p class="o7-news-letter__check-list-poiner">
+                                <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
+                                     focusable="false">
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
+                                </svg>
+                            </p>
+                            <p class="o7-news-letter__check-list-option">Unsubscribe Anytime</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 </body>
 
