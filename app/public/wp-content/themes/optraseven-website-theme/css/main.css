@@ -2676,9 +2676,6 @@ figure.megamenu__service-view-all-image-wrapper {
 }
 
 
-.o7-content-card__image:hover {
-    transform: scale(1.05);
-}
 
 .o7-content-card:hover .o7-hover-chip {
     top: 0px;
@@ -2739,10 +2736,6 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-content-card__image-wrapper {
     border-radius: 25px;
     overflow: hidden;
-}
-.portfolio-slider .o7-content-card__image-wrapper {
-    background-color: #4F6999;
-    padding: 20px;
 }
 .o7-content-card__circle-arrow {
     width: 30px;
@@ -4610,7 +4603,7 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-blog-post__content li {
     font-size: 20px;
     font-weight: 400;
-    margin: 0;
+    margin: 5px 0;
     color: #484848;
     line-height: 1.7;
 }
