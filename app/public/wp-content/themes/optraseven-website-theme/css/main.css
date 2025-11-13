@@ -7179,3 +7179,34 @@ figure.megamenu__service-view-all-image-wrapper {
 /* Get a Quote END */
 
 /* ------------------------- Page CSS END---------------------- */
+
+/* 
+// 404 page design:start
+----------------------------------------- */
+.page-404-container {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.page-404-container svg {
+    width: 500px;
+}
+
+.page-404-container h1 {
+    font-size: 128px;
+    font-weight: 800;
+}
+
+.page-404-container h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.page-404-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* _____/ 404 page design:end \_______*/
