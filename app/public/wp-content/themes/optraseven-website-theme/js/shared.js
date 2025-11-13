@@ -160,32 +160,20 @@
 	});
 })();
 
-document.addEventListener('DOMContentLoaded', () => {
+function showToast(message, type = 'success') {
 	const toast = document.getElementById('o7-toast');
+	if (!toast) return;
+	toast.textContent = message;
+	toast.className = `o7-toast ${type} show`;
+	setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
 	const params = new URLSearchParams(window.location.search);
-
-	let message = '';
-	let type = '';
-
-	if (params.get('contact_success')) {
-		message = 'Thank you! Your message has been sent successfully.';
-		type = 'success';
-	} else if (params.get('contact_error')) {
-		message = params.get('contact_error');
-		type = 'error';
+	if (params.has('quote_success')) {
+		showToast('Your message has been sent successfully!', 'success');
 	}
-
-	if (message) {
-		toast.textContent = message;
-		toast.classList.add('o7-toast--' + type, 'o7-toast--show');
-
-		setTimeout(() => {
-			toast.classList.remove('o7-toast--show');
-			// Remove query params from URL
-			const url = new URL(window.location);
-			url.searchParams.delete('contact_success');
-			url.searchParams.delete('contact_error');
-			window.history.replaceState({}, '', url);
-		}, 4000);
+	if (params.has('quote_error')) {
+		showToast('Something went wrong. Please try again.', 'error');
 	}
 });
