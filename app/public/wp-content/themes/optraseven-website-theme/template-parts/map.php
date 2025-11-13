@@ -6401,13 +6401,13 @@
                             Bangladesh
                         </h2>
                         <address class="o7-map__addreess">
-                            Ventura Iconia, Level 3, Plot 37, Road 11, Banani 1213, Dhaka, Bangladesh
+                            Bogura District, Rajshahi Division
                         </address>
                         <h2 class="o7-map__whatsapp">
                             whatsapp
                         </h2>
-                        <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__whatsapp-number">
-                            +8801856788998
+                        <a href="http://wa.me/+8801784287229" target="_blank" class="o7-map__whatsapp-number">
+                            (+880) 1784287229
                         </a>
                     </div>
                 </div>
@@ -6429,8 +6429,8 @@
                         <h2 class="o7-map__whatsapp">
                             whatsapp
                         </h2>
-                        <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__whatsapp-number">
-                            +1 (716) 503-6335
+                        <a href="http://wa.me/+8801784287229" target="_blank" class="o7-map__whatsapp-number">
+                            (+880) 1784287229
                         </a>
                     </div>
                 </div>
@@ -6442,13 +6442,13 @@
                         Bangladesh
                     </h2>
                     <address class="o7-map__addreess">
-                        Ventura Iconia, Level 3, Plot 37, Road 11, Banani 1213, Dhaka, Bangladesh
+                        Bogura District, Rajshahi Division
                     </address>
                     <h2 class="o7-map__whatsapp">
                         whatsapp
                     </h2>
-                    <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__whatsapp-number">
-                        +8801856788998
+                    <a href="http://wa.me/+8801784287229" target="_blank" class="o7-map__whatsapp-number">
+                        (+880) 1784287229
                     </a>
                 </div>
             <div class="o7-map__address-card o7-map__moblile-visible--card">
@@ -6461,8 +6461,8 @@
                     <h2 class="o7-map__whatsapp">
                         whatsapp
                     </h2>
-                    <a href="http://wa.me/+8801856788998" target="_blank" class="o7-map__whatsapp-number">
-                        +1 (716) 503-6335
+                    <a href="http://wa.me/+8801784287229" target="_blank" class="o7-map__whatsapp-number">
+                        (+880) 1784287229
                     </a>
                 </div>
         </div>

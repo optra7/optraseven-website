@@ -21,13 +21,17 @@ get_header();
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline" ?>></use>
                                 </svg>
-                                <p class="o7-contact-us__form-address">(+880) 1784287229</p>
+                                <a href="http://wa.me/+8801784287229" target="_blank" class="o7-contact-us__form-address">
+                                    (+880) 1784287229
+                                </a>
                             </div>
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() ."/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
                                 </svg>
-                                <p class="o7-contact-us__form-address">optraseven@gmail.com</p>
+                                <a href="mailto:optraseven@gmail.com" target="_blank" class="o7-contact-us__form-address">
+                                    optraseven@gmail.com
+                                </a>
                             </div>
                         </div>
                         <div class="o7-contact-us__form-address-content-wrapper">
@@ -90,7 +94,7 @@ get_header();
                                         class="o7-input-group o7-contact-us__input-group o7-contact-us__whatsapp-input-group">
                                         <input type="tel" id="whatsapp" name="whatsapp" inputmode="tel"
                                             class="o7-input-field o7-contact-us__input-field"
-                                            placeholder="+88 017 3221 3222">
+                                            placeholder="+88 017 8428 7229">
                                     </div>
                                 </div>
                             </div>

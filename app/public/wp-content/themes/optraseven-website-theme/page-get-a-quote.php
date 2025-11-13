@@ -19,13 +19,17 @@ get_header();
                                 <svg class="o7-get-the-quote__address-icon" aria-hidden="true" focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline" ?>></use>
                                 </svg>
-                                <p class="o7-get-the-quote__address">(+880) 1784287229</p>
+                                <a href="http://wa.me/+8801784287229" target="_blank" class="o7-get-the-quote__address">
+                                    (+880) 1784287229
+                                </a>
                             </div>
                             <div class="o7-get-the-quote__address-wrapper">
                                 <svg class="o7-get-the-quote__address-icon" aria-hidden="true" focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
                                 </svg>
-                                <p class="o7-get-the-quote__address">optraseven@gmail.com</p>
+                                <a href="mailto:optraseven@gmail.com" target="_blank" class="o7-get-the-quote__address">
+                                    optraseven@gmail.com
+                                </a>
                             </div>
                         </div>
 
@@ -304,7 +308,7 @@ get_header();
                                         <div class="o7-input-group">
                                             <input type="tel" id="phone" name="phone" inputmode="tel"
                                                 class="o7-input-field o7-get-the-quote__full-width"
-                                                placeholder="+44 738 672 4085">
+                                                   placeholder="+88 017 8428 7229">
                                         </div>
                                     </div>
                                 </div>
@@ -405,10 +409,10 @@ get_header();
                                         <select name="service-type" id="service-type"
                                             class="o7-get-the-quote__select-service">
                                             <option value="" selected>Select...</option>
-                                            <option value="shopify">shopify</option>
-                                            <option value="webflow">webflow</option>
-                                            <option value="custom">custom</option>
-                                            <option value="cro">cro</option>
+                                            <option value="shopify">Shopify</option>
+                                            <option value="webflow">Webflow</option>
+                                            <option value="custom">Custom Apps</option>
+                                            <option value="cro">CRO</option>
                                         </select>
                                     </div>
                                 </div>

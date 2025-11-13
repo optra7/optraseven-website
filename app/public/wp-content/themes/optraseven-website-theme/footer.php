@@ -108,22 +108,22 @@
                         </div>
                     </div>
                     <div class="o7-footer__menu-links">
-                        <h6 class="o7-footer__link-title o7-footer__link-title--align-right">Learn</h6>
-                        <ul class="o7-footer__menu-links-ul o7-footer__menu-links-ul--align-right">
-                            <li><a href="about_us.html" target="_blank">About</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="blog-list.html" target="_blank">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="o7-footer__menu-links">
                         <h6 class="o7-footer__link-title o7-footer__link-title--align-right-mobile">Explore</h6>
                         <ul class="o7-footer__menu-links-ul o7-footer__menu-links-ul--align-right-mobile">
                             <li><a href="/">Home</a></li>
-                            <li><a href="portfolio-list.html" target="_blank">Work</a></li>
-                            <li><a href="service.html" target="_blank">Services</a></li>
-                            <li><a href="case-study-list.html" target="_blank">Cases</a></li>
-                            <li><a href="/contact" target="_blank">Contact</a></li>
+                            <li><a href="/portfolio">Our Works</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/case-studies">Case Studies</a></li>
+                        </ul>
+                    </div>
+                    <div class="o7-footer__menu-links">
+                        <h6 class="o7-footer__link-title o7-footer__link-title--align-right">Learn</h6>
+                        <ul class="o7-footer__menu-links-ul o7-footer__menu-links-ul--align-right">
+                            <li><a href="/about-us">About</a></li>
+                            <li><a href="/blog-posts">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/get-the-quote">Get Quote</a></li>
+
                         </ul>
                     </div>
                     <div class="o7-footer__address-container">
@@ -132,7 +132,7 @@
                             Get In Touch</h6>
                         <ul class="o7-footer__menu-links-ul">
                             <li>
-                                <a href="#">
+                                <a href="http://wa.me/+8801784287229" target="_blank">
                                     <div class="o7-footer__address o7-footer__address--reverse">
                                         <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
                                             aria-hidden="true" focusable="false">
@@ -143,7 +143,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="mailto:optraseven@gmail.com" target="_blank">
                                     <div class="o7-footer__address o7-footer__address--reverse">
                                         <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
                                             aria-hidden="true" focusable="false">
@@ -172,7 +172,7 @@
 
                 <div class="o7-footer__copyright-container">
                     <div class="o7-footer__copyright">
-                        <span class="o7-footer__copyright--highlight"> OptraSeven</span>
+                        <span class="o7-footer__copyright--highlight">OptraSeven</span>
                         <p class="o7-footer__copyright-text">
                             2025 &copy; all right reserved
                         </p>
