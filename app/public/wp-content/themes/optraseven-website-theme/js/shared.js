@@ -160,20 +160,35 @@
 	});
 })();
 
-function showToast(message, type = 'success') {
-	const toast = document.getElementById('o7-toast');
-	if (!toast) return;
-	toast.textContent = message;
-	toast.className = `o7-toast ${type} show`;
-	setTimeout(() => toast.classList.remove('show'), 3000);
-}
 
 document.addEventListener('DOMContentLoaded', () => {
+	const toast = document.getElementById('o7-toast');
 	const params = new URLSearchParams(window.location.search);
-	if (params.has('quote_success')) {
-		showToast('Your message has been sent successfully!', 'success');
+
+	let message = '';
+	let type = '';
+
+	if (params.get('contact_success') || params.get('quote_success')) {
+		message = 'Thank you! Your message has been sent successfully.';
+		type = 'success';
+	} else if (params.get('contact_error') || params.get('quote_error')) {
+		message = 'Something went wrong. Please try again.';
+		type = 'error';
 	}
-	if (params.has('quote_error')) {
-		showToast('Something went wrong. Please try again.', 'error');
+
+	if (message) {
+		toast.textContent = message;
+		toast.classList.add('o7-toast--' + type, 'o7-toast--show');
+
+		setTimeout(() => {
+			toast.classList.remove('o7-toast--show');
+			// Remove query params from URL
+			const url = new URL(window.location);
+			url.searchParams.delete('contact_success');
+			url.searchParams.delete('contact_error');
+			url.searchParams.delete('quote_success');
+			url.searchParams.delete('quote_error');
+			window.history.replaceState({}, '', url);
+		}, 2500);
 	}
 });
