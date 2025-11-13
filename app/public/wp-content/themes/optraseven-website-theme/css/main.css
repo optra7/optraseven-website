@@ -1159,7 +1159,7 @@ body.no-scroll {
 }
 
 .o7-footer__menu-links {
-    max-width: 140px;
+    max-width: 160px;
 }
 
 .o7-footer__link-title {
@@ -2496,8 +2496,8 @@ figure.megamenu__service-view-all-image-wrapper {
 }
 
 .o7-logo-slider__logos img {
-    width: 200px;
     margin: 0 50px;
+    max-height: 40px;
 }
 
 .o7-logo-slider:hover .o7-logo-slider__logos {
@@ -3408,20 +3408,23 @@ figure.megamenu__service-view-all-image-wrapper {
     display: flex;
     gap: 40px;
     margin: 80px auto 0;
+    width: 100%;
 }
-
+.o7-list-page-filter__column-left, .o7-list-page-filter__column-right {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: calc(50% - 20px);
+}
 .o7-list-page-filter__column-left {
     display: flex;
     flex-direction: column;
     gap: 150px;
-    flex: 1;
 }
 
 .o7-list-page-filter__column-right {
     display: flex;
     flex-direction: column;
     gap: 150px;
-    flex: 1;
     margin-top: 220px;
 }
 
@@ -3453,9 +3456,9 @@ figure.megamenu__service-view-all-image-wrapper {
     transition: transform 0.45s ease;
 }
 
-.o7-list-page-filter__card-image-wrapper img:hover {
+/* .o7-list-page-filter__card-image-wrapper img:hover {
     transform: scale(1.05);
-}
+} */
 
 
 .o7-list-page-filter__card-title-wrapper {
@@ -7210,3 +7213,34 @@ figure.megamenu__service-view-all-image-wrapper {
 }
 
 /* _____/ 404 page design:end \_______*/
+
+
+/* 
+// Newsletter subscription success page:start
+------------------------------------------------------ */
+.subscription-success-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.subscription-success-container h1 {
+    display: none;
+}
+.subscription-success-container .icon-wrapper svg path {
+    width: 80px;
+    height: 80px;
+    fill: green;
+}
+.subscription-success-container .icon-wrapper svg {
+    height: 60px;
+    width: 60px;
+}
+/* _____/ Newsletter subscription success page:end \_______*/
+
