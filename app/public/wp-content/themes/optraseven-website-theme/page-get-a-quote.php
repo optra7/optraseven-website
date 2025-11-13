@@ -57,11 +57,6 @@ get_header();
                         </h2>
                         <form class="o7-get-the-quote-form" aria-label="get the quote form" method="post" enctype="multipart/form-data" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                             <input type="hidden" name="action" value="get_quote_form_submit">
-                            <?php if (!empty($_GET['quote_error'])): ?>
-                                <div class="alert alert-danger"><?php echo esc_html($_GET['quote_success']); ?></div>
-                            <?php elseif (!empty($_GET['contact_success'])): ?>
-                                <div class="alert alert-success">Thank you! Your message has been sent.</div>
-                            <?php endif; ?>
                             <!-- full name Start -->
                             <label class="o7-input-label o7-get-the-quote__input-label" for="name">Full Name <span class="text-danger">*</span> </label>
                             <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
@@ -459,6 +454,7 @@ get_header();
                                 Submit
                             </button>
                         </form>
+                        <div id="o7-toast" class="o7-toast"></div>
                     </div>
                 </div>
             </div>

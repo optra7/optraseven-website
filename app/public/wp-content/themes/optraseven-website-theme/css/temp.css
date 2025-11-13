@@ -334,4 +334,36 @@
         padding-top: 10px;
     }
 }
-    
+
+
+.o7-toast {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    min-width: 280px;
+    max-width: 420px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background: #323232;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 9999;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.o7-toast--show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+.o7-toast--success {
+    background: #28a745; /* Green */
+}
+.o7-toast--error {
+    background: #dc3545; /* Red */
+}

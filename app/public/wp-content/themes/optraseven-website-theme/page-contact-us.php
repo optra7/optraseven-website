@@ -57,11 +57,6 @@ get_header();
                         </h1>
                         <form class="o7-contact-us-form" aria-label="contact us form" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                             <input type="hidden" name="action" value="contact_form_submit">
-                            <?php if (!empty($_GET['contact_error'])): ?>
-                                <div class="alert alert-danger"><?php echo esc_html($_GET['contact_error']); ?></div>
-                            <?php elseif (!empty($_GET['contact_success'])): ?>
-                                <div class="alert alert-success">Thank you! Your message has been sent.</div>
-                            <?php endif; ?>
 
                             <!-- full name input -->
                             <div>
@@ -124,6 +119,7 @@ get_header();
                                 Submit
                             </button>
                         </form>
+                        <div id="o7-toast" class="o7-toast"></div>
                     </div>
                 </div>
             </div>

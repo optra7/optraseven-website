@@ -160,3 +160,32 @@
 	});
 })();
 
+document.addEventListener('DOMContentLoaded', () => {
+	const toast = document.getElementById('o7-toast');
+	const params = new URLSearchParams(window.location.search);
+
+	let message = '';
+	let type = '';
+
+	if (params.get('contact_success')) {
+		message = 'Thank you! Your message has been sent successfully.';
+		type = 'success';
+	} else if (params.get('contact_error')) {
+		message = params.get('contact_error');
+		type = 'error';
+	}
+
+	if (message) {
+		toast.textContent = message;
+		toast.classList.add('o7-toast--' + type, 'o7-toast--show');
+
+		setTimeout(() => {
+			toast.classList.remove('o7-toast--show');
+			// Remove query params from URL
+			const url = new URL(window.location);
+			url.searchParams.delete('contact_success');
+			url.searchParams.delete('contact_error');
+			window.history.replaceState({}, '', url);
+		}, 4000);
+	}
+});
