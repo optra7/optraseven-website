@@ -22,7 +22,7 @@
         if ($categories && !is_wp_error($categories)) :
             foreach ($categories as $cat) :
                 echo '<div class="o7-card-catagory__title-wrapper">';
-                echo '<span class="o7-card-catagory__decorative-dot"></span>';
+//                echo '<span class="o7-card-catagory__decorative-dot"></span>';
                 echo '<p class="o7-card-catagory__title">' . esc_html($cat->name) . '</p>';
                 echo '<span class="o7-card-catagory__decorative-dot"></span>';
                 echo '<p class="o7-card-portfolio__title">' . the_title() . '</p>';
