@@ -60,6 +60,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                             $post_id = get_the_ID();
                             $subtitle = get_field('subtitle', $post_id);
                             $platform = get_field('platform', $post_id);
+                            $all_tags = wp_get_post_terms($post_id, 'tag', ['fields' => 'names']);
                             $featured_img = get_the_post_thumbnail_url($post_id, 'large');
                             $categories = wp_get_post_terms($post_id, $taxonomy, ['fields' => 'slugs']);
                             $category_classes = !empty($categories) ? implode(' ', $categories) : '';
@@ -75,19 +76,51 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                                  loading="lazy" decoding="async">
                                         <?php endif; ?>
 
-                                        <!-- Platform Icon -->
+                                        <?php if (!empty($all_tags)) : ?>
+                                            <div class="o7-hover-chip">
+                                                <div class="o7-hover-chip__inner">
+                                                    <?php foreach ($all_tags as $tag): ?>
+                                                        <div class="o7-hover-chip__buton">
+                                                            <?= esc_html($tag); ?>
+                                                        </div>
+                                                    <?php endforeach; ?>
+                                                    <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">
+                                                        +1
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+
                                         <?php if ($platform): ?>
-                                            <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?> o7-hover-icon--left-icon-box">
-                                                <div class="o7-hover-icon__inner o7-hover-icon__inner--left-icon-box">
-                                                    <picture>
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/images/case-study-pages/case-study-list/hover-icon-<?php echo strtolower($platform); ?>.webp"
-                                                             alt="<?php echo esc_attr($platform); ?>"
-                                                             width="80" height="80">
-                                                    </picture>
+                                            <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?>">
+                                                <div class="o7-hover-icon__bg">
+                                                    <svg class="o7-hover-icon__icon" aria-hidden="true">
+                                                        <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-1"></use>
+                                                    </svg>
+                                                    <div class="o7-hover-icon__bg-span-wrapper">
+                                                        <span class="o7-hover-icon__bg-span"></span>
+                                                        <svg class="o7-hover-icon__bg-span-icon" aria-hidden="true">
+                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-2"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="o7-hover-icon__inner">
+                                                    <img
+                                                            src="<?php echo get_template_directory_uri(); ?>/assets/images/archive/hover-icon-<?php echo strtolower($platform); ?>.webp"
+                                                            alt="<?php echo esc_attr($platform); ?>"
+                                                            width="80" height="80"
+                                                    />
                                                 </div>
                                             </div>
                                         <?php endif; ?>
                                     </div>
+
+                                    <?php if ($platform) : ?>
+                                        <p class="o7-content-card__title">
+                                            <span class="o7-content-card__title-pointer"></span>
+                                            <?php echo esc_html($platform); ?>
+                                        </p>
+                                    <?php endif; ?>
 
                                     <!-- Title & Subtitle -->
                                     <div class="o7-list-page-filter__card-title-wrapper">
