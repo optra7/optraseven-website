@@ -60,7 +60,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                             $post_id = get_the_ID();
                             $subtitle = get_field('subtitle', $post_id);
                             $platform = get_field('platform', $post_id);
-                            $all_tags = wp_get_post_terms($post_id, 'tag', ['fields' => 'names']);
+                            $all_tags = wp_get_post_terms($post_id, 'post_tag', ['fields' => 'names']);
                             $featured_img = get_the_post_thumbnail_url($post_id, 'large');
                             $categories = wp_get_post_terms($post_id, $taxonomy, ['fields' => 'slugs']);
                             $category_classes = !empty($categories) ? implode(' ', $categories) : '';
