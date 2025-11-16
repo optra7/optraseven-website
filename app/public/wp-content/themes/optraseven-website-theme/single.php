@@ -149,6 +149,7 @@ get_header();
 
                             $type_label = get_post_type_object($linked_post->post_type)->labels->singular_name ?? ucfirst($linked_post->post_type);
                             $title = get_the_title($linked_post->ID);
+                            $subtitle = get_field('subtitle', $linked_post->ID);
                             $image = get_the_post_thumbnail($linked_post->ID, 'medium_large', [
                                 'alt' => esc_attr($title),
                                 'loading' => 'lazy',
@@ -169,8 +170,10 @@ get_header();
                                         <div class="o7-arrow-card__card-category-wrapper">
                                             <span class="o7-arrow-card__card-decorative-dot"></span>
                                             <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($type_label); ?></p>
+                                            <span class="o7-arrow-card__card-decorative-dot"></span>
+                                            <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($title); ?></p>
                                         </div>
-                                        <h3 class="o7-arrow-card__card-tagline"><?php echo esc_html($title); ?></h3>
+                                        <h3 class="o7-arrow-card__card-tagline"><?php echo esc_html($subtitle); ?></h3>
                                     </div>
                                 </a>
                             </article>

@@ -36,6 +36,7 @@ $explore_fields = array_filter($explore_fields);
 
                     // Get post title and thumbnail
                     $title = get_the_title($linked_post->ID);
+                    $subtitle = get_field('subtitle', $linked_post->ID);
                     $image = get_the_post_thumbnail($linked_post->ID, 'medium_large', [
                         'alt' => esc_attr($title),
                         'loading' => 'lazy',
@@ -56,8 +57,10 @@ $explore_fields = array_filter($explore_fields);
                                 <div class="o7-arrow-card__card-category-wrapper">
                                     <span class="o7-arrow-card__card-decorative-dot"></span>
                                     <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($type_label); ?></p>
+                                    <span class="o7-arrow-card__card-decorative-dot"></span>
+                                    <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($title); ?></p>
                                 </div>
-                                <h3 class="o7-arrow-card__card-tagline"><?php echo esc_html($title); ?></h3>
+                                <h3 class="o7-arrow-card__card-tagline"><?php echo esc_html($subtitle); ?></h3>
                             </div>
                         </a>
                     </article>
