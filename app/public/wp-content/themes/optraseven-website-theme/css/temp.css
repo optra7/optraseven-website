@@ -243,7 +243,7 @@
         width: 100%;
         border-radius: 0;
         background: none;
-        padding: 5px 0 5px 30px;
+        padding: 20px 0 0 30px;
     }
     .megamenu-tab__circle-shape {
         display: none;
@@ -260,7 +260,7 @@
 
 @media(max-width: 767px) {
     .megamenu__left-panel {
-        padding: 10px 0 10px 20px;
+        padding: 10px 0 5px 20px;
     }
 }
 
@@ -318,6 +318,8 @@
     .main-menu-responsive a.main-menu__link.has-megamenu {
         position: relative;
         padding-right: 30px;
+        width: 100%;
+        display: block;
     }
     .main-menu-responsive a.main-menu__link.has-megamenu:after {
         content: "";
