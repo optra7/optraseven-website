@@ -1605,6 +1605,7 @@ a.main-menu__link:focus-visible {
     min-width: 775px;
     height: 390px;
     z-index: 1;
+    background-color: transparent;
 }
 
 .megamenu__content-wrapper--service {
@@ -1750,10 +1751,10 @@ figure.megamenu__service-view-all-image-wrapper {
     border-radius: 16px;
 }
 
-.megamenu:focus-within .megamenu__content-wrapper,
+/* .megamenu:focus-within .megamenu__content-wrapper,
 .main-menu__link:focus+.megamenu__content-wrapper {
     display: block;
-}
+} */
 
 
 .menu__background {
@@ -7416,3 +7417,73 @@ figure.megamenu__service-view-all-image-wrapper {
 }
 
 /* _____/ Home page portfolio slider card:end \_______*/
+
+.megamenu-backdrop-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none; /* Initially not clickable */
+}
+
+.megamenu-backdrop-filter.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; /* Clickable when active */
+}
+
+/* Prevent layout shift when scrollbar disappears */
+body {
+    scrollbar-gutter: stable;
+}
+
+/* Alternative method for browsers that don't support scrollbar-gutter */
+body.no-scroll {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width, 0px);
+}
+
+/* Ensure the megamenu container has proper positioning */
+.megamenu {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+}
+
+/* Style for the content wrapper with offset */
+.megamenu__content-wrapper {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px); /* 10px offset down from the trigger */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    border-radius: 4px; /* Optional: for better appearance */
+}
+
+/* When active, show the content */
+.megamenu.active .megamenu__content-wrapper {
+    display: block !important;
+}
+
+/* Main menu link styling */
+.main-menu__link {
+    cursor: pointer;
+    position: relative;
+    display: inline-block; /* Ensure proper positioning */
+}
+
+/* Remove any old focus-within styles that might interfere */
+.megamenu:focus-within .megamenu__content-wrapper,
+.main-menu__link:focus + .megamenu__content-wrapper {
+    display: none;
+}
