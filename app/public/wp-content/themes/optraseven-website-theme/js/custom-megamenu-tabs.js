@@ -1,8 +1,8 @@
 // Portfolio and Case Studies Tab Accordion functionality
 document.addEventListener('DOMContentLoaded', function() {
     // Portfolio tabs
-    const portfolioTabItems = document.querySelectorAll('.megamenu-portfolio .megamenu-tab__item');
-    const portfolioTabContainers = document.querySelectorAll('.megamenu-portfolio .megamenu-tab-container');
+    const portfolioTabItems = document.querySelectorAll('.megamenu .megamenu-tab-accordion__item');
+    const portfolioTabContainers = document.querySelectorAll('.megamenu .megamenu-tab-container');
 
     portfolioTabItems.forEach((tab, index) => {
         tab.addEventListener('click', function(e) {
@@ -29,19 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
             portfolioTabContainers[0].classList.add('active');
         }
     }
-
-    // Industries tags functionality
-    const industryTags = document.querySelectorAll('.megamenu-tag-item');
-
-    industryTags.forEach(tag => {
-        tag.addEventListener('click', function() {
-            industryTags.forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
-
-            // Add your filter logic here based on the selected industry
-            const industry = this.querySelector('.megamenu-tag-label').textContent;
-            console.log('Selected industry:', industry);
-            // Implement your filtering logic here
-        });
-    });
 });
