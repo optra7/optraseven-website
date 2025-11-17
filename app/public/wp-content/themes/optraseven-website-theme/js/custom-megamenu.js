@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Utility
     const isMobile = () => window.innerWidth <= 1024; // adjust breakpoint
 
+    // Create background overlay if it doesn't exist
+    function createBackgroundOverlay() {
+        if (!document.querySelector('.menu__background')) {
+            const overlay = document.createElement('div');
+            overlay.className = 'menu__background';
+            document.body.appendChild(overlay);
+            return overlay;
+        }
+        return document.querySelector('.menu__background');
+    }
+
     // Toggle Mega Menu
     menuTriggers.forEach(trigger => {
         trigger.addEventListener("click", (e) => {
