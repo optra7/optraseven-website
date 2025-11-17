@@ -150,7 +150,7 @@
                 <nav class="main-menu">
                     <a href="/about" class="main-menu__link">About</a>
                     <div class="megamenu megamenu-portfolio">
-                        <a tabindex="0" class="main-menu__link">Portfolio</a>
+                        <a tabindex="0" class="main-menu__link has-megamenu">Portfolio</a>
                         <div class="megamenu__content-wrapper megamenu__content-wrapper--service">
                             <div class="megamenu__triangle-head"></div>
                             <div class="megamenu__content">
@@ -304,7 +304,7 @@
                     </div>
 
                     <div class="megamenu megamenu-service">
-                        <a tabindex="0" class="main-menu__link">Services</a>
+                        <a tabindex="0" class="main-menu__link has-megamenu">Services</a>
                         <div class="megamenu__content-wrapper megamenu__content-wrapper--service">
                             <div class="megamenu__triangle-head"></div>
                             <div class="megamenu__content">
