@@ -7257,3 +7257,16 @@ figure.megamenu__service-view-all-image-wrapper {
 }
 /* _____/ Newsletter subscription success page:end \_______*/
 
+/* 
+// Home page portfolio slider card:start
+----------------------------------------- */
+.portfolio-slider .o7-content-card--scrolling-snap .o7-content-card__image-wrapper {
+    padding: 35px;
+    background-color: #4F6999;
+}
+.portfolio-slider .o7-content-card--scrolling-snap:nth-child(2n) .o7-content-card__image-wrapper {
+    background-color: #648473;
+}
+
+/* _____/ Home page portfolio slider card:end \_______*/
+
