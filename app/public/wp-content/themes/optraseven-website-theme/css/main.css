@@ -2674,7 +2674,9 @@ figure.megamenu__service-view-all-image-wrapper {
     object-fit: cover;
     transition: transform 0.45s ease;
 }
-
+.o7-content-card__image:hover {
+    transform: scale(1.05);
+}
 
 
 .o7-content-card:hover .o7-hover-chip {
@@ -2697,7 +2699,15 @@ figure.megamenu__service-view-all-image-wrapper {
     margin-top: 10px;
     margin-bottom: 0;
 }
-
+.o7-content-card__header a {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: var(--dark-color);
+    text-decoration: none;
+}
 .o7-content-card__title-pointer {
     width: 10px;
     height: 10px;
@@ -3026,6 +3036,7 @@ figure.megamenu__service-view-all-image-wrapper {
     background-color: #E7E7E7;
     padding: 5px 15px;
     border-radius: 25px;
+    width: max-content;
 }
 
 .o7-hover-chip__buton--hidden-pc {
