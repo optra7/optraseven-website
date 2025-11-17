@@ -69,10 +69,11 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
                                 <a href="<?php echo get_permalink($post_id); ?>">
                                     <div class="o7-list-page-filter__card-image-wrapper">
-                                        <?php if ($featured_img): ?>
-                                            <img src="<?php echo esc_url($featured_img); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" width="780" height="680" loading="lazy" decoding="async">
-                                        <?php endif; ?>
-
+                                        <div class="o7-list-page-filter__image-frame">
+                                            <?php if ($featured_img): ?>
+                                                <img src="<?php echo esc_url($featured_img); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" width="780" height="680" loading="lazy" decoding="async">
+                                            <?php endif; ?>
+                                        </div>
                                         <?php if (!empty($all_tags)) : ?>
                                         <div class="o7-hover-chip">
                                             <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">

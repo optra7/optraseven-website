@@ -92,26 +92,27 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                         <?php endif; ?>
 
                                         <?php if ($platform): ?>
-                                            <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?>">
-                                                <div class="o7-hover-icon__bg">
-                                                    <svg class="o7-hover-icon__icon" aria-hidden="true">
-                                                        <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-1"></use>
-                                                    </svg>
-                                                    <div class="o7-hover-icon__bg-span-wrapper">
-                                                        <span class="o7-hover-icon__bg-span"></span>
-                                                        <svg class="o7-hover-icon__bg-span-icon" aria-hidden="true">
+
+                                        <div class="o7-hover-icon o7-hover-icon--webflow o7-hover-icon--bottom-left">
+                                            <div class="o7-hover-icon__bg">
+                                                <svg class="o7-hover-icon__icon" aria-hidden="true" focusable="false">
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-1"></use>
+                                                </svg>
+                                                <div class="o7-hover-icon__bg-span-wrapper">
+                                                    <span class="o7-hover-icon__bg-span"></span>
+                                                    <svg class="o7-hover-icon__bg-span-icon" aria-hidden="true"
+                                                        focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-2"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="o7-hover-icon__inner">
-                                                    <img
-                                                            src="<?php echo get_template_directory_uri(); ?>/assets/images/archive/hover-icon-<?php echo strtolower($platform); ?>.webp"
-                                                            alt="<?php echo esc_attr($platform); ?>"
-                                                            width="80" height="80"
-                                                    />
+                                                    </svg>
                                                 </div>
                                             </div>
+
+                                            <div class="o7-hover-icon__inner">
+                                                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/archive/hover-icon-<?php echo strtolower($platform); ?>.webp"
+                                                    alt="<?php echo esc_attr($platform); ?>" loading="lazy" decoding="async" width="80px"
+                                                    height="80px" />
+                                            </div>
+                                        </div>
                                         <?php endif; ?>
                                     </div>
 

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Universal Archive Template (for filtering)
  */
@@ -38,7 +39,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                     data-filter="<?php echo esc_attr($term->slug); ?>">
                                     <?php echo esc_html($term->name); ?>
                                 </li>
-                            <?php endforeach;
+                        <?php endforeach;
                         endif;
                         ?>
                     </ul>
@@ -65,19 +66,21 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                             $featured_img = get_the_post_thumbnail_url($post_id, 'large');
                             $categories = wp_get_post_terms($post_id, 'case_study_category', ['fields' => 'slugs']);
                             $category_classes = !empty($categories) ? implode(' ', $categories) : '';
-                            ?>
+                    ?>
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
                                 <a href="<?php echo get_permalink($post_id); ?>">
                                     <div class="o7-list-page-filter__card-image-wrapper">
-                                        <?php if ($featured_img): ?>
-                                            <img src="<?php echo esc_url($featured_img); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" width="780" height="680" loading="lazy" decoding="async">
-                                        <?php endif; ?>
+                                        <div class="o7-list-page-filter__image-frame">
+                                            <?php if ($featured_img): ?>
+                                                <img src="<?php echo esc_url($featured_img); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" width="780" height="680" loading="lazy" decoding="async">
+                                            <?php endif; ?>
+                                        </div>
 
                                         <?php if (!empty($all_tags)) : ?>
                                             <div class="o7-hover-chip">
                                                 <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
-                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
-                                            </svg>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                                                </svg>
                                                 <div class="o7-hover-chip__inner">
                                                     <?php foreach ($all_tags as $tag): ?>
                                                         <div class="o7-hover-chip__buton">
@@ -92,24 +95,33 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                         <?php endif; ?>
 
                                         <?php if ($platform): ?>
-                                            <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?>">
+
+                                            <div class="o7-hover-icon o7-hover-icon--shopify o7-hover-icon--left-icon-box">
                                                 <div class="o7-hover-icon__bg">
-                                                    <svg class="o7-hover-icon__icon" aria-hidden="true">
+                                                    <svg
+                                                        class="o7-hover-icon__icon" aria-hidden="true" focusable="false">
                                                         <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-1"></use>
                                                     </svg>
-                                                    <div class="o7-hover-icon__bg-span-wrapper">
-                                                        <span class="o7-hover-icon__bg-span"></span>
-                                                        <svg class="o7-hover-icon__bg-span-icon" aria-hidden="true">
+                                                    <div
+                                                        class="o7-hover-icon__bg-span-wrapper">
+                                                        <span
+                                                            class="o7-hover-icon__bg-span"></span>
+                                                        <svg
+                                                            class="o7-hover-icon__bg-span-icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-2"></use>
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div class="o7-hover-icon__inner">
+
+                                                <div
+                                                    class="o7-hover-icon__inner o7-hover-icon__inner--left-icon-box">
                                                     <img
-                                                            src="<?php echo get_template_directory_uri(); ?>/assets/images/archive/hover-icon-<?php echo strtolower($platform); ?>.webp"
-                                                            alt="<?php echo esc_attr($platform); ?>"
-                                                            width="80" height="80"
-                                                    />
+                                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/archive/hover-icon-<?php echo strtolower($platform); ?>.webp"
+                                                        alt="<?php echo esc_attr($platform); ?>"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        width="80px"
+                                                        height="80px" />
                                                 </div>
                                             </div>
                                         <?php endif; ?>
@@ -133,7 +145,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                     </div>
                                 </a>
                             </article>
-                        <?php
+                    <?php
                         endwhile;
                         wp_reset_postdata();
                     endif;
