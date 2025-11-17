@@ -66,7 +66,7 @@
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66667 5.33268L2 7.79422L4.66667 10.666M11.3333 5.33268L14 7.79422L11.3333 10.666M9.33333 2.66602L6.66667 13.3327" stroke="#202020" stroke-width="0.96" stroke-linecap="round" stroke-linejoin="round"/></svg>
 
                             </div>
-                            <span class="megamenu-tab__label">Custom</span>
+                            <span class="megamenu-tab__label">Custom Application</span>
                             <span class="megamenu-tab__circle-shape"></span>
                         </a>
 
@@ -170,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="main-menu__link">Contact</a>
+            <a href="/contact"" class="main-menu__link">Contact</a>
         </nav>
         <div class="start-project-btn-wrarpper">
             <a href="/get-the-quote" class="btn btn--secondary btn--medium">
