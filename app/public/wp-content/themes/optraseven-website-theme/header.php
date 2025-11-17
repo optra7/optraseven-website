@@ -33,7 +33,7 @@
         <nav class="main-menu">
             <a href="/about" class="main-menu__link">About</a>
             <a href="#" class="main-menu__link has-megamenu">Portfolio</a>
-                <div class="megamenu__left-panel">
+                <div class="megamenu__left-panel megamenu__mobile-item-container">
                     <div class="megamenu_tab-head">
                         <a class="megamenu-tab__item" href="#">
                             <div class="megamenu-tab__icon-wrapper">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             <a href="#" class="main-menu__link has-megamenu">Services</a>
-                <div class="megamenu__content-container-left megamenu__content-container-left--service">
+                <div class="megamenu__content-container-left megamenu__content-container-left--service megamenu__mobile-item-container">
                     <a class="megamenu__link-card megamenu__link-card--service" href="#">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
@@ -149,9 +149,9 @@
             <div class="main-menu-wrapper">
                 <nav class="main-menu">
                     <a href="/about" class="main-menu__link">About</a>
-                    <div class="megamenu megamenu-portfolio">
-                        <a tabindex="0" class="main-menu__link has-megamenu">Portfolio</a>
-                        <div class="megamenu__content-wrapper megamenu__content-wrapper--service">
+                    <div class="megamenu megamenu-portfolio has-megamenu">
+                        <a tabindex="0" class="main-menu__link">Portfolio</a>
+                        <div class="megamenu__content-wrapper megamenu__content-wrapper--service megamenu__item-container">
                             <div class="megamenu__triangle-head"></div>
                             <div class="megamenu__content">
                                 <div class="megamenu__left-panel">
@@ -303,9 +303,9 @@
                         </div>
                     </div>
 
-                    <div class="megamenu megamenu-service">
-                        <a tabindex="0" class="main-menu__link has-megamenu">Services</a>
-                        <div class="megamenu__content-wrapper megamenu__content-wrapper--service">
+                    <div class="megamenu megamenu-service has-megamenu">
+                        <a tabindex="0" class="main-menu__link">Services</a>
+                        <div class="megamenu__content-wrapper megamenu__content-wrapper--service megamenu__item-container">
                             <div class="megamenu__triangle-head"></div>
                             <div class="megamenu__content">
                                 <div class="megamenu__content-container-left megamenu__content-container-left--service">
