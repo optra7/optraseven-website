@@ -92,43 +92,47 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                         <?php endif; ?>
 
                                         <?php if ($platform): ?>
-                                            <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?>">
+
+                                            <div class="o7-hover-icon o7-hover-icon--<?php echo strtolower($platform); ?> o7-hover-icon--bottom-left">
                                                 <div class="o7-hover-icon__bg">
-                                                    <svg class="o7-hover-icon__icon" aria-hidden="true">
+                                                    <svg class="o7-hover-icon__icon" aria-hidden="true" focusable="false">
                                                         <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-1"></use>
                                                     </svg>
                                                     <div class="o7-hover-icon__bg-span-wrapper">
                                                         <span class="o7-hover-icon__bg-span"></span>
-                                                        <svg class="o7-hover-icon__bg-span-icon" aria-hidden="true">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-2"></use>
+                                                        <svg class="o7-hover-icon__bg-span-icon" aria-hidden="true"
+                                                            focusable="false">
+                                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#card-curve-img-2"></use>
                                                         </svg>
                                                     </div>
                                                 </div>
+
                                                 <div class="o7-hover-icon__inner">
-                                                    <img
-                                                            src="<?php echo get_template_directory_uri(); ?>/assets/images/archive/hover-icon-<?php echo strtolower($platform); ?>.webp"
-                                                            alt="<?php echo esc_attr($platform); ?>"
-                                                            width="80" height="80"
-                                                    />
+                                                    <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/archive/hover-icon-<?php echo strtolower($platform); ?>.webp"
+                                                        alt="<?php echo esc_attr($platform); ?>" loading="lazy" decoding="async" width="80px"
+                                                        height="80px" />
                                                 </div>
                                             </div>
                                         <?php endif; ?>
                                     </div>
 
-                                    <?php if ($platform) : ?>
-                                        <p class="o7-content-card__title">
-                                            <span class="o7-content-card__title-pointer"></span>
-                                            <?php echo esc_html($platform); ?>
-                                        </p>
-                                    <?php endif; ?>
-
                                     <!-- Title & Subtitle -->
+
                                     <div class="o7-list-page-filter__card-title-wrapper">
-                                        <h3 class="o7-content-card__header">
-                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                        <div class="o7-card-category">
+                                            <div class="o7-card-catagory__title-wrapper">
+                                                <span class="o7-card-catagory__decorative-dot"></span>
+                                                <p class="o7-card-catagory__title"><?php echo esc_html($platform); ?></p>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="o7-list-page-filter__card-tagline">
+                                           <?php the_title(); ?>
                                         </h3>
                                         <?php if ($subtitle): ?>
-                                            <p class="o7-list-page-filter__card-subtitle"><?php echo esc_html($subtitle); ?></p>
+                                        <p class="post-excerpt">
+                                           <?php echo esc_html($subtitle); ?>
+                                        </p>
                                         <?php endif; ?>
                                     </div>
                                 </a>
