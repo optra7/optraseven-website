@@ -248,12 +248,17 @@
     .megamenu-tab__circle-shape {
         display: none;
     }
-    .megamenu-tab__item {
+    .main-menu-responsive .megamenu-tab__item {
         border-radius: 0;
         padding: 0;
+        text-decoration: none;
     }
     .megamenu-tab__item + .megamenu-tab__item {
         margin-top: 15px;
+    }
+    .megamenu-tab-accordion__item.active .megamenu-tab__icon-wrapper,
+    .megamenu-tab__item:hover .megamenu-tab__icon-wrapper {
+        background-color: #C7C7C7;
     }
 
 }
@@ -294,6 +299,9 @@
         padding: 0;
         width: 100%;
         border-radius: 0;
+        text-decoration: none;
+        background: none;
+        outline: none;
     }
     .main-menu-responsive .megamenu__link-card--service + .megamenu__link-card--service {
         margin-top: 15px;
