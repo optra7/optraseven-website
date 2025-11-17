@@ -33,7 +33,7 @@
         <nav class="main-menu">
             <a href="/about" class="main-menu__link">About</a>
             <div class="megamenu">
-                <a href="#" class="main-menu__link has-megamenu">Portfolio</a>
+                <button class="main-menu__link has-megamenu">Portfolio</button>
                 <div class="megamenu__left-panel megamenu__mobile-item-container">
                     <div class="megamenu_tab-head">
                         <a class="megamenu-tab__item megamenu-accordion__item" href="#">
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="megamenu">
-                <a href="#" class="main-menu__link has-megamenu">Services</a>
+                <button class="main-menu__link has-megamenu">Services</button>
                 <div class="megamenu__content-container-left megamenu__content-container-left--service megamenu__mobile-item-container">
                     <a class="megamenu__link-card megamenu__link-card--service" href="#">
                         <div class="megamenu__link-card-text-wrapper">
@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div class="megamenu">
-                <a href="#" class="main-menu__link has-megamenu">Case Studies</a>
+                <button class="main-menu__link has-megamenu">Case Studies</button>
                 <div class="megamenu__left-panel megamenu__mobile-item-container">
                     <div class="megamenu_tab-head">
                         <a class="megamenu-tab__item megamenu-accordion__item" href="#">
