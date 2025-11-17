@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mobileMenu = document.querySelector(".main-menu-responsive"); // adjust if needed
 
     // Utility
-    const isMobile = () => window.innerWidth <= 991; // adjust breakpoint
+    const isMobile = () => window.innerWidth <= 1024; // adjust breakpoint
 
     // Toggle Mega Menu
     menuTriggers.forEach(trigger => {
