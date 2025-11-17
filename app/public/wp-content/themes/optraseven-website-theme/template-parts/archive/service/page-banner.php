@@ -4,7 +4,7 @@
  */
 
 // Get banner data from the "Case Study Archive Settings" page
-$settings_page = get_page_by_path('case-study-archive-settings');
+$settings_page = get_page_by_path('service-archive-settings');
 if ($settings_page) {
     $settings_id = $settings_page->ID;
     $banner_title = get_field('banner_title', $settings_id);
