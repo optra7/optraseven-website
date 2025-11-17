@@ -32,17 +32,9 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/shopify.webp" alt="shopify-image" class="o7-content-card__image">
                     </div>
                     <div class="o7-hover-chip">
-                        <div class="o7-hover-chip__bg">
-                            <svg class="o7-hover-chip__icon" aria-hidden="true" focusable="false">
-                                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-1.svg'); ?>"></use>
-                            </svg>
-                            <div class="o7-hover-chip__bg-span-wraper">
-                                <span class="o7-hover-chip__bg-span"></span>
-                                <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
-                                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-2.svg'); ?>"></use>
-                                </svg>
-                            </div>
-                        </div>
+                        <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                        </svg>
 
                         <div class="o7-hover-chip__inner">
                             <div class="o7-hover-chip__buton">Planning</div>
@@ -71,17 +63,9 @@
                              class="o7-content-card__image">
                     </div>
                     <div class="o7-hover-chip">
-                        <div class="o7-hover-chip__bg">
-                            <svg class="o7-hover-chip__icon" aria-hidden="true" focusable="false">
-                                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-1.svg'); ?>"></use>
-                            </svg>
-                            <div class="o7-hover-chip__bg-span-wraper">
-                                <span class="o7-hover-chip__bg-span"></span>
-                                <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
-                                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-2.svg'); ?>"></use>
-                                </svg>
-                            </div>
-                        </div>
+                        <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                        </svg>
 
                         <div class="o7-hover-chip__inner">
                             <div class="o7-hover-chip__buton">Planning</div>
@@ -111,17 +95,9 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/webflow-2.webp" alt="webflow-image" class="o7-content-card__image">
                     </div>
                     <div class="o7-hover-chip">
-                        <div class="o7-hover-chip__bg">
-                            <svg class="o7-hover-chip__icon">
-                                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-1.svg'); ?>"></use>
-                            </svg>
-                            <div class="o7-hover-chip__bg-span-wraper">
-                                <span class="o7-hover-chip__bg-span"></span>
-                                <svg class="o7-hover-chip__bg-span-icon">
-                                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-2.svg'); ?>"></use>
-                                </svg>
-                            </div>
-                        </div>
+                        <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                        </svg>
 
                         <div class="o7-hover-chip__inner">
                             <div class="o7-hover-chip__buton">Planning</div>
@@ -148,17 +124,9 @@
                              class="o7-content-card__image">
                     </div>
                     <div class="o7-hover-chip">
-                        <div class="o7-hover-chip__bg">
-                            <svg class="o7-hover-chip__icon" aria-hidden="true" focusable="false">
-                                <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-1.svg'); ?>"></use>
-                            </svg>
-                            <div class="o7-hover-chip__bg-span-wraper">
-                                <span class="o7-hover-chip__bg-span"></span>
-                                <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
-                                    <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/chip-radius-2.svg'); ?>"></use>
-                                </svg>
-                            </div>
-                        </div>
+                        <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                        </svg>
 
                         <div class="o7-hover-chip__inner">
                             <div class="o7-hover-chip__buton">Planning</div>

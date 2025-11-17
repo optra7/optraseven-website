@@ -75,6 +75,9 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
 
                                         <?php if (!empty($all_tags)) : ?>
                                         <div class="o7-hover-chip">
+                                            <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
+                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                                            </svg>
                                             <div class="o7-hover-chip__inner">
                                                 <?php foreach ($all_tags as $tag): ?>
                                                     <div class="o7-hover-chip__buton">
