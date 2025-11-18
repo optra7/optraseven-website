@@ -26,7 +26,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     <ul class="o7-service-card__list">
 
                         <li class="o7-service-card__list-item">
-                            <a href="service-details.html" target="_blank" class="o7-service-card__link">
+                            <a href="/services/shopify/" target="" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Shopify Store Setup & Custom Design</p>
@@ -39,7 +39,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/shopify/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Theme Development & Customization</p>
@@ -52,7 +52,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/shopify/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Shopify App Development & Integration</p>
@@ -65,7 +65,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/shopify/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Store Migration to Shopify</p>
@@ -78,7 +78,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/shopify/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Headless Shopify Development</p>
@@ -91,7 +91,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/shopify/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Automation & Conversion Optimization (CRO)
@@ -105,7 +105,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/shopify/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Performance Optimization & Ongoing Support
@@ -150,7 +150,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     <ul class="o7-service-card__list">
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/webflow/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">App Development</p>
@@ -163,7 +163,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/webflow/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Shopify Development</p>
@@ -176,7 +176,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/webflow/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Webflow Development</p>
@@ -189,7 +189,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/webflow/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">CMS-Based Development</p>
@@ -202,7 +202,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/webflow/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Custom Web Development</p>
@@ -215,7 +215,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/webflow/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Custom Theme Development</p>
@@ -242,7 +242,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     <ul class="o7-service-card__list">
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/conversion-rate-optimization-cro/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Email & SMS Automation Setup</p>
@@ -255,7 +255,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/conversion-rate-optimization-cro/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Performance Analytics & Reporting</p>
@@ -268,7 +268,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/conversion-rate-optimization-cro/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Conversion Rate Optimization (CRO)</p>
@@ -281,7 +281,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/conversion-rate-optimization-cro/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Product Page & Checkout Optimization</p>
@@ -294,7 +294,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/conversion-rate-optimization-cro/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">SEO & Content Strategy for eCommerce</p>
@@ -338,7 +338,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     <ul class="o7-service-card__list">
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/custom-application-development/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Shopify Development</p>
@@ -351,7 +351,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/custom-application-development/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Webflow eCommerece</p>
@@ -364,7 +364,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/custom-application-development/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">eCommere Platform Migration</p>
@@ -377,7 +377,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/custom-application-development/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Multi-store & International Setup</p>
@@ -390,7 +390,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/custom-application-development/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">App Integration & Custom Features</p>
@@ -403,7 +403,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/custom-application-development/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Store Optimization & Performance Tuning
@@ -431,7 +431,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     <ul class="o7-service-card__list">
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/testing-quality-assurance/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">API Testing</p>
@@ -444,7 +444,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/testing-quality-assurance/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Manual Testing</p>
@@ -457,7 +457,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/testing-quality-assurance/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Functional Testing</p>
@@ -470,7 +470,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/testing-quality-assurance/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Automation Testing</p>
@@ -483,7 +483,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/testing-quality-assurance/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Accessibility Testing</p>
@@ -496,7 +496,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/testing-quality-assurance/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Performance Testing</p>
@@ -509,7 +509,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/testing-quality-assurance/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Usability Testing (UX Testing)</p>
@@ -553,7 +553,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     <ul class="o7-service-card__list">
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/maintenance-support/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Search Engine Optimization</p>
@@ -566,7 +566,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/maintenance-support/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Content Writing & Updates</p>
@@ -579,7 +579,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/maintenance-support/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Analytics & Tracking Setup</p>
@@ -592,7 +592,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                         </li>
 
                         <li class="o7-service-card__list-item">
-                            <a href="#" class="o7-service-card__link">
+                            <a href="/services/maintenance-support/" class="o7-service-card__link">
                                 <img src=<?= get_template_directory_uri() . "/assets/images/service-page/hover-icon-shopify.webp" ?> alt="" aria-hidden="true"
                                      class="o7-service-card__icon">
                                 <p class="o7-service-card__link-label">Web Hosting & Server Management</p>
