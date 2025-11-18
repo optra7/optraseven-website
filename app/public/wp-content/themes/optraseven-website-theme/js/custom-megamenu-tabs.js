@@ -1,10 +1,14 @@
-const isDesktop = () => window.innerWidth > 1024;
 document.addEventListener('DOMContentLoaded', function () {
-    const megaMenus = document.querySelectorAll('.megamenu');
-    const backdropFilter = document.querySelector('.megamenu-backdrop-filter');
-    const mainMenuLinks = document.querySelectorAll('.main-menu__link');
+    function isDesktop() {
+        return window.innerWidth > 1024;
+    }
 
-    if (isDesktop()) {
+    function initDesktopMegaMenu() {
+        if (!isDesktop()) return;
+
+        const megaMenus = document.querySelectorAll('.megamenu');
+        const backdropFilter = document.querySelector('.megamenu-backdrop-filter');
+        const mainMenuLinks = document.querySelectorAll('.main-menu__link');
         // Initialize all megamenus as hidden
         megaMenus.forEach(menu => {
             const contentWrapper = menu.querySelector('.megamenu__content-wrapper');
@@ -181,4 +185,5 @@ document.addEventListener('DOMContentLoaded', function () {
         // Close megamenus when resizing window (mobile consideration)
         window.addEventListener('resize', hideAllMegaMenus);
     }
+    initDesktopMegaMenu();
 });
