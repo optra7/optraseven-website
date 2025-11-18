@@ -23,7 +23,7 @@
                 echo '<span class="o7-card-catagory__decorative-dot"></span>';
                 echo '<p class="o7-card-catagory__title">' . esc_html($cat->name) . '</p>';
                 echo '<span class="o7-card-catagory__decorative-dot"></span>';
-                echo '<p class="o7-case_study__title">' . the_title() . '</p>';
+                echo '<p class="o7-card-catagory__title">' . esc_html(get_the_title()) . '</p>';
                 echo '</div>';
             endforeach;
         endif;

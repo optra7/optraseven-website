@@ -478,7 +478,7 @@ template {
 }
 
 .section {
-    margin: 120px auto 0;
+    margin: 120px auto;
     padding: 0 30px;
 }
 
@@ -526,7 +526,7 @@ template {
 
 @media (max-width: 1024px) {
     .section {
-        margin: 80px auto 0;
+        margin: 80px auto;
         padding: 0 20px;
     }
 }
@@ -534,7 +534,7 @@ template {
 
 @media (max-width: 767px) {
     .section {
-        margin: 60px auto 0;
+        margin: 60px auto;
         padding: 0 15px;
     }
 }
@@ -546,7 +546,7 @@ template {
 /* Button  */
 .btn {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 20px;
     padding: 14px 30px;
     color: #202020;
@@ -2743,6 +2743,8 @@ figure.megamenu__service-view-all-image-wrapper {
     line-height: 130%;
     margin-top: 10px;
     margin-bottom: 0;
+    max-width: calc(100% - 20px);
+    padding: 0 10px;
 }
 
 .o7-content-card__header a {
@@ -2936,7 +2938,7 @@ figure.megamenu__service-view-all-image-wrapper {
     align-items: center;
     gap: 10px;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .o7-slider-control__button {
@@ -3568,6 +3570,7 @@ figure.megamenu__service-view-all-image-wrapper {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 0 10px;
 }
 
 
@@ -3584,14 +3587,14 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-card-catagory__title {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
 }
 
 .o7-card-catagory__title-wrapper {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .o7-card-catagory__decorative-dot {

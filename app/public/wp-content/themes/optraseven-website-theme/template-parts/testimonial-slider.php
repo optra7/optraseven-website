@@ -84,11 +84,11 @@ $uid = 'o7-testimonial-' . uniqid();
               <?php if (!empty($testimonial['blockquote'])): ?>
                 <div class="o7-testimonial__para">
                   <svg class="o7-icon o7-testimonial__para--left-vector" aria-hidden="true">
-                    <use href="<?= esc_url(get_template_directory_uri() . '/svg/svg-icon-sprite.svg#quote-left'); ?>"></use>
+                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#quote-left"></use>
                   </svg>
                   <blockquote class="o7-testimonial__blockquote"><?= esc_html($testimonial['blockquote']); ?></blockquote>
                   <svg class="o7-icon o7-testimonial__para--right-vector" aria-hidden="true">
-                    <use href="<?= esc_url(get_template_directory_uri() . '/svg/svg-icon-sprite.svg#quote-right'); ?>"></use>
+                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#quote-right"></use>
                   </svg>
                 </div>
               <?php endif; ?>
