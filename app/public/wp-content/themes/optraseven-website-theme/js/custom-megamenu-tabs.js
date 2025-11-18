@@ -4,19 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const backdropFilter = document.querySelector('.megamenu-backdrop-filter');
     const mainMenuLinks = document.querySelectorAll('.main-menu__link');
 
-    // Calculate scrollbar width to prevent layout shift
-    function getScrollbarWidth() {
-        return window.innerWidth - document.documentElement.clientWidth;
-    }
-
-    // Store scrollbar width as CSS variable
-    document.documentElement.style.setProperty('--scrollbar-width', getScrollbarWidth() + 'px');
-
-    // Recalculate on resize
-    window.addEventListener('resize', function() {
-        document.documentElement.style.setProperty('--scrollbar-width', getScrollbarWidth() + 'px');
-    });
-
     // Initialize all megamenus as hidden
     megaMenus.forEach(menu => {
         const contentWrapper = menu.querySelector('.megamenu__content-wrapper');
@@ -32,19 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
             contentWrapper.style.display = 'block';
         }
         menu.classList.add('active');
+        menu.classList.add('expended');
         
         // Show backdrop filter and handle scroll
         if (backdropFilter) {
             backdropFilter.classList.add('active');
-            
-            // Prevent body scroll without layout shift
-            document.body.classList.add('no-scroll');
-            
-            // Alternative method for browsers that don't support scrollbar-gutter
-            const scrollbarWidth = getScrollbarWidth();
-            if (scrollbarWidth > 0) {
-                document.body.style.paddingRight = scrollbarWidth + 'px';
-            }
         }
     }
 
@@ -55,15 +34,12 @@ document.addEventListener('DOMContentLoaded', function () {
             contentWrapper.style.display = 'none';
         }
         menu.classList.remove('active');
+        menu.classList.remove('expended');
         
         // Only hide backdrop if no other megamenus are active
         const anyActive = Array.from(megaMenus).some(m => m.classList.contains('active'));
         if (!anyActive && backdropFilter) {
             backdropFilter.classList.remove('active');
-            
-            // Restore body scroll
-            document.body.classList.remove('no-scroll');
-            document.body.style.paddingRight = '';
         }
     }
 
@@ -74,10 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         if (backdropFilter) {
             backdropFilter.classList.remove('active');
-            
-            // Restore body scroll
-            document.body.classList.remove('no-scroll');
-            document.body.style.paddingRight = '';
         }
     }
 
