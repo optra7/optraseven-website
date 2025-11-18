@@ -1138,10 +1138,6 @@ main-menu-responsive .main-menu {
     .main-menu-responsive .main-menu {
         gap: 10px;
     }
-
-    .main-menu-responsive .main-menu__link {
-        font-size: 18px;
-    }
 }
 
 

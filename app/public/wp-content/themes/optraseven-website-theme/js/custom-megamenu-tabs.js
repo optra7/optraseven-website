@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Set up main menu link click handlers for megamenus
         mainMenuLinks.forEach(link => {
+            if (!isDesktop()) return;
             // Check if this link is part of a megamenu
             const megamenu = link.closest('.megamenu');
 
