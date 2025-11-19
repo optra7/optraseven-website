@@ -17,42 +17,42 @@
 
                 <div class="o7-footer__icon-chip">
                     <div class="o7-footer__icon-chip-icon-wraper">
-                        <a href="https://www.facebook.com/optraseven">
+                        <a href="https://www.facebook.com/optraseven" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#facebook"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://x.com/OptraSeven">
+                        <a href="https://x.com/OptraSeven" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#x-twitter"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://www.instagram.com/optraseven/">
+                        <a href="https://www.instagram.com/optraseven/" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#instagram"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="http://wa.me/+8801784287229">
+                        <a href="http://wa.me/+8801784287229" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#whatsapp"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/company/optraseven">
+                        <a href="https://www.linkedin.com/company/optraseven" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#linkedin"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://github.com/orgs/optra7">
+                        <a href="https://github.com/orgs/optra7" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#github"?>></use>
@@ -172,42 +172,42 @@
 
                 <div class="o7-footer__icon-chip social-media-mobile-view">
                     <div class="o7-footer__icon-chip-icon-wraper">
-                        <a href="https://www.facebook.com/optraseven">
+                        <a href="https://www.facebook.com/optraseven" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#facebook"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://x.com/OptraSeven">
+                        <a href="https://x.com/OptraSeven" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#x-twitter"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://www.instagram.com/optraseven/">
+                        <a href="https://www.instagram.com/optraseven/" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#instagram"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="http://wa.me/+8801784287229">
+                        <a href="http://wa.me/+8801784287229" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#whatsapp"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/company/optraseven">
+                        <a href="https://www.linkedin.com/company/optraseven" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#linkedin"?>></use>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://github.com/orgs/optra7">
+                        <a href="https://github.com/orgs/optra7" target="_blank">
                             <div class="o7-footer__icon-chip-icon-box">
                                 <svg class="o7-footer__icon-chip-icon" aria-hidden="true" focusable="false">
                                     <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#github"?>></use>
