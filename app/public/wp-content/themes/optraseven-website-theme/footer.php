@@ -120,7 +120,7 @@
                         <h6 class="o7-footer__link-title o7-footer__link-title--align-right">Learn</h6>
                         <ul class="o7-footer__menu-links-ul o7-footer__menu-links-ul--align-right">
                             <li><a href="/about-us">About</a></li>
-                            <li><a href="/blog-posts">Blog</a></li>
+                            <li><a href="/blog-posts">Insights</a></li>
                             <li><a href="/contact">Contact</a></li>
                             <li><a href="/get-the-quote">Get Quote</a></li>
 

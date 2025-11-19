@@ -1,4 +1,5 @@
 <article class="o7-content-card o7-content-card--blogs o7-content-card--scrolling-snap">
+    <a href="<?php the_permalink(); ?>">
     <div class="relative o7-content-card__image-wrapper">
         <?php if (has_post_thumbnail()) : ?>
             <?php the_post_thumbnail('large', ['class' => 'o7-content-card__image content-image-blog']); ?>
@@ -32,4 +33,5 @@
     <p class="o7-content-card__blog-para">
         <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
     </p>
+    </a>
 </article>

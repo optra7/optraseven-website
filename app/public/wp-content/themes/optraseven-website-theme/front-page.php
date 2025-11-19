@@ -71,7 +71,7 @@ get_header();
                         </div>
                         <div class="o7-hero__button-chip-wrapper">
                             <div class="o7-hero__button-wrapper">
-                                <a href="#" class="btn btn--secondary btn--medium o7-hero__button">
+                                <a href="/portfolio" class="btn btn--secondary btn--medium o7-hero__button">
                                     Our Works
                                     <svg class="fee-icon" aria-hidden="true" focusable="false">
                                         <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right" ?>></use>

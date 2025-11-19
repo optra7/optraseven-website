@@ -18,7 +18,7 @@
             </p>
             <div class="o7-section-header__subtitle-container">
                 <h2 class="o7-section-header__sub-title">Where Strategy Meets Powerful Web Experiences</h2>
-                <a href="#" class="btn btn--secondary btn--medium button__mobile--invisible">Show All
+                <a href="<?php echo get_post_type_archive_link('service'); ?>" class="btn btn--secondary btn--medium button__mobile--invisible">Show All
                     <svg class="fee-icon" aria-hidden="true" focusable="false">
                         <use href="<?= esc_url(get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-up-right'); ?>"></use>
                     </svg>

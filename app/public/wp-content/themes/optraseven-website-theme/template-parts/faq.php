@@ -80,7 +80,7 @@ $sprite = esc_url($data['sprite_path']);
                         <h2 class="o7-section-header__sub-title">
                             <?php echo esc_html($data['sub_title']); ?>
                         </h2>
-                        <a href="#" class="btn btn--secondary btn--medium button__mobile--invisible">
+                        <a href="/contact" class="btn btn--secondary btn--medium button__mobile--invisible">
                             <?php echo esc_html($data['button_text']); ?>
                             <svg class="fee-icon" aria-hidden="true" focusable="false">
                                 <use href="<?php echo $sprite . '#arrow-up-right'; ?>"></use>
@@ -98,7 +98,7 @@ $sprite = esc_url($data['sprite_path']);
                         <h2 class="o7-section-header__sub-title">
                             <?php echo esc_html($data['sub_title']); ?>
                         </h2>
-                        <a href="#" class="btn btn--secondary btn--medium button__mobile--invisible">
+                        <a href="/contact" class="btn btn--secondary btn--medium button__mobile--invisible">
                             <?php echo esc_html($data['button_text']); ?>
                             <svg class="fee-icon" aria-hidden="true" focusable="false">
                                 <use href="<?php echo $sprite . '#arrow-up-right'; ?>"></use>
@@ -138,7 +138,7 @@ $sprite = esc_url($data['sprite_path']);
                 </ol>
             </div>
 
-            <a href="#" class="btn btn--secondary btn--medium button__mobile--visible">
+            <a href="/contact" class="btn btn--secondary btn--medium button__mobile--visible">
                 <?php echo esc_html($data['button_text']); ?>
                 <svg class="fee-icon" aria-hidden="true" focusable="false">
                     <use href="<?php echo $sprite . '#arrow-up-right'; ?>"></use>
