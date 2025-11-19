@@ -214,12 +214,12 @@ get_header();
                                     <span class="o7-qoute-button-chip__placeholder"></span>
                                 </div>
                             </div>
-                            <button class="btn btn--primary btn--medium o7-quote__button">
+                            <a href="/portfolio" class="btn btn--primary btn--medium o7-quote__button">
                                 Take a Look at Our Works
                                 <svg class="fee-icon">
-                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right"?>></use>
+                                    <use href="<?= get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-up-right' ?>"></use>
                                 </svg>
-                            </button>
+                            </a>
                         </div>
                     </article>
                 </div>

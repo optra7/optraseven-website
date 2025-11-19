@@ -35,7 +35,7 @@ function optraseven_register_custom_post_types() {
     register_post_type('portfolio', [
         'labels' => [
             'name'               => __('Portfolio', 'optraseven'),
-            'singular_name'      => __('Portfolio Item', 'optraseven'),
+            'singular_name'      => __('Portfolio', 'optraseven'),
             'menu_name'          => __('Portfolio', 'optraseven'),
             'add_new'            => __('Add New', 'optraseven'),
             'add_new_item'       => __('Add New Portfolio Item', 'optraseven'),
