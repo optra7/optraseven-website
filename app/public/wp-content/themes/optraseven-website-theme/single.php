@@ -169,7 +169,6 @@ get_header();
                                     <div class="o7-arrow-card__card-title-wrapper">
                                         <div class="o7-arrow-card__card-category-wrapper">
                                             <span class="o7-arrow-card__card-decorative-dot"></span>
-                                            <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($type_label); ?></p>
                                             <span class="o7-arrow-card__card-decorative-dot"></span>
                                             <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($title); ?></p>
                                         </div>
