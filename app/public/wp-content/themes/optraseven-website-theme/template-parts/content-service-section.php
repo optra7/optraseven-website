@@ -27,7 +27,8 @@
         </div>
         <div class="section__card-wrapper">
             <div class="service-col-one">
-                <article class="o7-content-card">
+                <a href="/services/shopify/">
+                    <article class="o7-content-card">
                     <div class="o7-content-card__image-wrapper">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/shopify.webp" alt="shopify-image" class="o7-content-card__image">
                     </div>
@@ -57,7 +58,9 @@
                         Creative shopify experiences that grow your business
                     </h3>
                 </article>
-                <article class="o7-content-card">
+                </a>
+                <a href="/services/custom-application-development/">
+                    <article class="o7-content-card">
                     <div class="o7-content-card__image-wrapper">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/custom-web-application.webp" alt="custom-web-application-image"
                              class="o7-content-card__image">
@@ -88,9 +91,11 @@
                         Custom web application crafted for your unique business needs
                     </h3>
                 </article>
+                </a>
             </div>
             <div class="service-col-two">
-                <article class="o7-content-card">
+                <a href="/services/webflow/">
+                    <article class="o7-content-card">
                     <div class="o7-content-card__image-wrapper">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/webflow-2.webp" alt="webflow-image" class="o7-content-card__image">
                     </div>
@@ -118,7 +123,9 @@
                         Accelerate your brand with expert webflow development
                     </h3>
                 </article>
-                <article class="o7-content-card">
+                </a>
+                <a href="/services/testing-quality-assurance/">
+                    <article class="o7-content-card">
                     <div class="o7-content-card__image-wrapper">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/quality-assurance.webp" alt="quality-assurance-image"
                              class="o7-content-card__image">
@@ -147,6 +154,7 @@
                         Uncompromising quality assurance for software and e-commerce
                     </h3>
                 </article>
+                </a>
             </div>
         </div>
         <a href="#" class="btn btn--secondary btn--medium button__mobile--visible">Show All
