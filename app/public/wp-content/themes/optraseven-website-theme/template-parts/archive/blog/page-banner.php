@@ -13,7 +13,7 @@ if ($settings_page) {
 }
 ?>
 
-<section class="section">
+<section class="section section-no-space-top">
     <div class="container o7-page-banner">
         <div class="o7-page-banner__heading">
             <h1 class="o7-page-banner__title">

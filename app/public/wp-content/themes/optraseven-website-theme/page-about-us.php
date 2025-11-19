@@ -6,8 +6,8 @@
 get_header();
 ?>
 
-<main>
-    <section class="section">
+<main class="main inner-page-main">
+    <section class="section section-no-space-top">
         <div class="container o7-page-banner">
             <div class="o7-page-banner__heading">
                 <h1 class="o7-page-banner__title">

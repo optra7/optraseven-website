@@ -7,8 +7,8 @@ get_header();
 ?>
 
 <body>
-    <main>
-        <section class="section o7-contact-us">
+    <main class="main inner-page-main">
+        <section class="section section-no-space-top o7-contact-us">
             <div class="container">
                 <div class="o7-contact-us__form-address-wrapper">
                     <!-- contact us content -->

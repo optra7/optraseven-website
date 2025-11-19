@@ -13,7 +13,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
 ]);
 ?>
 
-<main id="primary" class="site-main archive-portfolio">
+<main id="primary" class="main site-main archive-portfolio inner-page-main">
 
     <!-- ====== Banner Section ====== -->
     <?php get_template_part('template-parts/archive/portfolio/page-banner', null, ['post_id' => get_the_ID()]); ?>

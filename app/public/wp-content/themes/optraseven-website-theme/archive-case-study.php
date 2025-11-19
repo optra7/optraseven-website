@@ -14,7 +14,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
 ]);
 ?>
 
-<main id="primary" class="site-main archive-case-study">
+<main id="primary" class="main inner-page-main site-main archive-case-study">
 
     <!-- ====== Banner Section ====== -->
     <?php get_template_part('template-parts/archive/case-study/page-banner', null, ['post_id' => get_the_ID()]); ?>

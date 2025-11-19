@@ -477,10 +477,7 @@ template {
     position: relative !important;
 }
 
-.section {
-    margin: 120px auto;
-    padding: 0 30px;
-}
+
 
 .mx-auto {
     margin: 0 auto;
@@ -512,14 +509,7 @@ template {
     width: 1px;
 }
 
-.main {
-    margin-top: 180px;
-}
-@media (max-width: 1024px) {
-    .main {
-        margin-top: 135px;
-    }
-}
+
 
 .semi-bold {
     font-weight: 600;
@@ -529,6 +519,39 @@ template {
     color: #DC3545;
 }
 
+/* 
+// Page Main Container:start
+----------------------------------------- */
+.main {
+    margin-top: 180px;
+}
+.main.inner-page-main {
+    margin-top: 122px;
+}
+@media (max-width: 1024px) {
+    .main {
+        margin-top: 135px;
+    }
+    .main.inner-page-main {
+        margin-top: 90px;
+    }
+}
+
+/* _____/ Page Main Container:end \_______*/
+
+
+
+/* 
+// Section Spacing:start
+----------------------------------------- */
+
+.section {
+    margin: 120px auto;
+    padding: 0 30px;
+}
+.section.section-no-space-top {
+    margin-top: 0;
+}
 @media (max-width: 1200px) {
     .section {
         margin: 100px auto;
@@ -552,6 +575,9 @@ template {
         padding: 0 15px;
     }
 }
+
+/* _____/ Section Spacing:end \_______*/
+
 
 /* ------------------- Utils END-------------------- */
 
@@ -1041,14 +1067,6 @@ a.main-menu__link:visited {
         height: 2px;
         width: 25px;
         background-color: #202020;
-    }
-
-    .archive-case-study,
-    .archive-portfolio,
-    .archive-blog,
-    .archive-service {
-        margin-top: 120px;
-
     }
 }
 
@@ -4020,12 +4038,17 @@ figure.megamenu__service-view-all-image-wrapper {
 
 /* Page Banner */
 
+/* 
+// Inner Page Banner:start
+----------------------------------------- */
+
 .o7-page-banner {
     padding: 60px 40px;
     border-radius: 25px;
     background-color: #E7E7E7;
 }
 
+/* --- Banner Heading:start --- */
 .o7-page-banner__heading {
     display: flex;
     flex-direction: column;
@@ -4056,7 +4079,9 @@ figure.megamenu__service-view-all-image-wrapper {
     font-weight: 400;
     margin: 0;
 }
+/* --- Banner Heading:end --- */
 
+/* --- Banner Image:start --- */
 .o7-page-banner__image img {
     max-width: 100%;
     display: block;
@@ -4078,23 +4103,24 @@ figure.megamenu__service-view-all-image-wrapper {
     opacity: 1;
     border-radius: 25px;
 }
+/* --- Banner Image:end --- */
 
 
-@media (max-width: 1400px) {
-
-    .o7-page-banner__sub-title {
-        font-size: 42px;
-    }
-}
+/* === Responsive design === */
 
 @media (max-width: 1200px) {
     .o7-page-banner__sub-title {
-        font-size: 38px;
+        font-size: 42px;
+    }
+    .o7-page-banner {
+        padding: 40px;
+    }
+    .o7-page-banner__heading {
+        margin: 0 0 30px 0;
     }
 }
 
 @media (max-width: 1024px) {
-
 
     .o7-page-banner {
         padding: 30px 30px;
@@ -4122,6 +4148,12 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 }
 
+@media (max-width: 991px) {
+    .o7-page-banner {
+        padding: 30px;
+    }
+}
+
 @media (max-width: 767px) {
 
     .o7-page-banner {
@@ -4139,11 +4171,13 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-page-banner__heading {
         padding: 0 10px;
     }
+    .o7-page-banner {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 576px) {
 
-    /* Page Banner Start */
     .o7-page-banner {
         padding: 15px 15px;
     }
@@ -4171,13 +4205,17 @@ figure.megamenu__service-view-all-image-wrapper {
 
 }
 
+/* _____/ Inner Page Banner:end \_______*/
+
+
+
 /* Page Banner */
 
 
 /* Page Banner Start */
 
 .o7-details-page-hero__image img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto;
     border-radius: 25px;
@@ -5809,7 +5847,7 @@ figure.megamenu__service-view-all-image-wrapper {
 @media (max-width: 1200px) {
 
     .o7-our-journey__header {
-        font-size: 36px;
+        font-size: 42px;
     }
 
     .o7-our-journey__paragraph {

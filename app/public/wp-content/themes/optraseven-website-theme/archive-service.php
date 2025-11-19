@@ -13,7 +13,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
 ]);
 ?>
 
-<main id="primary" class="site-main archive-service">
+<main id="primary" class="main inner-page-main site-main archive-service">
 
     <!-- ====== Banner Section ====== -->
     <?php get_template_part('template-parts/archive/service/page-banner', null, ['post_id' => get_the_ID()]); ?>

@@ -26,8 +26,8 @@ while (have_posts()) : the_post();
     }, $content);
     ?>
 
-    <main>
-        <section class="section o7-stepper o7-stepper-service-details">
+    <main class="main inner-page-main">
+        <section class="section section-no-space-top o7-stepper o7-stepper-service-details">
             <?php if ($hero_image): ?>
                 <img src="<?php echo esc_url($hero_image); ?>"
                      alt="<?php the_title_attribute(); ?>"

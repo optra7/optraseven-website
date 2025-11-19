@@ -5,7 +5,7 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main single-case-study">
+<main id="primary" class="main inner-page-main site-main single-case-study">
 
     <?php if (have_posts()) : while (have_posts()) : the_post();
         $sidebar_fields = [
@@ -16,7 +16,7 @@ get_header();
             'Platform'   => get_field('platform') ? [get_field('platform')] : [],
         ];
         ?>
-    <section class="section">
+    <section class="section section-no-space-top">
         <div class="container">
 
             <!-- Title (Mobile) -->
