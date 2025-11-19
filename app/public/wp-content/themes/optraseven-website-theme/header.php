@@ -102,13 +102,26 @@
                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                         </div>
                     </a>
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/portfolio">
+                        <div class="megamenu__link-card-text-wrapper">
+                            <p class="megamenu__link-card-title">
+                                Explore More
+                            </p>
+                            <p class="megamenu__link-card-subtitle">
+                                Check out all the works we have done.
+                            </p>
+                        </div>
+                        <div class="megamenu__link-card-icon-wrapper">
+                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                        </div>
+                    </a>
                 </div>
             </div>
 
             <div class="megamenu">
                 <a class="main-menu__link has-megamenu">Services</a>
                 <div class="megamenu__content-container-left megamenu__content-container-left--service megamenu__mobile-item-container">
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/services/shopify/">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Shopify
@@ -121,7 +134,7 @@
                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                         </div>
                     </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/services/webflow/">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Webflow
@@ -134,7 +147,7 @@
                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                         </div>
                     </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/services/conversion-rate-optimization-cro/">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 CRO
@@ -147,13 +160,26 @@
                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                         </div>
                     </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/services/custom-application-development/">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Custom Application
                             </p>
                             <p class="megamenu__link-card-subtitle">
                                 Shopify solutions that boost sales success.
+                            </p>
+                        </div>
+                        <div class="megamenu__link-card-icon-wrapper">
+                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                        </div>
+                    </a>
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/services">
+                        <div class="megamenu__link-card-text-wrapper">
+                            <p class="megamenu__link-card-title">
+                                Explore More
+                            </p>
+                            <p class="megamenu__link-card-subtitle">
+                                Check out all the services we offer.
                             </p>
                         </div>
                         <div class="megamenu__link-card-icon-wrapper">
@@ -225,6 +251,19 @@
                             </p>
                             <p class="megamenu__link-card-subtitle">
                                 Shopify solutions that boost sales success.
+                            </p>
+                        </div>
+                        <div class="megamenu__link-card-icon-wrapper">
+                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
+                        </div>
+                    </a>
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/case-studies">
+                        <div class="megamenu__link-card-text-wrapper">
+                            <p class="megamenu__link-card-title">
+                                Explore More
+                            </p>
+                            <p class="megamenu__link-card-subtitle">
+                                Check out all the case studies we have.
                             </p>
                         </div>
                         <div class="megamenu__link-card-icon-wrapper">
@@ -311,7 +350,7 @@
                                             <span class="megamenu-tab__circle-shape"></span>
                                         </div>
                                     </div>
-                                    <a href="#" class="megamenu__service-view-all-card">
+                                    <a href="/portfolio" class="megamenu__service-view-all-card">
                                         <div class="megamenu__service-view-all-title-wrapper">
                                             <h2 class="megamenu__service-view-all-title">Explore Our Work</h2>
                                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
@@ -468,7 +507,7 @@
 
                                         </div>
                                         <div class="megamenu-tab-button-wrapper">
-                                            <a href="#" class="btn btn--secondary btn--x-small">
+                                            <a href="/portfolio" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
                                                     <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
@@ -722,7 +761,7 @@
                             <div class="megamenu__triangle-head"></div>
                             <div class="megamenu__content">
                                 <div class="megamenu__content-container-left megamenu__content-container-left--service">
-                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="/services/shopify/">
                                         <div class="megamenu__link-card-text-wrapper">
                                             <p class="megamenu__link-card-title">
                                                 Shopify
@@ -735,7 +774,7 @@
                                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                                         </div>
                                     </a>
-                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="/services/webflow/">
                                         <div class="megamenu__link-card-text-wrapper">
                                             <p class="megamenu__link-card-title">
                                                 Webflow
@@ -748,7 +787,7 @@
                                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                                         </div>
                                     </a>
-                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="/services/conversion-rate-optimization-cro/">
                                         <div class="megamenu__link-card-text-wrapper">
                                             <p class="megamenu__link-card-title">
                                                 CRO
@@ -761,7 +800,7 @@
                                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                                         </div>
                                     </a>
-                                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                                    <a class="megamenu__link-card megamenu__link-card--service" href="/services/custom-application-development/">
                                         <div class="megamenu__link-card-text-wrapper">
                                             <p class="megamenu__link-card-title">
                                                 Custom Application
@@ -777,7 +816,7 @@
                                 </div>
                                 <div
                                     class="megamenu__content-container-right megamenu__content-container-right--service">
-                                    <a href="#" class="megamenu__service-view-all-card">
+                                    <a href="/services" class="megamenu__service-view-all-card">
                                         <div class="megamenu__service-view-all-title-wrapper">
                                             <h2 class="megamenu__service-view-all-title">View All Service</h2>
                                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
@@ -791,6 +830,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="megamenu megamenu-portfolio has-megamenu">
                         <a tabindex="0" class="main-menu__link">Case Studies</a>
                         <div class="megamenu__content-wrapper megamenu__content-wrapper--service megamenu__item-container">
@@ -844,7 +884,7 @@
                                             <span class="megamenu-tab__circle-shape"></span>
                                         </div>
                                     </div>
-                                    <a href="#" class="megamenu__service-view-all-card">
+                                    <a href="/case-studies" class="megamenu__service-view-all-card">
                                         <div class="megamenu__service-view-all-title-wrapper">
                                             <h2 class="megamenu__service-view-all-title">Explore Our Work</h2>
                                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
@@ -904,7 +944,7 @@
 
                                         </div>
                                         <div class="megamenu-tab-button-wrapper">
-                                            <a href="#" class="btn btn--secondary btn--x-small">
+                                            <a href="/case-studies" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
                                                     <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
@@ -1248,6 +1288,7 @@
                             </div>
                         </div>
                     </div>
+
                     <a href="/contact" class="main-menu__link">Contact</a>
                 </nav>
                 <div class="main-menu__responsive-btn">
