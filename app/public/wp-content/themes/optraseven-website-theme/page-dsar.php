@@ -6,8 +6,8 @@
 get_header();
 ?>
 <body>
-    <main>
-        <section class="section o7-stepper">
+    <main class="main content-with-stepper-main">
+        <section class="section o7-stepper section-no-space-top-bottom">
             <h1 class="o7-stepper__page-header o7-stepper--dsar-header">
                 Data Subject Access Request (DSAR) Policy
             </h1>

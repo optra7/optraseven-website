@@ -7,8 +7,8 @@ get_header();
 ?>
 
 <body>
-    <main>
-        <section class="section">
+    <main class="main content-with-stepper-main">
+        <section class="section section-no-space-top">
             <div class="container">
                 <div class="o7-hero-legal__header-content">
                     <h1 class="o7-hero-legal__page-header">
@@ -39,7 +39,7 @@ get_header();
                 </div>
             </div>
         </section>
-        <section class="section o7-stepper">
+        <section class="section o7-stepper section-no-space-bottom">
             <div class="container o7-stepper-wrapper">
 
                 <aside class="o7-stepper__sidebar">
