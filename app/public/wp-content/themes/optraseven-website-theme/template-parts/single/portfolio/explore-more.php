@@ -20,7 +20,7 @@ $explore_fields = array_filter($explore_fields);
 ?>
 
 <?php if (!empty($explore_fields)) : ?>
-    <section class="section o7-explore-more">
+    <section class="section o7-explore-more section-no-space-bottom">
         <div class="container o7-arrow-card">
             <h2 class="o7-arrow-card__title">Explore More</h2>
 

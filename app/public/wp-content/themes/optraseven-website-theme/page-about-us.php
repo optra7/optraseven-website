@@ -279,7 +279,7 @@ get_header();
     ]);
 
     ?>
-    <section class="o7-news-letter section">
+    <section class="o7-news-letter section section-no-space-bottom">
         <div class="container">
             <div class="o7-news-letter__container">
                 <div class="o7-news-letter__form-wrapper">

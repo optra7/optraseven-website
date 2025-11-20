@@ -535,7 +535,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
         </div>
     </section>
 
-    <section class="section o7-service-card o7-service-card--dark">
+    <section class="section section-no-space-bottom o7-service-card o7-service-card--dark">
         <div class="container">
             <div class="o7-service-card__wrapper">
                 <h2 class="o7-service-card__title">Maintenance & Support </h2>

@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main homepage main">
-    <section class="section section-hero">
+    <section class="section section-hero section-no-space-top">
         <div class="container">
             <div class="o7-hero">
                 <div class="o7-hero__inner">
@@ -222,7 +222,7 @@ get_header();
 
     <?php get_template_part('template-parts/content', 'blog-slider'); ?>
 
-    <section class="o7-news-letter section">
+    <section class="o7-news-letter section section-no-space-bottom">
         <div class="container">
             <div class="o7-news-letter__container">
                 <div class="o7-news-letter__form-wrapper">

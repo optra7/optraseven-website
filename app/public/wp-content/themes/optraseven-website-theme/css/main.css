@@ -524,16 +524,38 @@ template {
 ----------------------------------------- */
 .main {
     margin-top: 180px;
+    margin-bottom: 100px;
 }
 .main.inner-page-main {
     margin-top: 122px;
+    margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
 }
 @media (max-width: 1024px) {
     .main {
         margin-top: 135px;
+        margin-bottom: 80px;
     }
     .main.inner-page-main {
         margin-top: 90px;
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 991px) {
+    .main {
+        margin-bottom: 60px;
+    }
+    .main.inner-page-main {
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .main {
+        margin-bottom: 40px;
+    }
+    .main.inner-page-main {
+        margin-bottom: 40px;
     }
 }
 
@@ -552,6 +574,10 @@ template {
 .section.section-no-space-top {
     margin-top: 0;
 }
+.section.section-no-space-bottom {
+    margin-bottom: 0;
+}
+
 @media (max-width: 1200px) {
     .section {
         margin: 100px auto;

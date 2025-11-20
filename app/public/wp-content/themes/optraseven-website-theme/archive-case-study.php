@@ -19,7 +19,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
     <!-- ====== Banner Section ====== -->
     <?php get_template_part('template-parts/archive/case-study/page-banner', null, ['post_id' => get_the_ID()]); ?>
     <!-- ====== Filter Section ====== -->
-    <section class="section">
+    <section class="section section-no-space-bottom">
         <div class="container">
             <div class="o7-list-page-filter">
 
