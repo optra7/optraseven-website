@@ -14,7 +14,6 @@ get_header();
                     <div class="o7-get-the-quote__form-details-container">
                         <h1 class="o7-get-the-quote__form-title">Tell Us About Your Amazing Project Here</h1>
                         <div class="o7-get-the-quote__info">
-                            <h2 class="o7-get-the-quote__location o7-get-the-quote__contact">Contact</h2>
                             <div class="o7-get-the-quote__address-wrapper">
                                 <svg class="o7-get-the-quote__address-icon" aria-hidden="true" focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline" ?>></use>
@@ -62,13 +61,16 @@ get_header();
                         <form class="o7-get-the-quote-form" aria-label="get the quote form" method="post" enctype="multipart/form-data" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                             <input type="hidden" name="action" value="get_quote_form_submit">
                             <!-- full name Start -->
-                            <label class="o7-input-label o7-get-the-quote__input-label" for="name">Full Name <span class="text-danger">*</span> </label>
-                            <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
-                                <input type="text" id="name" name="name"
-                                    required
-                                    class="o7-input-field o7-get-the-quote__input-name o7-get-the-quote__full-width"
-                                    placeholder="John Lennon">
-                            </div>
+                             <div>
+                                <label class="o7-input-label o7-get-the-quote__input-label" for="name">Full Name <span class="text-danger">*</span> </label>
+                                <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
+                                    <input type="text" id="name" name="name"
+                                        required
+                                        class="o7-input-field o7-get-the-quote__input-name o7-get-the-quote__full-width"
+                                        placeholder="John Lennon">
+                                </div>
+                             </div>
+                            
                             <!-- full name Start -->
 
                             <!-- two column input phone number and email -->

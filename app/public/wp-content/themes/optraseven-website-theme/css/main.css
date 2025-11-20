@@ -849,6 +849,7 @@ template {
     border: 1px solid #202020;
 }
 
+/* 
 .o7-input-group>.custom-select:not(:first-child),
 .o7-input-group>.o7-input-field:not(:first-child),
 .o7-input-group--col>.custom-select:not(:first-child),
@@ -862,6 +863,8 @@ template {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+*/
 
 .o7-input-field::placeholder {
     color: #787878;
@@ -6414,224 +6417,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 
 
-/* 
-// Location Map:start
------------------------------------------ */
 
-.o7-map__world-map {
-    width: 100%;
-    height: auto;
-    opacity: .7;
-}
-
-.o7-map-container {
-    position: relative;
-}
-
-.o7-map__office-location-1st-circle {
-    width: 50px;
-    height: 50px;
-    background-color: #7CE3AC4C;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
-
-.o7-map__office-location-2nd-circle {
-    width: 30px;
-    height: 30px;
-    background-color: #7CE3AC;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.o7-map__office-location-3rd-circle {
-    width: 10px;
-    height: 10px;
-    background-color: #D9EAD3;
-    border-radius: 50%;
-}
-
-.o7-map-pin {
-    animation: pulse 1.3s ease-in-out infinite;
-}
-
-.o7-map__address-card-link,
-.o7-map__address-card-link:hover {
-    text-decoration: none;
-}
-
-.o7-map__address-card {
-    min-width: 230px;
-    width: 100%;
-    background-color: #7CE3AC;
-    padding: 22px;
-    border-radius: 25px;
-    position: absolute;
-    top: 28px;
-    left: 28px;
-    border: 2px solid #66B88C;
-    text-align: center;
-}
-.o7-map__address-header {
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;
-}
-
-.o7-map__addreess {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    color: #000000;
-}
-
-.o7-map__whatsapp {
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;
-    margin-top: 15px;
-}
-
-.o7-map__whatsapp-number {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    padding: 8px 20px;
-    border: 1px solid #202020;
-    border-radius: 8px;
-    transition: all 300ms ease-out 0s;
-    color: #000;
-    margin-top: 5px;
-    display: inline-block;
-}
-
-.o7-map__whatsapp-number:hover {
-    background-color: #202020;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.o7-map__office-location {
-    position: relative;
-}
-
-.o7-map__card-bangladesh {
-    position: absolute;
-    bottom: 61%;
-    right: 28.5%;
-}
-
-.o7-map__card-america {
-    position: absolute;
-    top: 27%;
-    left: 11%;
-}
-.o7-map__moblile-visible--card {
-    display: none;
-}
-@keyframes pulse {
-    100% {
-        opacity: 0;
-        transform: translate(0, 0) scale(2);
-    }
-}
-
-/* ================= Responsive Design ==================== */
-
-@media(max-width: 1280px) {
-
-    .o7-map__card-america {
-        top: 24%;
-        left: 9%;
-    }
-
-}
-
-@media (max-width: 1200px) {
-
-    .o7-map__card-bangladesh {
-        bottom: 63%;
-        right: 28.5%;
-    }
-}
-
-@media(max-width: 1024px) {
-
-    .o7-map__card-america {
-        top: 22%;
-        left: 10%;
-    }
-    .o7-map__card-bangladesh {
-        bottom: 65%;
-        right: 29.5%;
-    }
-
-}
-@media(max-width: 991px) {
-
-    .o7-map__card-bangladesh .o7-map__address-card {
-        left: auto;
-        right: -141px;
-        top: 43px;
-    }
-    .o7-map__address-card {
-        top: 48px;
-        left: -85px;
-    }
-     .o7-map__card-bangladesh {
-        bottom: 65%;
-        right: 29.5%;
-    }
-
-}
-
-@media(max-width: 767px) {
-
-    .o7-map__card-america {
-        top: 20%;
-        left: 9%;
-    }
-    .o7-map__address-card {
-        display: none;
-    }
-    .o7-map__moblile-visible--card {
-        min-width: 100%;
-        display: block;
-        position: unset;
-        max-width: 100%;
-        border-radius: 16px;
-    }
-    .o7-map__moblile-visible-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-}
-
-@media(max-width: 575px) {
-
-    .o7-map__card-america {
-        top: 16%;
-        left: 7%;
-    }
-     .o7-map__card-bangladesh {
-        bottom: 74%;
-        right: 33%;
-    }
-
-}
-/* _____/ Location Map:end \_______*/
 
 
 /* ------------------------- Page CSS ---------------------- */
@@ -6942,6 +6728,10 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-contact-us__whatsapp-optional {
     font-weight: 300;
 }
+.o7-contact-us-form .btn--medium {
+    margin-top: 10px;
+    padding: 14px 30px;
+}
 /* --- Contact Us Form:end ---  */
 
 
@@ -6951,9 +6741,6 @@ figure.megamenu__service-view-all-image-wrapper {
 
     .o7-contact-us__form-address-wrapper {
         padding: 80px;
-    }
-    .o7-contact-us__header {
-        font-size: 42px;
     }
 
 }
@@ -6965,6 +6752,9 @@ figure.megamenu__service-view-all-image-wrapper {
     }
     .o7-contact-us__address-wrapper {
         max-width: 400px;
+    }
+    .o7-contact-us__header {
+        font-size: 42px;
     }
 
 }
@@ -7015,10 +6805,11 @@ figure.megamenu__service-view-all-image-wrapper {
 @media (max-width: 767px) {
 
     .o7-contact-us__header--tablet {
-        font-size: 28px;
+        font-size: 26px;
     }
     .o7-contact-us__form-address-wrapper {
         padding: 40px;
+        border-radius: 20px;
     }
     .o7-contact-us__input-container {
         flex-direction: column;
@@ -7039,11 +6830,10 @@ figure.megamenu__service-view-all-image-wrapper {
 
     .o7-contact-us__form-address-wrapper {
         padding: 20px;
-        border-radius: 16px;
+        border-radius: 15px;
         gap: 40px;
     }
     .o7-contact-us__header--tablet {
-        font-size: 26px;
         margin-bottom: 15px;
     }
     .o7-contact-us__input-container {
@@ -7054,7 +6844,7 @@ figure.megamenu__service-view-all-image-wrapper {
         font-size: 14px;
     }
     .o7-input-field {
-        padding: 10px 8px;
+        padding: 10px 15px;
     }
     .o7-contact-us-form {
         gap: 15px;
@@ -7066,13 +6856,13 @@ figure.megamenu__service-view-all-image-wrapper {
 
 
 
-
-
-/* Get a Quote START */
+/* _____/ Get the Quote Information and Forn:start \_______*/
 
 .o7-get-the-quote__container-title {
     display: none;
 }
+
+/* --- Get the Quote Information Block:start ---  */
 
 .o7-get-the-quote__content-container {
     display: flex;
@@ -7087,20 +6877,23 @@ figure.megamenu__service-view-all-image-wrapper {
     max-width: 480px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 0;
     align-items: flex-start;
 }
 
 .o7-get-the-quote__form-title {
     font-size: 56px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .o7-get-the-quote__info {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+}
+.o7-get-the-quote__info + .o7-get-the-quote__info {
+    margin-top: 40px;
 }
 
 .o7-get-the-quote__address-wrapper {
@@ -7112,12 +6905,15 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-get-the-quote__address-icon {
     width: 25px;
     height: 25px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .o7-get-the-quote__location {
     font-size: 16px;
     font-weight: 700;
     color: #000000;
+    margin: 0;
 }
 
 .o7-get-the-quote__address {
@@ -7125,12 +6921,20 @@ figure.megamenu__service-view-all-image-wrapper {
     font-weight: 400;
     color: #000000;
 }
+/* --- Get the Quote Information Block:end ---  */
 
+/* --- Get the Quote Form:start ---  */
+
+.o7-get-the-quote__form-wrapper {
+    width: 100%;
+    max-width: 750px;
+}
 .o7-get-the-quote-form {
     max-width: 980px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 25px;
 }
 
 .o7-get-the-quote__input-label {
@@ -7151,7 +6955,6 @@ figure.megamenu__service-view-all-image-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    margin-top: 25px;
 }
 
 .o7-get-the-quote__input-wrapper {
@@ -7252,7 +7055,6 @@ figure.megamenu__service-view-all-image-wrapper {
     border: 1px solid #C7C7C7;
     border-radius: 8px;
     resize: none;
-    margin-bottom: 25px;
     padding: 14px 20px;
     outline: none;
     transition: all 300ms ease-out 0s;
@@ -7260,10 +7062,6 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-get-the-quote__input-text:focus {
     border: 1px solid #202020;
-}
-
-.o7-get-the-quote__text-area-wrapper {
-    margin-top: 25px;
 }
 
 .o7-get-the-quote__input-file {
@@ -7362,15 +7160,22 @@ figure.megamenu__service-view-all-image-wrapper {
 .tnp-field.tnp-field-email label {
     display: none !important;
 }
+.o7-get-the-quote-form .btn--medium {
+    padding: 14px 30px;
+    margin-top: 10px;
+}
+
+/* --- Get the Quote Form:end ---  */
+
+/* ======== Responsive Design ======== */
 
 @media (max-width: 1400px) {
 
+    .o7-get-the-quote__content-container {
+        padding: 80px;
+    }
     .o7-get-the-quote__form-details-container {
         max-width: 330px;
-    }
-
-    .o7-get-the-quote__form-title {
-        font-size: 36px;
     }
 
 }
@@ -7378,61 +7183,32 @@ figure.megamenu__service-view-all-image-wrapper {
 @media (max-width: 1200px) {
 
     .o7-get-the-quote__content-container {
-        flex-direction: column-reverse;
+        padding: 40px;
     }
-
     .o7-get-the-quote__form-title {
-        display: none;
+        font-size: 42px;
     }
-
     .o7-get-the-quote-form {
         max-width: 100%;
     }
-
     .o7-get-the-quote__input-field-wrapper {
         max-width: 100%;
     }
-
-    .o7-get-the-quote__form-details-container {
-        max-width: 100%;
-        margin-top: 50px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     .o7-get-the-quote__form-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 30px;
     }
-
-    .o7-get-the-quote__container-title {
-        display: inline;
-        font-size: 56px;
-        font-weight: 400;
-    }
-
     .o7-get-the-quote__input-row-wrapper {
         flex-direction: column;
-        gap: 0;
         margin-top: 0;
     }
-
     .o7-get-the-quote__input-wrapper {
         max-width: 100%;
-        margin-top: 16px;
     }
-
     .o7-get-the-quote__cash-input-wrapper {
         max-width: 100%;
         width: 100%;
     }
-
-    .o7-get-the-quote__info {
-        max-width: 33.33%;
-        width: 100%;
-    }
-
     .o7-get-the-quote__contact {
         display: inline;
     }
@@ -7441,44 +7217,321 @@ figure.megamenu__service-view-all-image-wrapper {
 
 @media (max-width: 1024px) {
 
+    .o7-get-the-quote__content-container {
+        padding: 60px;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .o7-get-the-quote__form-details-container {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    .o7-get-the-quote__form-title {
+        display: none;
+    }
+    .o7-get-the-quote__container-title {
+        display: block;
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+    .o7-get-the-quote__info {
+        max-width: 33.33%;
+        width: 100%;
+    }
+    .o7-get-the-quote__info + .o7-get-the-quote__info {
+        margin-top: 0;
+    }
     .o7-get-the-quote__cash-input-wrapper {
         width: 100%;
     }
-
     .o7-input-group-text {
         padding: 14px 20px;
     }
+    .o7-get-the-quote__form-wrapper {
+        max-width: unset;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .o7-get-the-quote__content-container {
+        padding: 50px;
+    }
+    .o7-get-the-quote__container-title {
+        font-size: 32px;
+    }
+
 }
 
 @media (max-width: 767px) {
 
+    .o7-get-the-quote__content-container {
+        padding: 40px;
+        border-radius: 20px;
+    }
     .o7-get-the-quote__form-details-container {
         flex-direction: column;
     }
-
+    .o7-get-the-quote__container-title {
+        font-size: 26px;
+    }
     .o7-get-the-quote__info {
         max-width: 100%;
         width: 100%;
     }
+
 }
 
 @media (max-width: 576px) {
 
+    .o7-get-the-quote__content-container {
+        padding: 20px;
+        border-radius: 15px;
+    }
     .o7-get-the-quote__container-title {
         max-width: 346px;
-        font-size: 32px;
+        margin-bottom: 15px;
     }
-
     .o7-get-the-quote__input-cash-wrapper {
         gap: 10px;
     }
-
     .o7-input-group-text {
-        padding: 14px 10px;
+        padding: 14px 15px;
+    }
+    .o7-get-the-quote-form {
+        gap: 15px;
+    }
+
+    .o7-get-the-quote__input-row-wrapper {
+        gap: 15px;
+    }
+
+}
+/* _____/ Get the Quote Information and Forn:end \_______*/
+
+/* 
+// Location Map:start
+----------------------------------------- */
+
+.o7-map__world-map {
+    width: 100%;
+    height: auto;
+    opacity: .7;
+}
+
+.o7-map-container {
+    position: relative;
+}
+
+.o7-map__office-location-1st-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #7CE3AC4C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.o7-map__office-location-2nd-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #7CE3AC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o7-map__office-location-3rd-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #D9EAD3;
+    border-radius: 50%;
+}
+
+.o7-map-pin {
+    animation: pulse 1.3s ease-in-out infinite;
+}
+
+.o7-map__address-card-link,
+.o7-map__address-card-link:hover {
+    text-decoration: none;
+}
+
+.o7-map__address-card {
+    min-width: 230px;
+    width: 100%;
+    background-color: #7CE3AC;
+    padding: 22px;
+    border-radius: 25px;
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    border: 2px solid #66B88C;
+    text-align: center;
+}
+.o7-map__address-header {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.o7-map__addreess {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+}
+
+.o7-map__whatsapp {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.o7-map__whatsapp-number {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px 20px;
+    border: 1px solid #202020;
+    border-radius: 8px;
+    transition: all 300ms ease-out 0s;
+    color: #000;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.o7-map__whatsapp-number:hover {
+    background-color: #202020;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.o7-map__office-location {
+    position: relative;
+}
+
+.o7-map__card-bangladesh {
+    position: absolute;
+    bottom: 61%;
+    right: 28.5%;
+}
+
+.o7-map__card-america {
+    position: absolute;
+    top: 27%;
+    left: 11%;
+}
+.o7-map__moblile-visible--card {
+    display: none;
+}
+@keyframes pulse {
+    100% {
+        opacity: 0;
+        transform: translate(0, 0) scale(2);
     }
 }
 
-/* Get a Quote END */
+/* ================= Responsive Design ==================== */
+
+@media(max-width: 1280px) {
+
+    .o7-map__card-america {
+        top: 24%;
+        left: 9%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .o7-map__card-bangladesh {
+        bottom: 63%;
+        right: 28.5%;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .o7-map__card-america {
+        top: 22%;
+        left: 10%;
+    }
+    .o7-map__card-bangladesh {
+        bottom: 65%;
+        right: 29.5%;
+    }
+
+}
+@media(max-width: 991px) {
+
+    .o7-map__card-bangladesh .o7-map__address-card {
+        left: auto;
+        right: -141px;
+        top: 43px;
+    }
+    .o7-map__address-card {
+        top: 48px;
+        left: -85px;
+    }
+     .o7-map__card-bangladesh {
+        bottom: 65%;
+        right: 29.5%;
+    }
+
+}
+
+@media(max-width: 767px) {
+
+    .o7-map__card-america {
+        top: 20%;
+        left: 9%;
+    }
+    .o7-map__address-card {
+        display: none;
+    }
+    .o7-map__moblile-visible--card {
+        min-width: 100%;
+        display: block;
+        position: unset;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+    .o7-map__moblile-visible-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+}
+
+@media(max-width: 575px) {
+
+    .o7-map__card-america {
+        top: 16%;
+        left: 7%;
+    }
+     .o7-map__card-bangladesh {
+        bottom: 74%;
+        right: 33%;
+    }
+
+}
+/* _____/ Location Map:end \_______*/
+
+
 
 /* ------------------------- Page CSS END---------------------- */
 
