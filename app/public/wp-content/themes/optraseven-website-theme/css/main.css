@@ -1166,15 +1166,17 @@ body.no-scroll {
 /* Menu END */
 
 
-/* Footer */
-
+/* ===================================================================
+//  Footer Design:start
+====================================================================== */
 
 .o7-footer-container {
-    padding: 0 20px;
+    padding: 0 40px 40px;
 }
 
 .o7-footer {
     max-width: 1840px;
+    margin: 0 auto;
     background-color: #202020;
     border-radius: 25px;
 }
@@ -1383,10 +1385,18 @@ body.no-scroll {
     color: #7CE3AC;
 }
 
+/* ============= Responsive Design ============= */
+
 @media (max-width: 1400px) {
+    .o7-footer-container {
+        padding: 0 30px 30px;
+    }
+    .o7-footer__copyright-container {
+        padding: 100px 40px 60px 100px;
+    }
     .o7-footer__menu-container {
         flex-wrap: wrap;
-        padding: 80px 40px 0px 100px;
+        padding: 115px 40px 0px 100px;
     }
 
 }
@@ -1394,7 +1404,7 @@ body.no-scroll {
 @media (max-width: 1200px) {
     .o7-footer__menu-container {
         flex-wrap: wrap;
-        column-gap: 80px;
+        column-gap: 78px;
         row-gap: 50px;
         padding: 24px 80px 0px 100px;
         justify-content: flex-start;
@@ -1407,9 +1417,6 @@ body.no-scroll {
     .o7-footer__menu-links-ul li {
         padding: 0 0 22px 0;
     }
-
-  
-
     /* logo container */
     .o7-footer__logo-text {
         font-size: 50px;
@@ -1461,6 +1468,9 @@ body.no-scroll {
     .o7-section-footer {
         margin: 80px auto 20px;
         border-radius: 16px;
+    }
+    .o7-footer__menu-container {
+        column-gap: 66px;
     }
 
     .o7-footer__policy-pages-link {
@@ -1612,7 +1622,10 @@ body.no-scroll {
     }
 }
 
-/* Footer END */
+/* ===========// Footer Design:end \\=========== */
+
+
+
 
 /* Megamenu */
 a.main-menu__link:focus-visible {
