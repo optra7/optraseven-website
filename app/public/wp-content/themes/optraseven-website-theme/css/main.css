@@ -6413,11 +6413,15 @@ figure.megamenu__service-view-all-image-wrapper {
 /* ============== Stepper END ============== */
 
 
-/* world map  */
+
+/* 
+// Location Map:start
+----------------------------------------- */
 
 .o7-map__world-map {
     width: 100%;
     height: auto;
+    opacity: .7;
 }
 
 .o7-map-container {
@@ -6476,15 +6480,6 @@ figure.megamenu__service-view-all-image-wrapper {
     border: 2px solid #66B88C;
     text-align: center;
 }
-
-@media(max-width: 991px) {
-    .o7-map__card-bangladesh .o7-map__address-card {
-        left: auto;
-        right: -141px;
-        top: 43px;
-    }
-}
-
 .o7-map__address-header {
     font-size: 16px;
     font-weight: 700;
@@ -6541,46 +6536,9 @@ figure.megamenu__service-view-all-image-wrapper {
     top: 27%;
     left: 11%;
 }
-
-@media(max-width: 1280px) {
-    .o7-map__card-america {
-        top: 24%;
-        left: 9%;
-    }
-}
-
-@media(max-width: 1024px) {
-    .o7-map__card-america {
-        top: 22%;
-        left: 10%;
-    }
-}
-
-@media(max-width: 991px) {
-    .o7-map__address-card {
-        top: 48px;
-        left: -85px;
-    }
-}
-
-@media(max-width: 767px) {
-    .o7-map__card-america {
-        top: 20%;
-        left: 9%;
-    }
-}
-
-@media(max-width: 575px) {
-    .o7-map__card-america {
-        top: 16%;
-        left: 7%;
-    }
-}
-
 .o7-map__moblile-visible--card {
     display: none;
 }
-
 @keyframes pulse {
     100% {
         opacity: 0;
@@ -6588,35 +6546,64 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 }
 
+/* ================= Responsive Design ==================== */
+
+@media(max-width: 1280px) {
+
+    .o7-map__card-america {
+        top: 24%;
+        left: 9%;
+    }
+
+}
+
 @media (max-width: 1200px) {
+
     .o7-map__card-bangladesh {
         bottom: 63%;
         right: 28.5%;
     }
 }
 
-@media (max-width: 1024px) {
+@media(max-width: 1024px) {
+
+    .o7-map__card-america {
+        top: 22%;
+        left: 10%;
+    }
     .o7-map__card-bangladesh {
         bottom: 65%;
         right: 29.5%;
     }
-}
 
-@media (max-width: 991px) {
-    .o7-map__card-bangladesh {
+}
+@media(max-width: 991px) {
+
+    .o7-map__card-bangladesh .o7-map__address-card {
+        left: auto;
+        right: -141px;
+        top: 43px;
+    }
+    .o7-map__address-card {
+        top: 48px;
+        left: -85px;
+    }
+     .o7-map__card-bangladesh {
         bottom: 65%;
         right: 29.5%;
     }
+
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
 
-
-
+    .o7-map__card-america {
+        top: 20%;
+        left: 9%;
+    }
     .o7-map__address-card {
         display: none;
     }
-
     .o7-map__moblile-visible--card {
         min-width: 100%;
         display: block;
@@ -6624,51 +6611,27 @@ figure.megamenu__service-view-all-image-wrapper {
         max-width: 100%;
         border-radius: 16px;
     }
-
     .o7-map__moblile-visible-wrapper {
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
 
-    .o7-map__address-header {
-        text-align: left;
-    }
-
-    .o7-map__addreess {
-        text-align: left;
-    }
-
-    .o7-map__whatsapp {
-        text-align: left;
-    }
-
-    .o7-map__whatsapp-number {
-        max-width: 160px;
-        text-align: left;
-    }
 }
 
-@media (max-width: 576px) {
-    .o7-map__card-bangladesh {
+@media(max-width: 575px) {
+
+    .o7-map__card-america {
+        top: 16%;
+        left: 7%;
+    }
+     .o7-map__card-bangladesh {
         bottom: 74%;
         right: 33%;
     }
+
 }
-
-/* world map  */
-
-
-
-
-/* ------------------------- Blocks END ---------------------- */
-
-
-
-
-
-
-
+/* _____/ Location Map:end \_______*/
 
 
 /* ------------------------- Page CSS ---------------------- */
