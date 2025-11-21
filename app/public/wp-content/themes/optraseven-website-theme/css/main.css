@@ -3180,7 +3180,6 @@ figure.megamenu__service-view-all-image-wrapper {
     position: relative;
     overflow: hidden;
     max-width: 780px;
-    cursor: pointer;
 }
 
 .o7-content-card a {
@@ -3242,6 +3241,17 @@ figure.megamenu__service-view-all-image-wrapper {
     margin-bottom: 0;
     color: var(--dark-color);
     text-decoration: none;
+    position: relative;
+    display: inline;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 0.3s ease;
+    cursor: pointer;
+}
+.o7-content-card__header a:hover {
+    background-size: 100% 2px;
 }
 
 .o7-content-card__title-pointer {
@@ -5638,13 +5648,12 @@ figure.megamenu__service-view-all-image-wrapper {
     color: #202020;
     margin-bottom: 0;
     opacity: 0.7;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: all 300ms ease-out 100ms;
 }
 
 .o7-service-card__link:hover .o7-service-card__link-label {
     position: relative;
     transform: translateX(80px);
-    transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 1;
 }
 
@@ -5681,13 +5690,12 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-service-card__icon {
     position: absolute;
-    transform: translateX(0px);
     opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition: opacity 250ms ease;
+    z-index: 1;
 }
 
 .o7-service-card__link:hover .o7-service-card__icon {
-    transform: translateX(0);
     opacity: 1;
 }
 
