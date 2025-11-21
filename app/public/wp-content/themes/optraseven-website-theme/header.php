@@ -831,7 +831,7 @@
                         </div>
                     </div>
 
-                    <div class="megamenu megamenu-portfolio has-megamenu">
+                    <div class="megamenu megamenu-portfolio megamenu-case-studies has-megamenu">
                         <a tabindex="0" class="main-menu__link">Case Studies</a>
                         <div class="megamenu__content-wrapper megamenu__content-wrapper--service megamenu__item-container">
                             <div class="megamenu__triangle-head"></div>
