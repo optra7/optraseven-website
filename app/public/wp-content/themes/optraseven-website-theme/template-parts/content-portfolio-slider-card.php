@@ -7,14 +7,15 @@
                     <?php the_post_thumbnail('large', ['class' => 'o7-content-card__image']); ?>
                 <?php endif; ?>
                 </a>
+                <a href="<?php the_permalink(); ?>" class="o7-content-card__circle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-up-right-svgrepo-com.svg"
+                        alt="arrow"
+                        class="o7-content-card__circle-arrow">
+                </a>
             </div>
         </div>
 
-        <a href="<?php the_permalink(); ?>" class="o7-content-card__circle">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-up-right-svgrepo-com.svg"
-                 alt="arrow"
-                 class="o7-content-card__circle-arrow">
-        </a>
+        
 
         <div class="o7-card-category o7-card-category--home-sec-portfolio">
             <?php

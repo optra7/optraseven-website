@@ -67,12 +67,14 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                             $category_classes = !empty($categories) ? implode(' ', $categories) : '';
                             ?>
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
-                                <a href="<?php echo get_permalink($post_id); ?>">
+                                
                                     <div class="o7-list-page-filter__card-image-wrapper">
                                         <div class="o7-list-page-filter__image-frame">
+                                            <a href="<?php echo get_permalink($post_id); ?>">
                                             <?php if ($featured_img): ?>
                                                 <img src="<?php echo esc_url($featured_img); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" width="780" height="680" loading="lazy" decoding="async">
                                             <?php endif; ?>
+                                            </a>
                                         </div>
                                         <?php if (!empty($all_tags)) : ?>
                                         <div class="o7-hover-chip">
@@ -129,10 +131,14 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                             </div>
                                         </div>
                                         <?php if ($subtitle): ?>
-                                            <h3 class="o7-list-page-filter__card-tagline"><?php echo esc_html($subtitle); ?></h3>
+                                            <h3 class="o7-content-card__header">
+                                                <a href="<?php the_permalink(); ?>">
+                                                <?php echo esc_html($subtitle); ?>
+                                                </a>
+                                            </h3>
                                         <?php endif; ?>
                                     </div>
-                                </a>
+                                
                             </article>
                         <?php
                         endwhile;
