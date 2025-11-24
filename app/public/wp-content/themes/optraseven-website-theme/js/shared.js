@@ -123,8 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// device viewpot height fixing
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
+// device viewpot height fixing:start
+function setVh() {
+  const vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+}
+setVh();
+window.addEventListener('resize', setVh);
+// device viewpot height fixing:end
