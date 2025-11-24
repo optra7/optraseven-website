@@ -1,10 +1,10 @@
 <article class="o7-content-card o7-content-card--scrolling-snap">
     
-    <div class="o7-content-card__image-wrapper">
-        <div class="o7-content-card__image-frame">
+    <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded o7-card__image-wrapper--with-bg">
+        <div class="o7-content-card__image-frame o7-card__image-frame">
             <a href="<?php the_permalink(); ?>">
             <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('large', ['class' => 'o7-content-card__image']); ?>
+                <?php the_post_thumbnail('large', ['class' => 'o7-content-card__image o7-card__image']); ?>
             <?php endif; ?>
             </a>
             <a href="<?php the_permalink(); ?>" class="o7-content-card__circle">
@@ -15,17 +15,15 @@
         </div>
     </div>
 
-    <div class="o7-card-category o7-card-category--home-sec">
+    <div class="o7-card__info-block">
         <?php
         // Get Case Study categories
         $categories = get_the_terms(get_the_ID(), 'case_study_category');
         if ($categories && !is_wp_error($categories)) :
             foreach ($categories as $cat) :
-                echo '<div class="o7-card-catagory__title-wrapper">';
-                echo '<span class="o7-card-catagory__decorative-dot"></span>';
-                echo '<p class="o7-card-catagory__title">' . esc_html($cat->name) . '</p>';
-                echo '<span class="o7-card-catagory__decorative-dot"></span>';
-                echo '<p class="o7-card-catagory__title">' . esc_html(get_the_title()) . '</p>';
+                echo '<div class="o7-card__title-wrapper">';
+                echo '<p class="o7-card__title-decorative-dot o7-card__title">' . esc_html($cat->name) . '</p>';
+                echo '<p class="o7-card__title-decorative-dot o7-card__title">' . esc_html(get_the_title()) . '</p>';
                 echo '</div>';
             endforeach;
         endif;
@@ -37,13 +35,11 @@
             $client_name = get_field('client_name'); // ACF field
             if ($client_name) : ?>
                 <div class="o7-card-catagory__title-wrapper">
-                    <span class="o7-card-catagory__decorative-dot"></span>
-                    <p class="o7-card-catagory__title"><?php echo esc_html($client_name); ?></p>
+                    <p class="o7-card__title-decorative-dot o7-card__title"><?php echo esc_html($client_name); ?></p>
                 </div>
             <?php endif;
         endif;
         ?>
-    </div>
     <?php if (function_exists('get_field')) :
         $subtitle = get_field('subtitle'); // ACF field
         if ($subtitle) : ?>
@@ -54,6 +50,5 @@
             </h3>
         <?php endif;
     endif; ?>
-
-
+    </div>
 </article>

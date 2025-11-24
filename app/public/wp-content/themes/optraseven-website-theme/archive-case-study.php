@@ -69,11 +69,11 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     ?>
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
                                 
-                                <div class="o7-list-page-filter__card-image-wrapper">
-                                    <div class="o7-list-page-filter__image-frame">
+                                <div class="o7-list-page-filter__card-image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded o7-card__image-wrapper--with-bg">
+                                    <div class="o7-list-page-filter__image-frame o7-card__image-frame">
                                         <a href="<?php echo get_permalink($post_id); ?>">
                                         <?php if ($featured_img): ?>
-                                            <img src="<?php echo esc_url($featured_img); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" width="780" height="680" loading="lazy" decoding="async">
+                                            <img src="<?php echo esc_url($featured_img); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" width="780" height="680" loading="lazy" decoding="async" class="o7-card__image">
                                         <?php endif; ?>
                                         </a>
                                     </div>
@@ -129,24 +129,23 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                                     <?php endif; ?>
                                 </div>
 
-                                <div class="o7-list-page-filter__card-title-wrapper">
-                                    <div class="o7-card-category">
-                                        <?php if ($industry): ?>
-                                            <div class="o7-card-catagory__title-wrapper">
-                                                <p class="o7-card-catagory__title"><?php echo esc_html($industry); ?></p>
-                                            </div>
-                                        <?php endif; ?>
-                                        <div class="o7-card-catagory__title-wrapper">
-                                            <?php if ($industry): ?><span class="o7-card-catagory__decorative-dot"></span><?php endif; ?>
-                                            <p class="o7-card-catagory__title"><?php echo esc_html(get_the_title($post_id)); ?></p>
-                                        </div>
+                                <div class="o7-card__info-block">
+                                    <div class="o7-card__title-wrapper">
+                                    <?php if ($industry): ?>
+                                        <p class="o7-card__title"><?php echo esc_html($industry); ?></p>
+                                        <p class="o7-card__title-decorative-dot o7-card__title"><?php echo esc_html(get_the_title($post_id)); ?></p>
+                                    <?php else : ?>
+                                        <p class="o7-card__title"><?php echo esc_html(get_the_title($post_id)); ?></p>
+                                    <?php endif; ?>
+
                                     </div>
+
                                     <?php if ($subtitle): ?>
-                                        <h3 class="o7-content-card__header">
-                                            <a href="<?php the_permalink(); ?>">
-                                            <?php echo esc_html($subtitle); ?>
-                                            </a>
-                                        </h3>
+                                    <h3 class="o7-content-card__header">
+                                        <a href="<?php the_permalink(); ?>">
+                                        <?php echo esc_html($subtitle); ?>
+                                        </a>
+                                    </h3>
                                     <?php endif; ?>
                                 </div>
                                 

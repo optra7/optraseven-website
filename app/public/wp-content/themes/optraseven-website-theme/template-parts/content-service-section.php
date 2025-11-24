@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="section">
+<section class="section section-services">
     <div class="container">
         <div class="o7-section-header">
             <p class="o7-section-header__title">
@@ -29,10 +29,10 @@
             <div class="service-col-one">
 
                     <article class="o7-content-card">
-                        <div class="o7-content-card__image-wrapper">
-                            <div class="o7-content-card__image-frame">
+                        <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
+                            <div class="o7-content-card__image-frame o7-card__image-frame">
                                 <a href="/services/shopify/">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/shopify.webp" alt="shopify-image" class="o7-content-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/shopify.webp" alt="shopify-image" class="o7-content-card__image o7-card__image">
                                 </a>
                             </div>
                         </div>
@@ -52,24 +52,23 @@
                             </div>
                         </div>
                         
-                        <div class="o7-card-category o7-card-category--home-sec">
-                            <div class="o7-card-catagory__title-wrapper">
-                                <span class="o7-card-catagory__decorative-dot"></span>
-                                <p class="o7-card-catagory__title">Shopify</p>
+                        <div class="o7-card__info-block">
+                            <div class="o7-card__title-wrapper">
+                                <p class="o7-card__title-decorative-dot o7-card__title">Shopify</p>
                             </div>
-                        </div>
-                        <h3 class="o7-content-card__header">
-                            <a href="/services/shopify/">
-                                Creative shopify experiences that grow your business
-                            </a>
-                        </h3>      
+                            <h3 class="o7-content-card__header">
+                                <a href="/services/shopify/">
+                                    Creative shopify experiences that grow your business
+                                </a>
+                            </h3> 
+                        </div>     
                     </article>
 
                     <article class="o7-content-card">
-                        <div class="o7-content-card__image-wrapper">
-                            <div class="o7-content-card__image-frame">
+                        <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
+                            <div class="o7-content-card__image-frame o7-card__image-frame">
                                 <a href="/services/custom-application-development/">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/custom-web-application.webp" alt="custom-web-application-image" class="o7-content-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/custom-web-application.webp" alt="custom-web-application-image" class="o7-content-card__image o7-card__image">
                                 </a>
                             </div>
                         </div>
@@ -89,17 +88,17 @@
                             </div>
                         </div>
                         
-                            <div class="o7-card-category o7-card-category--home-sec">
-                        <div class="o7-card-catagory__title-wrapper">
-                            <span class="o7-card-catagory__decorative-dot"></span>
-                            <p class="o7-card-catagory__title">Custom Web Application</p>
+                        <div class="o7-card__info-block">
+                            <div class="o7-card__title-wrapper">
+                                <p class="o7-card__title-decorative-dot o7-card__title">Custom Web Application</p>
+                            </div>
+                            <h3 class="o7-content-card__header">
+                                <a href="/services/custom-application-development/">
+                                    Custom web application crafted for your unique business needs
+                                </a>
+                            </h3>
                         </div>
-                    </div>
-                    <h3 class="o7-content-card__header">
-                        <a href="/services/custom-application-development/">
-                            Custom web application crafted for your unique business needs
-                        </a>
-                    </h3>         
+                             
                 </article>
 
             </div>
@@ -107,10 +106,10 @@
             <div class="service-col-two">
 
                     <article class="o7-content-card">
-                        <div class="o7-content-card__image-wrapper">
-                            <div class="o7-content-card__image-frame">
+                        <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
+                            <div class="o7-content-card__image-frame o7-card__image-frame">
                                 <a href="/services/webflow/">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/webflow-2.webp" alt="webflow-image" class="o7-content-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/webflow-2.webp" alt="webflow-image" class="o7-content-card__image o7-card__image">
                                 </a>
                             </div>
                         </div>
@@ -130,24 +129,23 @@
                             </div>
                         </div>
                         
-                        <div class="o7-card-category o7-card-category--home-sec">
-                            <div class="o7-card-catagory__title-wrapper">
-                                <span class="o7-card-catagory__decorative-dot"></span>
-                                <p class="o7-card-catagory__title">Webflow</p>
+                        <div class="o7-card__info-block">
+                            <div class="o7-card__title-wrapper">
+                                <p class="o7-card__title-decorative-dot o7-card__title">Webflow</p>
                             </div>
+                            <h3 class="o7-content-card__header">
+                                <a href="/services/webflow/">
+                                    Accelerate your brand with expert webflow development
+                                </a>
+                            </h3>
                         </div>
-                        <h3 class="o7-content-card__header">
-                            <a href="/services/webflow/">
-                                Accelerate your brand with expert webflow development
-                            </a>
-                        </h3>
                     </article>
 
                     <article class="o7-content-card"> 
-                            <div class="o7-content-card__image-wrapper">
-                                <div class="o7-content-card__image-frame">
+                            <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
+                                <div class="o7-content-card__image-frame o7-card__image-frame">
                                     <a href="/services/testing-quality-assurance/">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/quality-assurance.webp" alt="quality-assurance-image" class="o7-content-card__image">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/quality-assurance.webp" alt="quality-assurance-image" class="o7-content-card__image o7-card__image">
                                     </a>
                                 </div>
                             </div>
@@ -167,18 +165,18 @@
                                 </div>
                             </div>
                         
-                            <div class="o7-card-category o7-card-category--home-sec">
-                        <div class="o7-card-catagory__title-wrapper">
-                            <span class="o7-card-catagory__decorative-dot"></span>
-                            <p class="o7-card-catagory__title">Quality Assurance</p>
-                        </div>
-                    </div>
-                    <h3 class="o7-content-card__header">
-                        <a href="/services/testing-quality-assurance/">
-                            Uncompromising quality assurance for software and e-commerce
-                        </a>
-                    </h3>   
-                </article>
+                            <div class="o7-card__info-block">
+                                <div class="o7-card__title-wrapper">
+                                    <p class="o7-card__title-decorative-dot o7-card__title">Quality Assurance</p>
+                                </div>
+                                <h3 class="o7-content-card__header">
+                                    <a href="/services/testing-quality-assurance/">
+                                        Uncompromising quality assurance for software and e-commerce
+                                    </a>
+                                </h3>
+                            </div>
+                       
+                    </article>
 
             </div>
             

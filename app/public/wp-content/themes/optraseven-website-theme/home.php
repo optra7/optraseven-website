@@ -66,16 +66,22 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                             $category_classes = !empty($categories) ? implode(' ', $categories) : '';
                             ?>
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
-                                <a href="<?php echo get_permalink($post_id); ?>">
+                                
                                     <!-- Featured Image -->
-                                    <div class="o7-list-page-filter__card-image-wrapper">
-                                        <?php if ($featured_img): ?>
-                                            <img src="<?php echo esc_url($featured_img); ?>"
-                                                 alt="<?php echo esc_attr(get_the_title($post_id)); ?>"
-                                                 width="780" height="680"
-                                                 loading="lazy" decoding="async">
-                                        <?php endif; ?>
+                                    <div class="o7-list-page-filter__card-image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded o7-card__image-wrapper--with-bg">
+                                        <div class="o7-content-card__image-frame o7-card__image-frame">
+                                            <a href="<?php echo get_permalink($post_id); ?>">
+                                                <?php if ($featured_img): ?>
+                                                <img src="<?php echo esc_url($featured_img); ?>"
+                                                    alt="<?php echo esc_attr(get_the_title($post_id)); ?>"
+                                                    width="780" height="680"
+                                                    loading="lazy" decoding="async"
+                                                    class="o7-card__image">
+                                                <?php endif; ?>
+                                            </a>
 
+                                        </div>
+                                        
                                         <?php if (!empty($all_tags)) : ?>
                                             <div class="o7-hover-chip">
                                                 <div class="o7-hover-chip__inner">
@@ -118,24 +124,23 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
 
                                     <!-- Title & Subtitle -->
 
-                                    <div class="o7-list-page-filter__card-title-wrapper">
-                                        <div class="o7-card-category">
-                                            <div class="o7-card-catagory__title-wrapper">
-                                                <span class="o7-card-catagory__decorative-dot"></span>
-                                                <p class="o7-card-catagory__title"><?php echo esc_html($platform); ?></p>
-                                            </div>
+                                    <div class="o7-card__info-block">
+                                        <div class="o7-card__title-wrapper">
+                                            <p class="o7-card__title-decorative-dot o7-card__title"><?php echo esc_html($platform); ?></p>
                                         </div>
 
-                                        <h3 class="o7-list-page-filter__card-tagline">
-                                           <?php the_title(); ?>
+                                        <h3 class="o7-content-card__header">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <?php the_title(); ?>
+                                            </a> 
                                         </h3>
                                         <?php if ($subtitle): ?>
-                                        <p class="post-excerpt">
+                                        <p class="o7-content-card__blog-para">
                                            <?php echo esc_html($subtitle); ?>
                                         </p>
                                         <?php endif; ?>
                                     </div>
-                                </a>
+                                
                             </article>
                         <?php
                         endwhile;
