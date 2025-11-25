@@ -57,12 +57,6 @@ while (have_posts()) : the_post();
                 <!-- Article Content -->
                 <div class="o7-stepper__article-wrapper o7-stepper-service-details__article-wrapper">
                     <article class="o7-stepper-article">
-                        <?php if ($subtitle): ?>
-                            <p class="o7-stepper-article__para o7-stepper-service-details__para o7-stepper-service-details__para-top-title">
-                                <?php echo wp_kses_post($subtitle); ?>
-                            </p>
-                        <?php endif; ?>
-
                         <?php echo $content_with_ids; ?>
                     </article>
                 </div>
