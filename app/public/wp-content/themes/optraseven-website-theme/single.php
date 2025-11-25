@@ -31,9 +31,6 @@ get_header();
                 <!-- Title & Subtitle -->
                 <header class="o7-blog-post__header">
                     <h1 class="o7-blog-post__title"><?php the_title(); ?></h1>
-                    <?php if ($subtitle) : ?>
-                        <p class="o7-blog-post__subtitle"><?php echo esc_html($subtitle); ?></p>
-                    <?php endif; ?>
                     <div class="o7-blog-post__platfrom-wrapper">
                         <?php if ($platform) : ?>
                             <span class="o7-blog-post__platfrom"><?php echo esc_html($platform); ?></span>
