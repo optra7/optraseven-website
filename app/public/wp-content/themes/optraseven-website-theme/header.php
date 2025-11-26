@@ -763,7 +763,7 @@
                                                         <span class="megamenu-tag-label">All</span>
                                                     </div>
                                                 </a>
-                                                <a href="">
+                                                <a href="#">
                                                     <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-fashion.svg" alt="">
@@ -948,46 +948,167 @@
                                         <h2 class="megamenu-tab-title">Most Popular Works</h2>
                                         <div class="megamenu-tab-card-container">
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
-                                                    <span class="megamenu-tab-card__icon-wrapper">
-                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                        </svg>
-                                                    </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Adord Vintage</span>
-                                                </div>
+                                                <a href="/case-studies/adored-vintage">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
+                                                        <span class="megamenu-tab-card__icon-wrapper">
+                                                            <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
+                                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Adord Vintage</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
-                                                    <span class="megamenu-tab-card__icon-wrapper">
-                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                        </svg>
-                                                    </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Velasca</span>
-                                                </div>
+                                                <a href="/case-studies/velasca">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
+                                                        <span class="megamenu-tab-card__icon-wrapper">
+                                                            <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
+                                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Velasca</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
+                                                <a href="/case-studies/castplus">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
+                                                        <span class="megamenu-tab-card__icon-wrapper">
+                                                            <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
+                                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Cast Plus</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="megamenu-tab-button-wrapper">
+                                            <a href="/case-studies" class="btn btn--secondary btn--x-small">
+                                                Show All
+                                                <svg class="fee-icon" aria-hidden="true" focusable="false">
+                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="megamenu-tab-industries">
+                                            <h2 class="megamenu-tab-title megamenu-tab-title--left-align">Industries</h2>
+                                            <div class="megamenu-tag-container">
+                                                <a href="/case-studies">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-all.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">All</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=shopify">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-shopify.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">Shopify</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=webflow">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-webflow.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">Webflow</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=fashion-and-clothing">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-fashion.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">Fashion & Clothing</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=beauty-accessories">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-beauty.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">Beauty & Accessories</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=business-industrial">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-business.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">Business & Industrial</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="megamenu-tab-container">
+                                        <h2 class="megamenu-tab-title">Shopify</h2>
+                                        <div class="megamenu-tab-card-container">
+                                            <div class="megamenu-tab-card">
+                                                <a href="/case-studies/verve-coffee-roasters">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Cast Plus</span>
-                                                </div>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Verve Coffee</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="megamenu-tab-card">
+                                                <a href="/case-studies/velasca">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
+                                                    <span class="megamenu-tab-card__icon-wrapper">
+                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
+                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Velasca</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="megamenu-tab-card">
+                                                <a href="/case-studies/azuna">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
+                                                    <span class="megamenu-tab-card__icon-wrapper">
+                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
+                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Azuna Fresh</span>
+                                                    </div>
+                                                </a>
                                             </div>
 
                                         </div>
@@ -1002,191 +1123,105 @@
                                         <div class="megamenu-tab-industries">
                                             <h2 class="megamenu-tab-title megamenu-tab-title--left-align">Industries</h2>
                                             <div class="megamenu-tag-container">
-                                                <div class="megamenu-tag-item">
+                                                <a href="/case-studies">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-all.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">All</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-shopify.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Shopify</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-webflow.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Webflow</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">All</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=fashion-and-clothing">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-fashion.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Fashion & Clothing</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">Fashion & Clothing</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=wellness-skincare">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-beauty.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Beauty & Wellness</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">Wellness & Skincare</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=business-industrial">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-business.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Business & Industrial</span>
-                                                </div>
+                                                        <span class="megamenu-tag-label">Business & Industrial</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=food-beverages">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-business.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">Food & Beverages</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="megamenu-tab-container">
-                                        <h2 class="megamenu-tab-title">Shopify</h2>
-                                        <div class="megamenu-tab-card-container">
-                                            <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
-                                                    <span class="megamenu-tab-card__icon-wrapper">
-                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                        </svg>
-                                                    </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Adord Vintage</span>
-                                                </div>
-                                            </div>
-                                            <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
-                                                    <span class="megamenu-tab-card__icon-wrapper">
-                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                        </svg>
-                                                    </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Velasca</span>
-                                                </div>
-                                            </div>
-                                            <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
-                                                    <span class="megamenu-tab-card__icon-wrapper">
-                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                        </svg>
-                                                    </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Cast Plus</span>
-                                                </div>
-                                            </div>
 
-                                        </div>
-                                        <div class="megamenu-tab-button-wrapper">
-                                            <a href="#" class="btn btn--secondary btn--x-small">
-                                                Show All
-                                                <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                        <div class="megamenu-tab-industries">
-                                            <h2 class="megamenu-tab-title megamenu-tab-title--left-align">Industries</h2>
-                                            <div class="megamenu-tag-container">
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-all.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">All</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-shopify.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Shopify</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-webflow.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Webflow</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-fashion.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Fashion & Clothing</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-beauty.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Beauty & Wellness</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-business.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Business & Industrial</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="megamenu-tab-container">
                                         <h2 class="megamenu-tab-title">Webflow</h2>
                                         <div class="megamenu-tab-card-container">
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
+                                                <a href="/case-studies/conbotics">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Adord Vintage</span>
-                                                </div>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Conbotics</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
+                                                <a href="/case-studies/technomaler">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Velasca</span>
-                                                </div>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Technomaler</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
+                                                <a href="/case-studies/castplus">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Cast Plus</span>
-                                                </div>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Cast Plus</span>
+                                                    </div>
+                                                </a>
                                             </div>
 
                                         </div>
                                         <div class="megamenu-tab-button-wrapper">
-                                            <a href="#" class="btn btn--secondary btn--x-small">
+                                            <a href="/case-studies" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
                                                     <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
@@ -1196,94 +1231,104 @@
                                         <div class="megamenu-tab-industries">
                                             <h2 class="megamenu-tab-title megamenu-tab-title--left-align">Industries</h2>
                                             <div class="megamenu-tag-container">
-                                                <div class="megamenu-tag-item">
+                                                <a href="/case-studies">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-all.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">All</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-shopify.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Shopify</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-webflow.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Webflow</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">All</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=fashion-and-clothing">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-fashion.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Fashion & Clothing</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">Fashion & Clothing</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=wellness-skincare">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-beauty.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Beauty & Wellness</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">Wellness & Skincare</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=business-industrial">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-business.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Business & Industrial</span>
-                                                </div>
+                                                        <span class="megamenu-tag-label">Business & Industrial</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=media-entertainment">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-business.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">Media & Entertainment</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="megamenu-tab-container">
                                         <h2 class="megamenu-tab-title">Custom Application</h2>
                                         <div class="megamenu-tab-card-container">
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
+                                                <a href="#">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Adord Vintage</span>
-                                                </div>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Anglo Health Care</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
+                                                <a href="#">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Velasca</span>
-                                                </div>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">EW Villa Medica</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="megamenu-tab-card">
-                                                <figure class="megamenu-tab-card__image-wrapper">
+                                                <a href="#">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                    <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
-                                                </figure>
-                                                <div class="megamenu-tab-card__title">
-                                                    <span class="megamenu-tab-card__title-circle"></span>
-                                                    <span class="megamenu-tab-card__title-text">Cast Plus</span>
-                                                </div>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Concord Stem Cell</span>
+                                                    </div>
+                                                </a>
                                             </div>
-
                                         </div>
                                         <div class="megamenu-tab-button-wrapper">
-                                            <a href="#" class="btn btn--secondary btn--x-small">
+                                            <a href="/case-studies" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
                                                     <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
@@ -1293,42 +1338,46 @@
                                         <div class="megamenu-tab-industries">
                                             <h2 class="megamenu-tab-title megamenu-tab-title--left-align">Industries</h2>
                                             <div class="megamenu-tag-container">
-                                                <div class="megamenu-tag-item">
+                                                <a href="/case-studies">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-all.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">All</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-shopify.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Shopify</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
-                                                    <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-webflow.svg" alt="">
-                                                    </span>
-                                                    <span class="megamenu-tag-label">Webflow</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">All</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-fashion.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Fashion & Clothing</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">Health Care</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=wellness-skincare">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-beauty.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Beauty & Wellness</span>
-                                                </div>
-                                                <div class="megamenu-tag-item">
+                                                        <span class="megamenu-tag-label">Wellness & Skincare</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=business-industrial">
+                                                    <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-business.svg" alt="">
                                                     </span>
-                                                    <span class="megamenu-tag-label">Business & Industrial</span>
-                                                </div>
+                                                        <span class="megamenu-tag-label">Business & Industrial</span>
+                                                    </div>
+                                                </a>
+                                                <a href="/case-studies/?filter=media-entertainment">
+                                                    <div class="megamenu-tag-item">
+                                                    <span class="megamenu-tag-icon-wrapper">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-business.svg" alt="">
+                                                    </span>
+                                                        <span class="megamenu-tag-label">Media & Entertainment</span>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
