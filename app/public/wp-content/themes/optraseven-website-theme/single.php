@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main single-blog">
+<main id="primary" class="site-main single-blog main inner-page-main">
     <?php while (have_posts()) : the_post();
 
         $post_id = get_the_ID();
@@ -25,7 +25,7 @@ get_header();
         $explore_portfolio  = get_field('explore_portfolio', $post_id);
 
         ?>
-    <section class="section">
+    <section class="section section-no-space-top">
         <div class="container">
             <article <?php post_class('o7-blog-post'); ?> id="post-<?php the_ID(); ?>">
 
@@ -42,6 +42,7 @@ get_header();
                         if (!empty($categories)) :
                             $category_names = wp_list_pluck($categories, 'name');
                             ?>
+                            <span class="decorative-dot"></span>
                             <span class="o7-blog-post__platfrom o7-blog-post__category">
                                 <?php echo esc_html(implode(', ', $category_names)); ?>
                             </span>
@@ -120,7 +121,7 @@ get_header();
                         </div>
                     <?php endforeach;
                 else : ?>
-                    <p>No comments yet. Be the first to comment!</p>
+                    <p class="no-comment-message">No comments yet. Be the first to comment!</p>
                 <?php endif; ?>
             </div>
         </div>
@@ -138,7 +139,7 @@ get_header();
         ?>
 
         <?php if (!empty($explore_fields)) : ?>
-            <section class="section o7-explore-more">
+            <section class="section o7-explore-more section-no-space-bottom">
                 <div class="container o7-arrow-card">
                     <h2 class="o7-arrow-card__title">Explore More</h2>
 

@@ -566,18 +566,7 @@ template {
         margin: 90px auto 60px;
     }
 }
-@media (max-width: 767px) {
-    .main {
-        /* margin-bottom: 40px; */
-    }
-    .main.inner-page-main {
-        /* margin-bottom: 40px; */
-    }
 
-    .main.content-with-stepper-main {
-        /* margin: 90px auto 40px; */
-    }
-}
 
 /* _____/ Page Main Container:end \_______*/
 
@@ -2933,7 +2922,7 @@ figure.megamenu__service-view-all-image-wrapper {
     text-align: center;
     font-size: 56px;
     font-weight: 400;
-    margin: 0 0 40px;
+    margin: 0 0 50px;
 }
 /* --- Explore More Title:end --- */
 
@@ -2960,7 +2949,7 @@ figure.megamenu__service-view-all-image-wrapper {
     }
     .o7-arrow-card__title {
         font-size: 36px;
-        margin: 0 0 30px;
+        margin: 0 0 40px;
     }
 }
 
@@ -2973,7 +2962,7 @@ figure.megamenu__service-view-all-image-wrapper {
     }
     .o7-arrow-card__title {
         font-size: 32px;
-        margin: 0 0 20px;
+        margin: 0 0 30px;
     }
 }
 @media (max-width: 767px) {
@@ -2985,7 +2974,7 @@ figure.megamenu__service-view-all-image-wrapper {
     }
     .o7-arrow-card__title {
         font-size: 26px;
-        margin: 0 0 15px;
+        margin: 0 0 20px;
     }
 }
 
@@ -3660,7 +3649,13 @@ figure.megamenu__service-view-all-image-wrapper {
     left: 0;
     top: 8px;
 }
-
+.decorative-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #7CE3AC;
+    border-radius: 50%;
+}
 
 /* --- Content Card:start ---  */
 .o7-content-card {
@@ -5204,12 +5199,9 @@ figure.megamenu__service-view-all-image-wrapper {
 
 
 /* Blog Post Start */
-.single-blog .section {
-    margin: 162px auto 0;
-}
 
 .o7-blog-post {
-    max-width: 1330px;
+    max-width: 900px;
     margin: 0 auto;
     width: 100%;
 }
@@ -5222,8 +5214,9 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-blog-post__platfrom-wrapper {
     display: flex;
-    gap: 30px;
-    margin: 30px 0;
+    gap: 15px;
+    align-items: center;
+    margin: 10px 0 30px;
     text-transform: capitalize;
 }
 
@@ -5371,7 +5364,7 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .o7-blog-post__platfrom-wrapper {
-        margin: 20px 0;
+        margin: 10px 0 20px;
     }
 
     .o7-blog-post__platfrom {
@@ -5406,8 +5399,8 @@ figure.megamenu__service-view-all-image-wrapper {
 /* Blog Comment Start */
 
 .o7-blog-post__comment-section {
-    max-width: 900px;
-    margin: 50px auto;
+    max-width: 730px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -5459,7 +5452,9 @@ figure.megamenu__service-view-all-image-wrapper {
 .comment-form p {
     margin: 15px 0;
 }
-
+.no-comment-message {
+    text-align: center;
+}
 .comment-form p label {
     font-size: 16px;
     font-weight: 400;
@@ -5756,6 +5751,12 @@ figure.megamenu__service-view-all-image-wrapper {
     /* Service list page media query END*/
 }
 
+
+@media (max-width: 1200px) {
+    .o7-blog-post-comment__heading {
+        font-size: 42px;
+    }
+}
 @media (max-width: 1024px) {
 
     .o7-service-card {
@@ -5824,8 +5825,26 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-service-card__link:hover .o7-service-card__link-label {
         transform: translateX(0);
     }
+    .o7-blog-post-comment__heading {
+        font-size: 36px;
+        margin: 0 0 30px;
+    }
+    .o7-blog-post-comment__input-box {
+        margin-bottom: 30px;
+    }
 }
-
+@media (max-width:991px) {
+    .o7-blog-post-comment__heading {
+        font-size: 32px;
+        margin: 0 0 20px;
+    }
+    .o7-blog-post-comment__input-box {
+        margin-bottom: 20px;
+    }
+    .no-comment-message {
+        font-size: 18px;
+    }
+}
 @media (max-width: 767px) {
 
     .o7-service-card__title {
@@ -5838,6 +5857,13 @@ figure.megamenu__service-view-all-image-wrapper {
 
     .o7-service-card__link {
         padding: 0 0 12px 0;
+    }
+    .o7-blog-post-comment__heading {
+        font-size: 26px;
+        margin: 0 0 15px;
+    }
+     .no-comment-message {
+        font-size: 16px;
     }
 
 }
@@ -6962,10 +6988,6 @@ figure.megamenu__service-view-all-image-wrapper {
 
 /* Blog Post Details */
 
-.o7-blog-post__comment-section {
-    max-width: 730px;
-    margin: 120px auto 0;
-}
 
 .o7-blog-details-arrow-card-wrapper {
     display: flex;
