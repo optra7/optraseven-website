@@ -40,28 +40,34 @@ $explore_fields = array_filter($explore_fields);
                     $image = get_the_post_thumbnail($linked_post->ID, 'medium_large', [
                         'alt' => esc_attr($title),
                         'loading' => 'lazy',
-                        'decoding' => 'async'
+                        'decoding' => 'async',
+                        'class' => 'o7-card__image'
                     ]);
                     ?>
-                    <article class="o7-arrow-card__card o7-arrow-card__card--<?php echo esc_attr($linked_post->post_type); ?>">
-                        <a href="<?php echo esc_url(get_permalink($linked_post->ID)); ?>" class="o7-arrow-card__card-link">
+                    <article class="o7-content-card o7-content-card--<?php echo esc_attr($linked_post->post_type); ?>">
                             <div class="o7-arrow-card__card-image-wrapper">
-                                <?php echo $image ?: '<div class="o7-arrow-card__card-placeholder"></div>'; ?>
-                                <div class="o7-arrow-card__card-hover-chip">
-                                    <svg class="o7-arrow-card__card-hover-icon" aria-hidden="true">
-                                        <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right" ?>></use>
-                                    </svg>
+                                <div class="o7-card__image-frame">
+                                    <a href="<?php echo esc_url(get_permalink($linked_post->ID)); ?>">
+                                    <?php echo $image ?: '<div class="o7-arrow-card__card-placeholder"></div>'; ?>
+                                    </a>
                                 </div>
+                                <a href="<?php echo esc_url(get_permalink($linked_post->ID)); ?>" class="o7-content-card__circle">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-up-right-svgrepo-com.svg"
+                                        alt="arrow"
+                                        class="o7-content-card__circle-arrow">
+                                </a>
                             </div>
-                            <div class="o7-arrow-card__card-title-wrapper">
-                                <div class="o7-arrow-card__card-category-wrapper">
-                                    <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($type_label); ?></p>
-                                    <span class="o7-arrow-card__card-decorative-dot"></span>
-                                    <p class="o7-arrow-card__card-catagory-title"><?php echo esc_html($title); ?></p>
+                            <div class="o7-card__info-block">
+                                <div class="o7-card__title-wrapper">
+                                    <p class="o7-card__title"><?php echo esc_html($type_label); ?></p>
+                                    <p class="o7-card__title-decorative-dot o7-card__title"><?php echo esc_html($title); ?></p>
                                 </div>
-                                <h3 class="o7-arrow-card__card-tagline"><?php echo esc_html($subtitle); ?></h3>
+                                <h3 class="o7-content-card__header">
+                                    <a href="<?php echo esc_url(get_permalink($linked_post->ID)); ?>">
+                                    <?php echo esc_html($subtitle); ?>
+                                    </a>
+                                </h3>
                             </div>
-                        </a>
                     </article>
                 <?php endforeach; ?>
             </div>

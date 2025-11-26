@@ -2882,17 +2882,17 @@ figure.megamenu__service-view-all-image-wrapper {
 
 /* Trust Badge Review Chip End */
 
-/* Section Header */
+/* 
+// Heading Title:start
+----------------------------------------- */
 
-
+/* --- Section Heading:start --- */
 .o7-section-header {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 40px;
 }
-
-
 .o7-section-header__title {
     font-family: "Manrope", sans-serif;
     font-size: 24px;
@@ -2902,7 +2902,6 @@ figure.megamenu__service-view-all-image-wrapper {
     display: flex;
     align-items: center;
 }
-
 .o7-section-header__sub-title {
     font-family: "Manrope", sans-serif;
     font-size: 56px;
@@ -2911,8 +2910,6 @@ figure.megamenu__service-view-all-image-wrapper {
     margin: 0;
 
 }
-
-
 .o7-section-header__title-pointer {
     width: 10px;
     height: 10px;
@@ -2922,7 +2919,6 @@ figure.megamenu__service-view-all-image-wrapper {
     display: inline-block;
     margin-right: 10px;
 }
-
 .o7-section-header__subtitle-container {
     display: flex;
     justify-content: space-between;
@@ -2930,7 +2926,19 @@ figure.megamenu__service-view-all-image-wrapper {
     gap: 24px;
     margin: 0;
 }
+/* --- Section Heading:end --- */
 
+/* --- Explore More Title:start --- */
+.o7-arrow-card__title {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0 0 40px;
+}
+/* --- Explore More Title:end --- */
+
+
+/* ======== Responsive Design ======== */
 @media (max-width: 1200px) {
     .o7-section-header__sub-title {
         font-size: 42px;
@@ -2950,6 +2958,10 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-section-header__title {
         font-size: 20px;
     }
+    .o7-arrow-card__title {
+        font-size: 36px;
+        margin: 0 0 30px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -2959,6 +2971,10 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-section-header__sub-title {
         font-size: 32px;
     }
+    .o7-arrow-card__title {
+        font-size: 32px;
+        margin: 0 0 20px;
+    }
 }
 @media (max-width: 767px) {
     .o7-section-header {
@@ -2966,6 +2982,10 @@ figure.megamenu__service-view-all-image-wrapper {
     }
     .o7-section-header__sub-title {
         font-size: 26px;
+    }
+    .o7-arrow-card__title {
+        font-size: 26px;
+        margin: 0 0 15px;
     }
 }
 
@@ -2975,7 +2995,8 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 }
 
-/* Section Header End */
+/* _____/ Heading Title:end \_______*/
+
 
 /* Logo Slider START */
 
@@ -3232,16 +3253,6 @@ figure.megamenu__service-view-all-image-wrapper {
 
 
 
-.o7-card__image-frame {
-    position: relative;
-}
-.o7-card__image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.45s ease;
-}
 
 
 
@@ -3578,6 +3589,19 @@ figure.megamenu__service-view-all-image-wrapper {
 .service-col-two .o7-content-card {
     margin-top: 110px;
 }
+.o7-arrow-card__card a {
+    text-decoration: none;
+    color: #202020;
+}
+
+.o7-arrow-card__card-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.o7-arrow-card__card-wrapper .o7-content-card {
+    flex: 0 0 calc(50% - 20px);
+}
 
 .o7-card__image-wrapper,
 .o7-card__image-frame {
@@ -3591,6 +3615,20 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-card__image-wrapper--with-bg {
     padding: 35px;
 }
+.o7-card__image-frame {
+    position: relative;
+}
+.o7-card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+.o7-content-card:hover .o7-card__image {
+    transform: scale(1.05);
+}
+
 .o7-card__info-block {
     margin: 35px 0 0 0;
     padding: 0 10px;
@@ -3752,6 +3790,12 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-content-card--scrolling-snap {
         flex: 0 0 calc(50% - 10px);
     }
+    .o7-arrow-card__card-wrapper {
+        gap: 20px;
+    }
+    .o7-arrow-card__card-wrapper .o7-content-card {
+        flex: 0 0 calc(50% - 10px);
+    }
     .o7-content-card__circle {
         width: 50px;
         height: 50px;
@@ -3868,7 +3912,12 @@ figure.megamenu__service-view-all-image-wrapper {
         flex-direction: column;
         gap: 30px;
     }
-
+    .o7-arrow-card__card-wrapper {
+        gap: 15px;
+    }
+    .o7-arrow-card__card-wrapper .o7-content-card {
+        flex: 0 0 calc(50% - 7.5px);
+    }
     .o7-content-card--scrolling-snap {
         flex: 0 0 calc(50% - 7.5px);
     }
@@ -3900,6 +3949,13 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-list-page-filter__column-right {
         gap: 50px;
         margin: 0;
+    }
+    .o7-arrow-card__card-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .o7-arrow-card__card-wrapper .o7-content-card {
+        flex: 0 0 calc(50% - 7.5px);
     }
     /* --- Card Chip responsive:start */
     .o7-hover-chip__buton--hidden-mobile {
@@ -5069,188 +5125,6 @@ figure.megamenu__service-view-all-image-wrapper {
 
 /* Details Page post End */
 
-/* Explore More Arrow Card*/
-
-.o7-arrow-card__title {
-    text-align: center;
-    font-size: 56px;
-    font-weight: 400;
-    margin: 0 0 60px;
-}
-
-.o7-arrow-card__card a {
-    text-decoration: none;
-    color: #202020;
-}
-
-.o7-arrow-card__card-wrapper {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.o7-arrow-card__card {
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: calc(50% - 20px);
-}
-
-.o7-arrow-card__card-image-wrapper img {
-    width: 100%;
-    display: block;
-    height: auto;
-    border-radius: 25px;
-}
-
-.o7-arrow-card__card-image-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-/* .o7-arrow-card__card-image-wrapper:nth-child(1){
-    background-color: #BEA1A2;
-}
-.o7-arrow-card__card-image-wrapper:nth-child(2){
-    background-color: #25566C;
-} */
-
-
-.o7-arrow-card__card-hover-chip {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    border-radius: 50px;
-    background-color: #E7E7E7;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -60px;
-    right: -60px;
-    transition: all 0.4s ease;
-}
-
-
-.o7-arrow-card__card-hover-icon {
-    width: 40px;
-    height: 40px;
-    fill: #202020;
-}
-
-
-.o7-arrow-card__card:hover .o7-arrow-card__card-hover-chip {
-    top: 30px;
-    right: 30px;
-}
-
-.o7-arrow-card__card-title-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 40px 0 0;
-    padding-left: 10px;
-}
-
-.o7-arrow-card__card-category-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.o7-arrow-card__card-decorative-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    background-color: #7CE3AC;
-}
-
-.o7-arrow-card__card-catagory-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
-}
-
-.o7-arrow-card__card-tagline {
-    font-size: 32px;
-    font-weight: 500;
-    margin: 0;
-}
-
-
-@media (max-width: 1400px) {
-    .o7-arrow-card__title {
-        font-size: 42px;
-    }
-
-    .o7-arrow-card__card-wrapper {
-        display: flex;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .o7-arrow-card__title {
-        font-size: 38px;
-    }
-
-    .o7-arrow-card__card-image-wrapper img {
-        border-radius: 16px;
-    }
-
-    .o7-arrow-card__card-tagline {
-        font-size: 24px;
-    }
-
-    .o7-arrow-card__card-hover-chip {
-        display: none;
-    }
-}
-
-@media (max-width: 1024px) {
-    .o7-arrow-card__title {
-        font-size: 36px;
-        margin: 0 0 40px;
-    }
-
-
-    .o7-arrow-card__card-catagory-title {
-        font-size: 16px;
-    }
-
-}
-
-@media (max-width: 767px) {
-    .o7-arrow-card__title {
-        font-size: 24px;
-    }
-
-    .o7-arrow-card__card-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .o7-arrow-card__card-title-wrapper {
-        gap: 8px;
-        margin: 36px 0 0;
-    }
-
-    .o7-arrow-card__card-tagline {
-        font-size: 20px;
-    }
-
-    .o7-arrow-card__card-catagory-title {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 576px) {
-    .o7-arrow-card__title {
-        margin: 0 0 30px;
-    }
-}
-
-/* Explore More Arrow Card END */
 
 /* Details Page Post */
 .o7-details-page-post p {
