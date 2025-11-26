@@ -20,12 +20,18 @@
         // Get Case Study categories
         $categories = get_the_terms(get_the_ID(), 'case_study_category');
         if ($categories && !is_wp_error($categories)) :
-            foreach ($categories as $cat) :
-                echo '<div class="o7-card__title-wrapper">';
-                echo '<p class="o7-card__title">' . esc_html($cat->name) . '</p>';
-                echo '<p class="o7-card__title-decorative-dot o7-card__title">' . esc_html(get_the_title()) . '</p>';
-                echo '</div>';
-            endforeach;
+//            foreach ($categories as $cat) :
+//                echo '<div class="o7-card__title-wrapper">';
+//                echo '<p class="o7-card__title">' . esc_html($cat->name) . '</p>';
+//                echo '<p class="o7-card__title-decorative-dot o7-card__title">' . esc_html(get_the_title()) . '</p>';
+//                echo '</div>';
+//            endforeach;
+            $cat = $categories[0];
+
+            echo '<div class="o7-card__title-wrapper">';
+            echo '<p class="o7-card__title">' . esc_html($cat->name) . '</p>';
+            echo '<p class="o7-card__title o7-card__title-decorative-dot">' . esc_html(get_the_title()) . '</p>';
+            echo '</div>';
         endif;
         ?>
 
