@@ -2608,7 +2608,7 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .o7-hero__title-span {
-        padding: 0 10px 12px;
+        padding: 0px 16px 10px 10px;
         border-radius: 0 0 16px 0;
     }
 }
@@ -2627,10 +2627,12 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .o7-hero__title-span {
-        padding: 0 10px 12px 0;
+        padding: 0 15px 8px 0;
         border-radius: 0 0 16px 0;
     }
-
+    .o7-hero__button-chip-wrapper {
+        max-width: 170px;
+    }
 
     .o7-hero__rating {
         font-size: 22px;
@@ -2642,11 +2644,6 @@ figure.megamenu__service-view-all-image-wrapper {
         max-height: 14px;
     }
 
-    .o7-hero__button-wrapper {
-        border-radius: 0 0 25px 0;
-        height: 52px;
-    }
-
     .o7-hero__curve-icon-bottom-1024 {
         display: inline;
         position: absolute;
@@ -2655,15 +2652,25 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .o7-hero__button-wrapper {
-        border-radius: 0 0 16px 0;
+        border-radius: 0 0 14px 0;
         display: flex;
         justify-content: start;
         max-width: 162px;
         height: 60px;
+        padding-bottom: 12px;
     }
 
     .o7-hero__image img {
         border-radius: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .o7-hero__button-wrapper {
+        border-radius: 0 0 28px 0;
+    }
+    .o7-hero__button-chip-wrapper {
+        max-width: 159px;
     }
 }
 
@@ -2721,6 +2728,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
     .o7-hero__title {
         font-size: 24px;
+        padding: 0 15px 0 0;
     }
 
     .o7-hero__title-span--mobile {
@@ -2746,8 +2754,8 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .o7-hero__title-span {
-        padding: 0 7px 9px 0;
-        border-radius: 0 0 25px 0;
+        padding: 0px 7px 5px 0;
+        border-radius: 0 0 14px 0;
     }
 
     .o7-hero__button-wrapper {
@@ -2764,7 +2772,7 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .hero__title-span--mobile {
-        padding-right: 30px;
+        padding-right: 19px;
     }
 }
 
