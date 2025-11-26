@@ -8,6 +8,7 @@ while (have_posts()) : the_post();
 
 // Get ACF & core fields
     $hero_image    = get_the_post_thumbnail_url(get_the_ID(), 'full');
+    $banner_image = get_field('banner_image');
     $subtitle      = get_field('subtitle');
     $platform      = get_field('platform');
     $explore_blog  = get_field('explore_blog');
@@ -28,10 +29,24 @@ while (have_posts()) : the_post();
 
     <main class="main inner-page-main">
         <section class="section section-no-space-top o7-stepper o7-stepper-service-details">
-            <?php if ($hero_image): ?>
+            <?php if (!empty($banner_image)) : ?>
+
+                <!-- Show Banner Image -->
+                <img src="<?php echo esc_url($banner_image); ?>"
+                     alt="<?php the_title_attribute(); ?>"
+                     class="o7-stepper-service-details__hero-image"
+                     decoding="async"
+                     fetchpriority="high">
+
+            <?php elseif (!empty($hero_image)) : ?>
+
+                <!-- Show Hero Image -->
                 <img src="<?php echo esc_url($hero_image); ?>"
                      alt="<?php the_title_attribute(); ?>"
-                     class="o7-stepper-service-details__hero-image">
+                     class="o7-stepper-service-details__hero-image"
+                     decoding="async"
+                     fetchpriority="high">
+
             <?php endif; ?>
 
             <div class="container o7-stepper-wrapper">

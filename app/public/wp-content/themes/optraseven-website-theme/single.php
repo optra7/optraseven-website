@@ -17,6 +17,7 @@ get_header();
         $author_id = get_post_field('post_author', get_the_ID());
         $author_name = get_the_author_meta('display_name', $author_id);
         $featured_image     = get_the_post_thumbnail_url($post_id, 'large');
+        $banner_image = get_field('banner_image');
 
         // Explore links
         $explore_service    = get_field('explore_service', $post_id);
@@ -53,8 +54,13 @@ get_header();
                     </div>
                 </header>
 
-                <!-- Featured Image -->
-                <?php if ($featured_image) : ?>
+                <?php if (!empty($banner_image)) : ?>
+                    <!-- Show Banner Image -->
+                    <div class="o7-blog-post__banner-image">
+                        <img src="<?php echo esc_url($banner_image); ?>" alt="<?php the_title_attribute(); ?>" width="1000" height="500">
+                    </div>
+                <?php elseif (!empty($featured_image)) : ?>
+                    <!-- Featured Image -->
                     <div class="o7-blog-post__banner-image">
                         <img src="<?php echo esc_url($featured_image); ?>" alt="<?php the_title_attribute(); ?>" width="1000" height="500">
                     </div>
