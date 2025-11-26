@@ -37,20 +37,7 @@
             <div class="megamenu">
                 <a class="main-menu__link has-megamenu">Portfolio</a>
                 <div class="megamenu__content-container-left megamenu__content-container-left--service megamenu__mobile-item-container">
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
-                        <div class="megamenu__link-card-text-wrapper">
-                            <p class="megamenu__link-card-title">
-                                Most Popular
-                            </p>
-                            <p class="megamenu__link-card-subtitle">
-                                Shopify solutions that boost sales success.
-                            </p>
-                        </div>
-                        <div class="megamenu__link-card-icon-wrapper">
-                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
-                        </div>
-                    </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/portfolio/?filter=shopify">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Shopify
@@ -63,33 +50,20 @@
                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                         </div>
                     </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/portfolio/?filter=webflow">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Webflow
                             </p>
                             <p class="megamenu__link-card-subtitle">
-                                Shopify solutions that boost sales success.
+                                Webflow sites that boost business.
                             </p>
                         </div>
                         <div class="megamenu__link-card-icon-wrapper">
                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                         </div>
                     </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
-                        <div class="megamenu__link-card-text-wrapper">
-                            <p class="megamenu__link-card-title">
-                                CRO
-                            </p>
-                            <p class="megamenu__link-card-subtitle">
-                                Shopify solutions that boost sales success.
-                            </p>
-                        </div>
-                        <div class="megamenu__link-card-icon-wrapper">
-                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
-                        </div>
-                    </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/portfolio/?filter=custom-application">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Custom Application
@@ -192,20 +166,7 @@
             <div class="megamenu">
                 <a class="main-menu__link has-megamenu">Case Studies</a>
                 <div class="megamenu__content-container-left megamenu__content-container-left--service megamenu__mobile-item-container">
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
-                        <div class="megamenu__link-card-text-wrapper">
-                            <p class="megamenu__link-card-title">
-                                Most Popular
-                            </p>
-                            <p class="megamenu__link-card-subtitle">
-                                Shopify solutions that boost sales success.
-                            </p>
-                        </div>
-                        <div class="megamenu__link-card-icon-wrapper">
-                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
-                        </div>
-                    </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/case-studies/?filter=shopify">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Shopify
@@ -218,7 +179,7 @@
                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                         </div>
                     </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/case-studies/?filter=webflow">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Webflow
@@ -231,20 +192,7 @@
                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                         </div>
                     </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
-                        <div class="megamenu__link-card-text-wrapper">
-                            <p class="megamenu__link-card-title">
-                                CRO
-                            </p>
-                            <p class="megamenu__link-card-subtitle">
-                                Shopify solutions that boost sales success.
-                            </p>
-                        </div>
-                        <div class="megamenu__link-card-icon-wrapper">
-                            <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
-                        </div>
-                    </a>
-                    <a class="megamenu__link-card megamenu__link-card--service" href="#">
+                    <a class="megamenu__link-card megamenu__link-card--service" href="/case-studies/?filter=custom-application">
                         <div class="megamenu__link-card-text-wrapper">
                             <p class="megamenu__link-card-title">
                                 Custom Application
@@ -934,7 +882,7 @@
                                     </div>
                                     <a href="/case-studies" class="megamenu__service-view-all-card">
                                         <div class="megamenu__service-view-all-title-wrapper">
-                                            <h2 class="megamenu__service-view-all-title">Explore Our Work</h2>
+                                            <h2 class="megamenu__service-view-all-title">Explore Our Journey</h2>
                                             <img class="megamenu__link-card-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage/tab-accordion-icon.webp" alt="accordion-icon">
                                         </div>
                                         <p class="megamenu__service-view-all-description">Take a look at our collection of completed projects</p>
@@ -945,7 +893,7 @@
                                 </div>
                                 <div class="megamenu__right-panel">
                                     <div class="megamenu-tab-container">
-                                        <h2 class="megamenu-tab-title">Most Popular Works</h2>
+                                        <h2 class="megamenu-tab-title">Most Popular Stories</h2>
                                         <div class="megamenu-tab-card-container">
                                             <div class="megamenu-tab-card">
                                                 <a href="/case-studies/adored-vintage">
