@@ -6401,7 +6401,9 @@
                             Bangladesh
                         </h2>
                         <address class="o7-map__addreess">
-                            Bogura District, Rajshahi Division
+                            <span>Shere Bangla Nagar,</span>
+                            <span>Dhaka - 1207,</span>
+                            <span>Bangladesh.</span> 
                         </address>
                         <h2 class="o7-map__whatsapp">
                             whatsapp
@@ -6442,7 +6444,9 @@
                         Bangladesh
                     </h2>
                     <address class="o7-map__addreess">
-                        Bogura District, Rajshahi Division
+                        <span>Shere Bangla Nagar,</span>
+                        <span>Dhaka - 1207,</span>
+                        <span>Bangladesh.</span> 
                     </address>
                     <h2 class="o7-map__whatsapp">
                         whatsapp

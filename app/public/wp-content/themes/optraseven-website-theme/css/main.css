@@ -1660,7 +1660,8 @@ aside.main-menu-responsive.active {
     margin: 0px;
 }
 
-.o7-footer__menu-links-ul li a {
+.o7-footer__menu-links-ul li a,
+.o7-footer__menu-links-ul li .region {
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 0.4px;
@@ -1927,7 +1928,8 @@ aside.main-menu-responsive.active {
         font-size: 26px;
     }
 
-    .o7-footer__menu-links-ul li a {
+    .o7-footer__menu-links-ul li a,
+    .o7-footer__menu-links-ul li .region {
         font-size: 20px;
     }
 
@@ -1982,7 +1984,8 @@ aside.main-menu-responsive.active {
         padding: 0 0 10px 0;
     }
 
-    .o7-footer__menu-links-ul li a {
+    .o7-footer__menu-links-ul li a,
+    .o7-footer__menu-links-ul li .region {
         font-size: 18px;
     }
 
@@ -7082,10 +7085,14 @@ figure.megamenu__service-view-all-image-wrapper {
     flex-grow: 0;
     flex-shrink: 0;
 }
-.o7-contact-us__form-address {
+.o7-contact-us__form-address,
+.o7-contact-us__form-address:hover {
     font-size: 16px;
     font-weight: 400;
     color: #000000;
+}
+.o7-contact-us__form-address span {
+    display: block;
 }
 .o7-contact-us__form-address-header {
     font-size: 16px;

@@ -34,7 +34,10 @@ get_header();
 
                         <div class="o7-get-the-quote__info">
                             <h2 class="o7-get-the-quote__location">Headquarter</h2>
-                            <address class="o7-get-the-quote__address">Bogura District, Rajshahi Division, Bangladesh
+                            <address class="o7-contact-us__form-address">
+                                <span>Shere Bangla Nagar,</span>
+                                <span>Dhaka - 1207,</span>
+                                <span>Bangladesh.</span> 
                             </address>
                         </div>
 

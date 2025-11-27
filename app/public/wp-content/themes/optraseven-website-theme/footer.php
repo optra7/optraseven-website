@@ -132,39 +132,35 @@
                             Get In Touch</h6>
                         <ul class="o7-footer__menu-links-ul">
                             <li>
-                                <a href="http://wa.me/+8801784287229" target="_blank">
-                                    <div class="o7-footer__address o7-footer__address--reverse">
-                                        <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
-                                            aria-hidden="true" focusable="false">
-                                            <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline"?>></use>
-                                        </svg>
-                                        (+880) 1784287229
-                                    </div>
-                                </a>
+                                <div class="o7-footer__address o7-footer__address--reverse">
+                                    <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
+                                        aria-hidden="true" focusable="false">
+                                        <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline"?>></use>
+                                    </svg>
+                                    <a href="http://wa.me/+8801784287229" target="_blank">(+880) 1784287229</a>
+                                </div>
                             </li>
                             <li>
-                                <a href="mailto:optraseven@gmail.com" target="_blank">
-                                    <div class="o7-footer__address o7-footer__address--reverse">
-                                        <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
-                                            aria-hidden="true" focusable="false">
-                                            <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
-                                        </svg>
-                                        optraseven@gmail.com
-                                    </div>
-                                </a>
+                                <div class="o7-footer__address o7-footer__address--reverse">
+                                    <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
+                                        aria-hidden="true" focusable="false">
+                                        <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
+                                    </svg>
+                                    <a href="mailto:optraseven@gmail.com" target="_blank">optraseven@gmail.com</a>
+                                </div>
                             </li>
-                            <li>
-                                <a class="region" href="#">
-                                    <div class="o7-footer__address o7-footer__address--reverse">
-                                        <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
-                                            aria-hidden="true" focusable="false">
-                                            <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#location-arrow-outline"?>></use>
-                                        </svg>
-                                        Bogura District,<br>
-                                        Rajshahi Division,<br>
-                                        Bangladesh
+                            <li> 
+                                <div class="o7-footer__address o7-footer__address--reverse">
+                                    <svg class="o7-icon o7-footer__address-icon o7-footer__address-icon--flip-horizontal"
+                                        aria-hidden="true" focusable="false">
+                                        <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#location-arrow-outline"?>></use>
+                                    </svg>
+                                    <div class="region">
+                                        Shere Bangla Nagar,<br>
+                                        Dhaka - 1207,<br>
+                                        Bangladesh.
                                     </div>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
