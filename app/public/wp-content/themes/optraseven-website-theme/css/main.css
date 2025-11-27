@@ -2551,15 +2551,6 @@ figure.megamenu__service-view-all-image-wrapper {
     right: -15px;
 }
 
-.o7-hero__button-wrapper {
-    display: flex;
-    justify-content: center;
-    max-width: 180px;
-    height: 65px;
-    padding-bottom: 10px;
-    border-radius: 0 0 25px 25px;
-    background-color: #f5f5f5;
-}
 
 .o7-hero__curver-icon-top {
     position: absolute;
@@ -2582,6 +2573,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-hero__image img {
     width: 100%;
+    height: auto;
     border-radius: 25px;
 }
 
@@ -3011,28 +3003,25 @@ figure.megamenu__service-view-all-image-wrapper {
     position: relative;
 }
 
-.o7-logo-slider::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80px;
-    height: 100%;
-    background: linear-gradient(to left, rgba(245, 245, 245, 0.2), #f5f5f5);
-    backdrop-filter: blur(5px);
-    content: "";
-    z-index: 2;
-}
-
+.o7-logo-slider::before,
 .o7-logo-slider::after {
     position: absolute;
     top: 0;
-    right: 0;
     width: 80px;
     height: 100%;
-    background: linear-gradient(to right, rgba(245, 245, 245, 0.2), #f5f5f5);
-    backdrop-filter: blur(5px);
     content: "";
     z-index: 2;
+    pointer-events: none;
+}
+
+.o7-logo-slider::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(245,245,245,0.2), #f5f5f5);
+}
+
+.o7-logo-slider::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(245,245,245,0.2), #f5f5f5);
 }
 
 @keyframes slide {
@@ -3045,17 +3034,22 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 }
 
+.o7-logo-slider__track{
+    display: inline-flex;
+    animation: slide 26s linear infinite;
+}
+
 .o7-logo-slider__logos {
-    display: inline-block;
-    animation: 20s slide infinite linear;
+    display: inline-flex;
 }
 
 .o7-logo-slider__logos img {
     margin: 0 50px;
     max-height: 40px;
+    flex-shrink: 0;
 }
 
-.o7-logo-slider:hover .o7-logo-slider__logos {
+.o7-logo-slider:hover .o7-logo-slider__track {
     animation-play-state: paused;
 }
 
@@ -3124,11 +3118,13 @@ figure.megamenu__service-view-all-image-wrapper {
 }
 
 .o7-accordion__answer {
-    background-color: #E7E7E7;
+    background-color: #e7e7e7;
+    color: transparent;
     border-radius: 0 0 25px 25px;
-    transition-duration: .3s;
-    transition-timing-function: cubic-bezier(.4, 2, .2, 1);
-    transition-property: all;
+    transition: height .2s ease-in-out, opacity .1s  ease-in-out;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
 }
 
 .o7-accordion__answer-text {
@@ -3136,6 +3132,12 @@ figure.megamenu__service-view-all-image-wrapper {
     font-weight: 400;
     margin-bottom: 0px;
     padding: 0 30px 30px;
+}
+
+.o7-accordion__item.active .o7-accordion__answer{
+    height: auto;
+    color: var(--dark-color);
+    opacity: 1;
 }
 
 

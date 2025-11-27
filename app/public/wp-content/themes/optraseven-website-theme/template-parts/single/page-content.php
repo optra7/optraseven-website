@@ -7,9 +7,9 @@ $args = $args ?? [];
 $args = wp_parse_args($args, ['post_id' => get_the_ID()]);
 $post_id = $args['post_id'];
 ?>
-
+<?php if (!wp_is_mobile()) :?>
 <h1 class="o7-details-page-post__title o7-details-page-post__title--pc"><?php echo get_the_title($post_id); ?></h1>
-
+<?php endif; ?>
 <?php if ($subtitle = get_field('sub_title', $post_id)) : ?>
     <h2 class="o7-details-page-post__sub-title"><?php echo esc_html($subtitle); ?></h2>
 <?php endif; ?>

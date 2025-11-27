@@ -71,8 +71,8 @@ get_header();
                         </div>
                         <div class="o7-hero__button-chip-wrapper">
                             <div class="o7-hero__button-wrapper">
-                                <a href="/portfolio" class="btn btn--secondary btn--medium o7-hero__button">
-                                    Our Works
+                                <a href="https://cal.com/optraseven/appointment" target="_blank" class="btn btn--secondary btn--medium o7-hero__button">
+                                    Book a Call
                                     <svg class="fee-icon" aria-hidden="true" focusable="false">
                                         <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#arrow-up-right" ?>></use>
                                     </svg>
@@ -100,7 +100,7 @@ get_header();
                     <source media="(min-width:1024px)" srcset=<?= get_template_directory_uri() . "/assets/images/homepage/Hero-image.webp" ?> />
                     <source media="(min-width:769px)" srcset=<?= get_template_directory_uri() . "/assets/images/homepage/Hero-image-tab.webp" ?> />
                     <source media="(min-width:100px)" srcset=<?= get_template_directory_uri() . "/assets/images/homepage/Hero-image-mobile.webp" ?> />
-                    <img src=<?= get_template_directory_uri() . "./images/homepage/Hero-image.webp" ?> alt="" />
+                    <img width="1600px" height="950px" src=<?= get_template_directory_uri() . "./images/homepage/Hero-image.webp" ?> alt="" />
                 </picture>
             </div>
         </div>

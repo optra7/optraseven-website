@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Logo Slider Template Part
  *
@@ -22,13 +23,15 @@ $base_uri = get_template_directory_uri() . $path;
 <section class="section section-infinity-logo-slider">
     <div class="section-infinity-logo-slider__container">
         <div class="o7-logo-slider">
-            <?php for ($i = 0; $i < 2; $i++): ?>
-                <div class="o7-logo-slider__logos">
-                    <?php foreach ($images as $img): ?>
-                        <img src="<?= esc_url($base_uri . $img) ?>" alt="logo-<?= esc_attr(pathinfo($img, PATHINFO_FILENAME)) ?>">
-                    <?php endforeach; ?>
-                </div>
-            <?php endfor; ?>
+            <div class="o7-logo-slider__track">
+                <?php for ($i = 0; $i < 2; $i++): ?>
+                    <div class="o7-logo-slider__logos">
+                        <?php foreach ($images as $img): ?>
+                            <img src="<?= esc_url($base_uri . $img) ?>" alt="logo-<?= esc_attr(pathinfo($img, PATHINFO_FILENAME)) ?>">
+                        <?php endforeach; ?>
+                    </div>
+                <?php endfor; ?>
+            </div>
         </div>
     </div>
 </section>

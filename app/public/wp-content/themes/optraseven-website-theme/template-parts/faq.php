@@ -130,7 +130,7 @@ $sprite = esc_url($data['sprite_path']);
                                 </div>
                             </div>
 
-                            <div class="o7-accordion__answer" hidden data-o7-accordion-panel>
+                            <div class="o7-accordion__answer" data-o7-accordion-panel>
                                 <p class="o7-accordion__answer-text"><?php echo wp_kses_post(nl2br(esc_html($qa['a']))); ?></p>
                             </div>
                         </li>

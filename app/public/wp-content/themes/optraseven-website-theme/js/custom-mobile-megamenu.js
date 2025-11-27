@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Your existing accordion functionality (keep this if you need it for other accordions)
+
     const accordionItems = document.querySelectorAll(".o7-accordion__item");
 
     if (accordionItems) {
@@ -85,11 +85,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (item !== clickedItem) {
                     item.classList.remove("active");
                     item.setAttribute("aria-expanded", "false");
-                    answer.hidden = true;
-                } else {
+                    answer.style.height = "0px";
+                    // answer.hidden = true;
+                } else if(item === clickedItem && !item.classList.contains("active")) {
                     const isActive = item.classList.toggle("active");
                     item.setAttribute("aria-expanded", String(isActive));
-                    answer.hidden = !isActive;
+                    answer.style.height = answer.scrollHeight + "px";
+                    // answer.hidden = !isActive;
                 }
             });
         }
