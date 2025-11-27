@@ -590,7 +590,10 @@ template {
     margin-top: 0;
     margin-bottom: 0;
 }
-
+.section.section-no-left-right {
+    padding-left: 0;
+    padding-right: 0;
+}
 @media (max-width: 1200px) {
     .section {
         margin: 100px auto;
@@ -2341,6 +2344,7 @@ figure.megamenu__service-view-all-image-wrapper {
     position: absolute;
     right: 30px;
     top: 16px;
+    cursor: pointer;
 }
 
 .o7-news-letter__form .tnp-subscription div.tnp-field-button:hover:after {
@@ -2764,7 +2768,7 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .o7-hero__curve-icon-bottom {
-        right: -14px;
+        right: -15px;
     }
 
     .o7-hero__curver-icon-top {
@@ -3189,6 +3193,7 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-accordion__answer-text {
         font-size: 16px;
         font-weight: 400;
+        padding: 0 20px 26px;
     }
 
 }
@@ -3283,13 +3288,15 @@ figure.megamenu__service-view-all-image-wrapper {
 
 @media (max-width: 1200px) {
 
-
-
     .o7-content-card__circle {
         width: 40px;
         height: 40px;
         top: -40px;
         right: -40px;
+    }
+    .o7-content-card:hover .o7-content-card__circle {
+        top: 20px;
+        right: 20px;
     }
 
     .o7-content-card__circle-arrow {
@@ -3605,12 +3612,16 @@ figure.megamenu__service-view-all-image-wrapper {
     overflow: hidden;
 }
 .o7-card__image-wrapper--rounded,
-.o7-card__image-frame,
+.o7-card__image-wrapper--rounded .o7-card__image-frame,
 .o7-card__image-wrapper--rounded .o7-card__image {
     border-radius: 25px;
 }
 .o7-card__image-wrapper--with-bg {
     padding: 35px;
+}
+.o7-card__image-wrapper--with-bg.o7-card__image-wrapper--rounded .o7-card__image-frame,
+.o7-card__image-wrapper--with-bg.o7-card__image-wrapper--rounded .o7-card__image {
+    border-radius: 20px;
 }
 .o7-card__image-frame {
     position: relative;
@@ -3703,15 +3714,18 @@ figure.megamenu__service-view-all-image-wrapper {
     right: -60px;
     transition: all 0.5s ease;
 }
+@media (min-width: 1201px) {
+    .o7-content-card:hover .o7-content-card__circle {
+        top: 20px;
+        right: 20px;
+    }
+}
+
 .o7-content-card__circle-arrow {
     width: 30px;
     height: 25px;
     display: flex;
     flex-shrink: 0;
-}
-.o7-content-card:hover .o7-content-card__circle {
-    top: 20px;
-    right: 20px;
 }
 /* --- Content Card:end ---  */
 
@@ -3749,23 +3763,33 @@ figure.megamenu__service-view-all-image-wrapper {
     .service-col-two .o7-content-card {
         margin-top: 90px;
     }
+    .o7-content-card__circle {
+        width: 50px;
+        height: 50px;
+        top: 15px;
+        right: 15px;
+    }
+    .o7-content-card__circle-arrow {
+        width: 20px;
+        height: 17px;
+    }
 
 }
 @media (max-width: 1200px) {
     .o7-list-page-filter__data-list {
         gap: 20px;
     }
-    .o7-card__image-wrapper--with-bg {
-        padding: 25px;
-    }
-
-    .o7-card__image-wrapper--rounded, .o7-card__image-frame,
+    .o7-card__image-wrapper--rounded,
+    .o7-card__image-wrapper--rounded .o7-card__image-frame,
     .o7-card__image-wrapper--rounded .o7-card__image {
         border-radius: 20px;
     }
-    .o7-content-card__circle {
-        top: 20px;
-        right: 20px;
+    .o7-card__image-wrapper--with-bg {
+        padding: 25px;
+    }
+    .o7-card__image-wrapper--with-bg.o7-card__image-wrapper--rounded .o7-card__image-frame,
+    .o7-card__image-wrapper--with-bg.o7-card__image-wrapper--rounded .o7-card__image {
+        border-radius: 16px;
     }
     /* --- Card Chip responsive:start */
     .o7-hover-chip {
@@ -3799,16 +3823,6 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-arrow-card__card-wrapper .o7-content-card {
         flex: 0 0 calc(50% - 10px);
     }
-    .o7-content-card__circle {
-        width: 50px;
-        height: 50px;
-        top: 15px;
-        right: 15px;
-    }
-    .o7-content-card__circle-arrow {
-        width: 20px;
-        height: 17px;
-    }
     .o7-card__info-block {
         margin: 25px 0 0 0;
     }
@@ -3835,12 +3849,17 @@ figure.megamenu__service-view-all-image-wrapper {
     .service-col-two .o7-content-card {
         margin-top: 60px;
     }
+    .o7-card__image-wrapper--rounded,
+    .o7-card__image-wrapper--rounded .o7-card__image-frame,
+    .o7-card__image-wrapper--rounded .o7-card__image {
+        border-radius: 15px;
+    }
     .o7-card__image-wrapper--with-bg {
         padding: 20px;
     }
-    .o7-card__image-wrapper--rounded, .o7-card__image-frame,
-    .o7-card__image-wrapper--rounded .o7-card__image {
-        border-radius: 15px;
+    .o7-card__image-wrapper--with-bg.o7-card__image-wrapper--rounded .o7-card__image-frame,
+    .o7-card__image-wrapper--with-bg.o7-card__image-wrapper--rounded .o7-card__image {
+        border-radius: 12px;
     }
     .o7-content-card__circle {
         width: 40px;
@@ -3848,7 +3867,6 @@ figure.megamenu__service-view-all-image-wrapper {
         top: 10px;
         right: 10px;
     }
-
     .o7-content-card__circle-arrow {
         width: 13px;
         height: 11px;
@@ -3923,6 +3941,9 @@ figure.megamenu__service-view-all-image-wrapper {
     }
     .o7-content-card--scrolling-snap {
         flex: 0 0 calc(50% - 7.5px);
+    }
+    .o7-card__image-wrapper--with-bg {
+        padding: 15px;
     }
     /* --- Card Chip responsive:start */
     .o7-hover-chip__buton--hidden-mobile {
@@ -6858,9 +6879,12 @@ figure.megamenu__service-view-all-image-wrapper {
 
 /* Home Page */
 
-
+.section.section-infinity-logo-slider {
+    padding-left: 0;
+    padding-right: 0;
+}
 .section-infinity-logo-slider__container {
-    max-width: 1840px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -7521,7 +7545,7 @@ figure.megamenu__service-view-all-image-wrapper {
     max-width: fit-content;
 }
 
-.tnp-subscription input[type="submit"]:hover {
+.tnp-subscription .tnp-field.tnp-field-button:hover input[type="submit"] {
     background-color: var(--dark-color) !important;
     color: white !important;
     fill: white !important;
