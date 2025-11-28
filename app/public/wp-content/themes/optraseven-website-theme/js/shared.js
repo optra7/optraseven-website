@@ -119,7 +119,29 @@ document.addEventListener('DOMContentLoaded', () => {
 			window.history.replaceState({}, '', url);
 		}, 2500);
 	}
+
+
+	// animations
+
+	const sections = document.querySelectorAll('.animate__fade-in');
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target); // animate only once
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    sections.forEach(sec => observer.observe(sec));
 });
+
+
+
 
 
 

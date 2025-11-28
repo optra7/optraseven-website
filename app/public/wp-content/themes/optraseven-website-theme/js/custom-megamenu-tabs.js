@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         megaMenus.forEach(menu => {
             const contentWrapper = menu.querySelector('.megamenu__content-wrapper');
             if (contentWrapper) {
-                contentWrapper.style.display = 'none';
+                contentWrapper.style.visibility = 'hidden';
             }
         });
 
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         function showMegaMenu(menu) {
             const contentWrapper = menu.querySelector('.megamenu__content-wrapper');
             if (contentWrapper) {
-                contentWrapper.style.display = 'block';
+                contentWrapper.style.visibility = 'visible';
             }
             menu.classList.add('active');
             menu.classList.add('expended');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         function hideMegaMenu(menu) {
             const contentWrapper = menu.querySelector('.megamenu__content-wrapper');
             if (contentWrapper) {
-                contentWrapper.style.display = 'none';
+                contentWrapper.style.visibility = 'hidden';
             }
             menu.classList.remove('active');
             menu.classList.remove('expended');

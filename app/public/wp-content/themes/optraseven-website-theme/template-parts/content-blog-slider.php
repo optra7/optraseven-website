@@ -1,4 +1,4 @@
-<section class="section o7-blog-section">
+<section class="section o7-blog-section animate__fade-in">
     <div class="container">
         <div class="o7-blog-section__container">
             <div class="o7-section-header o7-section-blog-header">

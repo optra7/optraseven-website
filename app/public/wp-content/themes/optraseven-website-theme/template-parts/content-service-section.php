@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="section section-services">
+<section class="section section-services animate__fade-in">
     <div class="container">
         <div class="o7-section-header">
             <p class="o7-section-header__title">

@@ -222,7 +222,7 @@ get_header();
 
     <?php get_template_part('template-parts/content', 'blog-slider'); ?>
 
-    <section class="o7-news-letter section section-no-space-bottom">
+    <section class="o7-news-letter section section-no-space-bottom animate__fade-in">
         <div class="container">
             <div class="o7-news-letter__container">
                 <div class="o7-news-letter__form-wrapper">

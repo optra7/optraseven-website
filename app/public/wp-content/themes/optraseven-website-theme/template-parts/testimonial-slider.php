@@ -40,7 +40,7 @@ return;
 $uid = 'o7-testimonial-' . uniqid();
 ?>
 
-<section id="<?= esc_attr($uid); ?>" class="section o7-testimonial-section">
+<section id="<?= esc_attr($uid); ?>" class="section o7-testimonial-section animate__fade-in">
   <div class="container">
     <div class="o7-testimonial">
       <div class="o7-section-header">

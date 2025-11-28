@@ -67,7 +67,7 @@ $uid = 'o7-faq-' . uniqid();
 
 $sprite = esc_url($data['sprite_path']);
 ?>
-<section id="<?php echo esc_attr($uid); ?>" class="section section-faq">
+<section id="<?php echo esc_attr($uid); ?>" class="section section-faq  animate__fade-in">
     <div class="container">
         <div class="o7-faq__container">
             <div class="o7-faq__block-left">

@@ -20,7 +20,7 @@ if (empty($images)) return;
 $base_uri = get_template_directory_uri() . $path;
 ?>
 
-<section class="section section-infinity-logo-slider">
+<section class="section section-infinity-logo-slider animate__fade-in">
     <div class="section-infinity-logo-slider__container">
         <div class="o7-logo-slider">
             <div class="o7-logo-slider__track">

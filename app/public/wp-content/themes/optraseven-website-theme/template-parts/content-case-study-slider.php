@@ -1,4 +1,4 @@
-<section class="section case-study-slider">
+<section class="section case-study-slider animate__fade-in">
     <div class="container">
         <div class="section__inner">
             <div class="o7-section-header">
