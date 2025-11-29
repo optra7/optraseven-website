@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="section section-services animate__fade-in">
+<section class="section section-services">
     <div class="container">
         <div class="o7-section-header">
             <p class="o7-section-header__title">
@@ -28,7 +28,7 @@
         <div class="section__card-wrapper">
             <div class="service-col-one">
 
-                    <article class="o7-content-card">
+                    <article class="o7-content-card animate__fade-in">
                         <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
                             <div class="o7-content-card__image-frame o7-card__image-frame">
                                 <a href="/services/shopify/">
@@ -64,7 +64,7 @@
                         </div>     
                     </article>
 
-                    <article class="o7-content-card">
+                    <article class="o7-content-card animate__fade-in">
                         <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
                             <div class="o7-content-card__image-frame o7-card__image-frame">
                                 <a href="/services/custom-application-development/">
@@ -105,7 +105,7 @@
 
             <div class="service-col-two">
 
-                    <article class="o7-content-card">
+                    <article class="o7-content-card animate__fade-in">
                         <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
                             <div class="o7-content-card__image-frame o7-card__image-frame">
                                 <a href="/services/webflow/">
@@ -141,7 +141,7 @@
                         </div>
                     </article>
 
-                    <article class="o7-content-card"> 
+                    <article class="o7-content-card animate__fade-in"> 
                             <div class="o7-content-card__image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
                                 <div class="o7-content-card__image-frame o7-card__image-frame">
                                     <a href="/services/testing-quality-assurance/">

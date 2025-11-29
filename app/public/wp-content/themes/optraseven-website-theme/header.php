@@ -27,7 +27,7 @@
     <aside class="main-menu-responsive">
         <div class="main-menu-responsive__header">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="main-menu-responsive__logo">OptraSeven</a>
-            <div class="main-menu-responsive__close-btn">
+            <div class="main-menu-responsive__close-btn" id="burger-close">
                 <span></span>
                 <span></span>
             </div>
@@ -1336,7 +1336,7 @@
 
                     <a href="/contact" class="main-menu__link">Contact</a>
                 </nav>
-                <div class="main-menu__responsive-btn">
+                <div class="main-menu__responsive-btn" id="burger">
                     <span></span>
                     <span></span>
                     <span></span>

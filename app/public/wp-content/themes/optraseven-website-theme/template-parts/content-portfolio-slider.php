@@ -1,4 +1,4 @@
-<section class="section portfolio-slider animate__fade-in">
+<section class="section portfolio-slider">
     <div class="container">
         <div class="section__inner">
             <div class="o7-section-header">

@@ -38,7 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 link.classList.remove('expended');
                 const megamenuContent = link.nextElementSibling;
                 if (megamenuContent && megamenuContent.classList.contains('megamenu__mobile-item-container')) {
-                    megamenuContent.style.display = 'none';
+                    megamenuContent.style.visibility = 'hidden';
+                    megamenuContent.style.height = '0px';
+                    megamenuContent.style.padding = '0px 0 0px 20px';
                 }
             });
         }
@@ -61,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 // If it wasn't expanded before, expand this one
                 if (!isExpanded && megamenuContent && megamenuContent.classList.contains('megamenu__mobile-item-container')) {
                     this.classList.add('expended');
-                    megamenuContent.style.display = 'block';
+                    megamenuContent.style.visibility = 'visible';
+                    megamenuContent.style.height = megamenuContent.scrollHeight + 16 + 'px';
+                    megamenuContent.style.padding = "10px 0 10px 20px";
                 }
             });
         });

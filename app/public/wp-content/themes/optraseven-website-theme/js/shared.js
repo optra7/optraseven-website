@@ -8,6 +8,16 @@
 }());
 
 (function () {
+
+	document.getElementById("burger").addEventListener("click", function () {
+		this.classList.toggle("active");
+	});
+
+	document.getElementById("burger-close").addEventListener("click", function () {
+		document.getElementById("burger").classList.remove("active");
+	});
+
+
 	document.querySelectorAll(".section__card-wrapper--scroll-x").forEach(container => {
 		const cards = container.querySelectorAll(".o7-content-card--scrolling-snap");
 		let index = 0;
@@ -125,30 +135,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const sections = document.querySelectorAll('.animate__fade-in');
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("is-visible");
-                    observer.unobserve(entry.target); // animate only once
-                }
-            });
-        },
-        { threshold: 0.1 }
-    );
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("is-visible");
+					observer.unobserve(entry.target); // animate only once
+				}
+			});
+		},
+		{ threshold: 0.1 }
+	);
 
-    sections.forEach(sec => observer.observe(sec));
+	sections.forEach(sec => observer.observe(sec));
 });
-
-
-
-
 
 
 // device viewpot height fixing:start
 function setVh() {
-  const vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+	const vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 setVh();
 window.addEventListener('resize', setVh);
