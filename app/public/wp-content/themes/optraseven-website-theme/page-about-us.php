@@ -35,7 +35,7 @@ get_header();
         </div>
     </section>
 
-    <section class="section o7-our-journey">
+    <section class="section o7-our-journey animate__fade-in">
         <div class="container o7-our-journey__container">
             <h2 class="o7-our-journey__header">
                 Our Journey
@@ -63,7 +63,7 @@ get_header();
                 </div>
             </div>
             <div class="o7-what-we-do__card-wrapper">
-                <div class="o7-card">
+                <div class="o7-card animate__fade-in">
                     <p class="o7-card__header">
                         Revenue Added for Brands in Last 3 Years.
                     </p>
@@ -71,7 +71,7 @@ get_header();
                         5K+
                     </p>
                 </div>
-                <div class="o7-card">
+                <div class="o7-card animate__fade-in">
                     <p class="o7-card__header">
                         Locations Supported
                     </p>
@@ -79,7 +79,7 @@ get_header();
                         +$ 12M
                     </p>
                 </div>
-                <div class="o7-card">
+                <div class="o7-card animate__fade-in">
                     <p class="o7-card__header">
                         Total New Customer Appointments Booked.
                     </p>
@@ -92,7 +92,7 @@ get_header();
         </div>
     </section>
 
-    <section class="section o7-our-talent">
+    <section class="section o7-our-talent animate__fade-in">
         <div class="container">
             <div class="o7-section-header">
                 <p class="o7-section-header__title">
@@ -106,7 +106,7 @@ get_header();
                 </div>
             </div>
             <div class="o7-our-talent__card-wrapper">
-                <div class="o7-card o7-card--align-left">
+                <div class="o7-card o7-card--align-left animate__fade-in">
                     <p class="o7-card__number">
                         01
                     </p>
@@ -119,7 +119,7 @@ get_header();
                         aspire to attract, retan, and empower the very best people.
                     </p>
                 </div>
-                <div class="o7-card o7-card--align-left">
+                <div class="o7-card o7-card--align-left animate__fade-in">
                     <p class="o7-card__number">
                         02
                     </p>
@@ -132,7 +132,7 @@ get_header();
                         We’re early in our journey, and collaboration fuels everything we do.
                     </p>
                 </div>
-                <div class="o7-card o7-card--align-left">
+                <div class="o7-card o7-card--align-left animate__fade-in">
                     <p class="o7-card__number">
                         03
                     </p>
@@ -149,7 +149,7 @@ get_header();
         </div>
     </section>
 
-    <section class="section o7-our-culture">
+    <section class="section o7-our-culture animate__fade-in">
         <div class="container">
             <div class="o7-our-culture-content-wrapper">
                 <div class="o7-our-culture__image-wrapper">
@@ -279,7 +279,7 @@ get_header();
     ]);
 
     ?>
-    <section class="o7-news-letter section section-no-space-bottom">
+    <section class="o7-news-letter section section-no-space-bottom animate__fade-in">
         <div class="container">
             <div class="o7-news-letter__container">
                 <div class="o7-news-letter__form-wrapper">
