@@ -320,7 +320,7 @@
                                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                             </svg>
                                                         </span>
-                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/adored-vintage.webp" alt="Card Image">
                                                         </figure>
                                                         <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -336,7 +336,7 @@
                                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                             </svg>
                                                         </span>
-                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
                                                         </figure>
                                                         <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -352,7 +352,7 @@
                                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                             </svg>
                                                         </span>
-                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/cast-plus.webp" alt="Card Image">
                                                         </figure>
                                                         <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -435,7 +435,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/verve-coffe.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -451,7 +451,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -467,7 +467,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/azuna-fresh.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -543,27 +543,11 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/conbotics.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
                                                         <span class="megamenu-tab-card__title-text">Conbotics</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="megamenu-tab-card">
-                                                <a href="/portfolio/technomaler">
-                                                    <figure class="megamenu-tab-card__image-wrapper">
-                                                    <span class="megamenu-tab-card__icon-wrapper">
-                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
-                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                        </svg>
-                                                    </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
-                                                    </figure>
-                                                    <div class="megamenu-tab-card__title">
-                                                        <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Technomaler</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -575,7 +559,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/cast-plus.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -583,7 +567,22 @@
                                                     </div>
                                                 </a>
                                             </div>
-
+                                            <div class="megamenu-tab-card">
+                                                <a href="/portfolio/technomaler">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
+                                                    <span class="megamenu-tab-card__icon-wrapper">
+                                                        <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
+                                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/technomiler.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Technomaler</span>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="megamenu-tab-button-wrapper">
                                             <a href="/portfolio" class="btn btn--secondary btn--x-small">
@@ -651,7 +650,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/adored-vintage.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -667,7 +666,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/anglo-healthcare.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -683,7 +682,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/concord-steam-cell.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -903,7 +902,7 @@
                                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                             </svg>
                                                         </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/adored-vintage.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -919,7 +918,7 @@
                                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                             </svg>
                                                         </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -935,7 +934,7 @@
                                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                             </svg>
                                                         </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/cast-plus.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1018,7 +1017,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/adored-vintage.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1034,7 +1033,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1050,7 +1049,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/azuna-fresh.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1126,7 +1125,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/conbotics.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1142,7 +1141,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1158,7 +1157,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/cast-plus.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1234,7 +1233,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-adord-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/anglo-healthcare.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1250,7 +1249,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-velasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/ew-villa.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -1266,7 +1265,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/mega-menu-card-cast-plus.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/concord-steam-cell.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
