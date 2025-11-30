@@ -22,7 +22,10 @@
                 <?php
                 $args = [
                     'post_type'      => 'portfolio',
-                    'posts_per_page' => 6,
+                    'posts_per_page' => -1,
+                    'meta_key'       => 'item_order',
+                    'orderby'        => 'meta_value_num',
+                    'order'          => 'ASC',
                 ];
                 $portfolio_query = new WP_Query($args);
 

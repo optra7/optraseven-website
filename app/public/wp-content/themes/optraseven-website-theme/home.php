@@ -53,6 +53,9 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     $query = new WP_Query([
                         'post_type'      => $post_type,
                         'posts_per_page' => -1,
+                        'meta_key'       => 'item_order',
+                        'orderby'        => 'meta_value_num',
+                        'order'          => 'ASC',
                     ]);
 
                     if ($query->have_posts()) :
