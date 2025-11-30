@@ -1256,7 +1256,9 @@ a.main-menu__link:visited {
     flex-shrink: 0;
     width: calc(33.333% - 10px);
 }
-
+.megamenu-tab-card a {
+    text-decoration: none;
+}
 .megamenu-tab-card__image-wrapper {
     margin: 0;
     width: 100%;
@@ -3784,6 +3786,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-card__image-frame {
     position: relative;
+    overflow: hidden;
 }
 
 .o7-card__image {

@@ -227,7 +227,7 @@
             <a href="/get-the-quote" class="btn btn--secondary btn--medium">
                 Start a Project
                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                    <use href="<?= get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-up-right' ?>"></use>
+                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                 </svg>
             </a>
         </div>
@@ -365,7 +365,7 @@
                                             <a href="/portfolio" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                 </svg>
                                             </a>
                                         </div>
@@ -481,7 +481,7 @@
                                             <a href="/portfolio" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                 </svg>
                                             </a>
                                         </div>
@@ -589,7 +589,7 @@
                                             <a href="/portfolio" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                 </svg>
                                             </a>
                                         </div>
@@ -696,7 +696,7 @@
                                             <a href="/portfolio" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                 </svg>
                                             </a>
                                         </div>
@@ -711,10 +711,10 @@
                                                         <span class="megamenu-tag-label">All</span>
                                                     </div>
                                                 </a>
-                                                <a href="#">
+                                                <a href="/portfolio/?filter=medical-assistive-devices">
                                                     <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-fashion.svg" alt="">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-health-care.svg" alt="">
                                                     </span>
                                                         <span class="megamenu-tag-label">Health Care</span>
                                                     </div>
@@ -948,7 +948,7 @@
                                             <a href="/case-studies" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                 </svg>
                                             </a>
                                         </div>
@@ -1064,7 +1064,7 @@
                                             <a href="/case-studies" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                 </svg>
                                             </a>
                                         </div>
@@ -1172,7 +1172,7 @@
                                             <a href="/case-studies" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                 </svg>
                                             </a>
                                         </div>
@@ -1279,7 +1279,7 @@
                                             <a href="/case-studies" class="btn btn--secondary btn--x-small">
                                                 Show All
                                                 <svg class="fee-icon" aria-hidden="true" focusable="false">
-                                                    <use href="http://optraseven-website.local/wp-content/themes/optraseven-website-theme/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                 </svg>
                                             </a>
                                         </div>
@@ -1294,10 +1294,10 @@
                                                         <span class="megamenu-tag-label">All</span>
                                                     </div>
                                                 </a>
-                                                <a href="#">
+                                                <a href="/portfolio/?filter=medical-assistive-devices">
                                                     <div class="megamenu-tag-item">
                                                     <span class="megamenu-tag-icon-wrapper">
-                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-fashion.svg" alt="">
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/tag-icon-health-care.svg" alt="">
                                                     </span>
                                                         <span class="megamenu-tag-label">Health Care</span>
                                                     </div>
@@ -1346,7 +1346,7 @@
                 <a href="/get-the-quote" class="btn btn--secondary btn--large">
                     Start a Project
                     <svg class="fee-icon" aria-hidden="true" focusable="false">
-                        <use href="<?= get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg#arrow-up-right' ?>"></use>
+                        <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                     </svg>
                 </a>
             </div>
