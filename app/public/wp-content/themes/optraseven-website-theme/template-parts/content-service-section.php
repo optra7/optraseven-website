@@ -38,14 +38,17 @@
                         </div>
                         
                         <div class="o7-hover-chip">
+                            <svg class="o7-hover-chip__bg-span-icon-top" aria-hidden="true" focusable="false">
+                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                            </svg>
                             <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
                             </svg>
 
                             <div class="o7-hover-chip__inner">
-                                <div class="o7-hover-chip__buton">Planning</div>
-                                <div class="o7-hover-chip__buton">UI & UX</div>
-                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">
+                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">Planning</div>
+                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">UI & UX</div>
+                                <div class="o7-hover-chip__buton">
                                     Development
                                 </div>
                                 <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+1</div>
@@ -74,14 +77,17 @@
                         </div>
                         
                         <div class="o7-hover-chip">
+                            <svg class="o7-hover-chip__bg-span-icon-top" aria-hidden="true" focusable="false">
+                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                            </svg>
                             <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
                             </svg>
 
                             <div class="o7-hover-chip__inner">
-                                <div class="o7-hover-chip__buton">Planning</div>
-                                <div class="o7-hover-chip__buton">UI & UX</div>
-                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">
+                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">Planning</div>
+                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">UI & UX</div>
+                                <div class="o7-hover-chip__buton">
                                     Development
                                 </div>
                                 <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+1</div>
@@ -115,14 +121,17 @@
                         </div>
                         
                         <div class="o7-hover-chip">
+                            <svg class="o7-hover-chip__bg-span-icon-top" aria-hidden="true" focusable="false">
+                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                            </svg>
                             <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
                             </svg>
 
                             <div class="o7-hover-chip__inner">
-                                <div class="o7-hover-chip__buton">Planning</div>
-                                <div class="o7-hover-chip__buton">UI & UX</div>
-                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">
+                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">Planning</div>
+                                <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">UI & UX</div>
+                                <div class="o7-hover-chip__buton">
                                     Development
                                 </div>
                                 <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+1</div>
@@ -151,14 +160,17 @@
                             </div>
                         
                             <div class="o7-hover-chip">
+                                <svg class="o7-hover-chip__bg-span-icon-top" aria-hidden="true" focusable="false">
+                                    <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                                </svg>
                                 <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
                                     <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
                                 </svg>
 
                                 <div class="o7-hover-chip__inner">
-                                    <div class="o7-hover-chip__buton">Planning</div>
-                                    <div class="o7-hover-chip__buton">UI & UX</div>
-                                    <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">
+                                    <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">Planning</div>
+                                    <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-mobile">UI & UX</div>
+                                    <div class="o7-hover-chip__buton">
                                         Development
                                     </div>
                                     <div class="o7-hover-chip__buton o7-hover-chip__buton--hidden-pc">+1</div>

@@ -69,7 +69,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     ?>
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
                                 
-                                <div class="o7-list-page-filter__card-image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded o7-card__image-wrapper--with-bg">
+                                <div class="o7-list-page-filter__card-image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
                                     <div class="o7-list-page-filter__image-frame o7-card__image-frame">
                                         <a href="<?php echo get_permalink($post_id); ?>">
                                         <?php if ($featured_img): ?>
@@ -80,6 +80,9 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
 
                                     <?php if (!empty($all_tags)) : ?>
                                         <div class="o7-hover-chip">
+                                            <svg class="o7-hover-chip__bg-span-icon-top" aria-hidden="true" focusable="false">
+                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
+                                            </svg>
                                             <svg class="o7-hover-chip__bg-span-icon" aria-hidden="true" focusable="false">
                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#chip-radius-2"></use>
                                             </svg>
