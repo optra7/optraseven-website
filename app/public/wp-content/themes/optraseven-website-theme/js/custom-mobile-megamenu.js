@@ -90,12 +90,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     item.classList.remove("active");
                     item.setAttribute("aria-expanded", "false");
                     answer.style.height = "0px";
-                    // answer.hidden = true;
                 } else if(item === clickedItem && !item.classList.contains("active")) {
                     const isActive = item.classList.toggle("active");
                     item.setAttribute("aria-expanded", String(isActive));
                     answer.style.height = answer.scrollHeight + "px";
-                    // answer.hidden = !isActive;
+                }else if(item === clickedItem && item.classList.contains("active")) {
+                    const isActive = item.classList.toggle("active");
+                    item.setAttribute("aria-expanded", String(isActive));
+                    answer.style.height = "0px";
                 }
             });
         }
