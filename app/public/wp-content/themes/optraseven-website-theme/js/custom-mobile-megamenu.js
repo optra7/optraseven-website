@@ -93,7 +93,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else if(item === clickedItem && !item.classList.contains("active")) {
                     const isActive = item.classList.toggle("active");
                     item.setAttribute("aria-expanded", String(isActive));
-                    answer.style.height = answer.scrollHeight + "px";
+
+                    setTimeout(() => {
+                        answer.style.height = answer.scrollHeight + "px"; 
+                    }, 10);
                 }else if(item === clickedItem && item.classList.contains("active")) {
                     const isActive = item.classList.toggle("active");
                     item.setAttribute("aria-expanded", String(isActive));
