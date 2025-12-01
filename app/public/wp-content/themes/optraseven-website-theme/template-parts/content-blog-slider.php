@@ -58,7 +58,10 @@
                 <?php
                 $args = [
                     'post_type'      => 'post',
-                    'posts_per_page' => 6,
+                    'posts_per_page' => -1,
+                    'meta_key'       => 'item_order',
+                    'orderby'        => 'meta_value_num',
+                    'order'          => 'ASC',
                 ];
                 $loop = new WP_Query($args);
 

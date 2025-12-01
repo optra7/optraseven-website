@@ -3904,6 +3904,44 @@ figure.megamenu__service-view-all-image-wrapper {
     transition: top 0.4s ease-out, right 0.4s ease-out, opacity 0.4s ease-out;
 }
 
+/* --- Portfolio Slider Card:start ---  */
+
+.portfolio-slider .o7-content-card--scrolling-snap .o7-card__image-frame {
+    width: 100%;
+    aspect-ratio: 780 / 460;
+}
+.portfolio-slider .o7-content-card--scrolling-snap .o7-card__image-frame .o7-card__image {
+    object-position: center;
+}
+/* --- Portfolio Slider Card:end ---  */
+
+/* --- Case Studies Slider Card:start ---  */
+
+.case-study-slider .section__card-wrapper--scroll-x .o7-card__image-frame {
+    width: 100%;
+    aspect-ratio: 780 / 460;
+}
+.case-study-slider .section__card-wrapper--scroll-x .o7-card__image-frame .o7-card__image {
+    object-position: center;
+}
+/* --- Case Studies Slider Card:end ---  */
+
+/* --- Portfolio Slider Card:start ---  */
+
+.o7-blog-section .o7-content-card--scrolling-snap .o7-card__image-frame {
+    width: 100%;
+    aspect-ratio: 780 / 460;
+}
+.o7-blog-section .o7-content-card--scrolling-snap .o7-card__image-frame .o7-card__image {
+    object-position: center;
+}
+.o7-blog-section .o7-content-card--scrolling-snap:hover .o7-card__image-wrapper--rounded,
+.o7-blog-section .o7-content-card--scrolling-snap:hover .o7-card__image-wrapper--rounded .o7-card__image-frame,
+.o7-blog-section .o7-content-card--scrolling-snap:hover .o7-card__image-wrapper--rounded .o7-card__image {
+    border-radius: 25px 25px 25px 0;
+}
+/* --- Portfolio Slider Card:end ---  */
+
 @media (min-width: 1201px) {
     .o7-content-card:hover .o7-content-card__circle {
         top: 20px;
@@ -4801,8 +4839,8 @@ figure.megamenu__service-view-all-image-wrapper {
     height: 80px;
     border-radius: 25px;
     position: absolute;
-    bottom: 1px;
-    left: 1px;
+    bottom: 0;
+    left: 0;
 }
 
 .o7-hover-icon--left-icon-box .o7-hover-icon__bg {
@@ -4911,7 +4949,7 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-hover-icon__inner img {
         width: 45px;
         height: 45px;
-        border-radius: 16px;
+        border-radius: 12px;
     }
 
     .o7-hover-icon__inner--left-icon-box img {

@@ -20,7 +20,13 @@
 
             <div class="section__card-wrapper section__card-wrapper--scroll-x">
                 <?php
-                $args = ['post_type' => 'case-study', 'posts_per_page' => 6];
+                $args = [
+                    'post_type'      => 'case-study',
+                    'posts_per_page' => -1,
+                    'meta_key'       => 'item_order',
+                    'orderby'        => 'meta_value_num',
+                    'order'          => 'ASC',
+                ];
                 $loop = new WP_Query($args);
                 if ($loop->have_posts()) :
                     while ($loop->have_posts()) : $loop->the_post();

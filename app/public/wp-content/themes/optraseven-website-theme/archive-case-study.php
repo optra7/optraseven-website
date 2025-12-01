@@ -54,6 +54,9 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     $query = new WP_Query([
                         'post_type'      => $post_type,
                         'posts_per_page' => -1,
+                        'meta_key'       => 'item_order',
+                        'orderby'        => 'meta_value_num',
+                        'order'          => 'ASC',
                     ]);
 
                     if ($query->have_posts()) :
@@ -69,7 +72,7 @@ wp_localize_script('o7-archive-filter', 'archiveFilterData', [
                     ?>
                             <article class="o7-list-page-filter__card <?php echo esc_attr($category_classes); ?>" data-category="<?php echo esc_attr($category_classes); ?>">
                                 
-                                <div class="o7-list-page-filter__card-image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded">
+                                <div class="o7-list-page-filter__card-image-wrapper o7-card__image-wrapper o7-card__image-wrapper--rounded o7-card__image-wrapper--with-bg">
                                     <div class="o7-list-page-filter__image-frame o7-card__image-frame">
                                         <a href="<?php echo get_permalink($post_id); ?>">
                                         <?php if ($featured_img): ?>
