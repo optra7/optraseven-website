@@ -3908,7 +3908,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .portfolio-slider .o7-content-card--scrolling-snap .o7-card__image-frame {
     width: 100%;
-    aspect-ratio: 780 / 460;
+    aspect-ratio: 780 / 429;
 }
 .portfolio-slider .o7-content-card--scrolling-snap .o7-card__image-frame .o7-card__image {
     object-position: center;
@@ -3919,7 +3919,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .case-study-slider .section__card-wrapper--scroll-x .o7-card__image-frame {
     width: 100%;
-    aspect-ratio: 780 / 460;
+    aspect-ratio: 780 / 429;
 }
 .case-study-slider .section__card-wrapper--scroll-x .o7-card__image-frame .o7-card__image {
     object-position: center;
@@ -3930,7 +3930,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-blog-section .o7-content-card--scrolling-snap .o7-card__image-frame {
     width: 100%;
-    aspect-ratio: 780 / 460;
+    aspect-ratio: 520 / 300;
 }
 .o7-blog-section .o7-content-card--scrolling-snap .o7-card__image-frame .o7-card__image {
     object-position: center;
@@ -4952,7 +4952,7 @@ figure.megamenu__service-view-all-image-wrapper {
         border-radius: 12px;
     }
 
-    
+
     .o7-hover-icon__inner--left-icon-box img {
         width: 45px;
         height: 45px;

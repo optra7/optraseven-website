@@ -650,7 +650,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/adored-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/anglo-healthcare.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
@@ -666,7 +666,7 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/anglo-healthcare.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/ew-villa.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
