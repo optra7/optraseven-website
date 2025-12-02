@@ -102,29 +102,27 @@ get_header();
                         <h2 class="o7-stepper-article__para-title" id="making-a-request">
                             Making a Request
                         </h2>
-                        <p class="o7-stepper-article__para">
-                            <b>Identification:</b> To ensure the security of your data, all requests must be
+                        <p class="o7-stepper-article__para"><b>Identification:</b> To ensure the security of your data, all requests must be
                             accompanied by sufficient information to identify you (e.g., name, contact details)
-                            and any other relevant information.<br>
-                            <b>Type of Request:</b> Clearly state whether you seek
-                            access to your data, a correction, or deletion.<br>
-                            <b>Contact:</b> Submit your request to
-                            info@outliant.com.
-                        </p>
+                            and any other relevant information.</p>
+                        <p class="o7-stepper-article__para"><b>Type of Request:</b> Clearly state whether you seek
+                            access to your data, a correction, or deletion.</p>
+                        <p class="o7-stepper-article__para"><b>Contact:</b> Submit your request to
+                            info@outliant.com.</p>
+                        
 
                         <h2 class="o7-stepper-article__para-title" id="processing-your-request">
                             Processing Your Request
                         </h2>
-                        <p class="o7-stepper-article__para">
-                            <b>Acknowledgement:</b> We will acknowledge receipt of your request
-                            promptly.<br>
-                            <b>Verification:</b> We may need to verify your identity and the validity of your
-                            request.<br>
-                            <b>Timeliness:</b> We aim to respond to your request within the timeframe
-                            stipulated by applicable data protection laws.<br>
-                            <b>No Charge:</b> Generally, you will not be charged for making a DSAR. However, if
-                            your request is excessive or repetitive, we may impose a reasonable fee.
-                        </p>
+                        <p class="o7-stepper-article__para"><b>Acknowledgement:</b> We will acknowledge receipt of your request
+                            promptly.</p>
+                        <p class="o7-stepper-article__para"><b>Verification:</b> We may need to verify your identity and the validity of your
+                            request.</p>
+                        <p class="o7-stepper-article__para"><b>Timeliness:</b> We aim to respond to your request within the timeframe
+                            stipulated by applicable data protection laws.</p>
+                        <p class="o7-stepper-article__para"><b>No Charge:</b> Generally, you will not be charged for making a DSAR. However, if
+                            your request is excessive or repetitive, we may impose a reasonable fee.</p>
+                        
 
                         <h2 class="o7-stepper-article__para-title" id="accessing-your-data">
                             Accessing Your Data

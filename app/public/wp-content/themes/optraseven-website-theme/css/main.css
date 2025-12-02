@@ -7111,17 +7111,12 @@ figure.megamenu__service-view-all-image-wrapper {
 /* _____/ Page with Stapper Sidebar:end \_______*/
 
 
-
 .o7-stepper__page-header {
     font-size: 36px;
     font-weight: 600;
     line-height: normal;
     color: #202020;
 }
-
-
-
-
 
 /* dsar page header */
 .o7-stepper--dsar-header {
@@ -7164,17 +7159,11 @@ figure.megamenu__service-view-all-image-wrapper {
         align-items: center;
         justify-content: center;
     }
-
-    
-
-    
-
     .o7-stepper__page-header {
         font-size: 28px;
     }
-
     .o7-stepper--dsar-header {
-        margin: 0 auto 80px auto;
+        margin: 0 auto 60px auto;
     }
 
     /* service details  */
@@ -7206,6 +7195,9 @@ figure.megamenu__service-view-all-image-wrapper {
 
 @media (max-width: 991px) {
     .o7-stepper-service-details__hero-image {
+        margin: 0 auto 40px auto;
+    }
+    .o7-stepper--dsar-header {
         margin: 0 auto 40px auto;
     }
     
