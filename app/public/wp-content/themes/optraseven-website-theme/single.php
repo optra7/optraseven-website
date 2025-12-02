@@ -162,7 +162,7 @@ get_header();
                             ]);
                             ?>
                             <article class="o7-content-card o7-content-card--<?php echo esc_attr($linked_post->post_type); ?>">
-                                    <div class="o7-arrow-card__card-image-wrapper">
+                                    <div class="o7-arrow-card__card-image-wrapper o7-card__image-wrapper--rounded">
                                         <div class="o7-card__image-frame">
                                             <a href="<?php echo esc_url(get_permalink($linked_post->ID)); ?>">
                                             <?php echo $image ?: '<div class="o7-arrow-card__card-placeholder"></div>'; ?>

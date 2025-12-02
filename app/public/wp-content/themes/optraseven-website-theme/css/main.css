@@ -5534,26 +5534,22 @@ figure.megamenu__service-view-all-image-wrapper {
         border-radius: 16px;
     }
 }
-
-
 /* _____/  Portfolio and Case Studies Details Page:end \_______*/
 
 
-
-/* Blog Post Start */
-
+/* 
+// Blog Post Details Page:start
+----------------------------------------- */
 .o7-blog-post {
     max-width: 900px;
     margin: 0 auto;
     width: 100%;
 }
-
 .o7-blog-post__title {
     font-size: 56px;
     font-weight: 500;
     margin: 0;
 }
-
 .o7-blog-post__platfrom-wrapper {
     display: flex;
     gap: 15px;
@@ -5574,133 +5570,90 @@ figure.megamenu__service-view-all-image-wrapper {
     gap: 10px;
     margin: 0 0 30px;
 }
-
 .o7-blog-post__author-name {
     font-size: 20px;
     font-weight: 500;
     margin: 0;
 }
-
 .o7-blog-post__date {
     font-size: 16px;
     font-weight: 500;
     margin: 0;
     color: #606060;
 }
-
+.o7-blog-post__banner-image {
+    margin: 0 0 120px;
+}
 .o7-blog-post__banner-image img {
     width: 100%;
     display: block;
     height: auto;
     border-radius: 25px;
-    margin: 0 0 30px;
 }
-
-.o7-blog-post__content p {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 25px 0;
-    color: #484848;
-}
-
-.o7-blog-post__content h2 {
+.o7-blog-post__content h2,
+.o7-blog-post__content .h2 {
     font-size: 32px;
+    line-height: 1.3;
     font-weight: 500;
-    margin: 80px 0 20px;
+    margin: 0 0 20px;
 }
-
-.o7-blog-post__content img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    border-radius: 25px;
-    margin: 0 0 50px;
-}
-
+.o7-blog-post__content p,
+.o7-blog-post__content .p,
 .o7-blog-post__content li {
     font-size: 20px;
     font-weight: 400;
-    margin: 5px 0;
-    color: #484848;
-    line-height: 1.7;
+    color: #202020;
 }
-
-.o7-stepper-service-details__spacer-100 {
-    margin: 50px 0;
-    height: 0;
+.o7-blog-post__content p,
+.o7-blog-post__content .p,
+.o7-blog-post__content ul,
+.o7-blog-post__content ol,
+.o7-blog-post__content figure {
+    margin: 0px 0 25px;
 }
-
-.o7-stepper-service-details__spacer-80 {
+.o7-blog-post__content li {
+    margin-bottom: 10px;
+}
+.o7-blog-post__content strong {
+    font-weight: 600;
+}
+.o7-blog-post__content figure {
+    font-size: 0;
+}
+.o7-blog-post__content picture,
+.o7-blog-post__content img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 20px;
+}
+.o7-blog-post__content__spacer-80 {
     margin: 40px 0;
     height: 0;
 }
 
-.o7-blog-post__description {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 0;
-    color: #787878;
-}
+/* ======== Responsive Design ======== */
 
-.o7-blog-post__description-gap {
-    display: block;
-    margin-top: 25px;
-}
-
-.o7-blog-post__key-point-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 60px 0 0;
-}
-
-.o7-blog-post__key-point-wrapper ol li {
-    line-height: 1.6;
-    margin-bottom: 12px;
-    color: #787878;
-}
-
-.o7-blog-post__key-point-wrapper ul li {
-    line-height: 1.6;
-    color: #787878;
-}
-
-.o7-blog-post__key-point-title {
-    font-size: 32px;
-    font-weight: 500;
-    margin: 0;
-}
-
-.o7-blog-post__key-point {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 0;
-    color: #787878;
-}
-
-.o7-blog-post__image img {
-    width: 70%;
-    border-radius: 25px;
-}
-
-
-
-/* Responsive Design */
 @media (max-width: 1400px) {
-    .o7-blog-post__title {
-        font-size: 42px;
-    }
+
 }
 
 @media (max-width: 1200px) {
+
     .o7-blog-post__title {
-        font-size: 38px;
+        font-size: 42px;
     }
+    .o7-blog-post__banner-image {
+        margin: 0 0 120px;
+    }
+    .o7-blog-post__content__spacer-80 {
+        margin: 35px 0;
+    }
+
 }
 
 @media (max-width: 1024px) {
+
     .o7-blog-post__title {
         font-size: 36px;
     }
@@ -5714,15 +5667,17 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .o7-blog-post__author-name {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .o7-blog-post__date {
         font-size: 14px;
     }
-
+    
+    .o7-blog-post__banner-image {
+        margin: 0 0 80px;
+    }
     .o7-blog-post__banner-image img {
-        width: 100%;
         border-radius: 16px;
     }
 
@@ -5734,9 +5689,92 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-blog-post__key-point-title {
         font-size: 28px;
     }
+    .o7-blog-post__content h2,
+    .o7-blog-post__content .h2 {
+        font-size: 30px;
+    }
+    .o7-blog-post__content__spacer-80 {
+        margin: 30px 0;
+    }
+}
+@media (max-width: 991px) {
+
+    .o7-blog-post__title {
+        font-size: 32px;
+    }
+    .o7-blog-post__platfrom {
+        font-size: 18px;
+    } 
+    .o7-blog-post__platfrom-wrapper {
+        margin: 10px 0 15px;
+    }
+    .o7-blog-post__author-name-wrapper {
+        gap: 5px;
+        margin: 0 0 20px;
+    }
+    .o7-blog-post__author-name {
+        font-size: 16px;
+    }
+    .o7-blog-post__date {
+        font-size: 15px;
+    }
+    .o7-blog-post__banner-image {
+        margin: 0 0 40px;
+    }
+    .o7-blog-post__content h2,
+    .o7-blog-post__content .h2 {
+        font-size: 24px;
+    }
+    .o7-blog-post__content p,
+    .o7-blog-post__content .p,
+    .o7-blog-post__content li {
+        font-size: 18px;
+    }
+    .o7-blog-post__content__spacer-80 {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 767px) {
+
+    .o7-blog-post__title {
+        font-size: 26px;
+    }
+    .o7-blog-post__content h2,
+    .o7-blog-post__content .h2 {
+        font-size: 24px;
+        margin: 0px 0 15px;
+    }
+    .o7-blog-post__content p,
+    .o7-blog-post__content .p,
+    .o7-blog-post__content ul,
+    .o7-blog-post__content ol,
+    .o7-blog-post__content figure {
+        margin: 0px 0 20px;
+    }
+    .o7-blog-post__content ul,
+    .o7-blog-post__content ol {
+        padding-left: 30px;
+    }
+    .o7-blog-post__content picture,
+    .o7-blog-post__content img {
+        border-radius: 16px;
+    }
 }
 
-/* Blog Post End */
+/* _____/ Blog Post Details Page:end \_______*/
+
+
+
+.o7-stepper-service-details__spacer-100 {
+    margin: 50px 0;
+    height: 0;
+}
+
+.o7-stepper-service-details__spacer-80 {
+    margin: 40px 0;
+    height: 0;
+}
+
 
 /* Blog Comment Start */
 
