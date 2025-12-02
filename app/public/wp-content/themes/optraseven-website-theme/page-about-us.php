@@ -27,7 +27,7 @@ get_header();
                         <source media="(min-width:100px)" srcset=<?= get_template_directory_uri() . "/assets/images/about-us/about-us-page-banner.webp"?> />
 
                         <img src="/assets/images/about-us/about-us-page-banner.webp" alt="about us page banner"
-                            decoding="async" fetchpriority="high" width="1520px" height="506px" />
+                             fetchpriority="high" width="1520px" height="506px" />
                     </picture>
                 </div>
                 <div class="o7-page-banner__image-overlay"></div>
