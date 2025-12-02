@@ -28,7 +28,7 @@ if ($settings_page) {
         <div class="o7-page-banner__image-wrapper">
             <?php if (!empty($banner_img['url'])): ?>
                 <div class="o7-page-banner__image">
-                    <img src="<?php echo esc_url($banner_img['url']); ?>"
+                    <img src="<?php echo esc_url($banner_img['url']); ?>" fetchpriority="high"
                          alt="<?php echo esc_attr($banner_img['alt'] ?? 'Case Study Banner'); ?>"
                          width="1520" height="506" />
                 </div>
