@@ -21,20 +21,20 @@ get_header();
                     </h2>
 
                     <div class="o7-hero-legal-intro">
-                        <p class="o7-hero-legal-intro__text o7-hero-legal-intro__text-one">
-                            All such additional terms, guidelines, and rules are incorporated by reference into
-                            these Terms.<br><br>
-                            These Terms of Use described the legally binding terms and conditions that oversee your
+                        <div class="o7-hero-legal-intro__text-one">
+                            <p class="o7-hero-legal-intro__text">All such additional terms, guidelines, and rules are incorporated by reference into
+                            these Terms.</p>
+                            <p class="o7-hero-legal-intro__text">These Terms of Use described the legally binding terms and conditions that oversee your
                             use of the Site. By logging into the site, you are being compliant that these terms and
-                            you represent that you have the authority and capacity to enter into these Terms.
-                        </p>
-                        <p class="o7-hero-legal-intro__text o7-hero-legal-intro__text-two">
-                            You should be at least 18 years of age to access the site. If you disagree with all of
-                            the provision of these terms, do not log into and/or use this site.<br><br>
-                            These terms require the use of arbitration Section 10.2 on an individual basis to
+                            you represent that you have the authority and capacity to enter into these Terms.</p> 
+                        </div>
+                        <div class="o7-hero-legal-intro__text-two">
+                            <p class="o7-hero-legal-intro__text">You should be at least 18 years of age to access the site. If you disagree with all of
+                            the provision of these terms, do not log into and/or use this site.</p>
+                            <p class="o7-hero-legal-intro__text">These terms require the use of arbitration Section 10.2 on an individual basis to
                             resolve disputes and also limit the remedies available to you in the event of a dispute.
-                            These Terms of Use were created with the help of the Terms Of Use Generator.
-                        </p>
+                            These Terms of Use were created with the help of the Terms Of Use Generator.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,39 +101,36 @@ get_header();
                             id="access-to-the-site">
                             Access to the site
                         </h2>
-                        <p class="o7-stepper-article__para">
-                            Subject to these Terms. Company grants you a non-transferable, non-exclusive,
-                            revocable, limited license to access the Site solely for your own personal,
-                            noncommercial use.<br><br>
-                            Certain Restrictions. The rights approved to you in these Terms are subject to the
-                            following restrictions: (a) you shall not sell, rent, lease, transfer, assign,
-                            distribute, host, or otherwise commercially exploit the Site; (b) you shall not
-                            change, make derivative works of, disassemble, reverse compile or reverse engineer
-                            any part of the Site; (c) you shall not access the Site in order to build a similar
-                            or competitive website; and (d) except as expressly stated herein, no part of the
-                            Site may be copied, reproduced, distributed, republished, downloaded, displayed,
-                            posted or transmitted in any form or by any means unless otherwise indicated, any
-                            future release, update, or other addition to functionality of the Site shall be
-                            subject to these Terms. All copyright and other proprietary notices on the Site must
-                            be retained on all copies thereof.<br><br>
-                            Company reserves the right to change, suspend, or cease the Site with or without
-                            notice to you. You approved that Company will not be held liable to you or any
-                            third-party for any change, interruption, or termination of the Site or any
-                            part.<br><br>
-                            Excluding any User Content that you may provide, you are aware that all the
-                            intellectual property rights, including copyrights, patents, trademarks, and trade
-                            secrets, in the Site and its content are owned by Company or Company's suppliers.
-                            Note that these Terms and access to the Site do not give you any rights, title or
-                            interest in or to any intellectual property rights, except for the limited access
-                            rights expressed in Section 2.1. Company and its suppliers reserve all rights not
-                            granted in these Terms.<br><br>
-                        </p>
+                        <p class="o7-stepper-article__para">Subject to these Terms. Company grants you a non-transferable, non-exclusive,
+                        revocable, limited license to access the Site solely for your own personal,
+                        noncommercial use.</p>
+                        <p class="o7-stepper-article__para">Certain Restrictions. The rights approved to you in these Terms are subject to the
+                        following restrictions: (a) you shall not sell, rent, lease, transfer, assign,
+                        distribute, host, or otherwise commercially exploit the Site; (b) you shall not
+                        change, make derivative works of, disassemble, reverse compile or reverse engineer
+                        any part of the Site; (c) you shall not access the Site in order to build a similar
+                        or competitive website; and (d) except as expressly stated herein, no part of the
+                        Site may be copied, reproduced, distributed, republished, downloaded, displayed,
+                        posted or transmitted in any form or by any means unless otherwise indicated, any
+                        future release, update, or other addition to functionality of the Site shall be
+                        subject to these Terms. All copyright and other proprietary notices on the Site must
+                        be retained on all copies thereof.</p>
+                        <p class="o7-stepper-article__para">Company reserves the right to change, suspend, or cease the Site with or without
+                        notice to you. You approved that Company will not be held liable to you or any
+                        third-party for any change, interruption, or termination of the Site or any
+                        part.</p>
+                        <p class="o7-stepper-article__para">Excluding any User Content that you may provide, you are aware that all the
+                        intellectual property rights, including copyrights, patents, trademarks, and trade
+                        secrets, in the Site and its content are owned by Company or Company's suppliers.
+                        Note that these Terms and access to the Site do not give you any rights, title or
+                        interest in or to any intellectual property rights, except for the limited access
+                        rights expressed in Section 2.1. Company and its suppliers reserve all rights not
+                        granted in these Terms.</p>
 
                         <h2 class="o7-stepper-article__para-title" id="third-party-links-&-ads-other-users">
                             Third-Party Links & Ads; Other Users
                         </h2>
-                        <p class="o7-stepper-article__para">
-                            Third-Party Links & Ads. The Site may contain links to third-party websites and
+                        <p class="o7-stepper-article__para">Third-Party Links & Ads. The Site may contain links to third-party websites and
                             services, and/or display advertisements for third-parties.  Such Third-Party Links &
                             Ads are not under the control of Company, and Company is not responsible for any
                             Third-Party Links & Ads.  Company provides access to these Third-Party Links & Ads
@@ -142,14 +139,14 @@ get_header();
                             use all Third-Party Links & Ads at your own risk, and should apply a suitable level
                             of caution and discretion in doing so. When you click on any of the Third-Party
                             Links & Ads, the applicable third party's terms and policies apply, including the
-                            third party's privacy and data gathering practices.<br><br>
-                            Other Users. Each Site user is solely responsible for any and all of its own User
+                            third party's privacy and data gathering practices.</p>
+                        <p class="o7-stepper-article__para">Other Users. Each Site user is solely responsible for any and all of its own User
                             Content.  Because we do not control User Content, you acknowledge and agree that we
                             are not responsible for any User Content, whether provided by you or by others.  You
                             agree that Company will not be responsible for any loss or damage incurred as the
                             result of any such interactions.  If there is a dispute between you and any Site
-                            user, we are under no obligation to become involved.<br><br>
-                            You hereby release and forever discharge the Company and our officers, employees,
+                            user, we are under no obligation to become involved.</p>
+                        <p class="o7-stepper-article__para">You hereby release and forever discharge the Company and our officers, employees,
                             agents, successors, and assigns from, and hereby waive and relinquish, each and
                             every past, present and future dispute, claim, controversy, demand, right,
                             obligation, liability, action and cause of action of every kind and nature, that has
@@ -159,19 +156,17 @@ get_header();
                             "a general release does not extend to claims which the creditor does not know or
                             suspect to exist in his or her favor at the time of executing the release, which if
                             known by him or her must have materially affected his or her settlement with the
-                            debtor."<br><br>
-                            Cookies and Web Beacons. Like any other website, Outliant uses ‘cookies'. These
+                            debtor."</p>
+                        <p class="o7-stepper-article__para">Cookies and Web Beacons. Like any other website, Outliant uses ‘cookies'. These
                             cookies are used to store information including visitors' preferences, and the pages
                             on the website that the visitor accessed or visited. The information is used to
                             optimize the users' experience by customizing our web page content based on
-                            visitors' browser type and/or other information.<br><br>
-                        </p>
+                            visitors' browser type and/or other information.</p>
 
                         <h2 class="o7-stepper-article__para-title" id="disclaimers">
                             Disclaimers
                         </h2>
-                        <p class="o7-stepper-article__para">
-                            The site is provided on an "as-is" and "as available" basis, and company and our
+                        <p class="o7-stepper-article__para">The site is provided on an "as-is" and "as available" basis, and company and our
                             suppliers expressly disclaim any and all warranties and conditions of any kind,
                             whether express, implied, or statutory, including all warranties or conditions of
                             merchantability, fitness for a particular purpose, title, quiet enjoyment, accuracy,
@@ -180,34 +175,33 @@ get_header();
                             error-free basis, or will be accurate, reliable, free of viruses or other harmful
                             code, complete, legal, or safe.  If applicable law requires any warranties with
                             respect to the site, all such warranties are limited in duration to ninety (90) days
-                            from the date of first use.<br><br>
-                            Some jurisdictions do not allow the exclusion of implied warranties, so the above
+                            from the date of first use.</p>
+                        <p class="o7-stepper-article__para">Some jurisdictions do not allow the exclusion of implied warranties, so the above
                             exclusion may not apply to you.  Some jurisdictions do not allow limitations on how
-                            long an implied warranty lasts, so the above limitation may not apply to you.
-                        </p>
+                            long an implied warranty lasts, so the above limitation may not apply to you.</p>
+                        
 
                         <h2 class="o7-stepper-article__para-title" id="limitation-on-liability">
                             Limitation on Liability
                         </h2>
-                        <p class="o7-stepper-article__para">
-                            To the maximum extent permitted by law, in no event shall company or our suppliers
+                        <p class="o7-stepper-article__para">To the maximum extent permitted by law, in no event shall company or our suppliers
                             be liable to you or any third-party for any lost profits, lost data, costs of
                             procurement of substitute products, or any indirect, consequential, exemplary,
                             incidental, special or punitive damages arising from or relating to these terms or
                             your use of, or incapability to use the site even if company has been advised of the
                             possibility of such damages.  Access to and use of the site is at your own
                             discretion and risk, and you will be solely responsible for any damage to your
-                            device or computer system, or loss of data resulting therefrom.<br><br>
-                            To the maximum extent permitted by law, notwithstanding anything to the contrary
+                            device or computer system, or loss of data resulting therefrom.</p>
+                        <p class="o7-stepper-article__para">To the maximum extent permitted by law, notwithstanding anything to the contrary
                             contained herein, our liability to you for any damages arising from or related to
                             this agreement, will at all times be limited to a maximum of fifty U.S. dollars
                             (u.s. $50). The existence of more than one claim will not enlarge this
-                            limit.<br><br>
-                            You agree that our suppliers will have no liability of any kind arising from or
+                            limit.</p>
+                        <p class="o7-stepper-article__para">You agree that our suppliers will have no liability of any kind arising from or
                             relating to this agreement.Some jurisdictions do not allow the limitation or
                             exclusion of liability for incidental or consequential damages, so the above
-                            limitation or exclusion may not apply to you.<br><br>
-                            Term and Termination. Subject to this Section, these Terms will remain in full force
+                            limitation or exclusion may not apply to you.</p>
+                        <p class="o7-stepper-article__para">Term and Termination. Subject to this Section, these Terms will remain in full force
                             and effect while you use the Site. We may suspend or terminate your rights to use
                             the Site at any time for any reason at our sole discretion, including for any use of
                             the Site in violation of these Terms. Upon termination of your rights under these
@@ -217,12 +211,11 @@ get_header();
                             have any liability whatsoever to you for any termination of your rights under these
                             Terms. Even after your rights under these Terms are terminated, the following
                             provisions of these Terms will remain in effect: Sections 2 through 2.5, Section 3
-                            and Sections 4 through 10.<br><br>
-                        </p>
-
+                            and Sections 4 through 10.</p>
                         <h2 class="o7-stepper-article__para-title" id="automatically-collected-information">
                             Automatically Collected Information
                         </h2>
+                        
                         <p class="o7-stepper-article__para">
                             Information about your computer hardware and software may be automatically collected
                             by Outliant. This information can include: your IP address, browser type, domain
@@ -272,8 +265,7 @@ get_header();
                         <h2 class="o7-stepper-article__para-title" id="general">
                             General
                         </h2>
-                        <p class="o7-stepper-article__para">
-                            These Terms are subject to occasional revision, and if we make any substantial
+                        <p class="o7-stepper-article__para">These Terms are subject to occasional revision, and if we make any substantial
                             changes, we may notify you by sending you an e-mail to the last e-mail address you
                             provided to us and/or by prominently posting notice of the changes on our Site. You
                             are responsible for providing us with your most current e-mail address. In the event
@@ -288,9 +280,8 @@ get_header();
                             conditions of such changes. Dispute Resolution. Please read this Arbitration
                             Agreement carefully. It is part of your contract with Company and affects your
                             rights. It contains procedures for MANDATORY BINDING ARBITRATION AND A CLASS ACTION
-                            WAIVER.<br><br>
-
-                            Applicability of Arbitration Agreement. All claims and disputes in connection with
+                            WAIVER.</p>
+                        <p class="o7-stepper-article__para">Applicability of Arbitration Agreement. All claims and disputes in connection with
                             the Terms or the use of any product or service provided by the Company that cannot
                             be resolved informally or in small claims court shall be resolved by binding
                             arbitration on an individual basis under the terms of this Arbitration Agreement.
@@ -298,9 +289,8 @@ get_header();
                             This Arbitration Agreement applies to you and the Company, and to any subsidiaries,
                             affiliates, agents, employees, predecessors in interest, successors, and assigns, as
                             well as all authorized or unauthorized users or beneficiaries of services or goods
-                            provided under the Terms.<br><br>
-
-                            Notice Requirement and Informal Dispute Resolution. Before either party may seek
+                            provided under the Terms.</p>
+                        <p class="o7-stepper-article__para">Notice Requirement and Informal Dispute Resolution. Before either party may seek
                             arbitration, the party must first send to the other party a written Notice of
                             Dispute describing the nature and basis of the claim or dispute, and the requested
                             relief. A Notice to the Company should be sent to: 251 Little Falls Dr. After the
@@ -309,9 +299,8 @@ get_header();
                             (30) days after the Notice is received, either party may begin an arbitration
                             proceeding. The amount of any settlement offer made by any party may not be
                             disclosed to the arbitrator until after the arbitrator has determined the amount of
-                            the award to which either party is entitled.<br><br>
-
-                            Arbitration Rules. Arbitration shall be initiated through the American Arbitration
+                            the award to which either party is entitled.</p>
+                        <p class="o7-stepper-article__para">Arbitration Rules. Arbitration shall be initiated through the American Arbitration
                             Association, an established alternative dispute resolution provider that offers
                             arbitration as set forth in this section. If AAA is not available to arbitrate, the
                             parties shall agree to select an alternative ADR Provider. The rules of the ADR
@@ -333,20 +322,17 @@ get_header();
                             the Company made to you prior to the initiation of arbitration, the Company will pay
                             you the greater of the award or $2,500.00. Each party shall bear its own costs and
                             disbursements arising out of the arbitration and shall pay an equal share of the
-                            fees and costs of the ADR Provider.<br><br>
-
-                            Additional Rules for Non-Appearance Based Arbitration. If non-appearance based
+                            fees and costs of the ADR Provider.</p>
+                        <p class="o7-stepper-article__para">Additional Rules for Non-Appearance Based Arbitration. If non-appearance based
                             arbitration is elected, the arbitration shall be conducted by telephone, online
                             and/or based solely on written submissions; the specific manner shall be chosen by
                             the party initiating the arbitration. The arbitration shall not involve any personal
                             appearance by the parties or witnesses unless otherwise agreed by the
-                            parties.<br><br>
-
-                            Time Limits. If you or the Company pursues arbitration, the arbitration action must
+                            parties.</p>
+                        <p class="o7-stepper-article__para">Time Limits. If you or the Company pursues arbitration, the arbitration action must
                             be initiated and/or demanded within the statute of limitations and within any
-                            deadline imposed under the AAA Rules for the pertinent claim.<br><br>
-
-                            Authority of Arbitrator. If arbitration is initiated, the arbitrator will decide the
+                            deadline imposed under the AAA Rules for the pertinent claim.</p>
+                        <p class="o7-stepper-article__para">Authority of Arbitrator. If arbitration is initiated, the arbitrator will decide the
                             rights and liabilities of you and the Company, and the dispute will not be
                             consolidated with any other matters or joined with any other cases or parties. The
                             arbitrator shall have the authority to grant motions dispositive of all or part of
@@ -356,9 +342,8 @@ get_header();
                             statement of decision describing the essential findings and conclusions on which the
                             award is based. The arbitrator has the same authority to award relief on an
                             individual basis that a judge in a court of law would have. The award of the
-                            arbitrator is final and binding upon you and the Company.<br><br>
-
-                            Waiver of Jury Trial. THE PARTIES HEREBY WAIVE THEIR CONSTITUTIONAL AND STATUTORY
+                            arbitrator is final and binding upon you and the Company.</p>
+                        <p class="o7-stepper-article__para">Waiver of Jury Trial. THE PARTIES HEREBY WAIVE THEIR CONSTITUTIONAL AND STATUTORY
                             RIGHTS TO GO TO COURT AND HAVE A TRIAL IN FRONT OF A JUDGE OR A JURY, instead
                             electing that all claims and disputes shall be resolved by arbitration under this
                             Arbitration Agreement. Arbitration procedures are typically more limited, more
@@ -366,73 +351,60 @@ get_header();
                             very limited review by a court. In the event any litigation should arise between you
                             and the Company in any state or federal court in a suit to vacate or enforce an
                             arbitration award or otherwise, YOU AND THE COMPANY WAIVE ALL RIGHTS TO A JURY
-                            TRIAL, instead electing that the dispute be resolved by a judge<br><br>
-
-                            Waiver of Class or Consolidated Actions. All claims and disputes within the scope of
+                            TRIAL, instead electing that the dispute be resolved by a judge</p>
+                        <p class="o7-stepper-article__para">Waiver of Class or Consolidated Actions. All claims and disputes within the scope of
                             this arbitration agreement must be arbitrated or litigated on an individual basis
                             and not on a class basis, and claims of more than one customer or user cannot be
                             arbitrated or litigated jointly or consolidated with those of any other customer or
-                            user.<br><br>
-
-                            Confidentiality. All aspects of the arbitration proceeding shall be strictly
+                            user.</p>
+                        <p class="o7-stepper-article__para">Confidentiality. All aspects of the arbitration proceeding shall be strictly
                             confidential. The parties agree to maintain confidentiality unless otherwise
                             required by law. This paragraph shall not prevent a party from submitting to a court
                             of law any information necessary to enforce this Agreement, to enforce an
-                            arbitration award, or to seek injunctive or equitable relief.<br><br>
-
-                            Severability. If any part or parts of this Arbitration Agreement are found under the
+                            arbitration award, or to seek injunctive or equitable relief.</p>
+                        <p class="o7-stepper-article__para">Severability. If any part or parts of this Arbitration Agreement are found under the
                             law to be invalid or unenforceable by a court of competent jurisdiction, then such
                             specific part or parts shall be of no force and effect and shall be severed and the
-                            remainder of the Agreement shall continue in full force and effect.<br><br>
-
-                            Right to Waive. Any or all of the rights and limitations set forth in this
+                            remainder of the Agreement shall continue in full force and effect.</p>
+                        <p class="o7-stepper-article__para">Right to Waive. Any or all of the rights and limitations set forth in this
                             Arbitration Agreement may be waived by the party against whom the claim is asserted.
                             Such waiver shall not waive or affect any other portion of this Arbitration
-                            Agreement.<br><br>
-
-                            Survival of Agreement. This Arbitration Agreement will survive the termination of
-                            your relationship with Company.<br><br>
-
-                            Small Claims Court. Nonetheless the foregoing, either you or the Company may bring
-                            an individual action in small claims court.<br><br>
-
-                            Emergency Equitable Relief. Anyhow the foregoing, either party may seek emergency
+                            Agreement.</p>
+                        <p class="o7-stepper-article__para">Survival of Agreement. This Arbitration Agreement will survive the termination of
+                            your relationship with Company.</p>
+                        <p class="o7-stepper-article__para">Small Claims Court. Nonetheless the foregoing, either you or the Company may bring
+                            an individual action in small claims court.</p>
+                        <p class="o7-stepper-article__para">Emergency Equitable Relief. Anyhow the foregoing, either party may seek emergency
                             equitable relief before a state or federal court in order to maintain the status quo
                             pending arbitration. A request for interim measures shall not be deemed a waiver of
-                            any other rights or obligations under this Arbitration Agreement.<br><br>
-
-                            Claims Not Subject to Arbitration. Notwithstanding the foregoing, claims of
+                            any other rights or obligations under this Arbitration Agreement./p>
+                        <p class="o7-stepper-article__para">Claims Not Subject to Arbitration. Notwithstanding the foregoing, claims of
                             defamation, violation of the Computer Fraud and Abuse Act, and infringement or
                             misappropriation of the other party's patent, copyright, trademark or trade secrets
-                            shall not be subject to this Arbitration Agreement.<br><br>
-
-                            In any circumstances where the foregoing Arbitration Agreement permits the parties
+                            shall not be subject to this Arbitration Agreement.</p>
+                        <p class="o7-stepper-article__para">In any circumstances where the foregoing Arbitration Agreement permits the parties
                             to litigate in court, the parties hereby agree to submit to the personal
                             jurisdiction of the courts located within us County, California, for such
-                            purposes.<br><br>
-
-                            The Site may be subject to U.S. export control laws and may be subject to export or
+                            purposes.</p>
+                        <p class="o7-stepper-article__para">The Site may be subject to U.S. export control laws and may be subject to export or
                             import regulations in other countries. You agree not to export, re-export, or
                             transfer, directly or indirectly, any U.S. technical data acquired from Company, or
                             any products utilizing such data, in violation of the United States export laws or
-                            regulations.<br><br>
-
-                            Company is located at the address in Section 10.8. If you are a California resident,
+                            regulations.</p>
+                        <p class="o7-stepper-article__para">Company is located at the address in Section 10.8. If you are a California resident,
                             you may report complaints to the Complaint Assistance Unit of the Division of
                             Consumer Product of the California Department of Consumer Affairs by contacting them
                             in writing at 400 R Street, Sacramento, CA 95814, or by telephone at (800)
-                            952-5210.<br><br>
-
-                            Electronic Communications. The communications between you and Company use electronic
+                            952-5210.</p>
+                        <p class="o7-stepper-article__para">Electronic Communications. The communications between you and Company use electronic
                             means, whether you use the Site or send us emails, or whether Company posts notices
                             on the Site or communicates with you via email. For contractual purposes, you (a)
                             consent to receive communications from Company in an electronic form; and (b) agree
                             that all terms and conditions, agreements, notices, disclosures, and other
                             communications that Company provides to you electronically satisfy any legal
                             obligation that such communications would satisfy if it were be in a hard copy
-                            writing.<br><br>
-
-                            Entire Terms. These Terms constitute the entire agreement between you and us
+                            writing.</p>
+                        <p class="o7-stepper-article__para">Entire Terms. These Terms constitute the entire agreement between you and us
                             regarding the use of the Site. Our failure to exercise or enforce any right or
                             provision of these Terms shall not operate as a waiver of such right or provision.
                             The section titles in these Terms are for convenience only and have no legal or
@@ -446,15 +418,13 @@ get_header();
                             or otherwise transferred by you without Company's prior written consent, and any
                             attempted assignment, subcontract, delegation, or transfer in violation of the
                             foregoing will be null and void. Company may freely assign these Terms. The terms
-                            and conditions set forth in these Terms shall be binding upon assignees.<br><br>
-                            Your Privacy. Please read our Privacy Policy.<br><br>
-
-                            Copyright/Trademark Information. Copyright ©. All rights reserved.  All trademarks,
+                            and conditions set forth in these Terms shall be binding upon assignees.</p>
+                        <p class="o7-stepper-article__para">Your Privacy. Please read our Privacy Policy.</p>
+                        <p class="o7-stepper-article__para">Copyright/Trademark Information. Copyright ©. All rights reserved.  All trademarks,
                             logos and service marks displayed on the Site are our property or the property of
                             other third-parties. You are not permitted to use these Marks without our prior
-                            written consent or the consent of such third party which may own the Marks.<br><br>
-                        </p>
-
+                            written consent or the consent of such third party which may own the Marks.</p>
+                        
                         <h2 class="o7-stepper-article__para-title" id="contact-information">
                             Contact Information
                         </h2>
