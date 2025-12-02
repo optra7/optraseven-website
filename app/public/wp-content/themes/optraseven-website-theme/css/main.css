@@ -6887,8 +6887,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 
     .o7-hero-legal__subtitle {
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 24px;
         letter-spacing: 0.20px;
         color: #202020;
     }
@@ -6911,6 +6910,12 @@ figure.megamenu__service-view-all-image-wrapper {
         font-size: 28px;
     }
 }
+@media (max-width: 991px) {
+    .o7-hero-legal__subtitle {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 767px) {
     .o7-hero-legal-intro {
         flex-direction: column;
@@ -6919,17 +6924,15 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-hero-legal-intro__text + .o7-hero-legal-intro__text {
         margin-top: 15px;
     }
+    .o7-hero-legal__subtitle {
+        font-size: 20px;
+    }
 
 }
 
 
 
 @media (max-width: 576px) {
-
-    .o7-hero-legal__subtitle {
-        font-size: 22px;
-        line-height: 36px;
-    }
 
     .o7-hero-legal__header-content {
         gap: 10px;
