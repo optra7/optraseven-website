@@ -5221,8 +5221,7 @@ figure.megamenu__service-view-all-image-wrapper {
 /* --- Layout --- */
 .o7-details-page-post-wrapper {
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
+    gap: 180px;
     margin-top: 120px;
 }
 
@@ -5230,13 +5229,13 @@ figure.megamenu__service-view-all-image-wrapper {
 .o7-details-page-sidebar {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    max-width: 220px;
-    width: 100%;
+    align-self: flex-start;
+    width: 220px;
+    flex-grow: 0;
+    flex-shrink: 0;
     margin: 260px 0 0;
     position: sticky;
     top: 125px;
-    align-self: flex-start;
 }
 .o7-details-page-sidebar__item-wrapper {
     margin: 0 0 30px;
@@ -5254,16 +5253,10 @@ figure.megamenu__service-view-all-image-wrapper {
 
 /* --- Artical --- */
 .o7-details-page-post {
-    max-width: 1200px;
-    flex-grow: 0;
-}
-.o7-details-page-post__details-wrapper {
-    margin: 50px 0 100px;
+    flex: 1 1 auto;
 }
 
 .o7-details-page-post__title {
-    font-size: 76px;
-    font-weight: 400;
     margin: 0 0 60px;
 }
 
@@ -5271,7 +5264,13 @@ figure.megamenu__service-view-all-image-wrapper {
     display: none;
 }
 
-
+.o7-details-page-post h1,
+.o7-details-page-post .h1,
+.o7-details-page-post__title {
+    font-size: 76px;
+    font-weight: 400;
+    margin: 0 0 30px;
+}
 .o7-details-page-post h2,
 .o7-details-page-post .h2 {
     font-size: 56px;
@@ -5333,16 +5332,7 @@ figure.megamenu__service-view-all-image-wrapper {
         gap: 60px;
     }
     .o7-details-page-sidebar {
-        max-width: 170px;
-        margin: 200px 0 0;
-    }
-
-    .o7-details-page-sidebar__title {
-        font-size: 20px;
-    }
-
-    .o7-details-page-sidebar__item {
-        font-size: 16px;
+        margin: 125px 0 0;
     }
 
     .o7-details-page-post__title {
@@ -5359,15 +5349,11 @@ figure.megamenu__service-view-all-image-wrapper {
 
 @media (max-width: 1200px) {
     .o7-details-page-post-wrapper {
-        gap: 40px;
+        margin-top: 100px;
     }
     .o7-details-page-sidebar {
-        margin: 170px 0 0;
+        margin: 110px 0 0;
     }
-    .o7-details-page-post__details-wrapper {
-        margin: 20px 0 40px;
-    }
-
     .o7-details-page-post__title {
         font-size: 56px;
         margin: 0 0 40px;
@@ -5397,30 +5383,7 @@ figure.megamenu__service-view-all-image-wrapper {
         border-radius: 16px;
     }
     .o7-details-page-post-wrapper {
-        display: flex;
-        flex-direction: column;
-        margin-top: 40px;
-    }
-    .o7-details-page-sidebar {
-        flex-direction: row;
-        background-color: #FFFFFF;
-        padding: 30px;
-        border-radius: 20px;
-        max-width: 100%;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: flex-start;
-        margin: 0;
-        position: static;
-    }
-    .o7-details-page-sidebar__item-wrapper {
-        flex-grow: 0;
-        flex-shrink: 0;
-        width: calc(33.33% - 20px);
-    }
-    .o7-details-page-sidebar__btn-wrapper {
-        width: 100%;
-        justify-items: center;
+        margin-top: 80px;
     }
     .o7-details-page-post__title {
         font-size: 48px;
@@ -5446,6 +5409,36 @@ figure.megamenu__service-view-all-image-wrapper {
 }
 @media (max-width: 991px) {
 
+    .o7-details-page-post-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .o7-details-page-sidebar {
+        background-color: #FFFFFF;
+        padding: 25px;
+        border-radius: 16px;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+        position: static;
+    }
+    .o7-details-page-sidebar__item-wrapper {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: calc(33.33% - 13.333px);
+        margin: 0;
+    }
+    .o7-details-page-sidebar__btn-wrapper {
+        width: 100%;
+        justify-items: center;
+    }
+    .o7-details-page-sidebar__inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -5458,9 +5451,11 @@ figure.megamenu__service-view-all-image-wrapper {
         font-size: 28px;
         font-weight: 500;
     }
-
-    .o7-details-page-post-wrapper {
-        margin-top: 30px;
+    .o7-details-page-sidebar {
+        padding: 20px;
+    }
+    .o7-details-page-sidebar__item-wrapper {
+        width: calc(50% - 10px);
     }
 }
 
