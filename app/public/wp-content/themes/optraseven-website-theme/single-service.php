@@ -35,7 +35,6 @@ while (have_posts()) : the_post();
                 <img src="<?php echo esc_url($banner_image); ?>"
                      alt="<?php the_title_attribute(); ?>"
                      class="o7-stepper-service-details__hero-image"
-                     decoding="async"
                      fetchpriority="high">
 
             <?php elseif (!empty($hero_image)) : ?>
@@ -44,7 +43,6 @@ while (have_posts()) : the_post();
                 <img src="<?php echo esc_url($hero_image); ?>"
                      alt="<?php the_title_attribute(); ?>"
                      class="o7-stepper-service-details__hero-image"
-                     decoding="async"
                      fetchpriority="high">
 
             <?php endif; ?>
