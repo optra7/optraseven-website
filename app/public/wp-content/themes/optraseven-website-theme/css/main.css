@@ -5426,7 +5426,7 @@ figure.megamenu__service-view-all-image-wrapper {
     }
     .o7-details-page-sidebar {
         background-color: #FFFFFF;
-        padding: 25px;
+        padding: 30px 25px;
         border-radius: 16px;
         width: 100%;
         flex-wrap: wrap;
@@ -5438,6 +5438,12 @@ figure.megamenu__service-view-all-image-wrapper {
         flex-shrink: 0;
         width: calc(33.33% - 13.333px);
         margin: 0;
+    }
+    .o7-details-page-sidebar__title {
+        font-size: 20px;
+    }
+    .o7-details-page-sidebar__item {
+        font-size: 18px;
     }
     .o7-details-page-sidebar__btn-wrapper {
         width: 100%;
@@ -5470,12 +5476,15 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-details-page-post__title {
         margin: 0 0 15px;
     }
-    .o7-details-page-sidebar {
-        padding: 20px;
-    }
     .o7-details-page-sidebar__item-wrapper {
         width: calc(50% - 10px);
     }
+    .o7-details-page-sidebar__title {
+        font-size: 18px;
+    }
+    .o7-details-page-sidebar__item {
+        font-size: 16px;
+    } 
 }
 
 
