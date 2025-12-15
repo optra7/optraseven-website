@@ -35,9 +35,9 @@ get_header();
                         <div class="o7-get-the-quote__info">
                             <h2 class="o7-get-the-quote__location">Headquarter</h2>
                             <address class="o7-contact-us__form-address">
-                                <span>Shere Bangla Nagar,</span>
-                                <span>Dhaka - 1207,</span>
-                                <span>Bangladesh.</span> 
+                                <span>1209 Mountain Road PL NE, STE R</span>
+                                <span>Albuquerque NM 87110</span>
+                                <span>USA</span>
                             </address>
                         </div>
 
