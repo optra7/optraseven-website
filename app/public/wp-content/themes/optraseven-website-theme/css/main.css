@@ -2784,10 +2784,10 @@ figure.megamenu__service-view-all-image-wrapper {
     }
 
     .o7-hero__button-wrapper {
-        border-radius: 0 0 14px 0;
+        border-radius: 0 0 28px 0;
         display: flex;
         justify-content: start;
-        max-width: 162px;
+        max-width: 170px;
         height: 60px;
         padding-bottom: 12px;
     }
@@ -2816,10 +2816,12 @@ figure.megamenu__service-view-all-image-wrapper {
     .o7-hero__title {
         font-size: 40px;
     }
-
+    .o7-hero__button-chip-wrapper {
+        max-width: 142px;
+    }
     .o7-hero__button-wrapper {
         height: 52px;
-        max-width: 139px;
+        max-width: 142px;
     }
 
     .o7-hero__button {
