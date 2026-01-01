@@ -100,7 +100,7 @@ get_header();
                     <source media="(min-width:1024px)" srcset=<?= get_template_directory_uri() . "/assets/images/homepage/Hero-image.webp" ?> />
                     <source media="(min-width:768px)" srcset=<?= get_template_directory_uri() . "/assets/images/homepage/Hero-image-tab.webp" ?> />
                     <source media="(min-width:100px)" srcset=<?= get_template_directory_uri() . "/assets/images/homepage/Hero-image-mobile.webp" ?> />
-                    <img width="1600px" height="950px" src=<?= get_template_directory_uri() . "./images/homepage/Hero-image.webp" ?> alt="" />
+                    <img width="1600px" height="950px" fetchpriority="high" src=<?= get_template_directory_uri() . "./images/homepage/Hero-image.webp" ?> alt="Hero-image" />
                 </picture>
             </div>
         </div>

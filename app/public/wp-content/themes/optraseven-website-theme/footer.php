@@ -156,9 +156,9 @@
                                         <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#location-arrow-outline"?>></use>
                                     </svg>
                                     <div class="region">
-                                        Shere Bangla Nagar,<br>
-                                        Dhaka - 1207,<br>
-                                        Bangladesh.
+                                        1209 Mountain Road PL NE, STE R<br>
+                                        Albuquerque NM 87110<br>
+                                        USA
                                     </div>
                                 </div>
                             </li>
