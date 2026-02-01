@@ -77,52 +77,52 @@ get_header();
     </section>
 
         <!-- Comments -->
-        <div class="o7-blog-post__comment-section">
-            <h2 class="o7-blog-post-comment__heading">Leave A Comment</h2>
-
-            <div class="o7-blog-post-comment__input-box">
-                <?php
-                comment_form([
-                    'title_reply'          => '',
-                    'comment_notes_before' => '',
-                    'comment_notes_after'  => '',
-                    'label_submit'         => 'Submit',
-                    'class_submit'         => 'btn btn--secondary btn--small',
-                    'comment_field'        => '<textarea name="comment" placeholder="Type your comment here" required></textarea>',
-                ]);
-                ?>
-            </div>
-
-            <div class="o7-blog-post__comments-list">
-                <?php
-                $comments = get_comments([
-                    'post_id' => get_the_ID(),
-                    'status'  => 'approve'
-                ]);
-
-                if ($comments) :
-                    foreach ($comments as $comment) : ?>
-                        <div class="o7-blog-post-comment__card">
-                            <div class="o7-blog-post-comment__avatar-wrapper">
-                                <div class="o7-blog-post-comment__avatar">
-                                    <?php echo get_avatar($comment, 50); ?>
-                                </div>
-                                <h4 class="o7-blog-post-comment__author">
-                                    <?php echo esc_html($comment->comment_author); ?>
-                                </h4>
-                            </div>
-                            <div class="o7-blog-post-comment__content">
-                                <div class="o7-blog-post-comment__text">
-                                    <?php echo esc_html($comment->comment_content); ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endforeach;
-                else : ?>
-                    <p class="no-comment-message">No comments yet. Be the first to comment!</p>
-                <?php endif; ?>
-            </div>
-        </div>
+<!--        <div class="o7-blog-post__comment-section">-->
+<!--            <h2 class="o7-blog-post-comment__heading">Leave A Comment</h2>-->
+<!---->
+<!--            <div class="o7-blog-post-comment__input-box">-->
+<!--                --><?php
+//                comment_form([
+//                    'title_reply'          => '',
+//                    'comment_notes_before' => '',
+//                    'comment_notes_after'  => '',
+//                    'label_submit'         => 'Submit',
+//                    'class_submit'         => 'btn btn--secondary btn--small',
+//                    'comment_field'        => '<textarea name="comment" placeholder="Type your comment here" required></textarea>',
+//                ]);
+//                ?>
+<!--            </div>-->
+<!---->
+<!--            <div class="o7-blog-post__comments-list">-->
+<!--                --><?php
+//                $comments = get_comments([
+//                    'post_id' => get_the_ID(),
+//                    'status'  => 'approve'
+//                ]);
+//
+//                if ($comments) :
+//                    foreach ($comments as $comment) : ?>
+<!--                        <div class="o7-blog-post-comment__card">-->
+<!--                            <div class="o7-blog-post-comment__avatar-wrapper">-->
+<!--                                <div class="o7-blog-post-comment__avatar">-->
+<!--                                    --><?php //echo get_avatar($comment, 50); ?>
+<!--                                </div>-->
+<!--                                <h4 class="o7-blog-post-comment__author">-->
+<!--                                    --><?php //echo esc_html($comment->comment_author); ?>
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div class="o7-blog-post-comment__content">-->
+<!--                                <div class="o7-blog-post-comment__text">-->
+<!--                                    --><?php //echo esc_html($comment->comment_content); ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    --><?php //endforeach;
+//                else : ?>
+<!--                    <p class="no-comment-message">No comments yet. Be the first to comment!</p>-->
+<!--                --><?php //endif; ?>
+<!--            </div>-->
+<!--        </div>-->
 
         <?php
         // Build explore fields array
