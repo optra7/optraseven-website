@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<body>
+    <body>
     <main class="main inner-page-main">
         <section class="section section-no-space-top o7-contact-us">
             <div class="container">
@@ -19,7 +19,7 @@ get_header();
                         <div class="o7-contact-us__form-address-content-wrapper">
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline" ?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline" ?>></use>
                                 </svg>
                                 <a href="http://wa.me/+8801784287229" target="_blank" class="o7-contact-us__form-address">
                                     (+880) 1784287229
@@ -27,32 +27,32 @@ get_header();
                             </div>
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?=get_template_directory_uri() ."/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin" ?>></use>
                                 </svg>
-                                <a href="mailto:info@optraseven.com" target="_blank" class="o7-contact-us__form-address">
-                                    info@optraseven.com
+                                <a href="mailto:optraseven@gmail.com" target="_blank" class="o7-contact-us__form-address">
+                                    optraseven@gmail.com
                                 </a>
                             </div>
                         </div>
                         <div class="o7-contact-us__form-address-content-wrapper">
                             <h2 class="o7-contact-us__form-address-header">Headquarter</h2>
                             <address class="o7-contact-us__form-address">
-                                <span>1209 Mountain Road PL NE,</span>
-                                <span>STE R, Albuquerque,</span>
-                                <span>NM 87110, USA</span> 
+                                <span>1209 Mountain Road PL NE, STE R</span>
+                                <span>Albuquerque NM 87110</span>
+                                <span>USA</span>
                             </address>
                         </div>
                         <div class="o7-contact-us__form-address-content-wrapper">
                             <h2 class="o7-contact-us__form-address-header">Offices</h2>
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#office"?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#office" ?>></use>
                                 </svg>
                                 <p class="o7-contact-us__form-address">Bangladesh</p>
                             </div>
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#usa" ?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#usa" ?>></use>
                                 </svg>
                                 <p class="o7-contact-us__form-address">United States</p>
                             </div>
@@ -64,13 +64,17 @@ get_header();
                         </h1>
                         <form class="o7-contact-us-form" aria-label="contact us form" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                             <input type="hidden" name="action" value="contact_form_submit">
+                            <?php wp_nonce_field('contact_form_submit', '_wpnonce'); ?>
+                            <div style="display: none;">
+                                <input type="text" name="website" id="website" autocomplete="off">
+                            </div>
 
                             <!-- full name input -->
                             <div>
                                 <label class="o7-input-label o7-contact-us__input-label" for="name">Full Name</label>
                                 <div class="o7-input-group o7-contact-us__input-group">
                                     <input type="text" id="name" name="name"
-                                        class="o7-input-field o7-contact-us__input-field" placeholder="John Lenon" required>
+                                           class="o7-input-field o7-contact-us__input-field" placeholder="John Lenon" required>
                                 </div>
                             </div>
 
@@ -80,10 +84,10 @@ get_header();
                                 <div class="o7-contact-us__input-wrapper o7-contact-us__input-wrapper--col-two">
                                     <label class="o7-input-label o7-contact-us__input-label" for="email">Email</label>
                                     <div
-                                        class="o7-input-group o7-contact-us__input-group o7-contact-us__email-input-group">
+                                            class="o7-input-group o7-contact-us__input-group o7-contact-us__email-input-group">
                                         <input type="email" id="email" name="email" required
-                                            class="o7-input-field o7-contact-us__input-field"
-                                            placeholder="johnlenon@gmail.com">
+                                               class="o7-input-field o7-contact-us__input-field"
+                                               placeholder="johnlenon@gmail.com">
                                     </div>
                                 </div>
                                 <!-- whatsapp -->
@@ -94,10 +98,10 @@ get_header();
                                         </span>
                                     </label>
                                     <div
-                                        class="o7-input-group o7-contact-us__input-group o7-contact-us__whatsapp-input-group">
+                                            class="o7-input-group o7-contact-us__input-group o7-contact-us__whatsapp-input-group">
                                         <input type="tel" id="whatsapp" name="whatsapp" inputmode="tel"
-                                            class="o7-input-field o7-contact-us__input-field"
-                                            placeholder="+88 017 8428 7229">
+                                               class="o7-input-field o7-contact-us__input-field"
+                                               placeholder="+88 017 8428 7229">
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +111,7 @@ get_header();
                                 <label class="o7-input-label o7-contact-us__input-label" for="subject">Subject</label>
                                 <div class="o7-input-group o7-contact-us__input-group">
                                     <input type="text" id="subject" name="subject"
-                                        class="o7-input-field o7-contact-us__input-field" placeholder="Ui Design" required>
+                                           class="o7-input-field o7-contact-us__input-field" placeholder="Ui Design" required>
                                 </div>
                             </div>
 
@@ -117,8 +121,8 @@ get_header();
                                     Details</label>
                                 <div class="o7-input-group o7-contact-us__input-group">
                                     <textarea name="message" id="message"
-                                        class="o7-input-field o7-contact-us__input-field o7-contact-us__message-input"
-                                        placeholder="I want to re-build my Shopify store..." required></textarea>
+                                              class="o7-input-field o7-contact-us__input-field o7-contact-us__message-input"
+                                              placeholder="I want to re-build my Shopify store..." required></textarea>
                                 </div>
                             </div>
                             <!-- submit button -->
@@ -135,22 +139,22 @@ get_header();
         get_template_part('template-parts/map', null, []);
         ?>
         <?php
-    $faq_data = array(
-        'title_pointer' => '', // optional small accent text (left dot in your original)
-        'title'         => 'Frequently Asked Questions',
-        'sub_title'     => 'Answers to Things You Might Be Wondering',
-        'button_text'   => 'Get In Touch',
-        'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
-        'questions'     => array(
-            array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
-            array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
-            array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
-            array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
-        ),
-    );
+        $faq_data = array(
+            'title_pointer' => '', // optional small accent text (left dot in your original)
+            'title'         => 'Frequently Asked Questions',
+            'sub_title'     => 'Answers to Things You Might Be Wondering',
+            'button_text'   => 'Get In Touch',
+            'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
+            'questions'     => array(
+                array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
+                array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
+                array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
+                array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
+            ),
+        );
 
-    get_template_part('template-parts/faq', null, $faq_data);
-    ?>
+        get_template_part('template-parts/faq', null, $faq_data);
+        ?>
 
         <section class="o7-news-letter section section-no-space-bottom">
             <div class="container">
@@ -205,6 +209,6 @@ get_header();
         </section>
 
     </main>
-</body>
+    </body>
 
 <?php get_footer(); ?>

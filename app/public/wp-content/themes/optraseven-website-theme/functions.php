@@ -258,7 +258,24 @@ add_action('admin_post_contact_form_submit', 'optraseven_contact_form_handler');
 
 function optraseven_contact_form_handler()
 {
-	require_once get_template_directory() . '/utils/sanitize-forms.php';
+    if (!isset($_POST['_wpnonce']) || !wp_verify_nonce($_POST['_wpnonce'], 'contact_form_submit')) {
+        wp_die('Security check failed');
+    }
+
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $transient_key = 'form_submission_' . md5($ip . '_contact_form');
+    if (get_transient($transient_key)) {
+        wp_die('Please wait before submitting another message.');
+    }
+    set_transient($transient_key, true, MINUTE_IN_SECONDS * 5);
+
+    // Check honeypot
+    if (!empty($_POST['website'])) {
+        wp_safe_redirect(home_url('/contact/'));
+        exit;
+    }
+
+    require_once get_template_directory() . '/utils/sanitize-forms.php';
 
 	$name     = sanitize_text_field($_POST['name'] ?? '');
 	$email    = sanitize_email($_POST['email'] ?? '');
@@ -276,26 +293,44 @@ function optraseven_contact_form_handler()
 		$errors[] = 'Invalid email address.';
 	}
 
-	if (empty($errors)) {
-		$to      = 'info@optraseven.com';
-		$subject_line = 'Contact Form submission from: ' . $email;
-		$body    = "Name: $name\nEmail: $email\nWhatsapp: $whatsapp\n\nMessage:\n$message";
-		$headers = "From: $name <$email>";
+    if ($whatsapp && !preg_match('/^[\d\s\-\+\(\)]+$/', $whatsapp)) {
+        $errors[] = 'Invalid WhatsApp number format.';
+    }
+
+    if (empty($errors)) {
+        $to      = 'info@optraseven.com';
+        $subject_line = 'Contact Form: ' . $subject;
+        $body    = "CONTACT FORM SUBMISSION\n";
+        $body   .= "=======================\n\n";
+        $body   .= "Name: $name\n";
+        $body   .= "Email: $email\n";
+        $body   .= "WhatsApp: $whatsapp\n";
+        $body   .= "Subject: $subject\n\n";
+        $body   .= "Message:\n";
+        $body   .= "--------\n";
+        $body   .= "$message\n\n";
+        $body   .= "---\n";
+        $body   .= "Submitted via website contact form.";
+
+        $headers = [
+            "From: Website Contact <noreply@optraseven.com>",
+            "Reply-To: $name <$email>",
+            "Content-Type: text/plain; charset=UTF-8"
+        ];
 
 		if (!wp_mail($to, $subject_line, $body, $headers)) {
 			$errors[] = 'Error sending email. Please try again later.';
 		}
 	}
 
-	// Redirect back to the page with status
-	$redirect = wp_get_referer() ?: home_url('/contact/');
-	if (!empty($errors)) {
-		$redirect = add_query_arg('contact_error', urlencode(implode(', ', $errors)), $redirect);
-	} else {
-		$redirect = add_query_arg('contact_success', '1', $redirect);
-	}
-	wp_safe_redirect($redirect);
-	exit;
+    $redirect = wp_get_referer() ?: home_url('/contact/');
+    if (!empty($errors)) {
+        $redirect = add_query_arg('contact_error', base64_encode(implode('|', $errors)), $redirect);
+    } else {
+        $redirect = add_query_arg('contact_success', '1', $redirect);
+    }
+    wp_safe_redirect($redirect);
+    exit;
 }
 /**
  * ----------------------------------------------------
@@ -305,16 +340,15 @@ function optraseven_contact_form_handler()
 
 function enqueue_quote_form_assets()
 {
-	if (
-		is_page_template('page-get-a-quote.php')
-	) {
-		wp_enqueue_script('flatpickr', 'https://cdn.jsdelivr.net/npm/flatpickr', [], null, true);
-		wp_enqueue_script('o7-quote-form', get_template_directory_uri() . '/js/quote-form.js', ['flatpickr'], null, true);
-		wp_enqueue_style('flatpickr-style', 'https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css');
-		wp_enqueue_style('choice-style', get_template_directory_uri() . '/css/choices.min.css');
-		wp_enqueue_script('choices-js', get_template_directory_uri() . '/js/choices.min.js', ['flatpickr'], null, true);
-
-	}
+    if (
+        is_page_template('page-get-a-quote.php')
+    ) {
+        wp_enqueue_script('flatpickr', 'https://cdn.jsdelivr.net/npm/flatpickr', [], null, true);
+        wp_enqueue_script('o7-quote-form', get_template_directory_uri() . '/js/quote-form.js', ['flatpickr'], null, true);
+        wp_enqueue_style('flatpickr-style', 'https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css');
+        wp_enqueue_style('choice-style', get_template_directory_uri() . '/css/choices.min.css');
+        wp_enqueue_script('choices-js', get_template_directory_uri() . '/js/choices.min.js', ['flatpickr'], null, true);
+    }
 }
 add_action('wp_enqueue_scripts', 'enqueue_quote_form_assets');
 
@@ -328,22 +362,42 @@ add_action('admin_post_get_quote_form_submit', 'optraseven_get_quote_form_handle
 
 function optraseven_get_quote_form_handler()
 {
-	require_once get_template_directory() . '/utils/sanitize-forms.php';
+    if (!isset($_POST['_wpnonce']) || !wp_verify_nonce($_POST['_wpnonce'], 'get_quote_form_submit')) {
+        wp_die('Security check failed');
+    }
 
-	// Sanitize fields
-	$name         = sanitize_text_field($_POST['name'] ?? '');
-	$country_code = sanitize_text_field($_POST['country-code'] ?? '');
-	$phone        = sanitize_text_field($_POST['phone'] ?? '');
-	$email        = sanitize_email($_POST['email'] ?? '');
-	$company_name = sanitize_text_field($_POST['company-name'] ?? '');
-	$website_url  = esc_url_raw($_POST['website-url'] ?? '');
-	$service_type = sanitize_text_field($_POST['service-type'] ?? '');
-	$industry     = sanitize_text_field($_POST['industry-category'] ?? '');
-	$budget_min   = sanitize_text_field($_POST['budget-min'] ?? '');
-	$budget_max   = sanitize_text_field($_POST['budget-max'] ?? '');
-	$country      = sanitize_text_field($_POST['country-select'] ?? '');
-	$date         = sanitize_text_field($_POST['date'] ?? '');
-	$message      = sanitize_textarea_field($_POST['message'] ?? '');
+    if (!empty($_POST['hp_email']) || !empty($_POST['website_url'])) {
+        // Log for debugging (optional)
+        error_log('Honeypot triggered from IP: ' . ($_SERVER['REMOTE_ADDR'] ?? 'unknown'));
+
+        // Silent fail - redirect without error (bots expect this)
+        wp_safe_redirect(home_url('/'));
+        exit;
+    }
+
+    // Rate limiting - prevents spam submissions
+    $ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+    $transient_key = 'form_submission_' . md5($ip . '_quote_form');
+    if (get_transient($transient_key)) {
+        wp_die('Please wait a few minutes before submitting another request.');
+    }
+    set_transient($transient_key, true, MINUTE_IN_SECONDS * 5); // 5 minute cooldown
+
+    require_once get_template_directory() . '/utils/sanitize-forms.php';
+
+    $name         = sanitize_text_field($_POST['name'] ?? '');
+    $country_code = sanitize_text_field($_POST['country-code'] ?? '');
+    $phone        = sanitize_text_field($_POST['phone'] ?? '');
+    $email        = sanitize_email($_POST['email'] ?? '');
+    $company_name = sanitize_text_field($_POST['company-name'] ?? '');
+    $website_url  = esc_url_raw($_POST['website-url'] ?? '');
+    $service_type = sanitize_text_field($_POST['service-type'] ?? '');
+    $industry     = sanitize_text_field($_POST['industry-category'] ?? '');
+    $budget_min   = sanitize_text_field($_POST['budget-min'] ?? '');
+    $budget_max   = sanitize_text_field($_POST['budget-max'] ?? '');
+    $country      = sanitize_text_field($_POST['country-select'] ?? '');
+    $date         = sanitize_text_field($_POST['date'] ?? '');
+    $message      = sanitize_textarea_field($_POST['message'] ?? '');
 
 	$phone_full = trim($country_code . ' ' . $phone);
 	$errors = [];
@@ -356,43 +410,61 @@ function optraseven_get_quote_form_handler()
 		$errors[] = 'Invalid email address.';
 	}
 
-	// File upload handling
-	$uploaded_file = $_FILES['file-attachment'] ?? null;
-	$attachment_path = '';
+    $uploaded_file = $_FILES['file-attachment'] ?? null;
+    $attachment_path = '';
 
-	if ($uploaded_file && $uploaded_file['size'] > 0) {
-		require_once ABSPATH . 'wp-admin/includes/file.php';
-		$upload = wp_handle_upload($uploaded_file, ['test_form' => false]);
+    if ($uploaded_file && $uploaded_file['size'] > 0) {
+        require_once ABSPATH . 'wp-admin/includes/file.php';
 
-		if (!empty($upload['error'])) {
-			$errors[] = 'File upload error: ' . esc_html($upload['error']);
-		} else {
-			$attachment_path = $upload['file'];
-		}
-	}
+        $allowed_types = ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx', 'txt'];
+        $file_ext = strtolower(pathinfo($uploaded_file['name'], PATHINFO_EXTENSION));
 
-	if (empty($errors)) {
-		$to = 'info@optraseven.com';
-		$subject_line = 'Quote Request from ' . $name;
-		$body = "Name: $name\nEmail: $email\nPhone: $phone_full\nCompany: $company_name\nWebsite: $website_url\nService: $service_type\nIndustry: $industry\nBudget: \$$budget_min - \$$budget_max\nCountry: $country\nDate: $date\n\nMessage:\n$message";
-		$headers = ["From: $name <$email>"];
+        if (!in_array($file_ext, $allowed_types)) {
+            $errors[] = 'Invalid file type. Allowed: ' . implode(', ', $allowed_types);
+        }
 
-		// Send mail with attachment if available
-		if ($attachment_path) {
-			wp_mail($to, $subject_line, $body, $headers, [$attachment_path]);
-		} else {
-			wp_mail($to, $subject_line, $body, $headers);
-		}
-	}
+        $max_size = 5 * 1024 * 1024; // 5MB
+        if ($uploaded_file['size'] > $max_size) {
+            $errors[] = 'File too large (max 5MB)';
+        }
 
-	$redirect = wp_get_referer() ?: home_url('/');
-	if (!empty($errors)) {
-		$redirect = add_query_arg('quote_error', urlencode(implode(', ', $errors)), $redirect);
-	} else {
-		$redirect = add_query_arg('quote_success', '1', $redirect);
-	}
-	wp_safe_redirect($redirect);
-	exit;
+        if (empty($errors)) {
+            $upload = wp_handle_upload($uploaded_file, ['test_form' => false]);
+
+            if (!empty($upload['error'])) {
+                $errors[] = 'File upload error: ' . esc_html($upload['error']);
+            } else {
+                $attachment_path = $upload['file'];
+            }
+        }
+    }
+
+    if (empty($errors)) {
+        $to = 'info@optraseven.com';
+        $subject_line = 'Quote Request from ' . $name;
+        $body = "Name: $name\nEmail: $email\nPhone: $phone_full\nCompany: $company_name\nWebsite: $website_url\nService: $service_type\nIndustry: $industry\nBudget: \$$budget_min - \$$budget_max\nCountry: $country\nDate: $date\n\nMessage:\n$message";
+
+        $headers = ["From: noreply@optraseven.com", "Reply-To: $email"];
+
+        if ($attachment_path) {
+            wp_mail($to, $subject_line, $body, $headers, [$attachment_path]);
+        } else {
+            wp_mail($to, $subject_line, $body, $headers);
+        }
+
+        if ($attachment_path && file_exists($attachment_path)) {
+            unlink($attachment_path);
+        }
+    }
+
+    $redirect = wp_get_referer() ?: home_url('/');
+    if (!empty($errors)) {
+        $redirect = add_query_arg('quote_error', base64_encode(implode('|', $errors)), $redirect);
+    } else {
+        $redirect = add_query_arg('quote_success', '1', $redirect);
+    }
+    wp_safe_redirect($redirect);
+    exit;
 }
 
 
@@ -425,7 +497,7 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-add_filter( 'comment_form_defaults', function( $defaults ) {
+add_filter('comment_form_defaults', function ($defaults) {
     $defaults['logged_in_as'] = ''; // remove "Logged in as" text
     return $defaults;
 });

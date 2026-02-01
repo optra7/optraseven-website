@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<body>
+    <body>
     <main class="main inner-page-main">
         <section class="section section-no-space-top o7-get-the-quote">
             <div class="container">
@@ -24,10 +24,10 @@ get_header();
                             </div>
                             <div class="o7-get-the-quote__address-wrapper">
                                 <svg class="o7-get-the-quote__address-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin" ?>></use>
                                 </svg>
-                                <a href="mailto:info@optraseven.com" target="_blank" class="o7-get-the-quote__address">
-                                    info@optraseven.com
+                                <a href="mailto:optraseven@gmail.com" target="_blank" class="o7-get-the-quote__address">
+                                    optraseven@gmail.com
                                 </a>
                             </div>
                         </div>
@@ -35,9 +35,9 @@ get_header();
                         <div class="o7-get-the-quote__info">
                             <h2 class="o7-get-the-quote__location">Headquarter</h2>
                             <address class="o7-contact-us__form-address">
-                                <span>1209 Mountain Road PL NE,</span>
-                                <span>STE R, Albuquerque,</span>
-                                <span>NM 87110, USA</span>  
+                                <span>1209 Mountain Road PL NE, STE R</span>
+                                <span>Albuquerque NM 87110</span>
+                                <span>USA</span>
                             </address>
                         </div>
 
@@ -63,17 +63,21 @@ get_header();
                         </h2>
                         <form class="o7-get-the-quote-form" aria-label="get the quote form" method="post" enctype="multipart/form-data" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                             <input type="hidden" name="action" value="get_quote_form_submit">
+                            <?php wp_nonce_field('get_quote_form_submit', '_wpnonce'); ?>
+                            <div style="display: none;">
+                                <input type="text" name="website_url" id="website_url" autocomplete="off">
+                            </div>
                             <!-- full name Start -->
-                             <div>
+                            <div>
                                 <label class="o7-input-label o7-get-the-quote__input-label" for="name">Full Name <span class="text-danger">*</span> </label>
                                 <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                     <input type="text" id="name" name="name"
-                                        required
-                                        class="o7-input-field o7-get-the-quote__input-name o7-get-the-quote__full-width"
-                                        placeholder="John Lennon">
+                                           required
+                                           class="o7-input-field o7-get-the-quote__input-name o7-get-the-quote__full-width"
+                                           placeholder="John Lennon">
                                 </div>
-                             </div>
-                            
+                            </div>
+
                             <!-- full name Start -->
 
                             <!-- two column input phone number and email -->
@@ -82,24 +86,24 @@ get_header();
                                 <div class="o7-get-the-quote__input-wrapper">
                                     <!-- email label -->
                                     <label class="o7-input-label o7-get-the-quote__input-label"
-                                        for="email">Email <span class="text-danger">*</span> </label>
+                                           for="email">Email <span class="text-danger">*</span> </label>
                                     <!-- email input -->
                                     <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                         <input type="email" id="email" name="email"
-                                            required
-                                            class="o7-input-field o7-get-the-quote__input-email o7-get-the-quote__full-width"
-                                            placeholder="johnlenon@gmail.com">
+                                               required
+                                               class="o7-input-field o7-get-the-quote__input-email o7-get-the-quote__full-width"
+                                               placeholder="johnlenon@gmail.com">
                                     </div>
                                 </div>
                                 <!-- country -->
                                 <div class="o7-get-the-quote__input-wrapper">
                                     <!-- date lable -->
                                     <label class="o7-input-label o7-get-the-quote__input-label"
-                                        for="country-select">Country <span class="text-danger">*</span> </label>
+                                           for="country-select">Country <span class="text-danger">*</span> </label>
                                     <!-- date input -->
                                     <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                         <select name="country-select" id="country-select" required
-                                            class="o7-get-the-quote__select-country">
+                                                class="o7-get-the-quote__select-country">
                                             <option value="" selected>Select...</option>
                                             <option value="afghanistan">Afghanistan</option>
                                             <option value="albania">Albania</option>
@@ -312,7 +316,7 @@ get_header();
                                     <div class="o7-get-the-quote__prepend-input-wrapper">
                                         <div class="o7-input-group">
                                             <input type="tel" id="phone" name="phone" inputmode="tel"
-                                                class="o7-input-field o7-get-the-quote__full-width"
+                                                   class="o7-input-field o7-get-the-quote__full-width"
                                                    placeholder="+88 017 8428 7229">
                                         </div>
                                     </div>
@@ -321,12 +325,12 @@ get_header();
                                 <div class="o7-get-the-quote__input-wrapper">
                                     <!-- Industry / Category label-->
                                     <label class="o7-input-label o7-get-the-quote__input-label"
-                                        for="industry-category">Industry / Category</label>
+                                           for="industry-category">Industry / Category</label>
                                     <!-- Industry / Category input -->
                                     <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                         <input type="text" id="industry-category" name="industry-category"
-                                            class="o7-input-field o7-get-the-quote__input-industry-category o7-get-the-quote__full-width"
-                                            placeholder="Apparel">
+                                               class="o7-input-field o7-get-the-quote__input-industry-category o7-get-the-quote__full-width"
+                                               placeholder="Apparel">
                                     </div>
                                 </div>
                             </div>
@@ -342,22 +346,22 @@ get_header();
                                     <!-- company input -->
                                     <div class="o7-input-group">
                                         <input type="text" id="company-name" name="company-name"
-                                            class="o7-input-field"
-                                            placeholder="Company Name">
+                                               class="o7-input-field"
+                                               placeholder="Company Name">
                                     </div>
                                 </div>
                                 <!-- website url -->
                                 <div class="o7-get-the-quote__input-wrapper">
                                     <!-- website label -->
                                     <label class="o7-input-label o7-get-the-quote__input-label"
-                                        for="website-url">Website
+                                           for="website-url">Website
                                         URL</label>
                                     <div class="o7-get-the-quote__prepend-input-wrapper">
                                         <div class="o7-input-group">
                                             <!-- website input -->
                                             <input type="url" id="website-url" name="website-url"
-                                                class="o7-input-field"
-                                                placeholder="www.yourwebsite.com">
+                                                   class="o7-input-field"
+                                                   placeholder="www.yourwebsite.com">
                                         </div>
                                     </div>
                                 </div>
@@ -368,14 +372,14 @@ get_header();
                             <!-- two column input budget and country -->
                             <div class="o7-get-the-quote__input-row-wrapper">
                                 <div
-                                    class="o7-get-the-quote__input-budget-wrapper o7-get-the-quote__input-wrapper o7-get-the-quote__full-width">
+                                        class="o7-get-the-quote__input-budget-wrapper o7-get-the-quote__input-wrapper o7-get-the-quote__full-width">
                                     <!-- budget label -->
                                     <label class="o7-input-label o7-get-the-quote__input-label"
-                                        for="budget-min">Budget</label>
+                                           for="budget-min">Budget</label>
                                     <div class="o7-get-the-quote__input-cash-wrapper">
                                         <!-- budget input wrapper -->
                                         <div
-                                            class="o7-get-the-quote__prepend-input-wrapper o7-get-the-quote__cash-input-wrapper">
+                                                class="o7-get-the-quote__prepend-input-wrapper o7-get-the-quote__cash-input-wrapper">
                                             <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                                 <!-- budget prepend one -->
                                                 <span class="o7-input-group-text o7-get-the-quote__input-cash">
@@ -383,14 +387,14 @@ get_header();
                                                 </span>
                                                 <!-- budget input one -->
                                                 <input type="number" id="budget-min" name="budget-min"
-                                                    class="o7-input-field o7-get-the-quote__input-budget o7-get-the-quote__full-width"
-                                                    placeholder="500">
+                                                       class="o7-input-field o7-get-the-quote__input-budget o7-get-the-quote__full-width"
+                                                       placeholder="500">
                                             </div>
                                         </div>
                                         <!-- budget input middle text -->
                                         <p class="o7-get-the-quote__budget-text">to</p>
                                         <div
-                                            class="o7-get-the-quote__prepend-input-wrapper o7-get-the-quote__cash-input-wrapper">
+                                                class="o7-get-the-quote__prepend-input-wrapper o7-get-the-quote__cash-input-wrapper">
                                             <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                                 <!-- budget prepend two -->
                                                 <span class="o7-input-group-text o7-get-the-quote__input-cash">
@@ -398,8 +402,8 @@ get_header();
                                                 </span>
                                                 <!-- budget input two -->
                                                 <input type="number" id="budget-max" name="budget-max"
-                                                    class="o7-input-field o7-get-the-quote__input-budget o7-get-the-quote__full-width"
-                                                    placeholder="1000+">
+                                                       class="o7-input-field o7-get-the-quote__input-budget o7-get-the-quote__full-width"
+                                                       placeholder="1000+">
                                             </div>
                                         </div>
                                     </div>
@@ -412,7 +416,7 @@ get_header();
                                     <!-- input Service Type -->
                                     <div class="o7-get-the-quote__prepend-input-wrapper">
                                         <select name="service-type" id="service-type"
-                                            class="o7-get-the-quote__select-service">
+                                                class="o7-get-the-quote__select-service">
                                             <option value="" selected>Select...</option>
                                             <option value="shopify">Shopify</option>
                                             <option value="webflow">Webflow</option>
@@ -428,11 +432,11 @@ get_header();
                                 <div class="o7-get-the-quote__input-wrapper">
                                     <!-- Attachment lable -->
                                     <label class="o7-input-label o7-get-the-quote__input-label"
-                                        for="file-attachment">Attachment</label>
+                                           for="file-attachment">Attachment</label>
                                     <!-- Attachment input -->
                                     <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                         <input type="file" id="file-attachment" name="file-attachment"
-                                            class="o7-input-field o7-get-the-quote__input-file o7-get-the-quote__full-width">
+                                               class="o7-input-field o7-get-the-quote__input-file o7-get-the-quote__full-width">
                                     </div>
                                 </div>
 
@@ -444,7 +448,7 @@ get_header();
                                     <!-- date input -->
                                     <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                         <input type="date" placeholder="mm-dd-yyyy" id="date" name="date"
-                                            class="o7-input-field o7-get-the-quote__input-date o7-get-the-quote__full-width">
+                                               class="o7-input-field o7-get-the-quote__input-date o7-get-the-quote__full-width">
                                     </div>
                                 </div>
                             </div>
@@ -455,7 +459,7 @@ get_header();
                                     Details <span class="text-danger">*</span> </label>
                                 <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                     <textarea name="message" id="message" class="o7-get-the-quote__input-text" required
-                                        placeholder="I want to re-build my Shopify store..."></textarea>
+                                              placeholder="I want to re-build my Shopify store..."></textarea>
                                 </div>
                             </div>
                             <!-- submit button -->
@@ -472,22 +476,22 @@ get_header();
         get_template_part('template-parts/map', null, []);
         ?>
         <?php
-    $faq_data = array(
-        'title_pointer' => '', // optional small accent text (left dot in your original)
-        'title'         => 'Frequently Asked Questions',
-        'sub_title'     => 'Answers to Things You Might Be Wondering',
-        'button_text'   => 'Get In Touch',
-        'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
-        'questions'     => array(
-            array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
-            array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
-            array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
-            array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
-        ),
-    );
+        $faq_data = array(
+            'title_pointer' => '', // optional small accent text (left dot in your original)
+            'title'         => 'Frequently Asked Questions',
+            'sub_title'     => 'Answers to Things You Might Be Wondering',
+            'button_text'   => 'Get In Touch',
+            'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
+            'questions'     => array(
+                array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
+                array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
+                array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
+                array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
+            ),
+        );
 
-    get_template_part('template-parts/faq', null, $faq_data);
-    ?>
+        get_template_part('template-parts/faq', null, $faq_data);
+        ?>
 
         <section class="o7-news-letter section section-no-space-bottom">
             <div class="container">
@@ -541,6 +545,6 @@ get_header();
             </div>
         </section>
     </main>
-</body>
+    </body>
 
 <?php get_footer(); ?>
