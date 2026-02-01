@@ -436,6 +436,7 @@ get_header();
                                     <!-- Attachment input -->
                                     <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                         <input type="file" id="file-attachment" name="file-attachment"
+                                               accept=".jpg, .jpeg, .png, .pdf, .doc, .docx, .txt"
                                                class="o7-input-field o7-get-the-quote__input-file o7-get-the-quote__full-width">
                                     </div>
                                 </div>
