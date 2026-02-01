@@ -58,12 +58,12 @@ get_header();
                 <?php if (!empty($banner_image)) : ?>
                     <!-- Show Banner Image -->
                     <div class="o7-blog-post__banner-image">
-                        <img src="<?php echo esc_url($banner_image); ?>" alt="<?php the_title_attribute(); ?>" fetchpriority="high" width="1000" height="500">
+                        <img src="<?php echo esc_url($banner_image); ?>" alt="<?php the_title_attribute(); ?>" width="1000" height="500">
                     </div>
                 <?php elseif (!empty($featured_image)) : ?>
                     <!-- Featured Image -->
                     <div class="o7-blog-post__banner-image">
-                        <img src="<?php echo esc_url($featured_image); ?>" alt="<?php the_title_attribute(); ?>" fetchpriority="high" width="1000" height="500">
+                        <img src="<?php echo esc_url($featured_image); ?>" alt="<?php the_title_attribute(); ?>" width="1000" height="500">
                     </div>
                 <?php endif; ?>
 

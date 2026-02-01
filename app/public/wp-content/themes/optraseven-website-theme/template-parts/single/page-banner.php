@@ -16,6 +16,7 @@ if (!$hero_image) {
     $hero_image = get_the_post_thumbnail($post_id, 'full', [
         'alt'   => get_the_title($post_id),
         'class' => '',
+        'decoding' => 'async',
         'fetchpriority' => 'high'
     ]);
 }
@@ -26,11 +27,12 @@ if (!$hero_image) {
 
         <?php
         if (!empty($banner_image)) {
-            echo '<img src="' . esc_url($banner_image) . '" alt="' . esc_attr(get_the_title($post_id)) . '" fetchpriority="high">';
+            echo '<img src="' . esc_url($banner_image) . '" alt="' . esc_attr(get_the_title($post_id)) . '" decoding="async" fetchpriority="high">';
 
         } elseif (is_array($hero_image) && isset($hero_image['ID'])) {
             echo wp_get_attachment_image($hero_image['ID'], 'full', false, [
                 'alt'           => $hero_image['alt'] ?? get_the_title($post_id),
+                'decoding'      => 'async',
                 'fetchpriority' => 'high'
             ]);
         } else {

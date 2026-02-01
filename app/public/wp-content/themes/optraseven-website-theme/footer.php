@@ -146,7 +146,7 @@
                                         aria-hidden="true" focusable="false">
                                         <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
                                     </svg>
-                                    <a href="mailto:optraseven@gmail.com" target="_blank">optraseven@gmail.com</a>
+                                    <a href="mailto:info@optraseven.com" target="_blank">info@optraseven.com</a>
                                 </div>
                             </li>
                             <li> 
@@ -156,9 +156,9 @@
                                         <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#location-arrow-outline"?>></use>
                                     </svg>
                                     <div class="region">
-                                        1209 Mountain Road PL NE, STE R<br>
-                                        Albuquerque NM 87110<br>
-                                        USA
+                                        1209 Mountain Road PL NE,<br>
+                                        STE R, Albuquerque, <br>
+                                        NM 87110, USA.
                                     </div>
                                 </div>
                             </li>
