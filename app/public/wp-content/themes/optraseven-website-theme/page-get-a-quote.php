@@ -24,7 +24,7 @@ get_header();
                             </div>
                             <div class="o7-get-the-quote__address-wrapper">
                                 <svg class="o7-get-the-quote__address-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin" ?>></use>
                                 </svg>
                                 <a href="mailto:optraseven@gmail.com" target="_blank" class="o7-get-the-quote__address">
                                     optraseven@gmail.com
@@ -63,8 +63,12 @@ get_header();
                         </h2>
                         <form class="o7-get-the-quote-form" aria-label="get the quote form" method="post" enctype="multipart/form-data" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                             <input type="hidden" name="action" value="get_quote_form_submit">
+                            <?php wp_nonce_field('get_quote_form_submit', '_wpnonce'); ?>
+                            <div style="display: none;">
+                                <input type="text" name="website_url" id="website_url" autocomplete="off">
+                            </div>
                             <!-- full name Start -->
-                             <div>
+                            <div>
                                 <label class="o7-input-label o7-get-the-quote__input-label" for="name">Full Name <span class="text-danger">*</span> </label>
                                 <div class="o7-input-group o7-get-the-quote__input-field-wrapper">
                                     <input type="text" id="name" name="name"
@@ -72,8 +76,8 @@ get_header();
                                         class="o7-input-field o7-get-the-quote__input-name o7-get-the-quote__full-width"
                                         placeholder="John Lennon">
                                 </div>
-                             </div>
-                            
+                            </div>
+
                             <!-- full name Start -->
 
                             <!-- two column input phone number and email -->
@@ -313,7 +317,7 @@ get_header();
                                         <div class="o7-input-group">
                                             <input type="tel" id="phone" name="phone" inputmode="tel"
                                                 class="o7-input-field o7-get-the-quote__full-width"
-                                                   placeholder="+88 017 8428 7229">
+                                                placeholder="+88 017 8428 7229">
                                         </div>
                                     </div>
                                 </div>
@@ -472,22 +476,22 @@ get_header();
         get_template_part('template-parts/map', null, []);
         ?>
         <?php
-    $faq_data = array(
-        'title_pointer' => '', // optional small accent text (left dot in your original)
-        'title'         => 'Frequently Asked Questions',
-        'sub_title'     => 'Answers to Things You Might Be Wondering',
-        'button_text'   => 'Get In Touch',
-        'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
-        'questions'     => array(
-            array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
-            array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
-            array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
-            array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
-        ),
-    );
+        $faq_data = array(
+            'title_pointer' => '', // optional small accent text (left dot in your original)
+            'title'         => 'Frequently Asked Questions',
+            'sub_title'     => 'Answers to Things You Might Be Wondering',
+            'button_text'   => 'Get In Touch',
+            'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
+            'questions'     => array(
+                array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
+                array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
+                array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
+                array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
+            ),
+        );
 
-    get_template_part('template-parts/faq', null, $faq_data);
-    ?>
+        get_template_part('template-parts/faq', null, $faq_data);
+        ?>
 
         <section class="o7-news-letter section section-no-space-bottom">
             <div class="container">
@@ -512,7 +516,7 @@ get_header();
                         <div class="o7-news-letter__check-list-content">
                             <p class="o7-news-letter__check-list-poiner">
                                 <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                     focusable="false">
+                                    focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                                 </svg>
                             </p>
@@ -521,7 +525,7 @@ get_header();
                         <div class="o7-news-letter__check-list-content">
                             <p class="o7-news-letter__check-list-poiner">
                                 <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                     focusable="false">
+                                    focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                                 </svg>
                             </p>
@@ -530,7 +534,7 @@ get_header();
                         <div class="o7-news-letter__check-list-content">
                             <p class="o7-news-letter__check-list-poiner">
                                 <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                     focusable="false">
+                                    focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                                 </svg>
                             </p>

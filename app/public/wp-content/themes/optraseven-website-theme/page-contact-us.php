@@ -19,7 +19,7 @@ get_header();
                         <div class="o7-contact-us__form-address-content-wrapper">
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline" ?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#phone-outline" ?>></use>
                                 </svg>
                                 <a href="http://wa.me/+8801784287229" target="_blank" class="o7-contact-us__form-address">
                                     (+880) 1784287229
@@ -27,7 +27,7 @@ get_header();
                             </div>
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?=get_template_directory_uri() ."/assets/icons/svg-icon-sprite.svg#envelope-outline-thin"?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#envelope-outline-thin" ?>></use>
                                 </svg>
                                 <a href="mailto:optraseven@gmail.com" target="_blank" class="o7-contact-us__form-address">
                                     optraseven@gmail.com
@@ -46,13 +46,13 @@ get_header();
                             <h2 class="o7-contact-us__form-address-header">Offices</h2>
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#office"?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#office" ?>></use>
                                 </svg>
                                 <p class="o7-contact-us__form-address">Bangladesh</p>
                             </div>
                             <div class="o7-contact-us__form-address-content">
                                 <svg class="o7-contact-us__form-icon" aria-hidden="true" focusable="false">
-                                    <use href=<?=get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#usa" ?>></use>
+                                    <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#usa" ?>></use>
                                 </svg>
                                 <p class="o7-contact-us__form-address">United States</p>
                             </div>
@@ -64,6 +64,10 @@ get_header();
                         </h1>
                         <form class="o7-contact-us-form" aria-label="contact us form" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                             <input type="hidden" name="action" value="contact_form_submit">
+                            <?php wp_nonce_field('contact_form_submit', '_wpnonce'); ?>
+                            <div style="display: none;">
+                                <input type="text" name="website" id="website" autocomplete="off">
+                            </div>
 
                             <!-- full name input -->
                             <div>
@@ -135,22 +139,22 @@ get_header();
         get_template_part('template-parts/map', null, []);
         ?>
         <?php
-    $faq_data = array(
-        'title_pointer' => '', // optional small accent text (left dot in your original)
-        'title'         => 'Frequently Asked Questions',
-        'sub_title'     => 'Answers to Things You Might Be Wondering',
-        'button_text'   => 'Get In Touch',
-        'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
-        'questions'     => array(
-            array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
-            array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
-            array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
-            array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
-        ),
-    );
+        $faq_data = array(
+            'title_pointer' => '', // optional small accent text (left dot in your original)
+            'title'         => 'Frequently Asked Questions',
+            'sub_title'     => 'Answers to Things You Might Be Wondering',
+            'button_text'   => 'Get In Touch',
+            'sprite_path'   => get_template_directory_uri() . '/assets/icons/svg-icon-sprite.svg',
+            'questions'     => array(
+                array('q' => 'How long does a typical project take to complete?', 'a' => 'Timelines vary based on scope, but most projects take 4–8 weeks.'),
+                array('q' => 'What is your design and development process?', 'a' => 'We follow a step-by-step process including discovery, design, development, testing, and launch.'),
+                array('q' => 'What kind of testing do you do before launch?', 'a' => 'We perform functional testing, responsiveness checks, browser compatibility, and bug fixes.'),
+                array('q' => 'Do you provide SEO best practices in your builds?', 'a' => 'Yes, we follow on-site SEO best practices like optimized tags, speed, and structure.'),
+            ),
+        );
 
-    get_template_part('template-parts/faq', null, $faq_data);
-    ?>
+        get_template_part('template-parts/faq', null, $faq_data);
+        ?>
 
         <section class="o7-news-letter section section-no-space-bottom">
             <div class="container">
@@ -175,7 +179,7 @@ get_header();
                         <div class="o7-news-letter__check-list-content">
                             <p class="o7-news-letter__check-list-poiner">
                                 <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                     focusable="false">
+                                    focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                                 </svg>
                             </p>
@@ -184,7 +188,7 @@ get_header();
                         <div class="o7-news-letter__check-list-content">
                             <p class="o7-news-letter__check-list-poiner">
                                 <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                     focusable="false">
+                                    focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                                 </svg>
                             </p>
@@ -193,7 +197,7 @@ get_header();
                         <div class="o7-news-letter__check-list-content">
                             <p class="o7-news-letter__check-list-poiner">
                                 <svg class="o7-icon o7-news-letter__check-list-checker" aria-hidden="true"
-                                     focusable="false">
+                                    focusable="false">
                                     <use href=<?= get_template_directory_uri() . "/assets/icons/svg-icon-sprite.svg#check" ?>></use>
                                 </svg>
                             </p>
