@@ -313,34 +313,18 @@
                                         <h2 class="megamenu-tab-title">Most Popular Works</h2>
                                         <div class="megamenu-tab-card-container">
                                                 <div class="megamenu-tab-card">
-                                                    <a href="/portfolio/adored-vintage">
+                                                    <a href="/portfolio/luxe-caviar">
                                                         <figure class="megamenu-tab-card__image-wrapper">
                                                         <span class="megamenu-tab-card__icon-wrapper">
                                                             <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                             </svg>
                                                         </span>
-                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/adored-vintage.webp" alt="Card Image">
+                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/luxe-caviar.webp" alt="Card Image">
                                                         </figure>
                                                         <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Adord Vintage</span>
-                                                    </div>
-                                                    </a>
-                                                </div>
-                                                <div class="megamenu-tab-card">
-                                                    <a href="/portfolio/velasca">
-                                                        <figure class="megamenu-tab-card__image-wrapper">
-                                                        <span class="megamenu-tab-card__icon-wrapper">
-                                                            <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
-                                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                            </svg>
-                                                        </span>
-                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
-                                                        </figure>
-                                                        <div class="megamenu-tab-card__title">
-                                                        <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Velasca</span>
+                                                        <span class="megamenu-tab-card__title-text">Luxe Caviar</span>
                                                     </div>
                                                     </a>
                                                 </div>
@@ -357,6 +341,22 @@
                                                         <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
                                                         <span class="megamenu-tab-card__title-text">Cast Plus</span>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="megamenu-tab-card">
+                                                    <a href="#">
+                                                        <figure class="megamenu-tab-card__image-wrapper">
+                                                        <span class="megamenu-tab-card__icon-wrapper">
+                                                            <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
+                                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                            </svg>
+                                                        </span>
+                                                            <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/anglo-healthcare.webp" alt="Card Image">
+                                                        </figure>
+                                                        <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Anglo Health Care</span>
                                                     </div>
                                                     </a>
                                                 </div>
@@ -428,34 +428,34 @@
                                         <h2 class="megamenu-tab-title">Shopify</h2>
                                         <div class="megamenu-tab-card-container">
                                             <div class="megamenu-tab-card">
-                                                <a href="/portfolio/verve-coffee-roasters">
+                                                <a href="/portfolio/luxe-caviar">
                                                     <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/verve-coffe.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/we-luv-eco.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Verve Coffee</span>
+                                                        <span class="megamenu-tab-card__title-text">We Luv Eco</span>
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="megamenu-tab-card">
-                                                <a href="/portfolio/velasca">
+                                                <a href="/portfolio/luxe-caviar">
                                                     <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/luxe-caviar.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Velasca</span>
+                                                        <span class="megamenu-tab-card__title-text">Luxe Caviar</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -467,11 +467,11 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/azuna-fresh.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/hot-monkey-nuts.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Azuna Fresh</span>
+                                                        <span class="megamenu-tab-card__title-text">Hot Monkey Nuts</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -575,11 +575,11 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/technomiler.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/sticki.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Technomaler</span>
+                                                        <span class="megamenu-tab-card__title-text">Sticki</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -895,34 +895,18 @@
                                         <h2 class="megamenu-tab-title">Most Popular Stories</h2>
                                         <div class="megamenu-tab-card-container">
                                             <div class="megamenu-tab-card">
-                                                <a href="/case-studies/adored-vintage">
+                                                <a href="/case-studies/luxe-caviar">
                                                     <figure class="megamenu-tab-card__image-wrapper">
                                                         <span class="megamenu-tab-card__icon-wrapper">
                                                             <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                                 <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                             </svg>
                                                         </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/adored-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/luxe-caviar.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Adord Vintage</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="megamenu-tab-card">
-                                                <a href="/case-studies/velasca">
-                                                    <figure class="megamenu-tab-card__image-wrapper">
-                                                        <span class="megamenu-tab-card__icon-wrapper">
-                                                            <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
-                                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
-                                                            </svg>
-                                                        </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
-                                                    </figure>
-                                                    <div class="megamenu-tab-card__title">
-                                                        <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Velasca</span>
+                                                        <span class="megamenu-tab-card__title-text">Luxe Caviar</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -939,6 +923,22 @@
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
                                                         <span class="megamenu-tab-card__title-text">Cast Plus</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="megamenu-tab-card">
+                                                <a href="#">
+                                                    <figure class="megamenu-tab-card__image-wrapper">
+                                                        <span class="megamenu-tab-card__icon-wrapper">
+                                                            <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
+                                                                <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/anglo-healthcare.webp" alt="Card Image">
+                                                    </figure>
+                                                    <div class="megamenu-tab-card__title">
+                                                        <span class="megamenu-tab-card__title-circle"></span>
+                                                        <span class="megamenu-tab-card__title-text">Anglo Health Care</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -1010,34 +1010,34 @@
                                         <h2 class="megamenu-tab-title">Shopify</h2>
                                         <div class="megamenu-tab-card-container">
                                             <div class="megamenu-tab-card">
-                                                <a href="/case-studies/verve-coffee-roasters">
+                                                <a href="/case-studies/luxe-caviar">
                                                     <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/adored-vintage.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/we-luv-eco.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Verve Coffee</span>
+                                                        <span class="megamenu-tab-card__title-text">We Luv Eco</span>
                                                     </div>
                                                 </a>
                                             </div>
                                             <div class="megamenu-tab-card">
-                                                <a href="/case-studies/velasca">
+                                                <a href="/case-studies/luxe-caviar">
                                                     <figure class="megamenu-tab-card__image-wrapper">
                                                     <span class="megamenu-tab-card__icon-wrapper">
                                                         <svg class="megamenu-tab-card__icon" aria-hidden="true" focusable="false">
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/luxe-caviar.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Velasca</span>
+                                                        <span class="megamenu-tab-card__title-text">Luxe Caviar</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -1049,11 +1049,11 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/azuna-fresh.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/hot-monkey-nuts.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Azuna Fresh</span>
+                                                        <span class="megamenu-tab-card__title-text">Hot Monkey Nuts</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -1141,11 +1141,11 @@
                                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
                                                         </svg>
                                                     </span>
-                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/valasca.webp" alt="Card Image">
+                                                        <img class="megamenu-tab-card__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega-menu/sticki.webp" alt="Card Image">
                                                     </figure>
                                                     <div class="megamenu-tab-card__title">
                                                         <span class="megamenu-tab-card__title-circle"></span>
-                                                        <span class="megamenu-tab-card__title-text">Technomaler</span>
+                                                        <span class="megamenu-tab-card__title-text">Sticki</span>
                                                     </div>
                                                 </a>
                                             </div>
