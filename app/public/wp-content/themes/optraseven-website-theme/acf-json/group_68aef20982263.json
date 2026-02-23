@@ -39,7 +39,8 @@
             },
             "choices": {
                 "shopify": "Shopify",
-                "webflow": "Webflow"
+                "webflow": "Webflow",
+                "custom": "Custom"
             },
             "default_value": false,
             "return_format": "value",
@@ -303,5 +304,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1764531836
+    "modified": 1771823410
 }
