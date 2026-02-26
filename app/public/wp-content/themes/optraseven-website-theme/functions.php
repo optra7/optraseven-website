@@ -313,7 +313,7 @@ function optraseven_contact_form_handler()
         $body   .= "Submitted via website contact form.";
 
         $headers = [
-            "From: Website Contact <noreply@optraseven.com>",
+            "From: Website Contact <support@optraseven.com>",
             "Reply-To: $name <$email>",
             "Content-Type: text/plain; charset=UTF-8"
         ];
@@ -444,7 +444,7 @@ function optraseven_get_quote_form_handler()
         $subject_line = 'Quote Request from ' . $name;
         $body = "Name: $name\nEmail: $email\nPhone: $phone_full\nCompany: $company_name\nWebsite: $website_url\nService: $service_type\nIndustry: $industry\nBudget: \$$budget_min - \$$budget_max\nCountry: $country\nDate: $date\n\nMessage:\n$message";
 
-        $headers = ["From: noreply@optraseven.com", "Reply-To: $email"];
+        $headers = ["From: support@optraseven.com", "Reply-To: $email"];
 
         if ($attachment_path) {
             wp_mail($to, $subject_line, $body, $headers, [$attachment_path]);
