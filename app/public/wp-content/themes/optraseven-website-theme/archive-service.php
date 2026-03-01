@@ -165,8 +165,7 @@ $maintenance_image = get_service_featured_image_by_slug('maintenance-support') ?
                     <div class="o7-service-card__image-wrap">
                         <img src="<?= esc_url($webflow_image) ?>" alt="monitor-image"
                             class="o7-service-card__image">
-                        <p class="o7-service-card__image-caption">Brand designers and web designers in-house
-                            crafting visuals to match your brand values.</p>
+                        <p class="o7-service-card__image-caption">Webflow experts designing and developing high-performance websites aligned with your brand vision.</p>
                     </div>
                     <ul class="o7-service-card__list">
                         <li class="o7-service-card__list-item">
@@ -363,8 +362,7 @@ $maintenance_image = get_service_featured_image_by_slug('maintenance-support') ?
                     <div class="o7-service-card__image-wrap">
                         <img src="<?= esc_url($cro_image) ?>"
                             alt="book-shelf-library-image" class="o7-service-card__image">
-                        <p class="o7-service-card__image-caption">Brand designers and web designers in-house
-                            crafting visuals to match your brand values.</p>
+                        <p class="o7-service-card__image-caption">Data-driven CRO experts refining your website experience to increase engagement and conversion rates.</p>
                     </div>
                 </div>
             </div>
@@ -381,8 +379,7 @@ $maintenance_image = get_service_featured_image_by_slug('maintenance-support') ?
                     <div class="o7-service-card__image-wrap">
                         <img src="<?= esc_url($custom_app_image) ?>"
                             alt="monitor-image" class="o7-service-card__image">
-                        <p class="o7-service-card__image-caption">Brand designers and web designers in-house
-                            crafting visuals to match your brand values.</p>
+                        <p class="o7-service-card__image-caption">In-house engineers designing and developing custom applications tailored to your business workflows and goals.</p>
                     </div>
 
                     <ul class="o7-service-card__list">
@@ -575,8 +572,7 @@ $maintenance_image = get_service_featured_image_by_slug('maintenance-support') ?
                     <div class="o7-service-card__image-wrap">
                         <img src="<?= esc_url($qa_image) ?>"
                             alt="book-shelf-library-image" class="o7-service-card__image">
-                        <p class="o7-service-card__image-caption">Brand designers and web designers in-house
-                            crafting visuals to match your brand values.</p>
+                        <p class="o7-service-card__image-caption">Strategic quality assurance that strengthens reliability, enhances usability, and supports scalable growth.</p>
                     </div>
                 </div>
             </div>
@@ -593,8 +589,7 @@ $maintenance_image = get_service_featured_image_by_slug('maintenance-support') ?
                     <div class="o7-service-card__image-wrap">
                         <img src="<?= esc_url($maintenance_image) ?>"
                             alt="monitor-image" class="o7-service-card__image">
-                        <p class="o7-service-card__image-caption">Brand designers and web designers in-house
-                            crafting visuals to match your brand values.</p>
+                        <p class="o7-service-card__image-caption">Dedicated maintenance and support ensuring stability, security, and continuous performance.</p>
                     </div>
 
                     <ul class="o7-service-card__list">
