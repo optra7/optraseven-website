@@ -121,8 +121,7 @@ $maintenance_image = get_service_featured_image_by_slug('maintenance-support') ?
                             <a href="/services/shopify/" class="o7-service-card__link">
                                 <img src="<?= get_template_directory_uri() ?>/assets/images/service-page/hover-icon-shopify.webp" alt="" aria-hidden="true"
                                     class="o7-service-card__icon">
-                                <p class="o7-service-card__link-label">Automation & Conversion Optimization (CRO)
-                                </p>
+                                <p class="o7-service-card__link-label">Automation & Conversion Optimization</p>
                                 <div class="o7-service-card__arrow-wrapper">
                                     <svg class="o7-icon o7-service-card__arrow-icon" aria-hidden="true" focusable="false">
                                         <use href="<?= get_template_directory_uri() ?>/assets/icons/svg-icon-sprite.svg#arrow-up-right"></use>
