@@ -12,19 +12,17 @@ get_header();
                 <div class="o7-hero-legal__header-content">
                     <h1 class="o7-hero-legal__page-header">Privacy Policy</h1>
                     <h2 class="o7-hero-legal__subtitle">
-                        At OptraSeven LLC , accessible from www.optraseven.com, one of our main
-                        priorities is the privacy of our visitors. This Privacy Policy document contains types of
-                        information that is collected and recorded by OptraSeven LLC and how we use it.
+                        At OptraSeven LLC, accessible from our website, protecting the privacy of our visitors is one of our top priorities. This Privacy Policy explains the types of information collected by OptraSeven LLC and how we use, store, and protect that information through our website and online services.
                     </h2>
                     <div class="o7-hero-legal-intro">
                         <div class="o7-hero-legal-intro__text-one">
                             <p class="o7-hero-legal-intro__text">
-                                If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us. This Privacy Policy applies only to our online activities and is valid for visitors to our website with
+                                If you have additional questions or require more information about our Privacy Policy, please contact us. This Privacy Policy applies only to our online activities and is valid for visitors to our website with regard to the information they share and/or that we collect on our website.
                             </p>
                         
                         </div>
                         <div class="o7-hero-legal-intro__text-two">
-                            <p class="o7-hero-legal-intro__text">Regards to the information that they shared and/or collect in OptraSeven LLC. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+                            <p class="o7-hero-legal-intro__text">This Privacy Policy applies only to our online activities and to visitors of our website regarding the information they share or that we collect through our website and services. It does not apply to information collected offline or through other channels.</p>
                      
                         </div>
                     </div>
@@ -123,53 +121,47 @@ get_header();
                         <h2 class="o7-stepper-article__para-title" id="information-we-collect">
                             Information we collect
                         </h2>
-                        <p class="o7-stepper-article__para">The personal information that you are asked to provide, and the reasons why you
-                            are
-                            asked to provide it, will be made clear to you at the point we ask you to
-                            provide
-                            your personal information.</p>
-                        <p class="o7-stepper-article__para">If you contact us directly, we may receive additional information about you such
-                            as
-                            your name, email address, phone number, the contents of the message and/or
-                            attachments you may send us, and any other information you may choose to
-                            provide.</p>
-                        <p class="o7-stepper-article__para">When you register for an Account, we may ask for your contact information,
-                            including
-                            items such as name, company name, address, email address, and telephone number.</p>
+                        <p class="o7-stepper-article__para">The personal information we request — and the reasons we require it — will be made clear when we collect it. Typical examples include:
+                            <ul class="o7-stepper-article__list">
+                                <li class="o7-stepper-article__list-item">
+                                    Information you provide when you contact us (for example: name, email address, phone number, the contents of your message, and attachments).
+                                </li>
+                                <li class="o7-stepper-article__list-item">
+                                    Account registration details (for example: name, company name, postal address, email address, and telephone number).
+                                </li>
+                                <li class="o7-stepper-article__list-item">
+                                    Transactional or billing information where applicable.
+                                </li>
+                            </ul>
+                        </p>
                         
-
                         <h2 class="o7-stepper-article__para-title" id="how-we-use-your-information">
                             How we use your information
                         </h2>
                         <p class="o7-stepper-article__para">
-                            We use the information we collect in various ways, including to:
+                            We use the information we collect for legitimate business purposes, including to:
                         </p>
                         <ul class="o7-stepper-article__list">
                             <li class="o7-stepper-article__list-item">
-                                Provide, operate, and maintain our website
+                                Provide, operate, and maintain our website and services.
                             </li>
                             <li class="o7-stepper-article__list-item">
-                                Improve, personalize, and expand our website
+                                Improve, personalise, and expand our website and offerings.
                             </li>
                             <li class="o7-stepper-article__list-item">
-                                Understand and analyze how you use our website
+                                Understand and analyse how you use our website to improve user experience.
                             </li>
                             <li class="o7-stepper-article__list-item">
-                                Develop new products, services, features, and functionality
+                                Develop new products, services, features, and functionality (including Shopify, Webflow, custom, and headless solutions).
                             </li>
                             <li class="o7-stepper-article__list-item">
-                                Communicate with you, either directly or through one of
-                                our partners, including for customer service, to provide you with updates
-                                and
-                                other
-                                information relating to the website, and for marketing and promotional
-                                purposes
+                                Communicate with you directly or via partners for customer service, updates, and — where permitted — marketing and promotional purposes.
                             </li>
                             <li class="o7-stepper-article__list-item">
-                                Send you emails
+                                Send transactional, service-related, and (where consented) marketing emails.
                             </li>
                             <li class="o7-stepper-article__list-item">
-                                Find and prevent fraud
+                                Detect, prevent, and investigate fraud or other unlawful activity.
                             </li>
                         </ul>
 
@@ -177,137 +169,108 @@ get_header();
                             Log Files
                         </h2>
                         <p class="o7-stepper-article__para">
-                            OptraSeven LLC follows a standard procedure of using log files. These files log
-                            visitors when they visit websites. All hosting companies do this and a part of
-                            hosting services&apos; analytics. The information collected by log files include
-                            internet protocol (IP) addresses, browser type, Internet Service Provider (ISP),
-                            date and time stamp, referring/exit pages, and possibly the number of clicks.
-                            These
-                            are not linked to any information that is personally identifiable. The purpose
-                            of
-                            the information is for analyzing trends, administering the site, tracking
-                            users&apos; movement on the website, and gathering demographic information.
+                            OptraSeven LLC uses standard log files as part of hosting providers’ analytics. These log files may record details such as IP addresses, browser type, Internet Service Provider (ISP), date and time stamps, referring/exit pages, and click counts. This technical data is not linked to personally identifiable information and is used to analyse trends, administer the site, monitor usage, and collect aggregated demographic information.
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="advertising-partners-privacy-policies">
                             Advertising Partners Privacy Policies
                         </h2>
-                        <p class="o7-stepper-article__para">Information about your computer hardware and software may be automatically
-                            You may consult this list to find the Privacy Policy for each of the advertising
-                            partners of OptraSeven LLC. Third-party ad servers or ad networks uses
-                            technologies
-                            like cookies, JavaScript, or Web Beacons that are used in their respective
-                            advertisements and links that appear on OptraSeven LLC, which are sent directly
-                            to
-                            users&apos; browser. They automatically receive your IP address when this
-                            occurs.
-                            These technologies are used to measure the effectiveness of their advertising
-                            campaigns and/or to personalize the advertising content that you see on websites
-                            that you visit.</p>
-                        <p class="o7-stepper-article__para">Note that OptraSeven LLC has no access
-                            to or control over these cookies that are used by third-party advertisers.</p>
+                        <p class="o7-stepper-article__para">
+                            Some third-party partners may automatically collect technical information about your device and browsing activity. Third-party ad servers or networks may use cookies, JavaScript, or web beacons in the advertisements and links that appear on our site; these technologies are sent directly to your browser and may collect your IP address and other technical data.
+                        </p>
+                        <p class="o7-stepper-article__para">
+                             Such partners use this information to measure advertising effectiveness and personalise ads. OptraSeven LLC does not control third-party advertising technologies and does not have access to the data those partners collect.
+                        </p>
+
 
                         <h2 class="o7-stepper-article__para-title" id="third-party-privacy-policies">
                             Third Party Privacy Policies
                         </h2>
-                        <p class="o7-stepper-article__para">OptraSeven LLC&apos;s Privacy Policy does not apply to other advertisers or
-                            websites. Thus, we are advising you to consult the respective Privacy Policies
-                            of
-                            these third-party ad servers for more detailed information. It may include their
-                            practices and instructions about how to opt-out of certain options.</p>
-                        <p class="o7-stepper-article__para">You can choose to disable cookies through your
-                            individual browser options. To know more detailed information about cookie
-                            management with specific web browsers, it can be found at the browsers&apos;
-                            respective websites.</p>
+                        <p class="o7-stepper-article__para">
+                            This Privacy Policy does not cover the practices of third-party websites or advertisers. We recommend reviewing the privacy policies of any external sites you visit for details about their data practices and opt-out options. You can manage or disable cookies via your browser settings; consult your browser’s documentation for instructions.
+                        </p>
+                        <p class="o7-stepper-article__para">
+                            You can choose to disable cookies through your browser settings. For more information about cookie management for specific browsers, please refer to the browser vendor’s support resources.
+                        </p>
                         
 
                         <h2 class="o7-stepper-article__para-title" id="ccpa-privacy-rights">
                             CCPA Privacy Rights (Do Not Sell My Personal Information)
                         </h2>
-                        <p class="o7-stepper-article__para">Under the CCPA, among other rights, California consumers have the right to:</p>
-                        <p class="o7-stepper-article__para">Request that a business delete any personal data about
-                            the consumer that a business has collected.<br><br> Request that
-                            a business that sells a consumer&apos;s personal data, not sell the
-                            consumer&apos;s
-                            personal data.</p>
-                        <p class="o7-stepper-article__para">If you make a request, we have one month
-                            to respond to you. If you would like to exercise any of these rights, please
-                            contact
-                            us.</p>
+                        <p class="o7-stepper-article__para">
+                            If you are a California resident, the California Consumer Privacy Act (CCPA) provides certain rights, including the right to:
+                        </p>
+                        <ul class="o7-stepper-article__list">
+                            <li class="o7-stepper-article__list-item">
+                                Request deletion of personal data collected about you.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                Request that a business that sells personal data not sell your personal data.
+                            </li>
+                        </ul>
+                        <p class="o7-stepper-article__para">
+                            If you make a request under the CCPA, we will respond within the timeframe required by law (typically one month). To exercise your rights, please contact us.
+                        </p>
                         
 
                         <h2 class="o7-stepper-article__para-title" id="data-protection-rights">
                             GDPR Data Protection Rights
                         </h2>
-                        <p class="o7-stepper-article__para">We would like to make sure you are fully aware of all of your data protection
-                            rights. Every user is entitled to the following:</p>
-                        <p class="o7-stepper-article__para">The right to access &ndash; You have the right to request copies of your
-                            personal
-                            data. We may charge you a small fee for this service.</p>
-                        <p class="o7-stepper-article__para">The right to rectification &ndash; You have the right to request that we correct
-                            any
-                            information you believe is inaccurate. You also have the right to request that
-                            we
-                            complete the information you believe is incomplete.</p>
-                        <p class="o7-stepper-article__para">The right to erasure &ndash; You have the right to request that we erase your
-                            personal data, under certain conditions.</p>
-                        <p class="o7-stepper-article__para">The right to restrict processing &ndash; You have the right to request that we
-                            restrict the processing of your personal data, under certain conditions.</p>
-                        <p class="o7-stepper-article__para">The right to object to processing &ndash; You have the right to object to our
-                            processing of your personal data, under certain conditions.</p>
-                        <p class="o7-stepper-article__para">The right to data portability &ndash; You have the right to request that we
-                            transfer
-                            the data that we have collected to another organization, or directly to you,
-                            under
-                            certain
-                            conditions.</p>
-                        <p class="o7-stepper-article__para">If you make a request, we have one month to respond to you. If you would like to
-                            exercise any of these rights, please contact us.</p>
+                        <p class="o7-stepper-article__para">
+                            Where the EU General Data Protection Regulation (GDPR) applies, you have the following rights:
+                        </p>
+                        <ul class="o7-stepper-article__list">
+                            <li class="o7-stepper-article__list-item">
+                                The right to access — request copies of your personal data. (A reasonable fee may apply for excessive requests.)
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                The right to rectification — request correction of inaccurate or incomplete data.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                The right to erasure — request deletion of your personal data under certain conditions.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                The right to restrict processing — request limitation of how we process your data under certain conditions.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                The right to object — object to our processing of your personal data in certain circumstances.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                The right to data portability — request transfer of your personal data to another organisation or to you in a commonly used, machine-readable format.
+                            </li>
+                        </ul>
+                        <p class="o7-stepper-article__para">
+                            If you wish to exercise any GDPR rights, contact us. We will respond to verifiable requests within the legally required timeframe (typically one month).
+                        </p>
                         
 
                         <h2 class="o7-stepper-article__para-title" id="childrens-information">
                             Children&rsquo;s Information
                         </h2>
-                        <p class="o7-stepper-article__para">Another part of our priority is adding protection for children while using the
-                            internet. We encourage parents and guardians to observe, participate in, and/or
-                            monitor and guide their online activity.</p>
-                        <p class="o7-stepper-article__para">OptraSeven LLC does not knowingly collect any Personal Identifiable Information
-                            from
-                            children under the age of 13. If you think that your child provided this kind of
-                            information on our website, we strongly encourage you to contact us immediately
-                            and
-                            we will do our best efforts to promptly remove such information from our
-                            records.</p>
+                        <p class="o7-stepper-article__para">
+                            Protecting children’s privacy online is important. We encourage parents and guardians to observe, participate in, and/or monitor their children’s online activity. OptraSeven LLC does not knowingly collect personally identifiable information from children under the age of 13. If you believe a child has provided such information on our website, please contact us and we will take reasonable steps to promptly remove it from our records.
+                        </p>
                         
-
+                        
                         <h2 class="o7-stepper-article__para-title" id="changes-to-this-privacy-policy">
                             Changes to This Privacy Policy
                         </h2>
                         <p class="o7-stepper-article__para">
-                            Address: Dhaka, Bangladesh
+                            We may update this Privacy Policy from time to time to reflect changes to our practices, services (including Shopify, Webflow, custom, and headless offerings), or legal requirements. We recommend reviewing this page periodically. Material changes will be posted here and will become effective as indicated.
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="contact-information">
                             Contact Information
                         </h2>
                         <p class="o7-stepper-article__para">
-                            We may update our Privacy Policy from time to time. Thus, we advise you to
-                            review
-                            this page periodically for any changes. We will notify you of any changes by
-                            posting
-                            the new Privacy Policy on this page. These changes are effective immediately,
-                            after
-                            they are posted on this page.
+                            Address: Dhaka, Bangladesh
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="contact-us">
                             Contact Us
                         </h2>
                         <p class="o7-stepper-article__para">
-                            If you have any questions or suggestions about our Privacy Policy, do not
-                            hesitate
-                            to
-                            contact us.
+                            If you have any questions, concerns, or suggestions about our Privacy Policy, or if you wish to exercise your data rights, please contact us at <a href="mailto:info@optraseven.com" target="_blank">info@optraseven.com</a>
                         </p>
                     </article>
                 </div>

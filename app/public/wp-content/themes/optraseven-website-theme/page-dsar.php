@@ -5,6 +5,7 @@
  */
 get_header();
 ?>
+
 <body>
     <main class="main content-with-stepper-main">
         <section class="section o7-stepper section-no-space-top-bottom">
@@ -84,93 +85,125 @@ get_header();
                             Introduction
                         </h2>
                         <p class="o7-stepper-article__para">
-                            At OptraSeven, we are committed to maintaining the accuracy, confidentiality, and
-                            security of your personal information. In line with this commitment and in
-                            compliance with data protection regulations, we provide you with the right to
-                            access, correct, or delete any personal information we hold about you.
+                            At OptraSeven, we are committed to protecting the accuracy, confidentiality, and security of your personal information. In keeping with applicable data protection laws, this Data Subject Access Request (DSAR) policy explains how you can access, correct, or request deletion of personal data we hold about you, and how we will handle those requests in a transparent and secure manner.
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="scope">
                             Scope
                         </h2>
                         <p class="o7-stepper-article__para">
-                            This DSAR policy applies to all personal data processed by Outliant, including data
-                            collected through our website, digital services, and any other interactions you may
-                            have with us.
+                            This DSAR policy applies to all personal data processed by OptraSeven, including information collected through our website, digital services, client engagements, and any other interactions with our team. It covers data related to clients, prospective clients, job applicants, partners, and website visitors.
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="making-a-request">
                             Making a Request
                         </h2>
-                        <p class="o7-stepper-article__para"><b>Identification:</b> To ensure the security of your data, all requests must be
-                            accompanied by sufficient information to identify you (e.g., name, contact details)
-                            and any other relevant information.</p>
-                        <p class="o7-stepper-article__para"><b>Type of Request:</b> Clearly state whether you seek
-                            access to your data, a correction, or deletion.</p>
-                        <p class="o7-stepper-article__para"><b>Contact:</b> Submit your request to
-                            info@outliant.com.</p>
-                        
+                        <p class="o7-stepper-article__para">
+                            To submit a DSAR, please provide the following so we can process your request securely and efficiently:
+                        </p>
+                        <ul class="o7-stepper-article__list">
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Identification:</strong> Sufficient information to identify you (for example: full name, email address, and any account or invoice reference).
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Type of request:</strong> Clearly state whether you are requesting access, correction, or deletion of your personal data.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Scope and details:</strong> If you can, describe the specific data, date ranges, or services the request concerns to help us locate relevant records.
+                            </li>
+                        </ul>
+
 
                         <h2 class="o7-stepper-article__para-title" id="processing-your-request">
                             Processing Your Request
                         </h2>
-                        <p class="o7-stepper-article__para"><b>Acknowledgement:</b> We will acknowledge receipt of your request
-                            promptly.</p>
-                        <p class="o7-stepper-article__para"><b>Verification:</b> We may need to verify your identity and the validity of your
-                            request.</p>
-                        <p class="o7-stepper-article__para"><b>Timeliness:</b> We aim to respond to your request within the timeframe
-                            stipulated by applicable data protection laws.</p>
-                        <p class="o7-stepper-article__para"><b>No Charge:</b> Generally, you will not be charged for making a DSAR. However, if
-                            your request is excessive or repetitive, we may impose a reasonable fee.</p>
-                        
+                        <p class="o7-stepper-article__para">
+                            We handle all DSARs with transparency, care, and in accordance with applicable data laws:
+                        </p>
+                        <ul class="o7-stepper-article__list">
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Acknowledgement:</strong> We will confirm receipt of your request as soon as possible.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Verification:</strong> To protect your data, we may request further identification before proceeding.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Response Time:</strong> We aim to respond within the timeframe specified by applicable regulations (typically within 30 days).
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Fees:</strong> Most requests are handled free of charge. However, if a request is manifestly unfounded, excessive, or repetitive, a reasonable administrative fee may apply.
+                            </li>
+                        </ul>
+
 
                         <h2 class="o7-stepper-article__para-title" id="accessing-your-data">
                             Accessing Your Data
                         </h2>
                         <p class="o7-stepper-article__para">
-                            Upon a valid request, we will provide you with a copy of your personal data in a
-                            structured, commonly used, and machine-readable format.
+                            To explain what happens once your DSAR is validated and how you will receive your personal data.
                         </p>
+                        <ul class="o7-stepper-article__list">
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Data Provision:</strong> Upon verification and validation of your request, we will provide a copy of the personal data we hold about you.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Format:</strong> Wherever possible, the data will be provided in a structured, commonly used, and machine-readable format.
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Information Provided:</strong> In addition to the personal data itself, we will provide details about:
+                                <ul class="o7-stepper-article__list">
+                                    <li class="o7-stepper-article__list-item">
+                                        The purpose of processing.
+                                    </li>
+                                    <li class="o7-stepper-article__list-item">
+                                        Categories of personal data held.
+                                    </li>
+                                    <li class="o7-stepper-article__list-item">
+                                        Any recipients of your data.
+                                    </li>
+                                    <li class="o7-stepper-article__list-item">
+                                        Retention periods for your data.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="o7-stepper-article__list-item">
+                                <strong>Transparency:</strong> We ensure that you have a clear understanding of how your data is used and processed, meeting applicable regulatory requirements.
+                            </li>
+                        </ul>
 
                         <h2 class="o7-stepper-article__para-title" id="correcting-your-data">
                             Correcting Your Data
                         </h2>
                         <p class="o7-stepper-article__para">
-                            If any personal data we hold about you is incorrect, you have the right to request
-                            that we correct any inaccuracies.
+                            If you believe any personal data we hold about you is inaccurate or incomplete, you may request that we correct or update it. We will take reasonable steps to verify the information and make the necessary corrections within a timely manner.
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="deleting-your-data">
                             Deleting Your Data
                         </h2>
                         <p class="o7-stepper-article__para">
-                            You may request the deletion of your personal data, subject to certain exceptions
-                            dictated by law or our business needs.
+                            You may request deletion of your personal data where permitted by law. Please note there are lawful grounds and business reasons (for example, compliance with legal obligations, prevention of fraud, or retention for legitimate business purposes) that may limit our ability to delete certain records. If we are unable to comply fully with a deletion request, we will explain the legal basis for retaining the data.
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="refusal-of-requests">
                             Refusal of Requests
                         </h2>
                         <p class="o7-stepper-article__para">
-                            In certain circumstances, we may legally refuse your request. If this is the case,
-                            we will explain the reasons for our refusal.
+                            We may refuse or partially refuse DSARs where permitted by law (for example, where fulfilling the request would adversely affect the rights of others, jeopardize an ongoing investigation, or conflict with legal obligations). If we refuse a request, we will explain the specific reasons and provide information on any available remedies.
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="changes-to-the-dsar-policy">
                             Changes to the DSAR Policy
                         </h2>
                         <p class="o7-stepper-article__para">
-                            This policy may be updated periodically. We will notify you of any significant
-                            changes through our website or through other means of contact.
+                            We may update this policy from time to time to reflect changes in our practices or legal obligations. Significant updates will be published on our website and, where appropriate, communicated through other reasonable channels.
                         </p>
 
                         <h2 class="o7-stepper-article__para-title" id="contact-us">
                             Contact Us
                         </h2>
                         <p class="o7-stepper-article__para">
-                            If you have any questions about this DSAR policy or how we process your personal
-                            data, please contact us through our designated channels or via our info@outliant.com
-                            email.
+                            If you have questions about this DSAR policy or wish to exercise your data subject rights, contact us at info@optraseven.com or through the contact channels listed on our website. We are committed to responding clearly and helpfully to your enquiries.
                         </p>
                     </article>
                 </div>
