@@ -4302,6 +4302,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-testimonial__card {
     flex: 0 0 auto;
+    justify-content: space-between;
     max-width: 450px;
     width: 100%;
     padding: 50px;
