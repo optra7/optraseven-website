@@ -2492,6 +2492,9 @@ figure.megamenu__service-view-all-image-wrapper {
 
 .o7-news-letter__form-wrapper .title {
     font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* END of newsletter plugin override */
@@ -3045,7 +3048,7 @@ figure.megamenu__service-view-all-image-wrapper {
 
 }
 
-.o7-section-header__title-pointer {
+.o7-section-header__title-pointer, .o7-content-card__title-pointer {
     width: 10px;
     height: 10px;
     background: #7CE3AC;
