@@ -22,9 +22,9 @@ get_header();
             <div class="o7-page-banner__image-wrapper">
                 <div class="o7-page-banner__image">
                     <picture>
-                        <source media="(min-width:1024px)" srcset=<?= get_template_directory_uri() . "/assets/images/about-us/about-us-page-banner.webp"?> />
-                        <source media="(min-width:768px)" srcset=<?= get_template_directory_uri() . "/assets/images/about-us/about-us-page-banner.webp"?> />
-                        <source media="(min-width:100px)" srcset=<?= get_template_directory_uri() . "/assets/images/about-us/about-us-page-banner.webp"?> />
+                        <source media="(min-width:1024px)" srcset=<?= get_template_directory_uri() . "/assets/images/about-us/about-us-page-banner-2.webp"?> />
+                        <source media="(min-width:768px)" srcset=<?= get_template_directory_uri() . "/assets/images/about-us/about-us-page-banner-2.webp"?> />
+                        <source media="(min-width:100px)" srcset=<?= get_template_directory_uri() . "/assets/images/about-us/about-us-page-banner-2.webp"?> />
 
                         <img src="/assets/images/about-us/about-us-page-banner.webp" alt="about us page banner"
                              fetchpriority="high" width="1520px" height="506px" />
